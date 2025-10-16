@@ -116,4 +116,25 @@ jobs:
           git add mocks.json
           git commit -m "chore: Auto-generate mocks.json from mock files"
           git push
+      
+      - name: Trigger stub-generator reload
+        if: steps.check_changes.outputs.changed == 'true'
+        run: |
+          echo "Notifying stub-generator of mock updates..."
+          
+          # Replace with your actual stub-generator URL
+          STUB_GENERATOR_URL="${{ secrets.STUB_GENERATOR_URL || 'http://localhost:10000' }}"
+          
+          curl -X POST "${STUB_GENERATOR_URL}/api/webhook/github-mocks-updated" \
+            -H "Content-Type: application/json" \
+            -d '{
+              "repository": "${{ github.repository }}",
+              "commits": [{"modified": ["mocks.json"]}],
+              "pusher": {"name": "github-actions[bot]"}
+            }' \
+            --fail-with-body \
+            --max-time 30 \
+            || echo "⚠️ Warning: Failed to notify stub-generator (server may be offline)"
+          
+          echo "Notification sent to stub-generator"
 
