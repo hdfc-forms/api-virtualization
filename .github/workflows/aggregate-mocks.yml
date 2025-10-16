@@ -11,6 +11,10 @@ on:
     branches:
       - main
 
+# Add write permissions for the workflow
+permissions:
+  contents: write
+
 jobs:
   aggregate-mocks:
     runs-on: ubuntu-latest
