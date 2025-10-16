@@ -1,0 +1,121 @@
+{
+  "businessName": "Loan Status Enquiry",
+  "apiName": "API/SW_LoanApplicationStatusInquiry",
+  "method": "POST",
+  "predicate": {
+    "request": {},
+    "headers": {},
+    "query": {}
+  },
+  "responseHeaders": {
+    "Content-Type": "application/json"
+  },
+  "responseBody": {
+    "ResponseSignatureEncryptedValue": null,
+    "Scope": null,
+    "responseString": {
+      "vKYCURL": "",
+      "JourneystatusDesc": "ValidatePartneris successfully completed",
+      "disbursementURL": "",
+      "disbursementStatus": "notinitiated",
+      "reDocumentUpload": [
+        {
+          "childDocId": "",
+          "parentDocId": ""
+        }
+      ],
+      "eKYCURL": "https://dapuat1.hdfcbank.com/HDFCDigitalAadhaar/AadhaarIntegration/InitiateRequest",
+      "Journeystatus": "ValidatePartner",
+      "expectedStepResponse": {
+        "leadInstaMobNo": null,
+        "mlano": "",
+        "leadInstaRefNo": null,
+        "stepResponse": {
+          "responseString": {
+            "digiliteFlag": "N",
+            "offerDemogDetails": [
+              {
+                "customerFullName": "MADHUKAR KUMAR",
+                "zipCode": "848101",
+                "customerState": "BIHAR",
+                "kycFlag": "",
+                "customerCity": "SAMASTIPUR",
+                "rateOfInterest": "",
+                "customerRessidencePhone": "",
+                "customerCountry": "IN",
+                "customerMobileNo": "917004541554",
+                "customerMiddleName": "",
+                "customerOfficeZipCode": "",
+                "residenceType": "",
+                "offerType": "",
+                "emailAddress": "",
+                "customerOfficePhone": "0 0  0",
+                "customerLastName": "KUMAR",
+                "reltype": "SOW",
+                "tenure": 0,
+                "monthlyIncome": "0",
+                "profession": "",
+                "customerOfficeAddress1": "",
+                "customerGender": "M",
+                "dateOfBirth": "02-10-2002",
+                "accountNumber": "XXXXXXXXX32572",
+                "customerOfficeAddress3": "",
+                "customerOfficeAddress2": "",
+                "customerFirstName": "MADHUKAR",
+                "customerID": "XXXX89085",
+                "custType": "I",
+                "offerAmount": 0,
+                "customerAddress1": "WARD NO 11 DHURLAKH SAMASTIPUR",
+                "customerAddress3": "",
+                "customerAddress2": "",
+                "customerPan": "JYXPK0721A"
+              }
+            ],
+            "stpOfferDetails": {
+              "stpBankJourneyID": "",
+              "stpOfferAvailable": "N",
+              "stpPartnerJourneyID": ""
+            },
+            "ekycStatusFlag": "Y"
+          },
+          "contextParam": {
+            "bankJourneyID": "684329732980",
+            "partnerJourneyID": "7a4e89ec-1296-4374-b074-a9e668ad9a3b_05_PL_U_WEB",
+            "partnerID": "HDFCBANK",
+            "productName": "PL"
+          },
+          "responseParam": null,
+          "status": {
+            "errorDesc": "",
+            "errorCode": "",
+            "responseCode": "0"
+          }
+        },
+        "stepName": "VerifyOTPAndGetDemogDetails",
+        "errorCode": "0",
+        "applicantID": "164766315",
+        "leadInstaUrl": "",
+        "errorMsg": "SUCCESS"
+      }
+    },
+    "errorMessage": null,
+    "contextParam": {
+      "bankJourneyID": "684329732980",
+      "partnerJourneyID": "7a4e89ec-1296-4374-b074-a9e668ad9a3b_05_PL_U_WEB",
+      "partnerID": "HDFCBANK",
+      "channelID": "ADOBE",
+      "productName": "PL"
+    },
+    "errorCode": null,
+    "originMessage": null,
+    "originCode": null,
+    "GWSymmetricKeyEncryptedValue": null,
+    "status": {
+      "errorDesc": "",
+      "errorCode": "",
+      "responseCode": "0"
+    },
+    "TransactionId": null
+  }
+}
+
