@@ -1,0 +1,8 @@
+# Mark auto-generated files
+mocks.json linguist-generated=true
+
+# This tells GitHub:
+# - Don't include in language statistics
+# - Show "Generated" badge in PR diffs
+# - Collapse by default in diffs
+
