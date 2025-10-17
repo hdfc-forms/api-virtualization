@@ -1,0 +1,39 @@
+{
+  "businessName": "Income Based Offer",
+  "apiName": "API/SW_Get_IncomeBasedOffer",
+  "method": "POST",
+  "latencyMs": 0,
+  "predicate": {
+    "request": {},
+    "headers": {},
+    "query": {}
+  },
+  "responseHeaders": {
+    "Content-Type": "application/json"
+  },
+  "responseBody": {
+    "ResponseSignatureEncryptedValue": null,
+    "Scope": null,
+    "responseString": {
+      "perfiosURL": "https://app.perfios.com/KuberaVault/insights/gl/14aef86a-c803-468d-84b5-224acc427515"
+    },
+    "errorMessage": null,
+    "contextParam": {
+      "bankJourneyID": "684329732980",
+      "partnerJourneyID": "7a4e89ec-1296-4374-b074-a9e668ad9a3b_05_PL_U_WEB",
+      "partnerID": "HDFCBANK",
+      "channelID": "ADOBE",
+      "productName": "PL"
+    },
+    "errorCode": null,
+    "originMessage": null,
+    "originCode": null,
+    "GWSymmetricKeyEncryptedValue": null,
+    "status": {
+      "errorDesc": "",
+      "errorCode": "",
+      "responseCode": "0"
+    },
+    "TransactionId": null
+  }
+}

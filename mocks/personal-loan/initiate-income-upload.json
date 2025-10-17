@@ -1,0 +1,31 @@
+{
+  "businessName": "Initiate Income Upload",
+  "apiName": "API/SW_Initiate_IncomeUpload",
+  "method": "POST",
+  "latencyMs": 0,
+  "predicate": {
+    "request": {},
+    "headers": {},
+    "query": {}
+  },
+  "responseHeaders": {
+    "Content-Type": "application/json"
+  },
+  "responseBody": {
+    "responseString": {
+      "perfiosURL": "https://13.234.85.48/content/hdfc_pl_forms/api/perfiosCallBack.3c74e391-a21d-4937-bb61-e126ca6878ed_01_PL_ETBWO_U_WEB.json"
+    },
+    "contextParam": {
+      "bankJourneyID": "178996941704",
+      "partnerJourneyID": "160120221234599899",
+      "partnerID": "HDFCBANK",
+      "productName": "PL",
+      "channelID": "ADOBE"
+    },
+    "status": {
+      "errorDesc": "",
+      "errorCode": "",
+      "responseCode": "0"
+    }
+  }
+}

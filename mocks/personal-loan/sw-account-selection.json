@@ -1,0 +1,58 @@
+{
+  "businessName": "ACCOUNT SELECTION",
+  "apiName": "API/SW_Account",
+  "method": "POST",
+  "latencyMs": 0,
+  "predicate": {
+    "request": {
+      "externalReferenceNo": "AD20250825083307261",
+      "RequestPayload": {
+        "requestString": {
+          "customerType": "Retail",
+          "employmentType": "Salaried",
+          "perfiosFipConsentFlag": "Y",
+          "accountdetails": [
+            {
+              "customerID": "XXXX89085",
+              "accountNumber": "XXXXXXXXX32572"
+            }
+          ]
+        },
+        "contextParam": {
+          "bankJourneyID": "684329732980",
+          "partnerJourneyID": "7a4e89ec-1296-4374-b074-a9e668ad9a3b_05_PL_U_WEB",
+          "externalReferenceNo": "AD20250825083307261",
+          "partnerID": "HDFCBANK",
+          "channelID": "ADOBE",
+          "productName": "PL"
+        }
+      }
+    }
+  },
+  "responseHeaders": {},
+  "responseBody": {
+    "ResponseSignatureEncryptedValue": null,
+    "Scope": null,
+    "responseString": {
+      "acknowledgement": "ok"
+    },
+    "errorMessage": null,
+    "contextParam": {
+      "bankJourneyID": "684329732980",
+      "partnerJourneyID": "7a4e89ec-1296-4374-b074-a9e668ad9a3b_05_PL_U_WEB",
+      "partnerID": "HDFCBANK",
+      "channelID": "ADOBE",
+      "productName": "PL"
+    },
+    "errorCode": null,
+    "originMessage": null,
+    "originCode": null,
+    "GWSymmetricKeyEncryptedValue": null,
+    "status": {
+      "errorDesc": "",
+      "errorCode": "",
+      "responseCode": "0"
+    },
+    "TransactionId": null
+  }
+}

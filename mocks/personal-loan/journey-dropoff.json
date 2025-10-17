@@ -1,0 +1,32 @@
+{
+  "businessName": "Journey Dropoff",
+  "apiName": "API/JourneyDropOff",
+  "method": "POST",
+  "latencyMs": 0,
+  "predicate": {
+    "request": {},
+    "headers": {},
+    "query": {}
+  },
+  "responseHeaders": {
+    "Content-Type": "application/json"
+  },
+  "responseBody": {
+    "errorMessage": null,
+    "errorCode": null,
+    "message": "Record successfully saved.",
+    "lead_profile_info": {
+      "leadProfileId": 27332143
+    },
+    "TransactionId": null,
+    "path": null,
+    "Scope": null,
+    "responseString": null,
+    "success": null,
+    "originCode": null,
+    "originMessage": null,
+    "ResponseEncryptedValue": null,
+    "GWSymmetricKeyEncryptedValue": null,
+    "status": "success"
+  }
+}

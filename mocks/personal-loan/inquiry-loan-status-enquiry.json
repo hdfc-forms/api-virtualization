@@ -2,6 +2,7 @@
   "businessName": "Loan Status Enquiry",
   "apiName": "API/SW_LoanApplicationStatusInquiry",
   "method": "POST",
+  "latencyMs": 0,
   "predicate": {
     "request": {},
     "headers": {},
@@ -118,4 +119,3 @@
     "TransactionId": null
   }
 }
-

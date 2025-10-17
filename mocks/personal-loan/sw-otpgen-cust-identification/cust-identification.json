@@ -1,0 +1,43 @@
+{
+  "businessName": "CUSTOMER IDENTIFICATION AND OTP GEN API (7860312283)",
+  "apiName": "API/SW_OTPGen_Cust_Identification",
+  "method": "POST",
+  "latencyMs": 0,
+  "predicate": {
+    "request": {
+      "requestString": {
+        "mobileNo": "7860312283"
+      }
+    }
+  },
+  "responseHeaders": {
+    "Content-Type": "application/json"
+  },
+  "responseBody": {
+    "ResponseSignatureEncryptedValue": null,
+    "Scope": null,
+    "responseString": {
+      "existingCustomer": "N",
+      "offerAvailable": "N",
+      "lcmcpFlag": "MOCK_RESPONSE"
+    },
+    "errorMessage": null,
+    "contextParam": {
+      "bankJourneyID": "684329732980",
+      "partnerJourneyID": "7a4e89ec-1296-4374-b074-a9e668ad9a3b_05_PL_U_WEB",
+      "partnerID": "HDFCBANK",
+      "channelID": "ADOBE",
+      "productName": "PL"
+    },
+    "errorCode": null,
+    "originMessage": null,
+    "originCode": null,
+    "GWSymmetricKeyEncryptedValue": null,
+    "status": {
+      "errorDesc": "",
+      "errorCode": "",
+      "responseCode": "0"
+    },
+    "TransactionId": null
+  }
+}

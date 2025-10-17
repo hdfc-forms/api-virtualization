@@ -1,7 +1,8 @@
 {
-  "businessName": "Journey Dropoff - ETB with number 9887422012",
-  "apiName": "API/JourneyDropOff",
+  "businessName": "Journey Dropoff Update",
+  "apiName": "API/JourneyDropOff_Update",
   "method": "POST",
+  "latencyMs": 0,
   "predicate": {
     "request": {},
     "headers": {},
@@ -13,20 +14,16 @@
   "responseBody": {
     "errorMessage": null,
     "errorCode": null,
-    "message": "Record successfully saved.",
-    "lead_profile_info": {
-      "leadProfileId": 27332143
-    },
     "TransactionId": null,
     "path": null,
     "Scope": null,
     "responseString": null,
-    "success": null,
+    "success": true,
+    "messages": "Record successfully updated!",
     "originCode": null,
     "originMessage": null,
     "ResponseEncryptedValue": null,
     "GWSymmetricKeyEncryptedValue": null,
-    "status": "success"
+    "status": null
   }
 }
-

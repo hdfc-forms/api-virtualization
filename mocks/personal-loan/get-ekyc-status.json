@@ -1,0 +1,47 @@
+{
+  "businessName": "Get eKYC Status",
+  "apiName": "API/SW_Fetch_EKYCStatus",
+  "method": "POST",
+  "latencyMs": 0,
+  "predicate": {
+    "request": {},
+    "headers": {},
+    "query": {}
+  },
+  "responseHeaders": {
+    "Content-Type": "application/json"
+  },
+  "responseBody": {
+    "Status": null,
+    "ResponseSignatureEncryptedValue": null,
+    "Scope": null,
+    "responseString": {
+      "aadhaarState": "Bihar",
+      "aadharName": null,
+      "addressMatchPercentage": "66.0",
+      "aadhaarAddress": ", ,, ,ward no-11, ,Dhurlakh, ,Bihar, ,848101",
+      "aadhaarCity": "Samastipur",
+      "aadhaarPincode": "848101",
+      "nameMatchPercentage": "100",
+      "ekycStatus": "SUCCESS"
+    },
+    "errorMessage": null,
+    "contextParam": {
+      "bankJourneyID": "684329732980",
+      "partnerJourneyID": "7a4e89ec-1296-4374-b074-a9e668ad9a3b_05_PL_U_WEB",
+      "partnerID": "HDFCBANK",
+      "channelID": "ADOBE",
+      "productName": "PL"
+    },
+    "errorCode": null,
+    "originMessage": null,
+    "originCode": null,
+    "GWSymmetricKeyEncryptedValue": null,
+    "status": {
+      "errorDesc": "",
+      "errorCode": "",
+      "responseCode": "0"
+    },
+    "TransactionId": null
+  }
+}

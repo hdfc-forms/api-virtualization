@@ -1,0 +1,32 @@
+{
+  "businessName": "Initiate Ekyc",
+  "apiName": "API/SW_Initiate_EKYC",
+  "method": "POST",
+  "latencyMs": 0,
+  "predicate": {
+    "request": {},
+    "headers": {},
+    "query": {}
+  },
+  "responseHeaders": {
+    "Content-Type": "application/json"
+  },
+  "responseBody": {
+    "contextParam": {
+      "partnerID": "HDFCBANK",
+      "channelID": "ADOBE",
+      "productName": "PL",
+      "partnerJourneyID": "12345656",
+      "bankJourneyID": "784578"
+    },
+    "responseString": {
+      "nextJourneyStep": "INITIATE-KYC",
+      "url": "https://13.234.85.48/content/forms/af/hdfc/hdfc_pl_forms/pl_etb/forms/pletb-wo.html?Jid=3c74e391-a21d-4937-bb61-e126ca6878ed_01_PL_ETBWO_U_WEB&visitType=KYC_COMPLETE_SUCCESS"
+    },
+    "status": {
+      "responseCode": "0",
+      "errorCode": "",
+      "errorDesc": ""
+    }
+  }
+}

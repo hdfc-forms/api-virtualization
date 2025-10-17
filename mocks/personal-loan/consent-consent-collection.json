@@ -1,0 +1,96 @@
+{
+  "businessName": "CONSENT_COLLECTION_API INVOKED",
+  "apiName": "API/SW_Consent",
+  "method": "POST",
+  "latencyMs": 0,
+  "predicate": {
+    "request": {
+      "externalReferenceNo": "AD20250825083243268",
+      "RequestPayload": {
+        "identifier": "917004541554",
+        "interactionDate": "20250825T03:02:43.272Z",
+        "purposes": [
+          {
+            "TransactionType": "CONFIRMED",
+            "Id": "47d9722a48cd4c57a14740b2773b8adc"
+          },
+          {
+            "CustomPreferences": [
+              {
+                "Options": [
+                  "ced59430d53345d7b6f969450295033b",
+                  "0e6ef33ea5ba499f875e10862f81a7e7",
+                  "78afe43e28c64ae2ada4b99663e62df2",
+                  "c7ca9ccdf99341c3ac83066a9ed4e0ec"
+                ],
+                "Id": "198cab9d5b2b43e4ab3bda0fb308a153"
+              }
+            ],
+            "TransactionType": "CONFIRMED",
+            "Id": "5e377611550247ca8a0585a54f54d280"
+          },
+          {
+            "CustomPreferences": [
+              {
+                "Options": [
+                  "adb45e713fb24b86a11a7d26663eff51",
+                  "b755b59b87f7463cbcbd05b957eabbaf",
+                  "20bffc33185c45c39c4b8c03dde13beb",
+                  "dfba61d267f14ac9b96da9b16d35af1c",
+                  "1113eab984194580813013ad2880ff75",
+                  "0fc0942687a44532979eccadf6fe1bc7",
+                  "8d5c7d515ad344d1a46be308984d40ea",
+                  "01229bc83fbb43889d364741f5474ecb",
+                  "ace638e2bb20486c85b441352d36120d",
+                  "7226c3dd11fc4ba791cf8c086539f401"
+                ],
+                "Id": "91f8f0559c1346f9870462ea894f3083"
+              }
+            ],
+            "TransactionType": "CONFIRMED",
+            "Id": "2c7f8b1790fd496fa592c962cb4692c0"
+          },
+          {
+            "CustomPreferences": [
+              {
+                "Options": [
+                  "bd51335717024d2796fc8557e42080ec",
+                  "1f267d22dd8d44c49e508eadbd8c5da6",
+                  "46e534efd83840a48054c0b103a95c93",
+                  "5f216f1c987143b485713eaf6ac4bda5"
+                ],
+                "Id": "643981a147b340f483418dae320ed8d2"
+              }
+            ],
+            "TransactionType": "CONFIRMED",
+            "Id": "c74e0bcfc166481792160ba2574c22ca"
+          }
+        ],
+        "dsDataElements": {
+          "FirstName": "MADHUKAR",
+          "DateOfBirth": "20021002",
+          "LastName": "KUMAR",
+          "PAN": "",
+          "Mobile": "917004541554"
+        },
+        "requestInformation": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...",
+        "customPayload": {
+          "Application_Name": "PL_JOURNEY"
+        }
+      }
+    }
+  },
+  "responseHeaders": {},
+  "responseBody": {
+    "Status": null,
+    "Scope": null,
+    "errorMessage": null,
+    "errorCode": null,
+    "receipt": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9eyJvYmplY3QiOnsiaWRlbnRpZmllciI6IkFkb2JlLVBMQG90cHJpdmFjeS5jb20iLCJjdXN0b21QYXlsb2FkIjp7ImFwcGxpY2F0aW9uTmFtZSI6IkFkb2JlLVBMIn0sImludGVyYWN0aW9uRGF0ZSI6IjIwMjUtMDMtMjhUMTI6Mzk6NDcuMzY2WiIsInB1cnBvc2VzIjpbeyJJZCI6ImRlYTliOTJjLWRjOWMtNDJkZS1iMTY2LTQ1NGI0ZDEyYTgzYyIsIlRyYW5zYWN0aW9uVHlwZSI6IkNPTkZJUk1FRCJ9LHsiSWQiOiJjNzRlMGJjZi1jMTY2LTQ4MTctOTIxNi0wYmEyNTc0YzIyY2EiLCJUcmFuc2FjdGlvblR5cGUiOiJDT05GSVJNRUQiLCJDdXN0b21QcmVmZXJlbmNlcyI6W3siSWQiOiI2NDM5ODFhMS00N2IzLTQwZjQtODM0MS04ZGFlMzIwZWQ4ZDIiLCJPcHRpb25zIjpbImJkNTEzMzU3LTE3MDItNGQyNy05NmZjLTg1NTdlNDIwODBlYyIsIjFmMjY3ZDIyLWRkOGQtNDRjNC05ZTUwLThlYWRiZDhjNWRhNiIsIjQ2ZTUzNGVmLWQ4MzgtNDBhNC04MDU0LWMwYjEwM2E5NWM5MyIsIjVmMjE2ZjFjLTk4NzEtNDNiNC04NTcxLTNlYWY2YWM0YmRhNSJdfV19LHsiSWQiOiJhN2E1MDc4Yi1hZTlmLTRmZDItYThmYS0zODU0Njg1MWQxMDkiLCJUcmFuc2FjdGlvblR5cGUiOiJDT05GSVJNRUQifSx7IklkIjoiOTdlNmVmYzAtYzRhZC00ZDc1LTllOWEtMjJmYWRhMGRkODA3IiwiVHJhbnNhY3Rpb25UeXBlIjoiQ09ORklSTUVEIn0seyJJZCI6IjVlMzc3NjExLTU1MDItNDdjYS04YTA1LTg1YTU0ZjU0ZDI4MCIsIlRyYW5zYWN0aW9uVHlwZSI6IkNPTkZJUk1FRCIsIkN1c3RvbVByZWZlcmVuY2VzIjpbeyJJZCI6IjE5OGNhYjlkLTViMmItNDNlNC1hYjNiLWRhMGZiMzA4YTE1MyIsIk9wdGlvbnMiOlsiY2VkNTk0MzAtZDUzMy00NWQ3LWI2ZjktNjk0NTAyOTUwMzNiIiwiMGU2ZWYzM2UtYTViYS00OTlmLTg3NWUtMTA4NjJmODFhN2U3IiwiNzhhZmU0M2UtMjhjNi00YWUyLWFkYTQtYjk5NjYzZTYyZGYyIiwiYzdjYTljY2QtZjk5My00MWMzLWFjODMtMDY2YTllZDRlMGVjIl19XX0seyJJZCI6IjQ3ZDk3MjJhLTQ4Y2QtNGM1Ny1hMTQ3LTQwYjI3NzNiOGFkYyIsIlRyYW5zYWN0aW9uVHlwZSI6IkNPTkZJUk1FRCJ9LHsiSWQiOiIyYzdmOGIxNy05MGZkLTQ5NmYtYTU5Mi1jOTYyY2I0NjkyYzAiLCJUcmFuc2FjdGlvblR5cGUiOiJDT05GSVJNRUQiLCJDdXN0b21QcmVmZXJlbmNlcyI6W3siSWQiOiI5MWY4ZjA1NS05YzEzLTQ2ZjktODcwNC02MmVhODk0ZjMwODMiLCJPcHRpb25zIjpbImFkYjQ1ZTcxLTNmYjItNGI4Ni1hMTFhLTdkMjY2NjNlZmY1MSIsImI3NTViNTliLTg3ZjctNDYzYy1iY2JkLTA1Yjk1N2VhYmJhZiIsIjIwYmZmYzMzLTE4NWMtNDVjMy05YzRiLThjMDNkZGUxM2JlYiIsImRmYmE2MWQyLTY3ZjEtNGFjOS1iOTZkLWE5YjE2ZDM1YWYxYyIsIjExMTNlYWI5LTg0MTktNDU4MC04MTMwLTEzYWQyODgwZmY3NSIsIjBmYzA5NDI2LTg3YTQtNDUzMi05NzllLWNjYWRmNmZlMWJjNyIsIjhkNWM3ZDUxLTVhZDMtNDRkMS1hNDZiLWUzMDg5ODRkNDBlYSIsIjAxMjI5YmM4LTNmYmItNDM4OC05ZDM2LTQ3NDFmNTQ3NGVjYiIsImFjZTYzOGUyLWJiMjAtNDg2Yy04NWI0LTQxMzUyZDM2MTIwZCIsIjcyMjZjM2RkLTExZmMtNGJhNy05MWNmLThjMDg2NTM5ZjQwMSJdfV19XSwiZHNEYXRhRWxlbWVudHMiOnsiRGF0ZU9mQmlydGgiOiIiLCJQQU4iOiIiLCJMYXN0TmFtZSI6IiIsIkZpcnN0TmFtZSI6IiJ9fSwiY29sbGVjdGlvblBvaW50SWQiOiIyYjMzMDk5NS00MTY3LTQwZmQtYjVhNS0xMWE2ZDRhNWM1OWUiLCJwdXJwb3NlIjpbeyJwdXJwb3NlSWQiOiI0N2Q5NzIyYS00OGNkLTRjNTctYTE0Ny00MGIyNzczYjhhZGMiLCJwdXJwb3NlVmVyc2lvbiI6MX0seyJwdXJwb3NlSWQiOiI1ZTM3NzYxMS01NTAyLTQ3Y2EtOGEwNS04NWE1NGY1NGQyODAiLCJwdXJwb3NlVmVyc2lvbiI6MX0seyJwdXJwb3NlSWQiOiIyYzdmOGIxNy05MGZkLTQ5NmYtYTU5Mi1jOTYyY2I0NjkyYzAiLCJwdXJwb3NlVmVyc2lvbiI6MX0seyJwdXJwb3NlSWQiOiJjNzRlMGJjZi1jMTY2LTQ4MTctOTIxNi0wYmEyNTc0YzIyY2EiLCJwdXJwb3NlVmVyc2lvbiI6Mn0seyJwdXJwb3NlSWQiOiJkZWE5YjkyYy1kYzljLTQyZGUtYjE2Ni00NTRiNGQxMmE4M2MiLCJwdXJwb3NlVmVyc2lvbiI6MX0seyJwdXJwb3NlSWQiOiJhN2E1MDc4Yi1hZTlmLTRmZDItYThmYS0zODU0Njg1MWQxMDkiLCJwdXJwb3NlVmVyc2lvbiI6MX0seyJwdXJwb3NlSWQiOiI5N2U2ZWZjMC1jNGFkLTRkNzUtOWU5YS0yMmZhZGEwZGQ4MDciLCJwdXJwb3NlVmVyc2lvbiI6MX1dLCJjb2xsZWN0aW9uUG9pbnRWZXJzaW9uIjo0fQvBa6bbqJFbFTJ0dCKGWXrj5UxZ4SAO4uIYE7jcBRZOE",
+    "ResponseEncryptedValue": null,
+    "GWSymmetricKeyEncryptedValue": null,
+    "originMessage": null,
+    "originCode": null,
+    "TransactionId": null
+  }
+}

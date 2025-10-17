@@ -1,0 +1,28 @@
+{
+  "businessName": "Save Additional Details",
+  "apiName": "API/SW_Save_Additional_Dtls",
+  "method": "POST",
+  "latencyMs": 0,
+  "predicate": {
+    "request": {},
+    "headers": {},
+    "query": {}
+  },
+  "responseHeaders": {
+    "Content-Type": "application/json"
+  },
+  "responseBody": {
+    "contextParam": {
+      "bankJourneyID": "826194228746",
+      "partnerJourneyID": "180120221234567999",
+      "partnerID": "HDFCBANK",
+      "productName": "PL",
+      "channelID": "ADOBE"
+    },
+    "status": {
+      "errorDesc": "",
+      "errorCode": "",
+      "responseCode": "0"
+    }
+  }
+}

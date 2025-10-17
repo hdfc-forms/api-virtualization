@@ -1,0 +1,50 @@
+{
+  "businessName": "PAN ENQUIRY API",
+  "apiName": "API/SW_PAN_GST_Inquiry",
+  "method": "POST",
+  "latencyMs": 0,
+  "predicate": {
+    "request": {},
+    "headers": {},
+    "query": {}
+  },
+  "responseHeaders": {
+    "Content-Type": "application/json"
+  },
+  "responseBody": {
+    "responseString": {
+      "panResponse": {
+        "lastName": "SINGH",
+        "seedingStatus": "Y",
+        "dobMatchFlag": "Y",
+        "nmPerStatus": "",
+        "panStatus": "E",
+        "panFiller3": "",
+        "firstName": "ANAND",
+        "panFiller4": "",
+        "panFiller1": "",
+        "panFiller2": "",
+        "nmNamePercentage": "",
+        "fatherNameMatchFlag": "",
+        "middleName": "",
+        "nmRemarks": "",
+        "pan": "BIOPC7152A",
+        "panTitle": "",
+        "nameMatchFlag": "Y",
+        "panFiller5": ""
+      }
+    },
+    "contextParam": {
+      "bankJourneyID": "799362682699",
+      "partnerJourneyID": "160120221234567999",
+      "partnerID": "HDFCBANK",
+      "productName": "PL",
+      "channelID": "ADOBE"
+    },
+    "status": {
+      "errorDesc": "",
+      "errorCode": "",
+      "responseCode": "0"
+    }
+  }
+}

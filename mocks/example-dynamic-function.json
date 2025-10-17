@@ -1,0 +1,14 @@
+{
+  "businessName": "Dynamic Loan Status (Example)",
+  "apiName": "API/LoanStatusDynamic",
+  "method": "POST",
+  "responseFunction": "dynamicLoanStatus",
+  "predicate": {
+    "request": {},
+    "headers": {},
+    "query": {}
+  },
+  "responseHeaders": {},
+  "responseBody": {}
+}
+
