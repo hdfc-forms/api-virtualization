@@ -1,0 +1,43 @@
+{
+  "businessName": "GetEKYCStatus - Folder 450",
+  "apiName": "API/PersonalLoan_GetEKYCStatus_450",
+  "method": "POST",
+  "latencyMs": 0,
+  "predicate": {
+    "request": {},
+    "headers": {},
+    "query": {}
+  },
+  "responseHeaders": {
+    "Content-Type": "application/json"
+  },
+  "responseBody": {
+    "Status": "SUCCESS",
+    "ResponseSignatureEncryptedValue": null,
+    "Scope": null,
+    "responseString": {
+      "loanAmount": 550700,
+      "interestRate": 10.5,
+      "tenure": 36,
+      "acknowledgementId": "TEST450007",
+      "status": "APPROVED"
+    },
+    "errorMessage": null,
+    "contextParam": {
+      "bankJourneyID": "TEST_JOURNEY_450_7",
+      "partnerJourneyID": "test-uuid-450-7",
+      "partnerID": "HDFCBANK",
+      "channelID": "ADOBE",
+      "productName": "PL"
+    },
+    "errorCode": null,
+    "originMessage": null,
+    "originCode": null,
+    "status": {
+      "errorDesc": "",
+      "errorCode": "",
+      "responseCode": "0"
+    },
+    "TransactionId": "TXN_TEST_450_7"
+  }
+}

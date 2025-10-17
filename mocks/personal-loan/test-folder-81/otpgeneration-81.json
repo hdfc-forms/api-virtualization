@@ -1,0 +1,43 @@
+{
+  "businessName": "OTPGeneration - Folder 81",
+  "apiName": "API/PersonalLoan_OTPGeneration_81",
+  "method": "POST",
+  "latencyMs": 0,
+  "predicate": {
+    "request": {},
+    "headers": {},
+    "query": {}
+  },
+  "responseHeaders": {
+    "Content-Type": "application/json"
+  },
+  "responseBody": {
+    "Status": "SUCCESS",
+    "ResponseSignatureEncryptedValue": null,
+    "Scope": null,
+    "responseString": {
+      "loanAmount": 181000,
+      "interestRate": 10.5,
+      "tenure": 36,
+      "acknowledgementId": "TEST81000",
+      "status": "APPROVED"
+    },
+    "errorMessage": null,
+    "contextParam": {
+      "bankJourneyID": "TEST_JOURNEY_81_0",
+      "partnerJourneyID": "test-uuid-81-0",
+      "partnerID": "HDFCBANK",
+      "channelID": "ADOBE",
+      "productName": "PL"
+    },
+    "errorCode": null,
+    "originMessage": null,
+    "originCode": null,
+    "status": {
+      "errorDesc": "",
+      "errorCode": "",
+      "responseCode": "0"
+    },
+    "TransactionId": "TXN_TEST_81_0"
+  }
+}

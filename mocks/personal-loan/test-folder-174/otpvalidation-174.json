@@ -1,0 +1,43 @@
+{
+  "businessName": "OTPValidation - Folder 174",
+  "apiName": "API/PersonalLoan_OTPValidation_174",
+  "method": "POST",
+  "latencyMs": 0,
+  "predicate": {
+    "request": {},
+    "headers": {},
+    "query": {}
+  },
+  "responseHeaders": {
+    "Content-Type": "application/json"
+  },
+  "responseBody": {
+    "Status": "SUCCESS",
+    "ResponseSignatureEncryptedValue": null,
+    "Scope": null,
+    "responseString": {
+      "loanAmount": 274100,
+      "interestRate": 10.5,
+      "tenure": 36,
+      "acknowledgementId": "TEST174001",
+      "status": "APPROVED"
+    },
+    "errorMessage": null,
+    "contextParam": {
+      "bankJourneyID": "TEST_JOURNEY_174_1",
+      "partnerJourneyID": "test-uuid-174-1",
+      "partnerID": "HDFCBANK",
+      "channelID": "ADOBE",
+      "productName": "PL"
+    },
+    "errorCode": null,
+    "originMessage": null,
+    "originCode": null,
+    "status": {
+      "errorDesc": "",
+      "errorCode": "",
+      "responseCode": "0"
+    },
+    "TransactionId": "TXN_TEST_174_1"
+  }
+}

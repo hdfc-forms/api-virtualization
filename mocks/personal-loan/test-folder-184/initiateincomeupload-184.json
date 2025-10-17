@@ -1,0 +1,43 @@
+{
+  "businessName": "InitiateIncomeUpload - Folder 184",
+  "apiName": "API/PersonalLoan_InitiateIncomeUpload_184",
+  "method": "POST",
+  "latencyMs": 0,
+  "predicate": {
+    "request": {},
+    "headers": {},
+    "query": {}
+  },
+  "responseHeaders": {
+    "Content-Type": "application/json"
+  },
+  "responseBody": {
+    "Status": "SUCCESS",
+    "ResponseSignatureEncryptedValue": null,
+    "Scope": null,
+    "responseString": {
+      "loanAmount": 285000,
+      "interestRate": 10.5,
+      "tenure": 36,
+      "acknowledgementId": "TEST184010",
+      "status": "APPROVED"
+    },
+    "errorMessage": null,
+    "contextParam": {
+      "bankJourneyID": "TEST_JOURNEY_184_10",
+      "partnerJourneyID": "test-uuid-184-10",
+      "partnerID": "HDFCBANK",
+      "channelID": "ADOBE",
+      "productName": "PL"
+    },
+    "errorCode": null,
+    "originMessage": null,
+    "originCode": null,
+    "status": {
+      "errorDesc": "",
+      "errorCode": "",
+      "responseCode": "0"
+    },
+    "TransactionId": "TXN_TEST_184_10"
+  }
+}

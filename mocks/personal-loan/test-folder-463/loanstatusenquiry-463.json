@@ -1,0 +1,43 @@
+{
+  "businessName": "LoanStatusEnquiry - Folder 463",
+  "apiName": "API/PersonalLoan_LoanStatusEnquiry_463",
+  "method": "POST",
+  "latencyMs": 0,
+  "predicate": {
+    "request": {},
+    "headers": {},
+    "query": {}
+  },
+  "responseHeaders": {
+    "Content-Type": "application/json"
+  },
+  "responseBody": {
+    "Status": "SUCCESS",
+    "ResponseSignatureEncryptedValue": null,
+    "Scope": null,
+    "responseString": {
+      "loanAmount": 563900,
+      "interestRate": 10.5,
+      "tenure": 36,
+      "acknowledgementId": "TEST463009",
+      "status": "APPROVED"
+    },
+    "errorMessage": null,
+    "contextParam": {
+      "bankJourneyID": "TEST_JOURNEY_463_9",
+      "partnerJourneyID": "test-uuid-463-9",
+      "partnerID": "HDFCBANK",
+      "channelID": "ADOBE",
+      "productName": "PL"
+    },
+    "errorCode": null,
+    "originMessage": null,
+    "originCode": null,
+    "status": {
+      "errorDesc": "",
+      "errorCode": "",
+      "responseCode": "0"
+    },
+    "TransactionId": "TXN_TEST_463_9"
+  }
+}
