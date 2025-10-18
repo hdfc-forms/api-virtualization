@@ -1,0 +1,102 @@
+name: Manual Reload Stub-Generator
+
+on:
+  workflow_dispatch:
+    inputs:
+      retry_count:
+        description: 'Number of retry attempts'
+        required: false
+        default: '3'
+        type: choice
+        options:
+          - '1'
+          - '2'
+          - '3'
+          - '5'
+
+permissions:
+  contents: read
+
+jobs:
+  reload-stub-generator:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Trigger stub-generator reload with retry
+        run: |
+          echo "📡 Triggering stub-generator reload..."
+          echo "Retry attempts: ${{ inputs.retry_count }}"
+          
+          # Replace with your actual stub-generator URL
+          STUB_GENERATOR_URL="${{ secrets.STUB_GENERATOR_URL || 'http://localhost:10000' }}"
+          
+          # Add timestamp for cache busting
+          TIMESTAMP=$(date +%s)
+          
+          # Retry logic
+          MAX_RETRIES=${{ inputs.retry_count }}
+          RETRY_COUNT=0
+          SUCCESS=false
+          
+          while [ $RETRY_COUNT -lt $MAX_RETRIES ]; do
+            echo ""
+            echo "Attempt $((RETRY_COUNT + 1)) of $MAX_RETRIES..."
+            
+            if curl -X POST "${STUB_GENERATOR_URL}/api/webhook/github-mocks-updated" \
+              -H "Content-Type: application/json" \
+              -d "{
+                \"repository\": \"${{ github.repository }}\",
+                \"commits\": [{\"modified\": [\"mocks.json\", \"functions.js\"]}],
+                \"pusher\": {\"name\": \"manual-trigger\"},
+                \"timestamp\": ${TIMESTAMP},
+                \"manual\": true
+              }" \
+              --fail-with-body \
+              --max-time 60 \
+              --connect-timeout 10 \
+              -w "\nHTTP Status: %{http_code}\n"; then
+              
+              echo "✅ Success! Stub-generator reloaded successfully"
+              SUCCESS=true
+              break
+            else
+              echo "❌ Attempt $((RETRY_COUNT + 1)) failed"
+              RETRY_COUNT=$((RETRY_COUNT + 1))
+              
+              if [ $RETRY_COUNT -lt $MAX_RETRIES ]; then
+                echo "⏳ Waiting 10 seconds before retry..."
+                sleep 10
+              fi
+            fi
+          done
+          
+          if [ "$SUCCESS" = false ]; then
+            echo ""
+            echo "❌ All retry attempts failed!"
+            echo ""
+            echo "Possible reasons:"
+            echo "  - Stub-generator service is offline"
+            echo "  - Cold start timeout (service is warming up)"
+            echo "  - Network connectivity issues"
+            echo "  - STUB_GENERATOR_URL secret not configured"
+            echo ""
+            echo "Manual reload URL (if you have access):"
+            echo "  curl -X POST ${STUB_GENERATOR_URL}/api/reload-external-mocks"
+            exit 1
+          fi
+      
+      - name: Summary
+        if: success()
+        run: |
+          echo ""
+          echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+          echo "✅ Stub-Generator Reload Complete"
+          echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+          echo ""
+          echo "The stub-generator has been notified to reload:"
+          echo "  ✓ Fetched latest mocks.json from EDS"
+          echo "  ✓ Fetched latest functions.js from EDS"
+          echo "  ✓ Reloaded all Mountebank stubs"
+          echo ""
+          echo "Your mock APIs are now updated! 🚀"
+

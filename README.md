@@ -335,6 +335,32 @@ mocks/
     └── product-details.json
 ```
 
+## Manual Reload Workflow
+
+If the automatic webhook fails (e.g., due to cold start), you can manually trigger a reload:
+
+**1. Go to GitHub Actions:**
+```
+https://github.com/hdfc-forms/api-virtualization/actions/workflows/manual-reload.yml
+```
+
+**2. Click "Run workflow"**
+
+**3. Configure options:**
+- **Number of retry attempts:** 1-5 (default: 3)
+  - Useful for cold start scenarios where first attempt might timeout
+
+**4. Click "Run workflow"** - The workflow will:
+- Attempt to trigger stub-generator reload immediately
+- Retry on failure (with 10s delay between attempts)
+- Show detailed logs
+
+**Why this is useful:**
+- ✅ Handles cold start timeouts with retries
+- ✅ Can be triggered anytime from GitHub UI
+- ✅ Provides detailed logs and error messages
+- ✅ Works when automatic webhook fails
+
 ## Troubleshooting
 
 **GitHub Action fails?**
@@ -346,4 +372,10 @@ mocks/
 - Verify `mocks.json` was generated
 - Check stub-generator can access the repository
 - Verify URL in stub-generator configuration
+
+**Webhook fails or times out?**
+- Use the **Manual Reload Workflow** (see above)
+- Check if STUB_GENERATOR_URL secret is configured correctly
+- Verify stub-generator service is running
+- Check for cold start issues (service warming up)
 
