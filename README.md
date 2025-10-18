@@ -31,6 +31,8 @@ Create individual JSON files in the `mocks/` directory:
   "businessName": "My New API",
   "apiName": "my/api/endpoint",
   "method": "POST",
+  "statusCode": 200,
+  "latencyMs": 0,
   "predicate": {
     "request": {},
     "headers": {},
@@ -77,6 +79,8 @@ The stub-generator server automatically:
 **Optional Fields:**
 - `businessName` (string) - Human-readable name
 - `method` (string) - HTTP method (default: "POST")
+- `statusCode` (number) - HTTP status code (default: 200). Use 404, 500, 401, etc. for error scenarios
+- `latencyMs` (number) - Response delay in milliseconds (default: 0). Simulates network latency
 - `predicate.request` (object) - Request body matching rules
 - `predicate.headers` (object) - Header matching rules
 - `predicate.query` (object) - Query parameter matching rules
@@ -130,6 +134,59 @@ The stub-generator server fetches mocks from this repository:
 **AEM Edge Delivery:**
 
 **URL:** `https://main--{site}--{org}.aem.live/mocks.json`
+
+### How Response Loading Works
+
+The system uses **on-demand loading from EDS** to minimize memory usage:
+
+**1. Aggregation** (`mocks.json` is lightweight)
+- GitHub Actions strips `responseBody` and `responseHeaders` from aggregated `mocks.json`
+- Only keeps: predicates, metadata, and `_metadata.sourceFile` path
+- Result: `mocks.json` is ~90% smaller (~1MB instead of ~50MB)
+
+**2. Stub-Generator Loads Metadata**
+- Fetches lightweight `mocks.json` from EDS
+- Creates Mountebank stubs with inject functions
+- Each stub knows its source file path via `_metadata.sourceFile`
+
+**3. Runtime Request Handling**
+
+When a request matches:
+```
+Request → Mountebank matches predicate
+       → Executes inject function
+       → Fetches: https://.../mocks/{sourceFile}
+       → EDS returns complete JSON with:
+          - statusCode: 200 (or 404, 500, 401, etc.)
+          - responseHeaders: {...}
+          - responseBody: {...}
+       → Mountebank applies latencyMs delay (_behaviors.wait)
+       → Returns response to client with correct status code
+```
+
+**Key Fields:**
+- `statusCode`: HTTP status code (200, 404, 500, etc.) - read from individual JSON file
+- `latencyMs`: Response delay in milliseconds - handled by Mountebank `_behaviors.wait`
+- `responseHeaders`: Custom headers (default: `Content-Type: application/json` if not specified)
+- `responseBody`: Response payload
+
+**4. Response Strategies** (evaluated in this order):
+
+| Strategy | When | Behavior |
+|----------|------|----------|
+| **Custom Function** | `responseFunction: "dynamicLoanStatus"` exists in `functions.js` | Executes function logic (no EDS fetch) |
+| **EDS Fetch** (default) | `_metadata.sourceFile` exists | Fetches complete response from EDS on every request |
+| **Inline Function** | `responseFunction` contains code string | Executes inline code (legacy) |
+| **Static** | None of the above | Uses `responseBody` from `mocks.json` (rare in external mode) |
+
+**Benefits:**
+- ✅ Low memory: Mountebank uses ~5MB instead of ~50MB
+- ✅ Fast startup: Loading 6000 lightweight stubs is instant
+- ✅ CDN-backed: EDS handles caching (~5-50ms per request)
+- ✅ Complete files: Each JSON file remains valid and testable
+- ✅ Flexible: Custom functions bypass EDS fetch entirely
+
+**Example:** Individual file at `mocks/personal-loan/apply-loan.json` has full response, but `mocks.json` only has its path. When request comes in, Mountebank fetches the complete file from `https://.../mocks/personal-loan/apply-loan.json` and returns the response.
 
 ## Dynamic Mocks with External Functions
 

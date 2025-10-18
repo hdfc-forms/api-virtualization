@@ -71,13 +71,20 @@ jobs:
               
               // Add metadata
               const relativePath = path.relative(mocksDir, filePath);
-              mocks.push({
-                ...mockData,
+              
+              // Remove large response fields - they're loaded from EDS when needed
+              // Individual JSON files remain complete with full response data
+              const lightweightMock = {
+                ...mockData,  // Copy all fields from original mock
+                responseHeaders: {},  // Remove - will be loaded from EDS
+                responseBody: {},     // Remove - will be loaded from EDS
                 _metadata: {
                   sourceFile: relativePath,
                   lastModified: fs.statSync(filePath).mtime.toISOString()
                 }
-              });
+              };
+              
+              mocks.push(lightweightMock);
               
               console.log(`Loaded: ${relativePath}`);
             } catch (err) {
@@ -96,7 +103,13 @@ jobs:
           
           // Write to mocks.json
           fs.writeFileSync(outputFile, JSON.stringify(output, null, 2));
+          
+          // Calculate and log size savings
+          const mocksJsonSize = fs.statSync(outputFile).size;
+          const mocksJsonSizeMB = (mocksJsonSize / 1024 / 1024).toFixed(2);
+          
           console.log(`\nCreated mocks.json with ${mocks.length} mock(s)`);
+          console.log(`File size: ${mocksJsonSizeMB} MB`);
           EOF
       
       - name: Check if mocks.json or functions.js changed
@@ -142,10 +155,18 @@ jobs:
           git commit -m "${COMMIT_MSG}"
           git push
       
+      - name: Wait for CDN cache refresh
+        if: steps.check_changes.outputs.changed == 'true'
+        run: |
+          echo "⏳ Waiting 30 seconds for AEM/CDN to refresh cache..."
+          echo "   This ensures the updated mocks.json is available when webhook is triggered"
+          sleep 30
+          echo "CDN refresh wait completed"
+      
       - name: Trigger stub-generator reload
         if: steps.check_changes.outputs.changed == 'true'
         run: |
-          echo "Notifying stub-generator of updates..."
+          echo "📡 Notifying stub-generator of updates..."
           
           # Build list of modified files
           MODIFIED_FILES="["
@@ -165,16 +186,20 @@ jobs:
           # Replace with your actual stub-generator URL
           STUB_GENERATOR_URL="${{ secrets.STUB_GENERATOR_URL || 'http://localhost:10000' }}"
           
+          # Add timestamp for cache busting
+          TIMESTAMP=$(date +%s)
+          
           curl -X POST "${STUB_GENERATOR_URL}/api/webhook/github-mocks-updated" \
             -H "Content-Type: application/json" \
             -d "{
               \"repository\": \"${{ github.repository }}\",
               \"commits\": [{\"modified\": ${MODIFIED_FILES}}],
-              \"pusher\": {\"name\": \"github-actions[bot]\"}
+              \"pusher\": {\"name\": \"github-actions[bot]\"},
+              \"timestamp\": ${TIMESTAMP}
             }" \
             --fail-with-body \
             --max-time 30 \
-            || echo "Warning: Failed to notify stub-generator (server may be offline)"
+            || echo "⚠️ Warning: Failed to notify stub-generator (server may be offline)"
           
-          echo "Notification sent to stub-generator"
+          echo "✅ Notification sent to stub-generator"
 
