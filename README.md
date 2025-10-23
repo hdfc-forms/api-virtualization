@@ -22,7 +22,7 @@ This repository stores mock API responses for service virtualization and API tes
 
 ---
 
-## 📋 Table of Contents
+## Table of Contents
 
 - [Quick Start](#quick-start)
 - [Ecosystem Overview](#ecosystem-overview)
@@ -34,10 +34,17 @@ This repository stores mock API responses for service virtualization and API tes
 - [Running Journey & Capturing Mocks](#running-journey--capturing-mocks)
 - [Download and Upload to GitHub](#download-and-upload-to-github)
 - [Repository Structure](#repository-structure)
+- [Mock JSON Schema](#mock-json-schema)
+- [How Response Loading Works](#how-response-loading-works)
+- [Dynamic Mocks with External Functions](#dynamic-mocks-with-external-functions)
+- [Best Practices](#best-practices)
+- [Manual Reload Workflow](#manual-reload-workflow)
+- [Performance & Load Testing](#performance--load-testing)
+- [Troubleshooting](#troubleshooting)
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
 **For Developers:**
 1. Browse existing mocks: https://mockapi-backend-09lz.onrender.com/
@@ -53,7 +60,7 @@ This repository stores mock API responses for service virtualization and API tes
 
 ---
 
-## 🏗️ Ecosystem Overview
+## Ecosystem Overview
 
 The API virtualization system consists of three main components:
 
@@ -94,16 +101,28 @@ The API virtualization system consists of three main components:
                                     │ (Reload)
                                     ▼
 ┌─────────────────────────────────────────────────────────────────┐
-│         Stub-Generator (Mountebank + Management API)            │
-│         https://mockapi-proxy.onrender.com/                     │
+│                    Stub-Generator (Render.com)                  │
 │                                                                   │
-│  ┌──────────────────┐    ┌──────────────────────────────────┐  │
-│  │ Management UI    │    │ Mountebank (Mock Server)         │  │
-│  │ - View mocks     │    │ - Lightweight stubs (~5MB)       │  │
-│  │ - Test APIs      │    │ - On-demand loading from EDS     │  │
-│  │ - Import/Export  │    │ - Matches predicates             │  │
-│  └──────────────────┘    │ - Returns responses              │  │
-│                          └──────────────────────────────────┘  │
+│  ┌──────────────────────────────────────────────────────────┐  │
+│  │ Management UI (Backend + UI)                             │  │
+│  │ https://mockapi-backend-09lz.onrender.com/               │  │
+│  │                                                            │  │
+│  │ - Create/Edit/View mocks (MongoDB + GitHub)             │  │
+│  │ - Test mocks                                             │  │
+│  │ - Import/Export (JSON/ZIP)                               │  │
+│  │ - Manage mock lifecycle                                  │  │
+│  └──────────────────────────────────────────────────────────┘  │
+│                                                                   │
+│  ┌──────────────────────────────────────────────────────────┐  │
+│  │ Mock Proxy (Mountebank)                                  │  │
+│  │ https://mockapi-proxy.onrender.com/                      │  │
+│  │                                                            │  │
+│  │ - Intercepts API calls                                   │  │
+│  │ - Matches predicates                                     │  │
+│  │ - Returns mock responses                                 │  │
+│  │ - On-demand loading from EDS (~5MB memory)               │  │
+│  │ - Handles latency simulation                             │  │
+│  └──────────────────────────────────────────────────────────┘  │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
@@ -217,7 +236,7 @@ git push origin main
 
 ---
 
-## ⚙️ AEM Side Configuration & Bundle
+## AEM Side Configuration & Bundle
 
 ### Prerequisites
 
@@ -286,7 +305,7 @@ Mock Proxy Runmodes: dev,stage,local
 
 ---
 
-## 🚀 Running Journey & Capturing Mocks
+## Running Journey & Capturing Mocks
 
 ### Step-by-Step Guide
 
@@ -703,7 +722,7 @@ https://github.com/hdfc-forms/api-virtualization/actions/workflows/manual-reload
 
 ---
 
-## 🚀 Performance & Load Testing
+## Performance & Load Testing
 
 The stub-generator has been load tested on Render.com with following results:
 
@@ -737,7 +756,7 @@ The stub-generator has been load tested on Render.com with following results:
 
 ---
 
-## 🐛 Troubleshooting
+## Troubleshooting
 
 **GitHub Action fails?**
 - Check JSON syntax in your mock files
@@ -771,7 +790,7 @@ The stub-generator has been load tested on Render.com with following results:
 
 ---
 
-## 📚 Additional Resources
+## Additional Resources
 
 **Related Repositories:**
 - **stub-generator:** Backend server (Mountebank + Management API)
@@ -789,7 +808,7 @@ The stub-generator has been load tested on Render.com with following results:
 
 ---
 
-## 📜 License
+## License
 
 This repository is part of the HDFC Forms internal tooling. For internal use only.
 
