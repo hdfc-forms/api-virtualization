@@ -1,0 +1,101 @@
+name: Run Tests
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+      
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+          cache: 'npm'
+      
+      - name: Install dependencies
+        run: npm ci
+      
+      - name: Validate mock JSON files
+        run: npm run validate:mocks
+      
+      - name: Run unit tests
+        run: npm test
+      
+      - name: Upload coverage reports
+        if: always()
+        uses: codecov/codecov-action@v3
+        with:
+          file: ./coverage/coverage-final.json
+          flags: unittests
+          fail_ci_if_error: false
+      
+      - name: Test aggregation script
+        run: npm run aggregate
+      
+      - name: Check if aggregation produces valid output
+        run: |
+          if [ ! -f "mocks.json" ]; then
+            echo "mocks.json was not generated"
+            exit 1
+          fi
+          
+          # Validate it's valid JSON
+          if ! jq empty mocks.json 2>/dev/null; then
+            echo "mocks.json is not valid JSON"
+            exit 1
+          fi
+          
+          echo "Aggregation produced valid mocks.json"
+
+  lint-mocks:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+      
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+      
+      - name: Check JSON syntax
+        run: |
+          echo "🔍 Checking JSON syntax for all mock files..."
+          
+          find mocks -name "*.json" -type f | while read file; do
+            if ! jq empty "$file" 2>/dev/null; then
+              echo "Invalid JSON: $file"
+              exit 1
+            fi
+          done
+          
+          echo "All JSON files are valid"
+      
+      - name: Check naming conventions
+        run: |
+          echo "Checking file naming conventions..."
+          
+          # Check for files with spaces or uppercase
+          BAD_FILES=$(find mocks -name "*.json" -type f | grep -E '[ A-Z]' || true)
+          
+          if [ ! -z "$BAD_FILES" ]; then
+            echo "Warning: Some files don't follow kebab-case naming:"
+            echo "$BAD_FILES"
+          else
+            echo "All files follow naming conventions"
+          fi
+

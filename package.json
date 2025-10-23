@@ -1,0 +1,49 @@
+{
+  "name": "api-virtualization",
+  "version": "1.0.0",
+  "description": "API Virtualization - Mock Repository for Service Virtualization",
+  "main": "functions.js",
+  "scripts": {
+    "test": "jest --coverage",
+    "test:watch": "jest --watch",
+    "test:verbose": "jest --verbose",
+    "validate:mocks": "node scripts/validate-mocks.js",
+    "aggregate": "node scripts/aggregate-mocks.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hdfc-forms/api-virtualization.git"
+  },
+  "keywords": [
+    "mocks",
+    "api",
+    "virtualization",
+    "mountebank",
+    "testing"
+  ],
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "@types/jest": "^29.5.11"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "coverageDirectory": "coverage",
+    "collectCoverageFrom": [
+      "functions.js",
+      "scripts/aggregate-mocks.js"
+    ],
+    "testMatch": [
+      "**/__tests__/**/*.test.js",
+      "**/*.test.js"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "branches": 70,
+        "functions": 80,
+        "lines": 75,
+        "statements": 75
+      }
+    }
+  }
+}
+
