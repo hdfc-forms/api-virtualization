@@ -87,7 +87,7 @@ jobs:
       - name: Wait for CDN cache refresh
         if: steps.check_changes.outputs.changed == 'true'
         run: |
-          echo "⏳ Waiting 30 seconds for AEM/CDN to refresh cache..."
+          echo "Waiting 30 seconds for AEM/CDN to refresh cache..."
           echo "   This ensures the updated mocks.json is available when webhook is triggered"
           sleep 30
           echo "CDN refresh wait completed"
@@ -95,7 +95,7 @@ jobs:
       - name: Trigger stub-generator reload
         if: steps.check_changes.outputs.changed == 'true'
         run: |
-          echo "📡 Notifying stub-generator of updates..."
+          echo "Notifying stub-generator of updates..."
           
           # Build list of modified files
           MODIFIED_FILES="["
@@ -128,7 +128,7 @@ jobs:
             }" \
             --fail-with-body \
             --max-time 30 \
-            || echo "⚠️ Warning: Failed to notify stub-generator (server may be offline)"
+            || echo "Warning: Failed to notify stub-generator (server may be offline)"
           
-          echo "✅ Notification sent to stub-generator"
+          echo "Notification sent to stub-generator"
 

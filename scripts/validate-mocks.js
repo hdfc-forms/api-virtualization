@@ -124,7 +124,7 @@ function validateMockSchema(mock, filePath) {
 function main() {
   const mocksDir = path.join(process.cwd(), 'mocks');
   
-  console.log('🔍 Validating mock JSON files...\n');
+  console.log(' Validating mock JSON files...\n');
   
   const mockFiles = getAllJsonFiles(mocksDir);
   
@@ -146,15 +146,15 @@ function main() {
       const { errors, warnings } = validateMockSchema(mock, relativePath);
       
       if (errors.length === 0 && warnings.length === 0) {
-        console.log(`✓ ${relativePath}`);
+        console.log(` ${relativePath}`);
         validCount++;
       } else {
         if (errors.length > 0) {
-          console.log(`✗ ${relativePath}`);
+          console.log(` ${relativePath}`);
           errors.forEach(err => console.log(`  ERROR: ${err}`));
           totalErrors += errors.length;
         } else {
-          console.log(`⚠ ${relativePath}`);
+          console.log(` ${relativePath}`);
         }
         
         if (warnings.length > 0) {
@@ -164,26 +164,26 @@ function main() {
       }
       
     } catch (err) {
-      console.log(`✗ ${relativePath}`);
+      console.log(` ${relativePath}`);
       console.log(`  ERROR: Invalid JSON - ${err.message}`);
       totalErrors++;
     }
   });
   
   console.log(`\n${'='.repeat(60)}`);
-  console.log(`\n📊 Validation Summary:`);
+  console.log(`\n Validation Summary:`);
   console.log(`   Total files: ${mockFiles.length}`);
-  console.log(`   ✓ Valid: ${validCount}`);
-  console.log(`   ✗ Errors: ${totalErrors}`);
-  console.log(`   ⚠ Warnings: ${totalWarnings}`);
+  console.log(`    Valid: ${validCount}`);
+  console.log(`    Errors: ${totalErrors}`);
+  console.log(`    Warnings: ${totalWarnings}`);
   
   if (totalErrors > 0) {
-    console.log(`\n❌ Validation failed with ${totalErrors} error(s)`);
+    console.log(`\n Validation failed with ${totalErrors} error(s)`);
     process.exit(1);
   } else if (totalWarnings > 0) {
-    console.log(`\n⚠️  Validation passed with ${totalWarnings} warning(s)`);
+    console.log(`\n  Validation passed with ${totalWarnings} warning(s)`);
   } else {
-    console.log(`\n✅ All mocks are valid!`);
+    console.log(`\n All mocks are valid!`);
   }
 }
 

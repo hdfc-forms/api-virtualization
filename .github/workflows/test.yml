@@ -48,17 +48,17 @@ jobs:
       - name: Check if aggregation produces valid output
         run: |
           if [ ! -f "mocks.json" ]; then
-            echo "❌ mocks.json was not generated"
+            echo "mocks.json was not generated"
             exit 1
           fi
           
           # Validate it's valid JSON
           if ! jq empty mocks.json 2>/dev/null; then
-            echo "❌ mocks.json is not valid JSON"
+            echo "mocks.json is not valid JSON"
             exit 1
           fi
           
-          echo "✅ Aggregation produced valid mocks.json"
+          echo "Aggregation produced valid mocks.json"
 
   lint-mocks:
     runs-on: ubuntu-latest
@@ -78,24 +78,24 @@ jobs:
           
           find mocks -name "*.json" -type f | while read file; do
             if ! jq empty "$file" 2>/dev/null; then
-              echo "❌ Invalid JSON: $file"
+              echo "Invalid JSON: $file"
               exit 1
             fi
           done
           
-          echo "✅ All JSON files are valid"
+          echo "All JSON files are valid"
       
       - name: Check naming conventions
         run: |
-          echo "🔍 Checking file naming conventions..."
+          echo "Checking file naming conventions..."
           
           # Check for files with spaces or uppercase
           BAD_FILES=$(find mocks -name "*.json" -type f | grep -E '[ A-Z]' || true)
           
           if [ ! -z "$BAD_FILES" ]; then
-            echo "⚠️  Warning: Some files don't follow kebab-case naming:"
+            echo "Warning: Some files don't follow kebab-case naming:"
             echo "$BAD_FILES"
           else
-            echo "✅ All files follow naming conventions"
+            echo "All files follow naming conventions"
           fi
 

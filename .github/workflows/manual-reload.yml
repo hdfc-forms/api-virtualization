@@ -56,11 +56,11 @@ jobs:
               --connect-timeout 10 \
               -w "\nHTTP Status: %{http_code}\n"; then
               
-              echo "✅ Success! Stub-generator reloaded successfully"
+              echo "Success! Stub-generator reloaded successfully"
               SUCCESS=true
               break
             else
-              echo "❌ Attempt $((RETRY_COUNT + 1)) failed"
+              echo "Attempt $((RETRY_COUNT + 1)) failed"
               RETRY_COUNT=$((RETRY_COUNT + 1))
               
               if [ $RETRY_COUNT -lt $MAX_RETRIES ]; then
@@ -72,7 +72,7 @@ jobs:
           
           if [ "$SUCCESS" = false ]; then
             echo ""
-            echo "❌ All retry attempts failed!"
+            echo "All retry attempts failed!"
             echo ""
             echo "Possible reasons:"
             echo "  - Stub-generator service is offline"
@@ -90,7 +90,7 @@ jobs:
         run: |
           echo ""
           echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
-          echo "✅ Stub-Generator Reload Complete"
+          echo "Stub-Generator Reload Complete"
           echo "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
           echo ""
           echo "The stub-generator has been notified to reload:"

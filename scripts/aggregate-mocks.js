@@ -61,10 +61,10 @@ function aggregateMocks(mocksDir) {
       
       mocks.push(lightweightMock);
       
-      console.log(`✓ Loaded: ${relativePath}`);
+      console.log(` Loaded: ${relativePath}`);
     } catch (err) {
       const relativePath = path.relative(mocksDir, filePath);
-      console.error(`✗ Error loading ${relativePath}:`, err.message);
+      console.error(` Error loading ${relativePath}:`, err.message);
       errors.push({ file: relativePath, error: err.message });
     }
   });
@@ -88,7 +88,7 @@ function main() {
   const mocksDir = path.join(process.cwd(), 'mocks');
   const outputFile = path.join(process.cwd(), 'mocks.json');
   
-  console.log('📦 Aggregating mock files...\n');
+  console.log('Aggregating mock files...\n');
   
   const { output, errors } = aggregateMocks(mocksDir);
   
@@ -99,11 +99,11 @@ function main() {
   const mocksJsonSize = fs.statSync(outputFile).size;
   const mocksJsonSizeMB = (mocksJsonSize / 1024 / 1024).toFixed(2);
   
-  console.log(`\n✅ Created mocks.json with ${output.totalMocks} mock(s)`);
-  console.log(`📊 File size: ${mocksJsonSizeMB} MB`);
+  console.log(`\nCreated mocks.json with ${output.totalMocks} mock(s)`);
+  console.log(`File size: ${mocksJsonSizeMB} MB`);
   
   if (errors.length > 0) {
-    console.error(`\n⚠️  ${errors.length} file(s) failed to load`);
+    console.error(`\n ${errors.length} file(s) failed to load`);
     process.exit(1);
   }
 }
