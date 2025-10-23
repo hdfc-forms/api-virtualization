@@ -40,6 +40,7 @@ This repository stores mock API responses for service virtualization and API tes
 - [Best Practices](#best-practices)
 - [Manual Reload Workflow](#manual-reload-workflow)
 - [Performance & Load Testing](#performance--load-testing)
+- [Testing](#testing)
 - [Troubleshooting](#troubleshooting)
 
 ---
@@ -753,6 +754,41 @@ The stub-generator has been load tested on Render.com with following results:
 - Use `latencyMs` field to simulate real network conditions
 - Test with realistic request volumes
 - Use Manual Reload Workflow for cold start scenarios
+
+---
+
+## Testing
+
+This repository includes comprehensive unit tests for mock validation, dynamic functions, and aggregation logic.
+
+**Run Tests:**
+```bash
+# Install dependencies (first time only)
+npm install
+
+# Run all tests with coverage
+npm test
+
+# Watch mode (auto-rerun on changes)
+npm run test:watch
+
+# Validate mock files only
+npm run validate:mocks
+```
+
+**What's Tested:**
+- Dynamic response functions (`functions.js`)
+- Mock JSON schema validation
+- Aggregation script (`mocks.json` generation)
+- File naming conventions
+- Function references
+
+**CI/CD:**
+Tests run automatically on:
+- Push to `main` branch
+- Pull requests
+
+View test results: [GitHub Actions](https://github.com/hdfc-forms/api-virtualization/actions)
 
 ---
 
