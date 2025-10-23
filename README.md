@@ -460,7 +460,7 @@ api-virtualization/
 │   ├── journey-dropoff.json
 │   └── personal-loan/
 │       └── loan-status-enquiry.json
-├── mocks.json                      # ⚠️ AUTO-GENERATED - DO NOT EDIT!
+├── mocks.json                      # AUTO-GENERATED - DO NOT EDIT!
 ├── functions.js                    # External response functions for dynamic mocks
 ├── .gitattributes                  # Marks mocks.json as generated
 └── .github/
@@ -535,13 +535,6 @@ Request → Mountebank matches predicate
 | **Inline Function** | `responseFunction` contains code string | Executes inline code (legacy) |
 | **Static** | None of the above | Uses `responseBody` from `mocks.json` (rare in external mode) |
 
-**Benefits:**
-- ✅ Low memory: Mountebank uses ~5MB instead of ~50MB
-- ✅ Fast startup: Loading 6000 lightweight stubs is instant
-- ✅ CDN-backed: EDS handles caching (~5-50ms per request)
-- ✅ Complete files: Each JSON file remains valid and testable
-- ✅ Flexible: Custom functions bypass EDS fetch entirely
-
 **Example:** Individual file at `mocks/personal-loan/apply-loan.json` has full response, but `mocks.json` only has its path. When request comes in, Mountebank fetches the complete file from `https://.../mocks/personal-loan/apply-loan.json` and returns the response.
 
 ---
@@ -552,10 +545,10 @@ For advanced use cases requiring dynamic responses (e.g., conditional logic, ran
 
 ### Why External Functions?
 
-✅ **Maintainable:** Keep functions in a proper `.js` file with syntax highlighting  
-✅ **Reusable:** Share functions across multiple mocks  
-✅ **Testable:** Easier to test and debug  
-✅ **Clean JSON:** No inline functions cluttering your mock definitions
+**Maintainable:** Keep functions in a proper `.js` file with syntax highlighting  
+**Reusable:** Share functions across multiple mocks  
+**Testable:** Easier to test and debug  
+**Clean JSON:** No inline functions cluttering your mock definitions
 
 ### Creating Functions
 
@@ -716,10 +709,10 @@ https://github.com/hdfc-forms/api-virtualization/actions/workflows/manual-reload
 - Show detailed logs
 
 **Why this is useful:**
-- ✅ Handles cold start timeouts with retries
-- ✅ Can be triggered anytime from GitHub UI
-- ✅ Provides detailed logs and error messages
-- ✅ Works when automatic webhook fails
+- Handles cold start timeouts with retries
+- Can be triggered anytime from GitHub UI
+- Provides detailed logs and error messages
+- Works when automatic webhook fails
 
 ---
 
@@ -728,11 +721,11 @@ https://github.com/hdfc-forms/api-virtualization/actions/workflows/manual-reload
 The stub-generator has been load tested on Render.com with following results:
 
 **Load Test Results:**
-- ✅ **6000+ mocks** loaded successfully
-- ✅ **~5MB memory footprint** (on-demand loading from EDS)
-- ✅ **Sub-second startup time** (lightweight stubs)
-- ✅ **50-200ms response times** (including EDS fetch)
-- ✅ **99.9% availability** (Render.com auto-scaling)
+- **6000+ mocks** loaded successfully
+- **~5MB memory footprint** (on-demand loading from EDS)
+- **Sub-second startup time** (lightweight stubs)
+- **50-200ms response times** (including EDS fetch)
+- **99.9% availability** (Render.com auto-scaling)
 
 **Infrastructure Details:**
 - **Platform:** Render.com (PaaS)
