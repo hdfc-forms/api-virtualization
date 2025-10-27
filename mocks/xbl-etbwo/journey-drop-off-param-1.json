@@ -1,6 +1,6 @@
 {
   "businessName": "Journey Drop Off Param",
-  "apiName": "JourneyDropOff_Param",
+  "apiName": "API/JourneyDropOff_Param",
   "method": "POST",
   "statusCode": 200,
   "latencyMs": 0,

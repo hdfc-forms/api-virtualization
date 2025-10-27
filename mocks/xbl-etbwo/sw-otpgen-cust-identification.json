@@ -1,6 +1,6 @@
 {
   "businessName": "SW OTPGen Cust Identification",
-  "apiName": "SW_OTPGen_Cust_Identification",
+  "apiName": "API/SW_OTPGen_Cust_Identification",
   "method": "POST",
   "statusCode": 200,
   "latencyMs": 0,

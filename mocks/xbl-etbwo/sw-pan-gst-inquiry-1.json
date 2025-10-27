@@ -1,6 +1,6 @@
 {
   "businessName": "SW PAN GST Inquiry",
-  "apiName": "SW_PAN_GST_Inquiry",
+  "apiName": "API/SW_PAN_GST_Inquiry",
   "method": "POST",
   "statusCode": 200,
   "latencyMs": 0,

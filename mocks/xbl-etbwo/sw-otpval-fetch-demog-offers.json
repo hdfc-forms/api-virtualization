@@ -1,6 +1,6 @@
 {
   "businessName": "SW OTPVal Fetch Demog Offers",
-  "apiName": "SW_OTPVal_FetchDemog_Offers",
+  "apiName": "API/SW_OTPVal_FetchDemog_Offers",
   "method": "POST",
   "statusCode": 200,
   "latencyMs": 0,

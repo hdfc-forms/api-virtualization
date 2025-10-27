@@ -1,6 +1,6 @@
 {
   "businessName": "Adobe Fetch Action Response",
-  "apiName": "Adobe_FetchActionResponse",
+  "apiName": "API/Adobe_FetchActionResponse",
   "method": "POST",
   "statusCode": 200,
   "latencyMs": 0,

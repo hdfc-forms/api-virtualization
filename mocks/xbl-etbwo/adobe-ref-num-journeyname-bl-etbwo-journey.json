@@ -1,6 +1,6 @@
 {
   "businessName": "Adobe Ref Num",
-  "apiName": "Adobe_RefNum",
+  "apiName": "API/Adobe_RefNum",
   "method": "POST",
   "statusCode": 200,
   "latencyMs": 0,

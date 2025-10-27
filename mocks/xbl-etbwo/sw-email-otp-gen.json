@@ -1,6 +1,6 @@
 {
   "businessName": "SW Email OTP Gen",
-  "apiName": "SW_EmailOTP_Gen",
+  "apiName": "API/SW_EmailOTP_Gen",
   "method": "POST",
   "statusCode": 200,
   "latencyMs": 0,

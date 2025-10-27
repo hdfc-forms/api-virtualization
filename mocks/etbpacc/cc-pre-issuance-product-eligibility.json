@@ -1,6 +1,6 @@
 {
   "businessName": "cc-pre Issuance-product Eligibility",
-  "apiName": "cc-preIssuance-productEligibility",
+  "apiName": "API/cc-preIssuance-productEligibility",
   "method": "POST",
   "statusCode": 200,
   "latencyMs": 0,

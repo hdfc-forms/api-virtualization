@@ -1,6 +1,6 @@
 {
   "businessName": "Pan Validation",
-  "apiName": "PanValidation",
+  "apiName": "API/PanValidation",
   "method": "POST",
   "statusCode": 200,
   "latencyMs": 0,

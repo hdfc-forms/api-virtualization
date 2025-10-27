@@ -1,6 +1,6 @@
 {
   "businessName": "SW Save Additional Dtls",
-  "apiName": "SW_Save_Additional_Dtls",
+  "apiName": "API/SW_Save_Additional_Dtls",
   "method": "POST",
   "statusCode": 200,
   "latencyMs": 0,

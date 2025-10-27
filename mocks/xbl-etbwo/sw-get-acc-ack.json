@@ -1,6 +1,6 @@
 {
   "businessName": "sw-get Acc Ack",
-  "apiName": "sw-getAccAck",
+  "apiName": "API/sw-getAccAck",
   "method": "POST",
   "statusCode": 200,
   "latencyMs": 0,
