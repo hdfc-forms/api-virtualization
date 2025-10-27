@@ -1,6 +1,6 @@
 {
   "businessName": "otp-gen",
-  "apiName": "api/v4/otp-gen",
+  "apiName": "API/otp-gen",
   "method": "POST",
   "statusCode": 200,
   "latencyMs": 0,
@@ -18,12 +18,6 @@
           }
         ],
         "requestString": {
-          "E2FARequestDTO": {
-            "linkData": "0000000918450644870",
-            "instanceId": "8888",
-            "forceNew": "false",
-            "apiUser": "hdfc_adobe"
-            },
           "AXIOMRequestDTO": {
             "countrycode": "",
             "languageid": "",
@@ -42,7 +36,7 @@
             "msgtype": "S",
             "priority": "1",
             "intflag": "",
-            "pno": "918450644870",
+            "pno": "919585802955",
             "filler_2": "",
             "filler_1": "",
             "ctype": "",
@@ -50,8 +44,7 @@
             "filler_5": "",
             "filler_4": "",
             "otpflag": "1",
-            "filler_3": "",
-            "dcode": "ADOBEOTP"
+            "filler_3": ""
             },
           "emailid": "",
           "splitOTP": "N"
@@ -68,32 +61,32 @@
       "replyCode": 0,
       "replyText": "0",
       "memo": null,
-      "externalReferenceNo": "AD20251027094223233",
-      "internalReferenceNumber": "2025300460964797",
+      "externalReferenceNo": "AD20251027142053849",
+      "internalReferenceNumber": "2025300461998081",
       "postingDate": {"dateString": "20251027000000"},
       "errorCode": "0",
       "extendedReply": {"messages": null},
       "validationErrors": null,
-      "userReferenceNumber": "AD20251027094223233"
+      "userReferenceNumber": "AD20251027142053849"
       },
     "maintenanceType": null,
     "configVersionId": null,
     "responseString": {
-      "refNo": "AD20251027094223233",
-      "datetimeExpire": "10/27/2025 15:14",
+      "refNo": "AD20251027142053849",
+      "datetimeExpire": "10/27/2025 19:52",
       "serverId": "DC",
-      "incrementedCounter": "60",
+      "incrementedCounter": "537",
       "errorMsg": null,
       "freshPassword": true,
-      "currentTimestampInMilliSeconds": "1761558143537",
+      "currentTimestampInMilliSeconds": "1761574854165",
       "serverInstanceId": "01",
       "divisionCode": "ADOBEOTP",
-      "datatimeGen": "10/27/2025 15:12",
+      "datatimeGen": "10/27/2025 19:50",
       "errorDetail": null,
-      "messageHash": "static:genpwdreq:06:06ke09ADbHDDmrexnYGFxd1hR2w=",
+      "messageHash": "static:genpwdreq:06:TdRXOJsxPCB1ovDqkuRrET9XY0I=",
       "otpReferenceData": "",
       "statusCode": "00",
-      "txnId": "202510c2dd2e71-18ae-46db-a721-d8aa13d4c08736_N2"
+      "txnId": "2025106840864a-2e86-478e-9348-31ac2334434d30_N2"
       }
     }
   }
