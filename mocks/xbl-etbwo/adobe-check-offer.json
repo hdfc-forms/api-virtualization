@@ -1,6 +1,6 @@
 {
   "businessName": "adobe-check Offer",
-  "apiName": "adobe-checkOffer",
+  "apiName": "API/adobe-checkOffer",
   "method": "POST",
   "statusCode": 200,
   "latencyMs": 0,

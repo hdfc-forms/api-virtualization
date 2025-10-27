@@ -1,6 +1,6 @@
 {
   "businessName": "Pdf Generation",
-  "apiName": "Pdf_Generation",
+  "apiName": "API/Pdf_Generation",
   "method": "POST",
   "statusCode": 200,
   "latencyMs": 0,

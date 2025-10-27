@@ -1,6 +1,6 @@
 {
   "businessName": "SW Fetch Bureau Offer",
-  "apiName": "SW_Fetch_BureauOffer",
+  "apiName": "API/SW_Fetch_BureauOffer",
   "method": "POST",
   "statusCode": 200,
   "latencyMs": 0,

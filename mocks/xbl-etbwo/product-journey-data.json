@@ -1,6 +1,6 @@
 {
   "businessName": "Product Journey Data",
-  "apiName": "ProductJourneyData",
+  "apiName": "API/ProductJourneyData",
   "method": "POST",
   "statusCode": 200,
   "latencyMs": 0,

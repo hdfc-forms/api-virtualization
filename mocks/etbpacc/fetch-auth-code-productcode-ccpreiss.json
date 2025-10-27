@@ -1,6 +1,6 @@
 {
   "businessName": "idcom/Fetch Auth Code",
-  "apiName": "idcom/Fetch_AuthCode",
+  "apiName": "API/idcom/Fetch_AuthCode",
   "method": "POST",
   "statusCode": 200,
   "latencyMs": 0,

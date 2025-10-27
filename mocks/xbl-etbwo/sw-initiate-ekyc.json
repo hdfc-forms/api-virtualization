@@ -1,6 +1,6 @@
 {
   "businessName": "SW Initiate EKYC",
-  "apiName": "SW_Initiate_EKYC",
+  "apiName": "API/SW_Initiate_EKYC",
   "method": "POST",
   "statusCode": 200,
   "latencyMs": 0,

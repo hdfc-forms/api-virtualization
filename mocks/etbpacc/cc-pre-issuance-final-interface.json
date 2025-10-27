@@ -1,6 +1,6 @@
 {
   "businessName": "cc-pre Issuance-final Interface",
-  "apiName": "cc-preIssuance-finalInterface",
+  "apiName": "API/cc-preIssuance-finalInterface",
   "method": "POST",
   "statusCode": 200,
   "latencyMs": 0,

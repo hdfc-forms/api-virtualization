@@ -1,6 +1,6 @@
 {
   "businessName": "SW Get STP non STP Decision",
-  "apiName": "SW_Get_STP_nonSTP_Decision",
+  "apiName": "API/SW_Get_STP_nonSTP_Decision",
   "method": "POST",
   "statusCode": 200,
   "latencyMs": 0,

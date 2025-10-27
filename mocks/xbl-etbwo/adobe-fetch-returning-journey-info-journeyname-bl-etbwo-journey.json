@@ -1,6 +1,6 @@
 {
   "businessName": "Adobe Fetch Returning Journey Info",
-  "apiName": "Adobe_FetchReturningJourneyInfo",
+  "apiName": "API/Adobe_FetchReturningJourneyInfo",
   "method": "POST",
   "statusCode": 200,
   "latencyMs": 0,
