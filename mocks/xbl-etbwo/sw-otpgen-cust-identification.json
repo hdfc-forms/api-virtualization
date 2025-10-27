@@ -1,0 +1,52 @@
+{
+  "businessName": "SW OTPGen Cust Identification",
+  "apiName": "SW_OTPGen_Cust_Identification",
+  "method": "POST",
+  "statusCode": 200,
+  "latencyMs": 0,
+  "predicate": {
+    "request": {"requestString": {
+      "identifierName": "PAN_NO",
+      "msgType": "S",
+      "subSource": "",
+      "identifierValue": "WITPL3993B",
+      "mobileNo": "9972868764",
+      "source": "",
+      "otpskip": "N",
+      "fillerFields": {
+        "filler9": "",
+        "filler8": "",
+        "filler5": "",
+        "filler4": "",
+        "filler7": "",
+        "filler6": "",
+        "filler1": "",
+        "filler10": "",
+        "filler3": "",
+        "filler2": ""
+        }
+      }},
+    "headers": {},
+    "query": {}
+    },
+  "responseHeaders": {"Content-Type": "application/json"},
+  "responseBody": {
+    "contextParam": {
+      "partnerJourneyID": "6b5faa49-ad56-407e-bc20-c068d63c96c2_01_BL_U_WEB",
+      "bankJourneyID": "885767331915",
+      "partnerID": "HDFCBANK",
+      "productName": "BL",
+      "channelID": "ADOBE"
+      },
+    "responseString": {
+      "offerAvailable": "N",
+      "existingCustomer": "Y",
+      "lcmcpFlag": "CP"
+      },
+    "status": {
+      "responseCode": "0",
+      "errorCode": "",
+      "errorDesc": ""
+      }
+    }
+  }

@@ -1,0 +1,19 @@
+{
+  "businessName": "Product Journey Data",
+  "apiName": "ProductJourneyData",
+  "method": "POST",
+  "statusCode": 200,
+  "latencyMs": 0,
+  "predicate": {
+    "request": {"mobileNumber": "9972868764"},
+    "headers": {},
+    "query": {}
+    },
+  "responseHeaders": {"Content-Type": "application/json"},
+  "responseBody": {
+    "errorTime": 1761550134929,
+    "message": "Product Journey Not found.",
+    "requestId": "",
+    "status": 400
+    }
+  }

@@ -1,0 +1,42 @@
+{
+  "businessName": "SW Email OTP Val",
+  "apiName": "SW_EmailOTP_Val",
+  "method": "POST",
+  "statusCode": 200,
+  "latencyMs": 0,
+  "predicate": {
+    "request": {"requestString": {
+      "passwordValue": "123456",
+      "fillerFields": {
+        "filler9": "",
+        "filler8": "",
+        "filler5": "",
+        "filler4": "",
+        "filler7": "",
+        "filler6": "",
+        "filler1": "",
+        "filler10": "",
+        "filler3": "",
+        "filler2": ""
+        }
+      }},
+    "headers": {},
+    "query": {}
+    },
+  "responseHeaders": {"Content-Type": "application/json"},
+  "responseBody": {
+    "contextParam": {
+      "partnerJourneyID": "14db7764-67e6-4da2-9fde-d0ce1e126c17_01_BL_U_WEB",
+      "bankJourneyID": "421611736360",
+      "partnerID": "HDFCBANK",
+      "productName": "BL",
+      "channelID": "ADOBE"
+      },
+    "responseString": {},
+    "status": {
+      "responseCode": "0",
+      "errorCode": "",
+      "errorDesc": ""
+      }
+    }
+  }

@@ -1,0 +1,63 @@
+{
+  "businessName": "otp-val",
+  "apiName": "otp-val",
+  "method": "POST",
+  "statusCode": 200,
+  "latencyMs": 0,
+  "predicate": {
+    "request": {
+      "sessionContext": {
+        "bankCode": "08",
+        "transactionBranch": "089999",
+        "channel": "APIGW",
+        "userId": "DevUser01"
+        },
+      "VerifyOTPRestRequestDTO": {
+        "headerParams": [
+          {
+          "value": "hdfc_adobe",
+          "key": "apiUser"
+          },
+          {
+          "value": "testing",
+          "key": "apiKey"
+          }
+        ],
+        "requestString": {
+          "refNo": "AD20251027094251855",
+          "linkData": "0000000918450644870",
+          "instanceId": "8888",
+          "passwordValue": "123456",
+          "apiUser": "hdfc_adobe"
+          }
+        }
+      },
+    "headers": {},
+    "query": {}
+    },
+  "responseHeaders": {"Content-Type": "application/json"},
+  "responseBody": {
+    "status": {
+      "isOverriden": false,
+      "replyCode": 0,
+      "replyText": "0",
+      "memo": null,
+      "externalReferenceNo": "AD20251027094251855",
+      "internalReferenceNumber": "2025300460964915",
+      "postingDate": {"dateString": "20251027000000"},
+      "errorCode": "0",
+      "extendedReply": {"messages": null},
+      "validationErrors": null,
+      "userReferenceNumber": null
+      },
+    "maintenanceType": null,
+    "configVersionId": null,
+    "responseString": {
+      "statusCode": "00",
+      "refNo": "AD20251027094251855",
+      "messageHash": "static:verpwdres:04:a/QcyfAXKXnhe0r6WE+2fdBBz8Q=",
+      "errorDetail": null,
+      "txnId": null
+      }
+    }
+  }

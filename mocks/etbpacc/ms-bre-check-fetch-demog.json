@@ -1,0 +1,100 @@
+{
+  "businessName": "ms-bre Check-fetch Demog",
+  "apiName": "ms-breCheck-fetchDemog",
+  "method": "POST",
+  "statusCode": 200,
+  "latencyMs": 0,
+  "predicate": {
+    "request": {
+      "sessionContext": {
+        "bankCode": "08",
+        "transactionBranch": "089999",
+        "channel": "APIGW",
+        "userId": "DevUser01"
+        },
+      "CIFAccountInquiryAndCCDemogRequestDTO": {"requestString": {
+        "prifiller9": "",
+        "prifiller8": "",
+        "prifiller7": "",
+        "sourcingChannel": "ADCC",
+        "mobileNumber": "8450644870",
+        "panNumber": "",
+        "productName": "",
+        "prifiller11": "",
+        "prifiller10": "",
+        "prifiller2": "19920910",
+        "prifiller6": "",
+        "prifiller15": "",
+        "prifiller5": "",
+        "prifiller14": "",
+        "prifiller4": "",
+        "prifiller13": "",
+        "prifiller3": "",
+        "prifiller12": ""
+        }}
+      },
+    "headers": {},
+    "query": {}
+    },
+  "responseHeaders": {"Content-Type": "application/json"},
+  "responseBody": {
+    "status": {
+      "isOverriden": false,
+      "replyCode": 0,
+      "replyText": "0",
+      "memo": null,
+      "externalReferenceNo": "AD20251027094252204",
+      "internalReferenceNumber": "2025300460731490",
+      "postingDate": {"dateString": "20251027000000"},
+      "errorCode": "0",
+      "extendedReply": {"messages": null},
+      "validationErrors": null,
+      "userReferenceNumber": null
+      },
+    "maintenanceType": null,
+    "configVersionId": null,
+    "responseString": {"DAXMLDocument": {
+      "OCONTROL": {
+        "EDITIONDATE": "2025-09-01",
+        "ERRORMSG": "SUCCESS",
+        "ERRORCODE": "X100",
+        "ALIAS": "CCDEMOG",
+        "OBJECTIVE": "DEMOG",
+        "APPLICATION_ID": "AD20251027094252204",
+        "SIGNATURE": "HDFC",
+        "EDITION": 98
+        },
+      "DEMOGOUT": {"OUTPUT": {"RESPONSE": {
+        "VDCUSTZIPCODE": 466116,
+        "VDCUSTEMAILADD": "ranjit.patil@hdfcbank.com",
+        "DDCUSTDATEOFBIRTH": 19920910,
+        "FWCUSTID": "XXXX0019",
+        "VDCUSTGENDER": "M",
+        "VDCUSTADD2": "93 COURTYARD FLAT NO 93",
+        "VDCUSTADD3": "COURTYARD",
+        "BREFILLER2": "D101",
+        "SOURCEID": "FINWARE",
+        "BREFILLER3": "AD300250002J",
+        "VDCUSTADD1": "FLAT NO 93 COURTYARD FLAT NO",
+        "BREFILLER4": "SUCCESSFUL RESPONSE",
+        "VDCUSTFIRSTNAME": "SHUBHAM DEELIP",
+        "VDCUSTNAMESHORT": "Ranjit Vijay Patil",
+        "VDCUSTADD4": "",
+        "CUSTOMERID": "XXXX0019",
+        "VDCUSTFULLNAME": "Shubham Deelip Sonawaneeeee",
+        "IPA0": "Y",
+        "BREFILLER5": "HDFC BANK LTD",
+        "VDCUSTLASTNAME": "SONAWANEEEEE",
+        "VDCUSTTYPE": "I",
+        "ACCOUNTID": "XXXXXXXXXX0455",
+        "VDCUSTITNBR": "OVBPD2158J",
+        "SEGMENT": "ONLY_CASA",
+        "VDCUSTSTATE": "MADHYA PRADESH",
+        "TOKENSTRING": "ONLYCASAXXY",
+        "VDCUSTCITY": "ASHTA",
+        "FWACCNTNUM": "XXXXXXXXXX0455",
+        "MOBILE": 8450644870
+        }}}
+      }}
+    }
+  }

@@ -1,0 +1,22 @@
+{
+  "businessName": "Adobe Ref Num",
+  "apiName": "Adobe_RefNum",
+  "method": "POST",
+  "statusCode": 200,
+  "latencyMs": 0,
+  "predicate": {
+    "request": {
+      "journeyName": "BL_ETBWO_JOURNEY",
+      "partnerCode": "BL"
+      },
+    "headers": {},
+    "query": {}
+    },
+  "responseHeaders": {"Content-Type": "application/json"},
+  "responseBody": {
+    "status": "SUCCESS",
+    "referenceNumber": "BL27102500227",
+    "errorCode": "REF0000",
+    "errorText": null
+    }
+  }

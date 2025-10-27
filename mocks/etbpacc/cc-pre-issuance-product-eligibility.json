@@ -1,0 +1,49 @@
+{
+  "businessName": "cc-pre Issuance-product Eligibility",
+  "apiName": "cc-preIssuance-productEligibility",
+  "method": "POST",
+  "statusCode": 200,
+  "latencyMs": 0,
+  "predicate": {
+    "request": {"executeProductEligibleRequest": {"requestHandler": {
+      "SOA_CUSTOMER_ID": "XXXX0019",
+      "SOA_EXISTINGCUSTOMER": "Y",
+      "SOA_FILLER2": "ADCC"
+      }}},
+    "headers": {},
+    "query": {}
+    },
+  "responseHeaders": {"Content-Type": "application/json"},
+  "responseBody": {"executeProductEligibleRequestResponse": {"executeProductEligibleRequestReturn": {
+    "SOA_APPLICATIONID": "AD300250002J",
+    "SOA_ELIGIBLE_PRODUCT1": "MILDBW",
+    "SOA_ELIGIBLE_PRODUCT2": "SWMDBW",
+    "SOA_ELIGIBLE_PRODUCT3": "",
+    "SOA_ELIGIBLE_PRODUCT4": "",
+    "SOA_ELIGIBLE_PRODUCT5": "",
+    "SOA_ERROR_CODE": "0000",
+    "SOA_ERROR_DESC": "SUCCESS",
+    "SOA_FILLER1": "ACL2QYG2X6",
+    "SOA_FILLER2": "ADCC",
+    "SOA_FILLER3": "",
+    "SOA_FILLER4": "",
+    "SOA_FILLER5": "",
+    "SOA_GRID": "",
+    "SOA_PRIORITY": "",
+    "SOA_PRODUCT_1_PRICING_DTL": "",
+    "SOA_PRODUCT_2_PRICING_DTL": "",
+    "SOA_PRODUCT_3_PRICING_DTL": "",
+    "SOA_PRODUCT_4_PRICING_DTL": "",
+    "SOA_PRODUCT_5_PRICING_DTL": "",
+    "SOA_REQUESTID": "2710254253",
+    "SOA_RESPONSEDT": "2025-10-27T09:42:53.468Z",
+    "SOA_SOURCE": "DAP",
+    "SOA_STATUS": "Y",
+    "SOA_RESULT1": "",
+    "SOA_RESULT2": "",
+    "SOA_RESULT3": "",
+    "SOA_RESULT_TEXT1": "",
+    "SOA_RESULT_TEXT2": "",
+    "SOA_RESULT_TEXT3": ""
+    }}}
+  }

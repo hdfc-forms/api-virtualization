@@ -1,0 +1,103 @@
+{
+  "businessName": "Pdf Generation",
+  "apiName": "Pdf_Generation",
+  "method": "POST",
+  "statusCode": 200,
+  "latencyMs": 0,
+  "predicate": {
+    "request": {
+      "applicationDetails": {
+        "ereferenceNumber": "AD300250002J",
+        "sourcingChannel": "ADCC",
+        "authenticationMode": "IDCOM"
+        },
+      "personalDetails": {
+        "firstName": "Shubham",
+        "lastName": "Sonawaneeeee",
+        "residenceType": "Indian",
+        "gender": "M",
+        "nationality": "Indian",
+        "nameOnCard": "ROHAN PATIL",
+        "panNo": "OVBPD2158J",
+        "middleName": "Deelip",
+        "dateOfBirth": "10-Sep-1992",
+        "mobileNo": "8450644870",
+        "persoanlEmailId": "ranjit.patil@hdfcbank.com",
+        "martialStatus": ""
+        },
+      "addressDetails": {
+        "permanentAddress": {
+          "city": "SEHORE",
+          "phone": "8450644870",
+          "pinCode": "466116",
+          "addressLine1": "Flat No 93 Courtyard Flat No,",
+          "addressLine2": "93 Courtyard Flat No 93,",
+          "addressLine3": "Courtyard",
+          "state": "MADHYA PRADESH"
+          },
+        "officeAddress": {
+          "city": "SEHORE",
+          "phone": "8450644870",
+          "pinCode": "466116",
+          "addressLine1": "Flat No 93 Courtyard Flat No,",
+          "addressLine2": "93 Courtyard Flat No 93,",
+          "addressLine3": "Courtyard",
+          "state": "Madhya Pradesh"
+          },
+        "residenceAddress": {
+          "city": "SEHORE",
+          "phone": "8450644870",
+          "pinCode": "466116",
+          "addressLine1": "Flat No 93 Courtyard Flat No,",
+          "addressLine2": "93 Courtyard Flat No 93,",
+          "addressLine3": "Courtyard",
+          "state": "Madhya Pradesh"
+          }
+        },
+      "consentPreference": {
+        "preference3": "Yes",
+        "consent1": "Yes",
+        "consent3": "Yes",
+        "relationshipWithDirector": "No",
+        "consent2": "Yes",
+        "consent4": "Yes",
+        "preference1": "Yes",
+        "preference2": "Yes"
+        },
+      "productDetails": {
+        "cardSure": "",
+        "fasTag": "",
+        "pricingDetails": "",
+        "smartPay": "",
+        "prepaidCard": ""
+        },
+      "bankUseSection": {
+        "branchCode": "08",
+        "lc1Code": "",
+        "relationshipWithDirector": "No",
+        "lc2Code": "",
+        "smCode": "",
+        "nameOfDirector": "",
+        "relationship": "",
+        "lgCode": ""
+        },
+      "occupationDetails": {
+        "occupationType": "Salaried",
+        "officeEmailId": "ranjit.patil@hdfcbank.com",
+        "typeOfIndustry": "",
+        "employmentType": "Salaried",
+        "companyName": "ICICI BANK LIMITED",
+        "employeeId": "",
+        "designation": "Area Manager",
+        "department": ""
+        }
+      },
+    "headers": {},
+    "query": {}
+    },
+  "responseHeaders": {"Content-Type": "application/json"},
+  "responseBody": {
+    "status": "Success",
+    "message": "Request submitted successfully"
+    }
+  }
