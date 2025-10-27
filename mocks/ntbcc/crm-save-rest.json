@@ -1,0 +1,29 @@
+{
+  "businessName": "CRM Save REST",
+  "apiName": "API/CRM_Save_REST",
+  "method": "POST",
+  "statusCode": 200,
+  "latencyMs": 0,
+  "predicate": {
+    "request": {"CRMnextObject": {
+      "MobilePhone": "9585802955",
+      "Phone": "9585802955"
+      }},
+    "headers": {},
+    "query": {}
+    },
+  "responseHeaders": {"Content-Type": "application/json"},
+  "responseBody": {"SaveResponse": {
+    "xmlns": "http://www.crmnext.com/api/",
+    "xmlns:s": "http://schemas.xmlsoap.org/soap/envelope/",
+    "SaveResult": {
+      "xmlns:i": "http://www.w3.org/2001/XMLSchema-instance",
+      "SaveResult": {
+        "IsSuccess": true,
+        "Message": "Success",
+        "objectKey": {"ItemKey": 779687952},
+        "ApiObject": {"i:nil": true}
+        }
+      }
+    }}
+  }

@@ -1,0 +1,17 @@
+{
+  "businessName": "Adobe Loan Booking",
+  "apiName": "API/Adobe_LoanBooking",
+  "method": "POST",
+  "statusCode": 200,
+  "latencyMs": 0,
+  "predicate": {
+    "request": {},
+    "headers": {},
+    "query": {}
+    },
+  "responseHeaders": {"Content-Type": "application/json"},
+  "responseBody": {
+    "status": "Success",
+    "response": {"inquiryResponse": "{\"HeaderInfo\":{\"TransactionId\":\"AD20251027142105564\",\"ServiceRequestId\":\"21\"},\"OutputParameters\":{\"LAN\":\"74146166\",\"CustId\":\"84146975\",\"CustName\":\"SANJAY  KUMAR\",\"DOB_DOI\":\"20/10/1996\",\"PAN\":\"ETCPK7240H\",\"BankAccNo\":\"\",\"AddressType\":\"CURRES\",\"Address1\":\"S/O JITENDER KUMAR DHANKA \",\"Address2\":\"WARD NO 08 \",\"Address3\":\"SARDARGARH\",\"Address4\":\"11SGM \",\"City\":\"SURATGARH\",\"State\":\"RAJASTHAN\",\"Landmark\":\"BEHIND UCO BANK\",\"Country\":\"INDIA\",\"Zip\":\"335804\",\"Fulladdress\":\"S/O JITENDER KUMAR DHANKA ,WARD NO 08 ,SARDARGARH,11SGM ,Landmark:BEHIND UCO BANK,Pincode:335804,City:SURATGARH,State:RAJASTHAN,Country:INDIA\",\"Phone1\":\"8432680172\",\"Phone2\":\"\",\"Mobile1\":\"8432680172\",\"Mobile2\":\"\",\"Product\":\"RURAL SWARNA - TL\",\"LoanAmount\":\"25000.00\",\"EMIAmount\":\"28750.00\",\"Status\":\"Closed\",\"VehicleNo\":\"\",\"MigratedNo\":\"\"},\"ExceptionInfo\":{\"ErrorCode\":\"0000\",\"ErrorDescription\":\"Successful response Loan data Available\"}}"}
+    }
+  }

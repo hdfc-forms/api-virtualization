@@ -1,0 +1,22 @@
+{
+  "businessName": "cc-pre Issuance-execute Interface",
+  "apiName": "API/cc-preIssuance-executeInterface",
+  "method": "POST",
+  "statusCode": 200,
+  "latencyMs": 0,
+  "predicate": {
+    "request": {"executeInterfaceRequest": {"requestHandler": {
+      "APS_SOURCING_CHANNEL": "ADCC",
+      "APS_FIRST_NAME": "Cathy"
+      }}},
+    "headers": {},
+    "query": {}
+    },
+  "responseHeaders": {"Content-Type": "application/json"},
+  "responseBody": {"executeInterfaceRequestResponse": {"executeInterfaceRequestReturn": {
+    "APS_APPL_REF_NUM": "D25J27077019H0S2",
+    "APS_ERROR_CODE": "0000",
+    "APS_ERROR_DESC": "SUCCESS",
+    "APS_E_REF_NUM": "AD3002500049"
+    }}}
+  }

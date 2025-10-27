@@ -1,0 +1,50 @@
+{
+  "businessName": "Fetch CRILC Data",
+  "apiName": "API/Fetch_CRILC_Data",
+  "method": "POST",
+  "statusCode": 200,
+  "latencyMs": 0,
+  "predicate": {
+    "request": {
+      "exactMatchRequestParams": {"LG_CODE": "AYUS12"},
+      "productName": "TOKEN",
+      "masterName": "DETAILS"
+      },
+    "headers": {},
+    "query": {}
+    },
+  "responseHeaders": {"Content-Type": "application/json"},
+  "responseBody": {
+    "status": "Success",
+    "pageSize": 15,
+    "pageNo": 0,
+    "lastPage": 0,
+    "content": [{
+      "MOBILE_NUMBER": "7860312283",
+      "SE_CODE": "NAVE11",
+      "SUBTEAM": null,
+      "STATE": "EMPLOYEE_QR_CODE_GENERATION_SUCCESS",
+      "CURRENT_FORM_CONTEXT": null,
+      "FCM_TOKEN": null,
+      "DSA": "AYUS12",
+      "SALES_PROMO_CODE": "4545",
+      "SM_CODE": null,
+      "LC2_CODE": "MANCHU11",
+      "FULL_NAME": "Ayush",
+      "BRANCH_CODE": "AYUS12",
+      "ON_ROLL": "Y",
+      "ID": 1,
+      "REGISTERED_MOBILE_NUMBER": null,
+      "BR_CODE": null,
+      "SCHEME_CODE": null,
+      "TIMEINFO": "2025-10-20T17:41:30.797000",
+      "TSE": "AYUS12",
+      "LG_CODE": "AYUS12",
+      "CHANNEL": "LBC",
+      "TL": "NAVE11",
+      "TEAM": null,
+      "EMAIL_ID": null,
+      "LC_CODE": null
+      }]
+    }
+  }

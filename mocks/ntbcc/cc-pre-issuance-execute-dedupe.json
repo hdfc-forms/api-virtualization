@@ -1,0 +1,27 @@
+{
+  "businessName": "cc-pre Issuance-execute Dedupe",
+  "apiName": "API/cc-preIssuance-executeDedupe",
+  "method": "POST",
+  "statusCode": 200,
+  "latencyMs": 0,
+  "predicate": {
+    "request": {"executeDedupeRequest": {"dedupeRequestHandler": {
+      "SOA_FILLER2": "ADCC",
+      "SOA_MOBILE_NUMBER": "9585802955",
+      "SOA_AUTHSTATUS": "Y"
+      }}},
+    "headers": {},
+    "query": {}
+    },
+  "responseHeaders": {"Content-Type": "application/json"},
+  "responseBody": {"executeDedupeRequestResponse": {"executeDedupeRequestReturn": {
+    "SOA_APPLICATIONID": "AD3002500049",
+    "SOA_ERROR_CODE": "0000",
+    "SOA_ERROR_DESC": "SUCCESS",
+    "SOA_PRIORITY": "1",
+    "SOA_REQUESTID": "2710252105",
+    "SOA_RESPONSEDT": "",
+    "SOA_SOURCE": "Y",
+    "SOA_STATUS": "N"
+    }}}
+  }

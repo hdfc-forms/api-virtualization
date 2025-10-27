@@ -1,0 +1,67 @@
+{
+  "businessName": "ms-bre Check-fetch Demog",
+  "apiName": "API/ms-breCheck-fetchDemog",
+  "method": "POST",
+  "statusCode": 200,
+  "latencyMs": 0,
+  "predicate": {
+    "request": {
+      "CIFAccountInquiryAndCCDemogRequestDTO": {"requestString": {
+        "prifiller9": "",
+        "prifiller8": "",
+        "prifiller7": "",
+        "sourcingChannel": "ADCC",
+        "mobileNumber": "9585802955",
+        "productName": "",
+        "prifiller11": "",
+        "prifiller10": "",
+        "prifiller2": "",
+        "prifiller6": "",
+        "prifiller15": "",
+        "prifiller5": "",
+        "prifiller14": "",
+        "prifiller4": "",
+        "prifiller13": "",
+        "prifiller3": "",
+        "prifiller12": ""
+        }}
+      },
+    "headers": {},
+    "query": {}
+    },
+  "responseHeaders": {"Content-Type": "application/json"},
+  "responseBody": {
+    "status": {
+      "isOverriden": false,
+      "replyCode": 0,
+      "replyText": "0",
+      "memo": null,
+      "externalReferenceNo": "AD20251027142103302",
+      "internalReferenceNumber": "2025300378419826",
+      "postingDate": {"dateString": "20251027000000"},
+      "errorCode": "0",
+      "extendedReply": {"messages": null},
+      "validationErrors": null,
+      "userReferenceNumber": null
+      },
+    "maintenanceType": null,
+    "configVersionId": null,
+    "responseString": {"DAXMLDocument": {
+      "OCONTROL": {
+        "EDITIONDATE": "2025-09-01",
+        "ERRORMSG": "SUCCESS",
+        "ERRORCODE": "X100",
+        "ALIAS": "CCDEMOG",
+        "OBJECTIVE": "DEMOG",
+        "APPLICATION_ID": "AD20251027142103302",
+        "SIGNATURE": "HDFC",
+        "EDITION": 98
+        },
+      "DEMOGOUT": {"OUTPUT": {"RESPONSE": {
+        "IPA0": "N",
+        "BREFILLER2": "D102",
+        "BREFILLER4": "NO MATCHING DEMOG RECORDS FOUND IN CIF"
+        }}}
+      }}
+    }
+  }

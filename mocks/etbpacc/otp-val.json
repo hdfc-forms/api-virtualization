@@ -6,12 +6,6 @@
   "latencyMs": 0,
   "predicate": {
     "request": {
-      "sessionContext": {
-        "bankCode": "08",
-        "transactionBranch": "089999",
-        "channel": "APIGW",
-        "userId": "DevUser01"
-        },
       "VerifyOTPRestRequestDTO": {
         "headerParams": [
           {
@@ -24,7 +18,6 @@
           }
         ],
         "requestString": {
-          "refNo": "AD20251027094251855",
           "linkData": "0000000918450644870",
           "instanceId": "8888",
           "passwordValue": "123456",
