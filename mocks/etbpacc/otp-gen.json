@@ -1,6 +1,6 @@
 {
   "businessName": "otp-gen",
-  "apiName": "API/otp-gen",
+  "apiName": "api/v4/otp-gen",
   "method": "POST",
   "statusCode": 200,
   "latencyMs": 0,
