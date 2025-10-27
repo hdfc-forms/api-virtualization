@@ -1,6 +1,6 @@
 {
   "businessName": "otp-val",
-  "apiName": "API/otp-val",
+  "apiName": "api/v4/otp-val",
   "method": "POST",
   "statusCode": 200,
   "latencyMs": 0,
