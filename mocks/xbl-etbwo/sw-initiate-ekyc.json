@@ -1,0 +1,35 @@
+{
+  "businessName": "SW Initiate EKYC",
+  "apiName": "SW_Initiate_EKYC",
+  "method": "POST",
+  "statusCode": 200,
+  "latencyMs": 0,
+  "predicate": {
+    "request": {"requestString": {
+      "mobileNo": "9972868764",
+      "customerName": "Rahul Goyal",
+      "pan": "WITPL3993B"
+      }},
+    "headers": {},
+    "query": {}
+    },
+  "responseHeaders": {"Content-Type": "application/json"},
+  "responseBody": {
+    "contextParam": {
+      "partnerJourneyID": "e7af2dc8-2614-40a5-8395-71d40db00b87_01_BL_U_WEB",
+      "bankJourneyID": "404104314844",
+      "partnerID": "HDFCBANK",
+      "productName": "BL",
+      "channelID": "ADOBE"
+      },
+    "responseString": {
+      "url": "https://hdfc-uat-02.adobecqms.net/content/hdfc_loan_forms/api/kyc/kycCallBack.872883b2-e03b-4543-b797-60750e331606_01_BL_ETBWO_U_WEB.BL_ETBWO_JOURNEY.json",
+      "nextJourneyStep": "INITIATE-KYC"
+      },
+    "status": {
+      "responseCode": "0",
+      "errorCode": "",
+      "errorDesc": ""
+      }
+    }
+  }

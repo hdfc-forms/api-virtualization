@@ -1,0 +1,42 @@
+{
+  "businessName": "idcom/Fetch Auth Code",
+  "apiName": "idcom/Fetch_AuthCode",
+  "method": "POST",
+  "statusCode": 200,
+  "latencyMs": 0,
+  "predicate": {
+    "request": {
+      "Filler5": "",
+      "Filler4": "",
+      "Filler7": "",
+      "Filler10": "",
+      "Filler6": "",
+      "ProductCode": "CCPREISS",
+      "Filler3": "",
+      "Filler2": "",
+      "Filler9": "",
+      "Filler8": "",
+      "FintechID": "AACC",
+      "Identifiers": [
+        {
+        "TypeName": "MobileNo",
+        "TypeValue": "918450644870"
+        },
+        {
+        "TypeName": "PANNo",
+        "TypeValue": "OVBPD2158J"
+        }
+      ]
+      },
+    "headers": {},
+    "query": {}
+    },
+  "responseHeaders": {"Content-Type": "application/json"},
+  "responseBody": {
+    "authCode": "P20251027151464918216960",
+    "redirectUrl": "https://idcomuat-in1.hdfcbank.com:443/validate/P20251027151464918216960",
+    "errorCode": null,
+    "errorMessage": null,
+    "errorDescription": null
+    }
+  }

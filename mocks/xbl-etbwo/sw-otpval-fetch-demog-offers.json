@@ -1,0 +1,91 @@
+{
+  "businessName": "SW OTPVal Fetch Demog Offers",
+  "apiName": "SW_OTPVal_FetchDemog_Offers",
+  "method": "POST",
+  "statusCode": 200,
+  "latencyMs": 0,
+  "predicate": {
+    "request": {"requestString": {
+      "passwordValue": "123456",
+      "fillerFields": {
+        "filler9": "",
+        "filler8": "",
+        "filler5": "",
+        "filler4": "",
+        "filler7": "",
+        "filler6": "",
+        "filler1": "",
+        "filler10": "",
+        "filler3": "",
+        "filler2": ""
+        }
+      }},
+    "headers": {},
+    "query": {}
+    },
+  "responseHeaders": {"Content-Type": "application/json"},
+  "responseBody": {
+    "contextParam": {
+      "partnerJourneyID": "6b5faa49-ad56-407e-bc20-c068d63c96c2_01_BL_U_WEB",
+      "bankJourneyID": "885767331915",
+      "partnerID": "HDFCBANK",
+      "productName": "BL",
+      "channelID": "ADOBE"
+      },
+    "responseString": {
+      "ekycStatusFlag": "N",
+      "digiliteFlag": "N",
+      "OfferDemogDetails": [{
+        "customerFullName": "MD Jhangir Aftab E Rahim Sher Khan",
+        "zipCode": "384662",
+        "customerState": "KARNATAKA",
+        "kycFlag": "",
+        "customerCity": "BANGALORE",
+        "rateOfInterest": "",
+        "customerRessidencePhone": "9972868764",
+        "customerCountry": "INDIA",
+        "customerMobileNo": "9972868764",
+        "customerMiddleName": null,
+        "customerOfficeZipCode": "",
+        "customerOfficeCity": "",
+        "residenceType": "",
+        "offerType": "",
+        "emailAddress": "Nithita.astgmail.com",
+        "customerOfficePhone": "",
+        "customerLastName": "",
+        "reltype": "SOW",
+        "tenure": 0,
+        "monthlyIncome": "0",
+        "profession": "Doctor",
+        "customerOfficeAddress1": "WHOLESALE? BUSINESS PO--",
+        "campaignId": "",
+        "customerGender": "F",
+        "dateOfBirth": "20-09-1936",
+        "procFees": "",
+        "accountNumber": "XXXXXXXXXX24639",
+        "customerOfficeAddress3": "Dunmari adda At Dumari",
+        "customerOfficeAddress2": "Adda, PS<>Doriganj Chapra",
+        "repaymentAcct": "",
+        "multiTenureAmt": "",
+        "customerFirstName": "MD",
+        "customerID": "XXXX76293",
+        "custType": "E",
+        "offerAmount": 0,
+        "customerAddress1": "203 SITE NO1317 SRI DURGA KRUPA AP",
+        "customerAddress3": "14TH MAIN ROAD BTM",
+        "customerAddress2": "SUNSHINE COLONY",
+        "customerPan": ""
+        }],
+      "stpOfferDetails": {
+        "stpOfferAvailable": "N",
+        "stpBankJourneyID": "",
+        "stpPartnerJourneyID": ""
+        }
+      },
+    "status": {
+      "responseCode": "0",
+      "errorCode": "",
+      "errorDesc": ""
+      }
+    }
+  }

@@ -1,0 +1,36 @@
+{
+  "businessName": "cc-pre Issuance-final Interface",
+  "apiName": "cc-preIssuance-finalInterface",
+  "method": "POST",
+  "statusCode": 200,
+  "latencyMs": 0,
+  "predicate": {
+    "request": {"executeFinalDAPRequest": {"finalDAPRequest": {
+      "FILLER8": "DCSUCCESS",
+      "FILLER9": "ADCC"
+      }}},
+    "headers": {},
+    "query": {}
+    },
+  "responseHeaders": {"Content-Type": "application/json"},
+  "responseBody": {"executeFinalDAPRequestResponse": {"executeFinalDAPRequestReturn": {
+    "APS_APPL_REF_NUM": "D25J27076977S0J5",
+    "APS_ERROR_CODE": "0000",
+    "APS_ERROR_DESC": "SUCCESS",
+    "APS_E_REF_NUM": "AD300250002J",
+    "APS_IPA_RESULT": "",
+    "APS_MB_POS_DESC": "",
+    "APS_MB_POS_RESULT": "",
+    "FILLER1": "",
+    "FILLER2": "",
+    "FILLER3": "",
+    "FILLER4": "",
+    "FILLER5": "",
+    "FILLER6": "",
+    "FILLER7": "",
+    "FILLER8": "",
+    "FILLER9": "",
+    "FILLER10": "",
+    "STATUS": ""
+    }}}
+  }

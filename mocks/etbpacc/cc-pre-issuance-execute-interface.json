@@ -1,0 +1,23 @@
+{
+  "businessName": "cc-pre Issuance-execute Interface",
+  "apiName": "cc-preIssuance-executeInterface",
+  "method": "POST",
+  "statusCode": 200,
+  "latencyMs": 0,
+  "predicate": {
+    "request": {"executeInterfaceRequest": {"requestHandler": {
+      "APS_BANK_ACC_NUMBER": "XXXXXXXXXX0455",
+      "APS_COM_MOBILE_NUM": "8450644870",
+      "APS_PER_EMAILID": "ranjit.patil@hdfcbank.com"
+      }}},
+    "headers": {},
+    "query": {}
+    },
+  "responseHeaders": {"Content-Type": "application/json"},
+  "responseBody": {"executeInterfaceRequestResponse": {"executeInterfaceRequestReturn": {
+    "APS_APPL_REF_NUM": "D25J27076977S0J5",
+    "APS_ERROR_CODE": "0000",
+    "APS_ERROR_DESC": "SUCCESS",
+    "APS_E_REF_NUM": "AD300250002J"
+    }}}
+  }

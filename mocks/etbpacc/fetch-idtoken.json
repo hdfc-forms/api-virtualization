@@ -1,0 +1,18 @@
+{
+  "businessName": "idcom/Fetch IDToken",
+  "apiName": "idcom/Fetch_IDToken",
+  "method": "POST",
+  "statusCode": 200,
+  "latencyMs": 0,
+  "predicate": {
+    "request": {"authCode": "P20251027151464918216960"},
+    "headers": {},
+    "query": {}
+    },
+  "responseHeaders": {"Content-Type": "application/json"},
+  "responseBody": {
+    "authCode": "P20251027151464918216960",
+    "authStatus": "Y",
+    "IDToken": "Np522NOToLBxw9zuHgqI0TF1jYs5X5-Xtt47fWHTtF0EGsZfcLm-QUo24olm-HybL6oEzJ6kv-RP87ddMwTiM2z7HKU_stUC2FHj04XLlgty30mJ3c-7TWqYz2psAY6G4bL4eZ9eGA168dt7caE4SXYFbo0c-iCI0QdcGkFJx9s67qesB8Lob4y7P02d2xCvu0uWHnwpSgfQ62_UiqivAvQpGrJ2xU7S-GK7zL66c8b1ej2qIR4gcn1fqOI_wLidjhj39cVygAXfn36Bu2UhEMTPR66CwyDHwtX5Gm0f2KsEWaFu6c3CEiGG81cJKFju2_On_Q8T6Lpl4hUWXJKZmA.fUWm2B92PBaqV1fDu7PahA.T6G6_Ao68PGNCtTxZTe4wvwB3c_uh-4r7n1BMz-KoBkeRFzGKGIZjj7Rda03mJpR3RXddikHA626QM94RdLz2OjHpRlda4kDXCQLJ8a6XkRjxX-SP-pbenwFWLjsxYuM15NzcHhdD5r5UgCgVJ17Sk2TQ3YJR0nm2fWvBFiD55TWmp9sN_5MDxaR5NO5Ihu9o45Ifbxg_70CJP5spM_iXFjfDfoBozBFUT112FAqc8W6l2pb5aLMJQmVTy7RnuGPm6YLYyqDpwrWBoa0xwR-tj_AT_FPtNw9evnmh6IxOuytYkwjrD1I-0-NOJK9wPsobaPdaVcrRPE7c-LZdFaDMQJfn4JYOMgxhFSGbSfATfi48S0qFWSzaJPog0qKipiS-E8OlC7beuOPRMtHBXbSP96qoyppm1jp3XPyr3Uwl1iG6d6p0yvFv4gxzV54ScjwO4xW8aQkU_AKEo5evFT5k_4P0zoteBPnfeAKd84-dNBJJfVeccNOI_3dJC72VXGJUqfTkdkwkPd5vE-XP0wCT-U5cfd0h9gUgBTiIfmjqHL8fUcmORFANV5JlHy_8d9cdtN2-zm44RZQaegeE_u5rcr2_SpRmBVYZbZJ0Nd5sJg5qEWg1UNvm_xiwWInRP7bfuDFC2nXycmWv6E0K_L916nhmDW0zyYLYDLT7RMcXVrt2DoNpRVF-0T1wK4LSbntBKdjwPchZhbNWvgZhnmX7J8NmL84Cj_LME1_GCE8TA02PVjRkfJythwWGYeEb2vOb8XCOhf8zR-sGTejgUXf7iYHq8Jiae8zcE0WJNHlRLBmJN6_WtDXv6LLj4kWTSti5hCjty0OPaeEUisv4w_NF7qDDzgrdwVFRU6oFsTQV7vAWho4iEBp3WFcjASiY_gTaOdwaSo1Kref_3Wwu1zOnXo_2b5JW8huKlWZQw5MsbFgkAt36gQSzF3FYwJjxcBP.GefK3ViGlFCEHEucZS82XA"
+    }
+  }

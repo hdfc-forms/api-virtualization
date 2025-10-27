@@ -1,0 +1,17 @@
+{
+  "businessName": "Adobe Fetch Action Response",
+  "apiName": "Adobe_FetchActionResponse",
+  "method": "POST",
+  "statusCode": 200,
+  "latencyMs": 0,
+  "predicate": {
+    "request": {},
+    "headers": {},
+    "query": {}
+    },
+  "responseHeaders": {"Content-Type": "application/json"},
+  "responseBody": {
+    "responseCode": "RE002",
+    "responseMsg": "Record not found, try again later"
+    }
+  }

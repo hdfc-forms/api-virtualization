@@ -1,0 +1,72 @@
+{
+  "businessName": "SW PAN GST Inquiry",
+  "apiName": "SW_PAN_GST_Inquiry",
+  "method": "POST",
+  "statusCode": 200,
+  "latencyMs": 0,
+  "predicate": {
+    "request": {"requestString": {
+      "firstName": "Rahul",
+      "lastName": "Goyal",
+      "operationMode": "1",
+      "dob": "20/09/1997",
+      "middleName": "",
+      "salutation": "",
+      "pan": "WITPL3993B",
+      "fillerFields": {
+        "filler9": "",
+        "filler8": "",
+        "filler5": "",
+        "filler4": "",
+        "filler7": "",
+        "filler6": "",
+        "filler1": "",
+        "filler10": "",
+        "filler3": "",
+        "filler2": ""
+        },
+      "gstnID": ""
+      }},
+    "headers": {},
+    "query": {}
+    },
+  "responseHeaders": {"Content-Type": "application/json"},
+  "responseBody": {
+    "contextParam": {
+      "partnerJourneyID": "e7af2dc8-2614-40a5-8395-71d40db00b87_01_BL_U_WEB",
+      "bankJourneyID": "404104314844",
+      "partnerID": "HDFCBANK",
+      "productName": "BL",
+      "channelID": "ADOBE"
+      },
+    "responseString": {
+      "panResponse": {
+        "pan": "WITPL3993B",
+        "panStatus": "E",
+        "lastName": "Goyal",
+        "firstName": "Rahul",
+        "middleName": "",
+        "panTitle": "",
+        "panFiller1": "",
+        "panFiller2": "",
+        "panFiller3": "",
+        "panFiller4": "",
+        "panFiller5": "",
+        "fatherNameMatchFlag": "",
+        "seedingStatus": "Y",
+        "nameMatchFlag": "Y",
+        "dobMatchFlag": "Y",
+        "nmNamePercentage": "",
+        "nmPerStatus": "",
+        "nmRemarks": ""
+        },
+      "addressResponse": {},
+      "gstinResponse": {}
+      },
+    "status": {
+      "responseCode": "0",
+      "errorCode": "",
+      "errorDesc": ""
+      }
+    }
+  }

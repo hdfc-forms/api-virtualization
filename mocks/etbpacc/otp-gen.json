@@ -1,0 +1,108 @@
+{
+  "businessName": "otp-gen",
+  "apiName": "otp-gen",
+  "method": "POST",
+  "statusCode": 200,
+  "latencyMs": 0,
+  "predicate": {
+    "request": {
+      "sessionContext": {
+        "bankCode": "08",
+        "transactionBranch": "089999",
+        "channel": "APIGW",
+        "externalReferenceNo": "AD20251027094223233",
+        "userId": "DevUser01",
+        "userReferenceNumber": "AD20251027094223233"
+        },
+      "OTPGenAndSMSEmailDispatchOrchestrationRequestDTO": {
+        "headerParams": [
+          {
+          "value": "hdfc_adobe",
+          "key": "apiUser"
+          },
+          {
+          "value": "testing",
+          "key": "apiKey"
+          }
+        ],
+        "requestString": {
+          "E2FARequestDTO": {
+            "linkData": "0000000918450644870",
+            "instanceId": "8888",
+            "forceNew": "false",
+            "apiUser": "hdfc_adobe"
+            },
+          "AXIOMRequestDTO": {
+            "countrycode": "",
+            "languageid": "",
+            "subjectLine": "",
+            "msgtxt": "#OTP# is your OTP for HDFC Bank Credit Card Online Application. Never share OTP. Not you? Call 18002586161 @applyonline.hdfcbank.com # #OTP#",
+            "userid": "adobeotp",
+            "drlflag": "",
+            "dndalert": "",
+            "consumer_name": "",
+            "attachment": "",
+            "brd": "",
+            "alert": "",
+            "ornid": "",
+            "tag": "",
+            "tempid": "",
+            "msgtype": "S",
+            "priority": "1",
+            "intflag": "",
+            "pno": "918450644870",
+            "filler_2": "",
+            "filler_1": "",
+            "ctype": "",
+            "sender": "HDFCBank",
+            "filler_5": "",
+            "filler_4": "",
+            "otpflag": "1",
+            "filler_3": "",
+            "pwd": "3hcVpTQv5Gh",
+            "dcode": "ADOBEOTP"
+            },
+          "emailid": "",
+          "splitOTP": "N"
+          }
+        }
+      },
+    "headers": {},
+    "query": {}
+    },
+  "responseHeaders": {"Content-Type": "application/json"},
+  "responseBody": {
+    "status": {
+      "isOverriden": false,
+      "replyCode": 0,
+      "replyText": "0",
+      "memo": null,
+      "externalReferenceNo": "AD20251027094223233",
+      "internalReferenceNumber": "2025300460964797",
+      "postingDate": {"dateString": "20251027000000"},
+      "errorCode": "0",
+      "extendedReply": {"messages": null},
+      "validationErrors": null,
+      "userReferenceNumber": "AD20251027094223233"
+      },
+    "maintenanceType": null,
+    "configVersionId": null,
+    "responseString": {
+      "refNo": "AD20251027094223233",
+      "datetimeExpire": "10/27/2025 15:14",
+      "serverId": "DC",
+      "incrementedCounter": "60",
+      "errorMsg": null,
+      "freshPassword": true,
+      "currentTimestampInMilliSeconds": "1761558143537",
+      "serverInstanceId": "01",
+      "divisionCode": "ADOBEOTP",
+      "datatimeGen": "10/27/2025 15:12",
+      "errorDetail": null,
+      "messageHash": "static:genpwdreq:06:06ke09ADbHDDmrexnYGFxd1hR2w=",
+      "otpReferenceData": "",
+      "statusCode": "00",
+      "txnId": "202510c2dd2e71-18ae-46db-a721-d8aa13d4c08736_N2"
+      }
+    }
+  }
