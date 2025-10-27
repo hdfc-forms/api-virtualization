@@ -1,0 +1,22 @@
+{
+  "businessName": "Adobe Ref Num",
+  "apiName": "API/Adobe_RefNum",
+  "method": "POST",
+  "statusCode": 200,
+  "latencyMs": 0,
+  "predicate": {
+    "request": {
+      "journeyName": "INSTA_LOAN_JOURNEY",
+      "partnerCode": "AD"
+      },
+    "headers": {},
+    "query": {}
+    },
+  "responseHeaders": {"Content-Type": "application/json"},
+  "responseBody": {
+    "status": "SUCCESS",
+    "referenceNumber": "AD3002500034",
+    "errorCode": "REF0000",
+    "errorText": null
+    }
+  }
