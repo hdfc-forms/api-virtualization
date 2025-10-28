@@ -1,0 +1,52 @@
+{
+  "businessName": "SW OTPGen Cust Identification",
+  "apiName": "API/SW_OTPGen_Cust_Identification",
+  "method": "POST",
+  "statusCode": 200,
+  "latencyMs": 0,
+  "predicate": {
+    "request": {"requestString": {
+      "identifierName": "DOB",
+      "msgType": "S",
+      "subSource": "",
+      "identifierValue": "25/12/1984",
+      "mobileNo": "9645291713",
+      "source": "",
+      "otpskip": "N",
+      "fillerFields": {
+        "filler9": "",
+        "filler8": "",
+        "filler5": "",
+        "filler4": "",
+        "filler7": "",
+        "filler6": "",
+        "filler1": "",
+        "filler10": "",
+        "filler3": "",
+        "filler2": ""
+        }
+      }},
+    "headers": {},
+    "query": {}
+    },
+  "responseHeaders": {"Content-Type": "application/json"},
+  "responseBody": {
+    "contextParam": {
+      "partnerJourneyID": "7380fb2c-f8e3-49ae-a128-9e9e010046e7_01_PL_U_WEB",
+      "bankJourneyID": "163908753745",
+      "partnerID": "HDFCBANK",
+      "productName": "PL",
+      "channelID": "ADOBE"
+      },
+    "responseString": {
+      "offerAvailable": "Y",
+      "existingCustomer": "Y",
+      "lcmcpFlag": "CP"
+      },
+    "status": {
+      "responseCode": "0",
+      "errorCode": "",
+      "errorDesc": ""
+      }
+    }
+  }

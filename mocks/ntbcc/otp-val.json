@@ -1,0 +1,47 @@
+{
+  "businessName": "api/v4/otp-val",
+  "apiName": "api/v4/otp-val",
+  "method": "POST",
+  "statusCode": 200,
+  "latencyMs": 0,
+  "predicate": {
+    "request": {
+      
+      "VerifyOTPRestRequestDTO": {
+        
+        "requestString": {
+          
+          "linkData": "0000000919585802955"
+          
+          }
+        }
+      },
+    "headers": {},
+    "query": {}
+    },
+  "responseHeaders": {"Content-Type": "application/json"},
+  "responseBody": {
+    "status": {
+      "isOverriden": false,
+      "replyCode": 0,
+      "replyText": "0",
+      "memo": null,
+      "externalReferenceNo": "AD20251028090428188",
+      "internalReferenceNumber": "2025301381819589",
+      "postingDate": {"dateString": "20251028000000"},
+      "errorCode": "0",
+      "extendedReply": {"messages": null},
+      "validationErrors": null,
+      "userReferenceNumber": null
+      },
+    "maintenanceType": null,
+    "configVersionId": null,
+    "responseString": {
+      "statusCode": "00",
+      "refNo": "AD20251028090428188",
+      "messageHash": "static:verpwdres:04:PgAWZVnAL0JTmHR11j4QDMcs69E=",
+      "errorDetail": null,
+      "txnId": null
+      }
+    }
+  }

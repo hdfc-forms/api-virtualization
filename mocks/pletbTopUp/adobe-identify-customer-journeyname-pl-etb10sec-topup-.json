@@ -1,0 +1,24 @@
+{
+  "businessName": "adobe-identify Customer",
+  "apiName": "API/adobe-identifyCustomer",
+  "method": "POST",
+  "statusCode": 200,
+  "latencyMs": 0,
+  "predicate": {
+    "request": {
+      "journeyName": "PL_ETB10SEC_TOPUP_JOURNEY",
+      "productCode": "PLTOPUP",
+      "mobileNumber": "9645291713",
+      "dob": "25-12-1984"
+      },
+    "headers": {},
+    "query": {}
+    },
+  "responseHeaders": {"Content-Type": "application/json"},
+  "responseBody": {
+    "status": "SUCCESS",
+    "code": "EA001",
+    "message": "Request submitted successfully.",
+    "customerType": "ETB"
+    }
+  }

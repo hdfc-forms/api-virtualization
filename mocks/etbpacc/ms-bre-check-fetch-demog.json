@@ -1,6 +1,6 @@
 {
   "businessName": "ms-bre Check-fetch Demog",
-  "apiName": "API/ms-breCheck-fetchDemog",
+  "apiName": "api/v1/ms-breCheck-fetchDemog",
   "method": "POST",
   "statusCode": 200,
   "latencyMs": 0,
