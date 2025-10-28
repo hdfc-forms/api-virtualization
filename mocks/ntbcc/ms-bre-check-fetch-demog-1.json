@@ -1,0 +1,79 @@
+{
+  "businessName": "api/v1/ms-bre Check-fetch Demog",
+  "apiName": "api/v1/ms-breCheck-fetchDemog",
+  "method": "POST",
+  "statusCode": 200,
+  "latencyMs": 0,
+  "predicate": {
+    "request": {
+      
+      "CIFAccountInquiryAndCCDemogRequestDTO": {"requestString": {
+        
+        "mobileNumber": "8775856427",
+     
+        "prifiller2": "19920910"
+      
+        }}
+      },
+    "headers": {},
+    "query": {}
+    },
+  "responseHeaders": {"Content-Type": "application/json"},
+  "responseBody": {
+    "status": {
+      "isOverriden": false,
+      "replyCode": 0,
+      "replyText": "0",
+      "memo": null,
+      "externalReferenceNo": "AD20251028090653916",
+      "internalReferenceNumber": "2025301465052272",
+      "postingDate": {"dateString": "20251028000000"},
+      "errorCode": "0",
+      "extendedReply": {"messages": null},
+      "validationErrors": null,
+      "userReferenceNumber": null
+      },
+    "maintenanceType": null,
+    "configVersionId": null,
+    "responseString": {"DAXMLDocument": {
+      "OCONTROL": {
+        "EDITIONDATE": "2025-09-01",
+        "ERRORMSG": "SUCCESS",
+        "ERRORCODE": "X100",
+        "ALIAS": "CCDEMOG",
+        "OBJECTIVE": "DEMOG",
+        "APPLICATION_ID": "AD20251028090653916",
+        "SIGNATURE": "HDFC",
+        "EDITION": 98
+        },
+      "DEMOGOUT": {"OUTPUT": {"RESPONSE": {
+        "VDCUSTZIPCODE": 461668,
+        "DDCUSTDATEOFBIRTH": 19920910,
+        "FWCUSTID": "XXXXX6918",
+        "VDCUSTGENDER": "M",
+        "VDCUSTADD2": "Makhmalabad road rto corne",
+        "VDCUSTADD3": "Sector 3 airoli navi mumbai",
+        "BREFILLER2": "D106",
+        "SOURCEID": "FINWARE",
+        "BREFILLER3": "AD3012500015",
+        "VDCUSTADD1": "Kapurthala,Manunappa , Sector 3",
+        "BREFILLER4": "VALID DEMOG RECORD AVAILABLE IN CIF, BUT THE ADDRESS LENGTH EXCEEDS 90 CHARACTERS AFTER CLEANSING",
+        "VDCUSTFIRSTNAME": "PUNEET",
+        "VDCUSTNAMESHORT": "Ranjit Vijay Patil",
+        "CUSTOMERID": "XXXXX6918",
+        "VDCUSTFULLNAME": "Puneet",
+        "IPA0": "Y",
+        "BREFILLER5": "HDFC BANK LTD",
+        "VDCUSTTYPE": "Y",
+        "ACCOUNTID": "XXXXXXXXXX4071",
+        "VDCUSTITNBR": "RJZPK3948C",
+        "SEGMENT": "ONLY_CASA",
+        "VDCUSTSTATE": "MADHYA PRADESH",
+        "TOKENSTRING": "ONLYCASAXXY",
+        "VDCUSTCITY": "PIPARIYA",
+        "FWACCNTNUM": "XXXXXXXXXX4071",
+        "MOBILE": 8775856427
+        }}}
+      }}
+    }
+  }

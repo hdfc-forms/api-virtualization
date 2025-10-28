@@ -1,0 +1,25 @@
+{
+  "businessName": "Pdf Generation",
+  "apiName": "API/Pdf_Generation",
+  "method": "POST",
+  "statusCode": 200,
+  "latencyMs": 0,
+  "predicate": {
+    "request": {
+      
+      "personalDetails": {
+       
+        "mobileNo": "9819842431"
+        
+        }
+    
+      },
+    "headers": {},
+    "query": {}
+    },
+  "responseHeaders": {"Content-Type": "application/json"},
+  "responseBody": {
+    "status": "Success",
+    "message": "Request submitted successfully"
+    }
+  }

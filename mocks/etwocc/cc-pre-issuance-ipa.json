@@ -1,0 +1,37 @@
+{
+  "businessName": "api/v1/ms/cc-pre Issuance-ipa",
+  "apiName": "api/v1/ms/cc-preIssuance-ipa",
+  "method": "POST",
+  "statusCode": 200,
+  "latencyMs": 0,
+  "predicate": {
+    "request": {"executeIPARequest": {"DSRequest": {
+     
+      "APS_SOURCE": "DAP"
+      
+      }}},
+    "headers": {},
+    "query": {}
+    },
+  "responseHeaders": {"Content-Type": "application/json"},
+  "responseBody": {"executeIPARequestResponse": {"executeIPARequestReturn": {
+    "APS_APPL_REF_NUM": "D25J28077151H0W1",
+    "APS_ERROR_CODE": "0000",
+    "APS_ERROR_DESC": "SUCCESS",
+    "APS_E_REF_NUM": "AD301250001J",
+    "APS_IPA_RESULT": "N",
+    "APS_MB_POS_DESC": "",
+    "APS_MB_POS_RESULT": "",
+    "FILLER1": "DBMINC,MVCINC,TMRINC-UPRFT",
+    "FILLER2": "",
+    "FILLER3": "",
+    "FILLER4": "",
+    "FILLER5": "",
+    "FILLER6": 50000,
+    "FILLER7": "",
+    "FILLER8": "",
+    "FILLER9": "",
+    "FILLER10": "",
+    "STATUS": "New"
+    }}}
+  }

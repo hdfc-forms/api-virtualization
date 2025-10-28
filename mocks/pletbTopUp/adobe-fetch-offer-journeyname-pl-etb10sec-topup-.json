@@ -1,0 +1,443 @@
+{
+  "businessName": "adobe-fetch Offer",
+  "apiName": "API/adobe-fetchOffer",
+  "method": "POST",
+  "statusCode": 200,
+  "latencyMs": 0,
+  "predicate": {
+    "request": {
+      "journeyName": "PL_ETB10SEC_TOPUP_JOURNEY"
+      },
+    "headers": {},
+    "query": {}
+    },
+  "responseHeaders": {"Content-Type": "application/json"},
+  "responseBody": {
+    "status": "SUCCESS",
+    "code": "EA001",
+    "message": "SUCCESS",
+    "demogDetail": {
+      "customerid": "900007184",
+      "accountid": "50100109728571",
+      "sourceid": "FINWARE",
+      "sasid": 900007184,
+      "fwcustid": "",
+      "fwaccntnum": "50100109728571",
+      "vdcustfirstname": "Ranjit",
+      "vdcustmiddlename": "Vijay",
+      "vdcustlastname": "patil",
+      "ddcuststartdate": "",
+      "ddcustcloseddate": "",
+      "vdcustchannel1CODE": "",
+      "vdcustchannel2CODE": "",
+      "vdcustbranchcode": "2373",
+      "ddcustdateofbirth": "1984-12-25 00:00:00",
+      "vdcustprofession": "",
+      "vdcustgender": "M",
+      "fdcuststaffind": "",
+      "vdcustmaritalstatus": "2",
+      "ndcustdependents": 0,
+      "vdcusteducation": "",
+      "ndcustmonthlyincome": 0,
+      "ndcustannualincome": 0,
+      "vdcustempcompany": "",
+      "vdcustadd1": "Plaza Building K304",
+      "vdcustadd2": "Hiranandani Estate",
+      "vdcustadd3": "Ghodhbunder Road",
+      "vdcustzipcode": "413216",
+      "vdcustjobtitle": "",
+      "vdcustoffadr1": "",
+      "vdcustoffadr2": "",
+      "vdcustoffadr3": "",
+      "vdcustoffzipcode": "",
+      "vdcusttypeorigin": "",
+      "vdcustresidencetype": "",
+      "ndcustjoiningage": 0,
+      "fdcustmissingind": "",
+      "ddcustreestbdate": "",
+      "vdcusttitle": "MR",
+      "vdcustadd4": "",
+      "vdcustcity": "SOLAPUR",
+      "vdcuststate": "MAHARASHTRA",
+      "vdcustcountry": "INDIA",
+      "vdcustemailadd": "Ranjit@gmail.com",
+      "vdcustmobilephone": "9645291713",
+      "vdcustitnbr": "ROGPS3337B",
+      "vdcustnetannualincome": 0,
+      "vdcustfullname": "Ranjit Vijay patil",
+      "vdcustspousename": "",
+      "vdcustnameshort": "Ranjit",
+      "vdcustspouseoccu": "",
+      "vdcustresiphone": "9645291713",
+      "vdcustoffphone": "",
+      "vdcustnatlid": "",
+      "vdcustoffemailadd": "",
+      "updatedt": "",
+      "standardizedcity": "",
+      "vdcustmthrmadnname": "",
+      "vdsecondholder": "",
+      "vdthirdholder": "",
+      "vdcustitpan2": "",
+      "vdcustitpan3": "",
+      "vdcusttype": "I",
+      "reltype": "SOW",
+      "debitscorepl": "",
+      "debitscorebl": "",
+      "debitscoreal": "",
+      "debitscorecards": "",
+      "cncbehavscore": "",
+      "cardbehavscore": "",
+      "behavscore1": "",
+      "behavscore2": "",
+      "totalunsecurepaamt": "",
+      "totalpaamt": "",
+      "behavioralscore3": "",
+      "behavioralscore4": "",
+      "behavioralscore5": "",
+      "behavioralscore6": "",
+      "behavioralscore7": "",
+      "score1": null,
+      "score2": null,
+      "score3": null,
+      "score4": null,
+      "score5": null,
+      "score6": null,
+      "score7": null,
+      "score8": null,
+      "band1": null,
+      "band2": null,
+      "band3": null,
+      "band4": null,
+      "band5": null,
+      "band6": null,
+      "band7": null,
+      "band8": null,
+      "ethniccode": "12",
+      "productcode": "",
+      "productdescription": "",
+      "producttype": "",
+      "maskedcardno": "",
+      "branchcode": "1119",
+      "filler3": null,
+      "filler4": null,
+      "filler5": null,
+      "filler6": null,
+      "filler7": null,
+      "filler8": null,
+      "filler9": null,
+      "filler10": null,
+      "filler11": null,
+      "filler12": null,
+      "accountId": null,
+      "sourceId": null,
+      "customerIdentity": null,
+      "panNo": null,
+      "aadharNo": "",
+      "mobileNo": null,
+      "aldebitRawScores": null,
+      "ccbehaviorSegment": null,
+      "ccbehaviorRawScores": null,
+      "ccbehaviorNewBandsForAL": null,
+      "ucicno": null
+      },
+    "offerDetail": {
+      "campaignId": 12865,
+      "campaignName": "STP_PL_10SEC_TOPUP_NB_29MAY_UAT01_R1",
+      "personalizationList": {"personalizationDatapoint": [
+        {
+        "fieldName": "cp_identity_cp",
+        "fieldValue": "10"
+        },
+        {
+        "fieldName": "ba_meta_key",
+        "fieldValue": "67827730"
+        },
+        {
+        "fieldName": "member_id",
+        "fieldValue": "900007184"
+        },
+        {
+        "fieldName": "card_number",
+        "fieldValue": ""
+        },
+        {
+        "fieldName": "customer_id",
+        "fieldValue": ""
+        },
+        {
+        "fieldName": "Email",
+        "fieldValue": "shubham@gmail.com"
+        },
+        {
+        "fieldName": "mobile_number",
+        "fieldValue": "9645291713"
+        },
+        {
+        "fieldName": "Product",
+        "fieldValue": "PL"
+        },
+        {
+        "fieldName": "ACCOUNT_NO",
+        "fieldValue": "50100109728571"
+        },
+        {
+        "fieldName": "CARD_TYPE",
+        "fieldValue": "STP_PL_10SEC_TOPUP_NB_29MAY_UAT01"
+        },
+        {
+        "fieldName": "CITY",
+        "fieldValue": "PUNE"
+        },
+        {
+        "fieldName": "CRM_CAMPAIGN_ID",
+        "fieldValue": "900007184"
+        },
+        {
+        "fieldName": "CRM_CUSTOMER_TRACKING_ID",
+        "fieldValue": "900007184"
+        },
+        {
+        "fieldName": "CRM_OCCURRENCE_NUMBER",
+        "fieldValue": ""
+        },
+        {
+        "fieldName": "LG_CODE",
+        "fieldValue": "N"
+        },
+        {
+        "fieldName": "MOBILE_NO",
+        "fieldValue": ""
+        },
+        {
+        "fieldName": "NAME",
+        "fieldValue": "Shubham Deelip Sonawane"
+        },
+        {
+        "fieldName": "NEW_CARD_TYPE",
+        "fieldValue": ""
+        },
+        {
+        "fieldName": "OFFER_DETAILS",
+        "fieldValue": ""
+        },
+        {
+        "fieldName": "OFFER_TO_DATE",
+        "fieldValue": ""
+        },
+        {
+        "fieldName": "PRODUCT_1",
+        "fieldValue": ""
+        },
+        {
+        "fieldName": "PROMO_CODE",
+        "fieldValue": ""
+        },
+        {
+        "fieldName": "AADHAR_NO",
+        "fieldValue": ""
+        },
+        {
+        "fieldName": "address1",
+        "fieldValue": "A 20 Building A705"
+        },
+        {
+        "fieldName": "address2",
+        "fieldValue": "Adani Estate"
+        },
+        {
+        "fieldName": "address3",
+        "fieldValue": "Nashik Road"
+        },
+        {
+        "fieldName": "address4",
+        "fieldValue": ""
+        },
+        {
+        "fieldName": "address5",
+        "fieldValue": ""
+        },
+        {
+        "fieldName": "ATM_CITY",
+        "fieldValue": ""
+        },
+        {
+        "fieldName": "ATM_ID",
+        "fieldValue": ""
+        },
+        {
+        "fieldName": "BRANCHCODE",
+        "fieldValue": "2373"
+        },
+        {
+        "fieldName": "CD_CC",
+        "fieldValue": ""
+        },
+        {
+        "fieldName": "CD_DC",
+        "fieldValue": ""
+        },
+        {
+        "fieldName": "CD_HASH",
+        "fieldValue": ""
+        },
+        {
+        "fieldName": "CD_POS",
+        "fieldValue": ""
+        },
+        {
+        "fieldName": "Comments",
+        "fieldValue": ""
+        },
+        {
+        "fieldName": "COMP_CODE",
+        "fieldValue": ""
+        },
+        {
+        "fieldName": "COMP_NAME",
+        "fieldValue": ""
+        },
+        {
+        "fieldName": "CUSTADD",
+        "fieldValue": ""
+        },
+        {
+        "fieldName": "DEC_LN_AMOUNT",
+        "fieldValue": ""
+        },
+        {
+        "fieldName": "DOB",
+        "fieldValue": "25/12/1984 12:00:00 AM"
+        },
+        {
+        "fieldName": "EMI",
+        "fieldValue": "999"
+        },
+        {
+        "fieldName": "EMI_DUE_DATE",
+        "fieldValue": ""
+        },
+        {
+        "fieldName": "ENCRYPTEDCUSTID",
+        "fieldValue": "NzpGhBjbaqY="
+        },
+        {
+        "fieldName": "FIELD_1",
+        "fieldValue": "A400000T12orA500000T24orA6000000T36orA700000T48orA800000T60orA900000T72"
+        },
+        {
+        "fieldName": "FIELD_3",
+        "fieldValue": "5.01001E+13"
+        },
+        {
+        "fieldName": "field2",
+        "fieldValue": "6521030"
+        },
+        {
+        "fieldName": "field3",
+        "fieldValue": ""
+        },
+        {
+        "fieldName": "field4",
+        "fieldValue": "Y"
+        },
+        {
+        "fieldName": "field5",
+        "fieldValue": "50100109728571"
+        },
+        {
+        "fieldName": "GENDER",
+        "fieldValue": "NO DOCS"
+        },
+        {
+        "fieldName": "INTRATE",
+        "fieldValue": "13%"
+        },
+        {
+        "fieldName": "INTRATE_1",
+        "fieldValue": "13%"
+        },
+        {
+        "fieldName": "MARTIAL_STATUS",
+        "fieldValue": "0"
+        },
+        {
+        "fieldName": "NEW_CITY",
+        "fieldValue": ""
+        },
+        {
+        "fieldName": "NEW_STATE",
+        "fieldValue": ""
+        },
+        {
+        "fieldName": "PAN_NO",
+        "fieldValue": "URKPR7744V"
+        },
+        {
+        "fieldName": "PF",
+        "fieldValue": "1500"
+        },
+        {
+        "fieldName": "PIN",
+        "fieldValue": "411007"
+        },
+        {
+        "fieldName": "PRODUCT_VARIANT",
+        "fieldValue": "PL"
+        },
+        {
+        "fieldName": "Propensity",
+        "fieldValue": "Top 10 Percentile"
+        },
+        {
+        "fieldName": "Pseudo_Id",
+        "fieldValue": ""
+        },
+        {
+        "fieldName": "RACKINTRATE",
+        "fieldValue": "19%"
+        },
+        {
+        "fieldName": "RACKPF",
+        "fieldValue": "2%"
+        },
+        {
+        "fieldName": "RACKTENOR",
+        "fieldValue": "60"
+        },
+        {
+        "fieldName": "RANK",
+        "fieldValue": ""
+        },
+        {
+        "fieldName": "STATE",
+        "fieldValue": "MAHARASHTRA"
+        },
+        {
+        "fieldName": "TENOR",
+        "fieldValue": "38"
+        },
+        {
+        "fieldName": "LOANAMT",
+        "fieldValue": "1500000.00"
+        },
+        {
+        "fieldName": "NET_LOAN",
+        "fieldValue": ""
+        },
+        {
+        "fieldName": "LOANAMT_1",
+        "fieldValue": ""
+        },
+        {
+        "fieldName": "LOAN_AMT",
+        "fieldValue": ""
+        },
+        {
+        "fieldName": "custid",
+        "fieldValue": ""
+        }
+      ]},
+      "tenureWiseOfferList": null
+      }
+    }
+  }

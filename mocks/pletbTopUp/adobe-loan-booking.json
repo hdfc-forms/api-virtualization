@@ -1,0 +1,18 @@
+{
+  "businessName": "Adobe Loan Booking",
+  "apiName": "API/Adobe_LoanBooking",
+  "method": "POST",
+  "statusCode": 200,
+  "latencyMs": 0,
+  "predicate": {
+    "request": {
+      },
+    "headers": {},
+    "query": {}
+    },
+  "responseHeaders": {"Content-Type": "application/json"},
+  "responseBody": {
+    "status": "Success",
+    "response": {"inquiryResponse": "{\"HeaderInfo\":{\"TransactionId\":\"PT28102500085\",\"ServiceRequestId\":\"12\"},\"OutputParameters\":{\"LoanDate\":\"11/06/2019\",\"LoanName\":\"MR. SUSHIL VISHWANATH VISHWAKARMA\",\"LoanAddress1\":\"A WING GR FLOOR \",\"LoanAddress2\":\" 01 JAYSHIVPARVATI\",\"LoanAddress3\":\" CHS LTD CABIN\",\"LoanAddress4\":\" CRS RD NR SEEMA IND ESTET\",\"LoanCity\":\"THANE\",\"LoanState\":\"MAHARASHTRA\",\"LoanZip\":\"401105\",\"LoanPhone\":\"\",\"LoanType\":\"PERSONAL LOAN\",\"LoanAmt\":\"          188000.00\",\"LoanAgreementNo\":\"6521030\",\"LoanInstallmentAmt\":\"            4496.00\",\"LoanRepayStartDate\":\"07/07/2019\",\"LoanDueDay\":\"07th\",\"LoanFrequency\":\" Month\",\"LoanBranchAddress\":\"RETAIL ASSETS 1)NEW VIJAY CINEMA,CHEMBUR 2)S V ROAD,KANDIVALI/W 3)TRADESTAR,ANDHERI-E 4) WAGLE ESTATE,THANE\",\"LoanBranchCity\":\"MUMBAI\",\"LoanBranchZipcode\":\"400059\",\"LoanBranchPhone\":\"18002026161\",\"LoanBranchFax\":\"1\",\"LoanBranchEmail\":\"loansupport@hdfcbank.com\"},\"ExceptionInfo\":{\"ErrorCode\":\"0000\",\"ErrorDescription\":\"Successful response Loan data Available\"}}"}
+    }
+  }
