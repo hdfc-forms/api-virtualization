@@ -7,16 +7,6 @@
   "predicate": {
     "request": {
       "VerifyOTPRestRequestDTO": {
-        "headerParams": [
-          {
-          "value": "hdfc_adobe",
-          "key": "apiUser"
-          },
-          {
-          "value": "testing",
-          "key": "apiKey"
-          }
-        ],
         "requestString": {
           "linkData": "0000000918450644870",
           "instanceId": "8888",
