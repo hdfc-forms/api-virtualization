@@ -7,16 +7,6 @@
   "predicate": {
     "request": {
       "OTPGenAndSMSEmailDispatchOrchestrationRequestDTO": {
-        "headerParams": [
-          {
-          "value": "hdfc_adobe",
-          "key": "apiUser"
-          },
-          {
-          "value": "testing",
-          "key": "apiKey"
-          }
-        ],
         "requestString": {
           "E2FARequestDTO": {
             "linkData": "0000000918450644870",
