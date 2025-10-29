@@ -1,26 +1,36 @@
 {
-  "businessName": "api/v1/ms/cc-pre Issuance-execute Dedupe",
-  "apiName": "api/v1/ms/cc-preIssuance-executeDedupe",
+  "businessName": "CC Pre Issuance Execute Dedupe",
+  "apiName": "API/CC_PreIssuance_ExecuteDedupe",
   "method": "POST",
   "statusCode": 200,
   "latencyMs": 0,
   "predicate": {
     "request": {"executeDedupeRequest": {"dedupeRequestHandler": {
-     
-      "SOA_MOBILE_NUMBER": "9585802955"
-  
+      "SOA_FILLER2": "ADCC",
+      "SOA_MOBILE_NUMBER": "9585802955",
+      "SOA_AUTHSTATUS": "Y",
+      "SOA_SOURCE": "Y",
+      "SOA_EXISTINGCUSTOMER": "N",
+      "SOA_PRIORITY": "1",
+      "SOA_PAN_NUMBER": ""
       }}},
     "headers": {},
     "query": {}
     },
   "responseHeaders": {"Content-Type": "application/json"},
   "responseBody": {"executeDedupeRequestResponse": {"executeDedupeRequestReturn": {
-    "SOA_APPLICATIONID": "AD301250001G",
+    "SOA_APPLICATIONID": "AD302250001T",
     "SOA_ERROR_CODE": "0000",
     "SOA_ERROR_DESC": "SUCCESS",
     "SOA_PRIORITY": "1",
-    "SOA_REQUESTID": "2810250429",
-    "SOA_RESPONSEDT": "",
+    "SOA_REQUESTID": "2910251553",
+    "SOA_RESPONSEDT": "29-Oct-2025 13:45:53",
+    "SOA_RESULT1": "",
+    "SOA_RESULT2": "",
+    "SOA_RESULT3": "",
+    "SOA_RESULT_TEXT1": "",
+    "SOA_RESULT_TEXT2": "",
+    "SOA_RESULT_TEXT3": "",
     "SOA_SOURCE": "Y",
     "SOA_STATUS": "N"
     }}}
