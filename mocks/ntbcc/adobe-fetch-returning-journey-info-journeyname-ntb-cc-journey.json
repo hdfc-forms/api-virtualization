@@ -6,6 +6,7 @@
   "latencyMs": 0,
   "predicate": {
     "request": {
+      "journeyName": "NTB_CC_JOURNEY",
       "mobileNumber": "9585802955"
       },
     "headers": {},
@@ -13,7 +14,23 @@
     },
   "responseHeaders": {"Content-Type": "application/json"},
   "responseBody": {
-    "msg": "No Incomplete Journey Exists for journeyNTB_CC_JOURNEY",
-    "errorCode": "RJI0001"
+    "journey": [{
+      "leadProfileId": 27363186,
+      "profile": {},
+      "address": null,
+      "mobileNumber": "9585802955",
+      "countryCode": "91",
+      "isCountryCodeAppended": "false",
+      "journeyStateInfo": [{
+        "state": "CUSTOMER_IDENTITY_RESOLVED",
+        "stateInfo": "{\"aadhaarConsentDetails\":{\"aadhaarConsentPreferredLanguage\":\"English\"},\"aadhaarEkycDetails\":{\"aadhaarAddressConsentChecked\":\"0\",\"isAadhaarAddressMailingAddress\":\"0\",\"isAadhaarAddressYourPermanentAddress\":\"1\"},\"adRefNumber\":\"AD302250001T\",\"apsData\":{\"apiFieldsJsonObject\":\"{\\\"utmParams\\\":{\\\"VISITTYPE\\\":\\\"UNIFIED_FORM_REDIRECTION\\\",\\\"JID\\\":\\\"142A28CC-27A4-41F9-9AAA-276636103F09_01_UNIFIEDURL_U_WEB\\\"}}\",\"apsAddressEditFlag\":\"N\",\"apsApplyingBranch\":\"N\",\"apsBankEmployee\":\"N\",\"apsComAddressType\":\"2\",\"apsDateOfBirth\":\"01-Jan-2000\",\"apsDemogReferenceNumber\":\"AD302250001T\",\"apsFieldsDataObject\":\"{\\\"BREFILLER2\\\":\\\"D102\\\",\\\"BREFILLER3\\\":\\\"\\\",\\\"SourceID\\\":\\\"\\\",\\\"IPA0\\\":\\\"N\\\",\\\"Segment\\\":\\\"\\\",\\\"BREFILLER4\\\":\\\"NO MATCHING DEMOG RECORDS FOUND IN CIF\\\"}\",\"apsId_token_jwt_fetchdemog\":\"UoXNNUQNE1XSps2_5zL501VhbTIwDSVRnXDPRyWTZf2_Lab0qyUxa3Rk6T1F6ePz35NyRhBk5KMWp_Ir7zCwe6Eals_qYs8sg5t6nyjLN2I0yuHbO9jA6psp8Wd1toXVGz_wJgYwx7fB3i7sChgRmNC_dl7wWownaSpCLvvnjddrM03maEoNF1T7A91M8RLOHvFBJ87Y9DQOV6wWAcURiWHuCAl-Q7SSjnafbNfXKl799GFqPs1m2rNs2Bmc-HpPz92DE8SA7pgE2MrNgUy4zZPik9JGaJD-8DMd4JSAhvjx-B4ZkPJGF7Pb2a6k2NxAynVwv1oxu1arQSJ9owfO7A.bhf3Su9LtZ6ausPx2UxK8Q.RHYo0BRF_v-pO_MX40X0Uow9HBsCFmL1y4j2x9VT712Q_bt685M92cjxbTz2qaX0H_i52R5sTDvCYZlY4UO6zw6D7y7r2YNkIlGuBIcj2ekNsVoR0s1H4u4TV58OCuRVpwQkP7P7Ct0bzmoy40IdfXyVYOKdGBEHjOF7Xt31q_nqm0GBPAeKwhGJDrz_35pYBi_SsVg1inefkaDnePbGMOunkHO216jnRSbbbRtuq4Qmeivt9x4gz_avlAQNtvy6SV41fD27oFxgEFWxjSxWHvG1oR6tAmnTj89vzkzRIfPjaoJs0v_tW8Rgt0kWrqNY1gvD4PVb_V9WGlj2jE3bXxe8MzE6pQ24s-RTQEWlFkvDZG2fw4DVBDvrBwFZykoS5GhtQcJQaDLtHWWocVf9lgzmc3a8U2iOL8IQAu6wKI04i2PwigeEv6AYKxV5dGFrgq4pOrcVUEovLvfVMRoSGNZaxtE1STxvWLETz0vd24f9Ff5tH9vJ3EyOdRUihacAVGXjJK2nGl72pHiuYdP8_Utb0nQM0n5BaA7m3Q_I7DuOTtTm-00e_WATJQdenv6976lmKLsTKRSR8WBmZwMBMM8ZoALTf4U0uEcsUP46E5qx0YS13kMf-AA_At7qJNWX1drbGNI5fF2RkpdbK1TeNe_c-HC_CY0swnrG0KttNLs0_IbnA1-vrwaJ-JPmyq0_dDMUpGTnlzBUz6pGzSgE_cT6qx1OrEMrrb7PB3fswrh2dN1HlR2q99AlpauXFItl_enA87W1iSqNvzMQxJznuR3d_3YMx4jbROrXFlpzKOesFiJViGNxVoLE7QY1cZPGP6tBERHozavQATZ75MlsydENlHWu8PRh5aaq15naP2Y.8MLVhstFin9bJ1luUqV5-g\",\"apsMobileEditFlag\":\"Y\",\"apsMobileNumber\":\"919585802955\",\"apsNameEditFlag\":\"Y\",\"apsPanEditFlag\":\"N\",\"apsPerAddressType\":\"2\",\"apsResPhoneEditFlag\":\"N\",\"apsSelfConfirmation\":\"N\"},\"customerDetails\":{\"customerBREConsent\":\"Y\",\"isPermanentAndCommunicationAddressSame\":\"1\"},\"docUploadDetails\":{\"addressProofType\":\"2_348\",\"incomeProofType\":\"3_77\"},\"ekycDetails\":{\"isAadhaarAddressYourPermanentAddress\":\"1\",\"isMailingAddressAadhaarAddress\":\"1\"},\"formData\":{\"transactionID\":\"f5eda4ad4895409c95c30128a49b397cNTBCC\"},\"identifyYourSelfOTP\":{\"dateOfBirth\":\"2000-01-01\",\"registeredMobileNumber\":9585802955},\"incomeVerification\":{\"verifyOnline\":\"0\"},\"modeOfValidation\":{\"aadhaarkycSelected\":\"0\"},\"panOrDobFlag\":\"dob\",\"personalInformation\":{\"AssistedByInPersonBioKyc\":\"1\",\"channel\":\"0\",\"customerMotherTitle\":\"Select\",\"higherLimitOpted\":\"N\"},\"termsAndConditions\":\"0\"}",
+        "timeinfo": "2025-10-29T13:44:50.135Z"
+        }],
+      "channel": "ADOBE WEBFORMS",
+      "journeyName": "NTB_CC_JOURNEY",
+      "journeyID": "f5eda4ad-4895-409c-95c3-0128a49b397c_01_NTBCC_R_WEB",
+      "journeyState": "CUSTOMER_IDENTITY_RESOLVED"
+      }],
+    "errorCode": "RJI0000"
     }
   }
