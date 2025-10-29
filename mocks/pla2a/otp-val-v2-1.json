@@ -1,0 +1,26 @@
+{
+  "businessName": "OTP Val v2",
+  "apiName": "API/OTP_Val_v2",
+  "method": "POST",
+  "statusCode": 200,
+  "latencyMs": 0,
+  "predicate": {
+    "request": {"verifyPwdRequest": {"hdfcVerifyPwdReq": {
+      "linkData": "0000000919186111297"
+      }}},
+    "headers": {},
+    "query": {}
+    },
+  "responseHeaders": {"Content-Type": "application/json"},
+  "responseBody": {"verifyPwdRequestResponse": {"multiRef": {
+    "errorDetail": "",
+    "fillerField1": "",
+    "fillerField2": "",
+    "fillerField3": "",
+    "fillerField4": "",
+    "fillerField5": "",
+    "messageHash": "static:verpwdres:04:WjW53DArUSELCk5Wrj2RwHOxJa4=",
+    "refNo": "20251029092128847",
+    "statusCode": "00"
+    }}}
+  }

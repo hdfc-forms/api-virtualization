@@ -1,0 +1,53 @@
+{
+  "businessName": "OTP Gen",
+  "apiName": "API/OTP_Gen",
+  "method": "POST",
+  "statusCode": 200,
+  "latencyMs": 0,
+  "predicate": {
+    "request": {"ccotpserviceRequest": {
+      "mobilenumber": "9186111297",
+      "soafillers": {
+        "filler5": "",
+        "filler4": "",
+        "filler1": "",
+        "filler3": "",
+        "filler2": ""
+        },
+      "departmentcode": "CCIVROTP",
+      "messageHash": "static:genpwdreq:06:81kVzqbgd5vEFKnwTaQOcYqVR3Q=",
+      "sms_password": "{e2779841f55789e9cefa93567bf1dda9fa1d22ff57c0b4b95548482d795508b5}",
+      "authType": "2",
+      "otpPasswordValue": "{f59f638e83c64e9a972137a541cc6cf1902410ca5f36c9169e29069db31bec04}",
+      "msgtype": "S",
+      "linkData": "0000000919186111297",
+      "author": "",
+      "msgid": "38bfb01e-5433-487b-8381-ab9214fdb530",
+      "priority": "",
+      "broadcastname": "CCIVROTP",
+      "sms_userid": "{edb20922a4ea09ce92f9ef6955fe2e490df64231dbab2931bc67da2ebc664708}",
+      "Trace_Number": "AD20251029091837365",
+      "ctype": "1",
+      "sender": "{2451c56610134d5a1a88546f6863756460709f4d310193937d8badc1ca3a77bb}",
+      "ATM_POS_IVR_ID": "CCIVR1",
+      "subAuthor": "",
+      "callerId": "hdfc_adobe",
+      "submitdate": "2025-10-29 09:18:37"
+      }},
+    "headers": {},
+    "query": {}
+    },
+  "responseHeaders": {"Content-Type": "application/json"},
+  "responseBody": {"ccotpserviceResponse": {
+    "Trace_Number": "AD20251029091837365",
+    "ERROR_CODE": "00000",
+    "ERROR_MSG": "SUCCESS",
+    "soafillers": {
+      "filler1": "",
+      "filler2": "",
+      "filler3": "",
+      "filler4": "",
+      "filler5": ""
+      }
+    }}
+  }
