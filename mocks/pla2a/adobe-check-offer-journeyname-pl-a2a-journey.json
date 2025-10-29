@@ -1,0 +1,30 @@
+{
+  "businessName": "api/v1/adobe-check Offer",
+  "apiName": "api/v1/adobe-checkOffer",
+  "method": "POST",
+  "statusCode": 200,
+  "latencyMs": 0,
+  "predicate": {
+    "request": {
+      "journeyName": "PL_A2A_JOURNEY"
+    },
+    "headers": {},
+    "query": {}
+  },
+  "responseHeaders": {
+    "Content-Type": "application/json"
+  },
+  "responseBody": {
+    "status": "SUCCESS",
+    "code": "EA001",
+    "message": "Offer available.",
+    "offers": [
+      {
+        "offerId": "bfb81fbe-5b55-4997-81b3-9cac8f218ece",
+        "offerString": [
+          "LG_PL_A2A_NONCASA_NB_RB_UAT1_19FEB_UAT820"
+        ]
+      }
+    ]
+  }
+}

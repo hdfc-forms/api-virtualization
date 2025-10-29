@@ -1,0 +1,57 @@
+{
+  "businessName": "SW PAN GST Inquiry",
+  "apiName": "API/SW_PAN_GST_Inquiry",
+  "method": "POST",
+  "statusCode": 200,
+  "latencyMs": 0,
+  "predicate": {
+    "request": {
+      "requestString": {
+        "pan": "CARPC0866K"
+      }
+    },
+    "headers": {},
+    "query": {}
+  },
+  "responseHeaders": {
+    "Content-Type": "application/json"
+  },
+  "responseBody": {
+    "contextParam": {
+      "partnerJourneyID": "5fb6d4f4-565b-44f9-abd8-d1ba4c954350_01_BL_U_WEB",
+      "bankJourneyID": "988967940546",
+      "partnerID": "HDFCBANK",
+      "productName": "BL",
+      "channelID": "ADOBE"
+    },
+    "responseString": {
+      "panResponse": {
+        "pan": "CARPC0866K",
+        "panStatus": "E",
+        "lastName": "tetst",
+        "firstName": "test",
+        "middleName": "",
+        "panTitle": "",
+        "panFiller1": "",
+        "panFiller2": "",
+        "panFiller3": "",
+        "panFiller4": "",
+        "panFiller5": "",
+        "fatherNameMatchFlag": "",
+        "seedingStatus": "Y",
+        "nameMatchFlag": "Y",
+        "dobMatchFlag": "Y",
+        "nmNamePercentage": "",
+        "nmPerStatus": "",
+        "nmRemarks": ""
+      },
+      "addressResponse": {},
+      "gstinResponse": {}
+    },
+    "status": {
+      "responseCode": "0",
+      "errorCode": "",
+      "errorDesc": ""
+    }
+  }
+}

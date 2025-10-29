@@ -1,0 +1,24 @@
+{
+  "businessName": "api/v1/adobe-check Offer",
+  "apiName": "api/v1/adobe-checkOffer",
+  "method": "POST",
+  "statusCode": 200,
+  "latencyMs": 0,
+  "predicate": {
+    "request": {
+      "journeyName": "ETB10SEC_PERSONAL_LOAN_JOURNEY"
+      },
+    "headers": {},
+    "query": {}
+    },
+  "responseHeaders": {"Content-Type": "application/json"},
+  "responseBody": {
+    "status": "SUCCESS",
+    "code": "EA001",
+    "message": "Offer available.",
+    "offers": [{
+      "offerId": "8f6f5199-73be-4cf6-beeb-41cb10a0388d",
+      "offerString": ["STP_PL_10SEC_Top3_NB_TEST_13MAR_UAT820"]
+      }]
+    }
+  }

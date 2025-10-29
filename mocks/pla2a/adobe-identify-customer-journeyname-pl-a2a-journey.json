@@ -1,0 +1,24 @@
+{
+  "businessName": "api/v1/adobe-identify Customer",
+  "apiName": "api/v1/adobe-identifyCustomer",
+  "method": "POST",
+  "statusCode": 200,
+  "latencyMs": 0,
+  "predicate": {
+    "request": {
+      "journeyName": "PL_A2A_JOURNEY",
+      "productCode": "PL",
+      "mobileNumber": "9186111297",
+      "dob": "01-01-2000"
+      },
+    "headers": {},
+    "query": {}
+    },
+  "responseHeaders": {"Content-Type": "application/json"},
+  "responseBody": {
+    "status": "SUCCESS",
+    "code": "EA001",
+    "message": "Request submitted successfully.",
+    "customerType": "A2A"
+    }
+  }

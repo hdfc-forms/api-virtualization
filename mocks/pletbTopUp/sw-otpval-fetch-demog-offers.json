@@ -1,0 +1,91 @@
+{
+  "businessName": "API/SW OTPVal Fetch Demog Offers",
+  "apiName": "API/SW_OTPVal_FetchDemog_Offers",
+  "method": "POST",
+  "statusCode": 200,
+  "latencyMs": 0,
+  "predicate": {
+    "request": {"requestString": {
+      "passwordValue": "123451",
+      "fillerFields": {
+        "filler9": "",
+        "filler8": "",
+        "filler5": "",
+        "filler4": "",
+        "filler7": "",
+        "filler6": "",
+        "filler1": "",
+        "filler10": "",
+        "filler3": "",
+        "filler2": ""
+        }
+      }},
+    "headers": {},
+    "query": {}
+    },
+  "responseHeaders": {"Content-Type": "application/json"},
+  "responseBody": {
+    "contextParam": {
+      "partnerJourneyID": "7380fb2c-f8e3-49ae-a128-9e9e010046e7_01_PL_U_WEB",
+      "bankJourneyID": "163908753745",
+      "partnerID": "HDFCBANK",
+      "productName": "PL",
+      "channelID": "ADOBE"
+      },
+    "responseString": {
+      "ekycStatusFlag": "N",
+      "digiliteFlag": "N",
+      "OfferDemogDetails": [{
+        "customerFullName": "Ranjit Vijay patil",
+        "zipCode": "413216",
+        "customerState": "MAHARASHTRA",
+        "kycFlag": "Y",
+        "customerCity": "SOLAPUR",
+        "rateOfInterest": "13%",
+        "customerRessidencePhone": "9645291713",
+        "customerCountry": "INDIA",
+        "customerMobileNo": "9645291713",
+        "customerMiddleName": "Vijay",
+        "customerOfficeZipCode": "",
+        "customerOfficeCity": "",
+        "residenceType": "",
+        "offerType": "STP_PL_10SEC_TOPUP_NB_29MAY_UAT01",
+        "emailAddress": "Ranjit@gmail.com",
+        "customerOfficePhone": "",
+        "customerLastName": "patil",
+        "reltype": "SOW",
+        "tenure": 38,
+        "monthlyIncome": "0",
+        "profession": "",
+        "customerOfficeAddress1": "",
+        "campaignId": "",
+        "customerGender": "M",
+        "dateOfBirth": "25-12-1984",
+        "procFees": "1500",
+        "accountNumber": "",
+        "customerOfficeAddress3": "",
+        "customerOfficeAddress2": "",
+        "repaymentAcct": "",
+        "multiTenureAmt": "",
+        "customerFirstName": "Ranjit",
+        "customerID": "XXXX07184",
+        "custType": "I",
+        "offerAmount": 1500000,
+        "customerAddress1": "Plaza Building K304",
+        "customerAddress3": "Ghodhbunder Road",
+        "customerAddress2": "Hiranandani Estate",
+        "customerPan": "ROGPS3337B"
+        }],
+      "stpOfferDetails": {
+        "stpOfferAvailable": "N",
+        "stpBankJourneyID": "",
+        "stpPartnerJourneyID": ""
+        }
+      },
+    "status": {
+      "responseCode": "0",
+      "errorCode": "",
+      "errorDesc": ""
+      }
+    }
+  }

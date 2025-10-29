@@ -1,0 +1,27 @@
+{
+  "businessName": "idcom/Fetch Auth Code",
+  "apiName": "API/idcom/Fetch_AuthCode",
+  "method": "POST",
+  "statusCode": 200,
+  "latencyMs": 0,
+  "predicate": {
+    "request": {
+      "Identifiers": [
+        {
+        "TypeName": "MobileNo",
+        "TypeValue": "919865522881"
+        }
+      ]
+      },
+    "headers": {},
+    "query": {}
+    },
+  "responseHeaders": {"Content-Type": "application/json"},
+  "responseBody": {
+    "authCode": "P20251029144660490617924",
+    "redirectUrl": "https://idcomuat-in1.hdfcbank.com:443/validate/P20251029144660490617924",
+    "errorCode": null,
+    "errorMessage": null,
+    "errorDescription": null
+    }
+  }
