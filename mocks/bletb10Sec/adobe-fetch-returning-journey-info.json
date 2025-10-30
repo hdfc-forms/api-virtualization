@@ -1,0 +1,41 @@
+{
+  "businessName": "Adobe Fetch Returning Journey Info",
+  "apiName": "API/Adobe_FetchReturningJourneyInfo",
+  "method": "POST",
+  "statusCode": 200,
+  "latencyMs": 0,
+  "predicate": {
+    "request": {
+      "mobileNumber": "7020287605"
+      },
+    "headers": {},
+    "query": {}
+    },
+  "responseHeaders": {"Content-Type": "application/json"},
+  "responseBody": {
+    "journey": [{
+      "crmLeadKey": "",
+      "aanNumber": "",
+      "leadProfileId": 27363919,
+      "profile": {"fullName": "Ranjit Vijay patil"},
+      "address": null,
+      "mobileNumber": "7020287605",
+      "countryCode": "91",
+      "isCountryCodeAppended": "false",
+      "emailId": "",
+      "officialEmailId": "",
+      "pseudoCustomerId": "",
+      "customerId": "900007003",
+      "journeyStateInfo": [{
+        "state": "CUSTOMER_LEAD_QUALIFIED",
+        "stateInfo": "{\"AgreeToInsuranceTermsCheckBox\":\"1\",\"AssistedByBankEmployee\":\"1\",\"FirstEMIDate\":\"04-12-2025\",\"IsRelatedToDirector\":\"1\",\"KFSSelected\":\"N\",\"LCMOfferUsed\":false,\"LoanAmount\":348681,\"LoanAmountInsured\":\"1\",\"LoanSummaryBankAccountNumberPrefill\":\"xxxxxxxxxx7147\",\"LoanSummaryBankBranchNamePrefill\":\"HDFC Bank Ltd\",\"LoanSummaryEMIAmount\":\"8023\",\"LoanSummaryFirstEMIDate\":\"04-12-2025\",\"LoanSummaryLoanPeriod\":\"60\",\"LoanSummaryProcessingFeeWithGst\":\"4719\",\"LoanSummaryProcessingFeeWithoutGst\":\"3999\",\"LoanSummaryTotalLoanAmount\":\"348681\",\"MonthlyEMI\":\"8023\",\"MonthlyRateOfInterest\":\"1.13% per month\",\"OtherProductConsentFlag\":\"N\",\"Override_DNC_NDNCConsentFlag\":\"N\",\"PD_State\":\"MAHARASHTRA\",\"PrivacyConsentFlag\":\"N\",\"Product\":\"BL\",\"PromoCode\":\"STP_BL_10SEC_NB_JUNE23\",\"RateofInterest\":\"13.5\",\"ReferenceSectionSkipped\":\"Y\",\"RegisteredPhoneNum\":\"7020287605\",\"RequestProductConsentFlag\":\"N\",\"ResidentialAddressSwitch\":\"0\",\"ResidentialState\":\"State\",\"SourceCode\":\"\",\"Tenure\":60,\"encUserId\":\"1f391f39d37b42f34abf75c80da82d0f\",\"formData\":{\"transactionID\":\"9025c0abc6424b9f8d5e7770bbdd56f7BLEB\"},\"frmSource\":\"ADOBE\",\"hiddenChannelDataConsentCheckboxValue\":\"N\",\"hiddenPersonalDataConsentCheckboxValue\":\"Y\",\"hiddenPersonalizedOffersConsentCheckboxValue\":\"N\",\"panValue\":\"KGFPD5805K\",\"physicalDisability\":\"No\"}",
+        "timeinfo": "2025-10-29T16:55:23.000Z"
+        }],
+      "channel": "ADOBE WEBFORMS",
+      "journeyName": "ETB10SEC_BUSINESS_LOAN_JOURNEY",
+      "journeyID": "9025c0ab-c642-4b9f-8d5e-7770bbdd56f7_01_BLEB_U_WEB",
+      "journeyState": "CUSTOMER_LEAD_QUALIFIED"
+      }],
+    "errorCode": "RJI0000"
+    }
+  }
