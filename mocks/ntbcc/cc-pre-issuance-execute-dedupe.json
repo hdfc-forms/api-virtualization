@@ -1,6 +1,6 @@
 {
   "businessName": "CC Pre Issuance Execute Dedupe",
-  "apiName": "API/CC_PreIssuance_ExecuteDedupe",
+  "apiName": "api/v1/ms/cc-preIssuance-executeDedupe",
   "method": "POST",
   "statusCode": 200,
   "latencyMs": 0,
