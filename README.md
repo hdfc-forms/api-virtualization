@@ -35,6 +35,8 @@ This repository stores mock API responses for service virtualization and API tes
 - [Download and Upload to GitHub](#download-and-upload-to-github)
 - [Repository Structure](#repository-structure)
 - [Mock JSON Schema](#mock-json-schema)
+- [Regex Pattern Matching in Predicates](#regex-pattern-matching-in-predicates)
+- [Understanding Predicate Matching: contains vs JSONPath](#understanding-predicate-matching-contains-vs-jsonpath)
 - [How Response Loading Works](#how-response-loading-works)
 - [Dynamic Mocks with External Functions](#dynamic-mocks-with-external-functions)
 - [Best Practices](#best-practices)
@@ -488,6 +490,641 @@ api-virtualization/
 - `responseHeaders` (object) - Custom response headers
 - `responseFunction` (string) - For **dynamic responses**: function name from `functions.js` (recommended) OR inline JavaScript code (legacy)
 
+---
+
+## Regex Pattern Matching in Predicates
+
+### Syntax
+
+Use `"regex:pattern"` as the value in your predicate:
+
+```json
+{
+  "predicate": {
+    "request": {
+      "fieldName": "regex:your-pattern-here"
+    }
+  }
+}
+```
+
+### Common Use Cases
+
+#### 1. Journey ID Pattern Matching
+
+Match any journey ending with `_UNIFIEDURL_U_WEB`:
+
+```json
+{
+  "businessName": "Journey Drop Off - Unified URL Pattern",
+  "apiName": "API/JourneyDropOff_Param",
+  "predicate": {
+    "request": {
+      "journeyInfo": {
+        "journeyID": "regex:.*_UNIFIEDURL_U_WEB$"
+      }
+    }
+  },
+  "responseBody": {
+    "status": "success"
+  }
+}
+```
+
+**Matches:**
+- `{"journeyInfo": {"journeyID": "a94448f7-9213-4b5a-9705-e188b59ceb11_01_UNIFIEDURL_U_WEB"}}` 
+- `{"journeyInfo": {"journeyID": "xyz-123_UNIFIEDURL_U_WEB"}}` 
+- `{"leadProfile": {}, "journeyInfo": {"journeyID": "abc_UNIFIEDURL_U_WEB"}}` 
+
+**Doesn't match:**
+- `{"journeyInfo": {"journeyID": "a94448f7-9213-4b5a-9705-e188b59ceb11_PACC_U_WEB"}}`
+
+**Tip:** Only specify fields you want to match. Avoid empty objects `{}` in predicates.
+
+#### 2. Phone Number Validation
+
+Match Indian mobile numbers (starts with 6-9, then 9 digits):
+
+```json
+{
+  "businessName": "OTP Generation - Any Valid Mobile",
+  "apiName": "API/OTP_Gen",
+  "predicate": {
+    "request": {
+      "mobileNumber": "regex:^[6-9]\\d{9}$"
+    }
+  },
+  "responseBody": {
+    "otp": "123456"
+  }
+}
+```
+
+#### 3. Reference Number Patterns
+
+Match reference numbers starting with "AD" followed by digits:
+
+```json
+{
+  "businessName": "Transaction - Adobe Reference",
+  "apiName": "API/Transaction",
+  "predicate": {
+    "request": {
+      "sessionContext": {
+        "externalReferenceNo": "regex:^AD\\d{17}$"
+      }
+    }
+  }
+}
+```
+
+#### 4. Mixed Regex and Exact Match
+
+Combine regex with exact values and booleans:
+
+```json
+{
+  "businessName": "CRM Save - Pattern Match",
+  "apiName": "API/CRM_Save_REST",
+  "predicate": {
+    "request": {
+      "CRMnextObject": {
+        "MobilePhone": "regex:^[6-9]\\d{9}$",
+        "Email": "regex:^[a-zA-Z0-9._%+-]+@.+$",
+        "ProductName": "Credit Card",
+        "IsDedupeSearch": false
+      }
+    }
+  }
+}
+```
+
+### Common Regex Patterns
+
+| Pattern | Matches | Example |
+|---------|---------|---------|
+| `regex:^\\d{10}$` | Exactly 10 digits | `9585802955` |
+| `regex:^[6-9]\\d{9}$` | Indian mobile (starts 6-9) | `9585802955` |
+| `regex:.*_UNIFIEDURL_U_WEB$` | Ends with `_UNIFIEDURL_U_WEB` | `uuid_01_UNIFIEDURL_U_WEB` |
+| `regex:^AD\\d+$` | Starts with AD + digits | `AD20251029101054804` |
+| `regex:^[A-Z]{2}\\d+$` | 2 uppercase + digits | `AB12345` |
+
+### Important Notes
+
+**Escaping:**
+- Use double backslashes in JSON: `\\d` not `\d`
+- Example: `"regex:^\\d{10}$"` not `"regex:^\d{10}$"`
+
+---
+
+## Understanding Predicate Matching: `contains` vs JSONPath
+
+The stub generator intelligently chooses the best Mountebank operator based on your predicate content. Understanding this helps you write effective predicates.
+
+**Key Insight:** `deepEquals` does NOT ignore extra fields in nested structures (unlike `contains`). This is why we use individual JSONPath predicates for boolean/number fields.
+
+### **Automatic Operator Selection**
+
+The system analyzes your predicate and selects:
+- **`contains`**: For string-only predicates (best for deeply nested objects, ignores extra fields)
+- **`equals` (JSONPath)**: For predicates with booleans, numbers, or arrays (each field matched independently)
+- **`matches` (JSONPath)**: For regex patterns (see [Regex Pattern Matching](#regex-pattern-matching-in-predicates))
+
+---
+
+### **Operator 1: `contains` (String-Only Predicates)**
+
+**When Used:**
+- All predicate values are strings
+- No booleans, numbers, or arrays
+
+**How It Works:**
+- Recursively checks if request **contains** the predicate structure
+- Works excellently with deeply nested objects
+- Ignores extra fields not in predicate
+
+#### **Example 1: Simple String Match**
+
+**Predicate:**
+```json
+{
+  "predicate": {
+    "request": {
+      "mobileNumber": "9585802955"
+    }
+  }
+}
+```
+
+**Generated Mountebank Predicate:**
+```json
+{
+  "contains": {
+    "body": {
+      "mobileNumber": "9585802955"
+    }
+  }
+}
+```
+
+**Matches:**
+```json
+{"mobileNumber": "9585802955"}
+{"mobileNumber": "9585802955", "email": "test@example.com"}  // Extra fields ignored
+```
+
+**Doesn't Match:**
+```json
+{"mobileNumber": "8450644870"}  // Different value
+{"phone": "9585802955"}         // Different field name
+```
+
+---
+
+#### **Example 2: Deeply Nested String Match**
+
+**Predicate:**
+```json
+{
+  "predicate": {
+    "request": {
+      "OTPGenRequest": {
+        "requestString": {
+          "AXIOMRequestDTO": {
+            "pno": "919585802955"
+          }
+        }
+      }
+    }
+  }
+}
+```
+
+**Generated Mountebank Predicate:**
+```json
+{
+  "contains": {
+    "body": {
+      "OTPGenRequest": {
+        "requestString": {
+          "AXIOMRequestDTO": {
+            "pno": "919585802955"
+          }
+        }
+      }
+    }
+  }
+}
+```
+
+**Matches (Excellent Deep Nesting Support):**
+```json
+{
+  "sessionContext": {
+    "bankCode": "08",
+    "channel": "APIGW"
+  },
+  "OTPGenRequest": {
+    "headerParams": [
+      {"key": "apiUser", "value": "hdfc_adobe"}
+    ],
+    "requestString": {
+      "E2FARequestDTO": {
+        "refNo": "AD123",
+        "linkData": "xyz"
+      },
+      "AXIOMRequestDTO": {
+        "countrycode": "",
+        "languageid": "",
+        "pno": "919585802955",      // ← Matches here!
+        "msgtype": "S",
+        "priority": "1"
+      },
+      "emailid": "",
+      "splitOTP": "N"
+    }
+  }
+}
+```
+
+**Why `contains` is Great for Deep Nesting:**
+- Checks: "Does `OTPGenRequest` contain `requestString`?" → Yes 
+- Checks: "Does `requestString` contain `AXIOMRequestDTO`?" → Yes 
+- Checks: "Does `AXIOMRequestDTO` contain `pno: "919585802955"`?" → Yes
+- Ignores: `E2FARequestDTO`, `emailid`, `splitOTP`, all other fields
+
+---
+
+### **Operator 2: JSONPath + `equals` (Boolean/Number Predicates)**
+
+**When Used:**
+- Predicate contains boolean values (`true`, `false`)
+- Predicate contains number values (`0`, `1`, `533`)
+- Predicate contains arrays
+
+**How It Works:**
+- Creates individual JSONPath predicates for each field
+- Uses `equals` operator with JSONPath selector
+- Each field matched independently (ignores extra fields)
+- Prevents `indexOf` error that `contains` throws on booleans/numbers
+
+#### **Example 3: Predicate with Boolean**
+
+**Predicate:**
+```json
+{
+  "predicate": {
+    "request": {
+      "CRMnextObject": {
+        "MobilePhone": "9585802955",
+        "ProductName": "Credit Card",
+        "IsDedupeSearch": false
+      }
+    }
+  }
+}
+```
+
+**Generated Mountebank Predicates (Individual JSONPath for Each Field):**
+```json
+[
+  {
+    "equals": {
+      "body": {
+        "$.CRMnextObject.MobilePhone": "9585802955"
+      }
+    }
+  },
+  {
+    "equals": {
+      "body": {
+        "$.CRMnextObject.ProductName": "Credit Card"
+      }
+    }
+  },
+  {
+    "equals": {
+      "body": {
+        "$.CRMnextObject.IsDedupeSearch": false
+      }
+    }
+  }
+]
+```
+
+**Why This Works:** Each field is matched independently using JSONPath, so extra fields like `Email`, `FirstName`, `Custom` object, etc. don't affect matching.
+
+**Matches (Extra Fields and Nested Objects):**
+```json
+{
+  "CRMnextObject": {
+    "MobilePhone": "9585802955",     // $.CRMnextObject.MobilePhone matches
+    "ProductName": "Credit Card",     // $.CRMnextObject.ProductName matches
+    "IsDedupeSearch": false,          // $.CRMnextObject.IsDedupeSearch matches
+    "Email": "",                      // Extra field (not in predicate, ignored)
+    "FirstName": "John",              // Extra field (ignored)
+    "StatusCode": "New",              // Extra field (ignored)
+    "Custom": {                       // Extra nested object (ignored)
+      "Gender": "Male",
+      "Company": "Adobe",
+      "l_Present_Address_L1": "123 Street"
+    }
+  }
+}
+```
+
+**How JSONPath Matching Works:**
+1. Checks: Does `$.CRMnextObject.MobilePhone` = "9585802955"? → Yes
+2. Checks: Does `$.CRMnextObject.ProductName` = "Credit Card"? → Yes
+3. Checks: Does `$.CRMnextObject.IsDedupeSearch` = false? → Yes
+4. All 3 predicates pass → **MATCH!**
+5. Extra fields like `Email`, `Custom`, etc. are never checked → Ignored
+
+**Doesn't Match (Specified Field Has Wrong Value):**
+```json
+{
+  "CRMnextObject": {
+    "MobilePhone": "9585802955",
+    "ProductName": "Credit Card",
+    "IsDedupeSearch": true           // Boolean mismatch (expects false)
+  }
+}
+```
+
+**Doesn't Match (Specified Field is Missing):**
+```json
+{
+  "CRMnextObject": {
+    "MobilePhone": "9585802955",
+    "ProductName": "Credit Card"
+    // IsDedupeSearch is missing entirely - No match
+  }
+}
+```
+
+**Doesn't Match (Wrong Nesting Structure):**
+```json
+{
+  "CRMnextObject": {
+    "MobilePhone": "9585802955",
+    "IsDedupeSearch": false
+    // ProductName is missing - No match
+  },
+  "ProductName": "Credit Card"       // Wrong level (outside CRMnextObject)
+}
+```
+
+---
+
+#### **Example 4: Real-World CRM Example (JSONPath + equals)**
+
+**Predicate (Simplified - Only 3 Fields):**
+```json
+{
+  "predicate": {
+    "request": {
+      "CRMnextObject": {
+        "MobilePhone": "9585802955",
+        "IsDedupeSearch": false,
+        "ProductName": "Credit Card"
+      }
+    }
+  }
+}
+```
+
+**Matches Full CRM Request (50+ Fields):**
+```json
+{
+  "CRMnextObject": {
+    "-xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "Email": "",
+    "StatusCodeDisplayText": "New",
+    "ProductName": "Credit Card",          // Matches
+    "-xsi:type": "api:Lead",
+    "IndustryKey": "",
+    "TerritoryKey": "",
+    "IsDedupeSearch": false,               // Matches (boolean)
+    "StatusCode": "New",
+    "MobilePhone": "9585802955",           // Matches
+    "Phone": "9585802955",
+    "ProductCategoryID": "533",
+    "TerritoryCode": "",
+    "IsChildLead": false,
+    "LeadParentName": "",
+    "RatingKey": "1",
+    "State_add_l": "",
+    "IndustryName": "",
+    "ProductKey": "534",
+    "LeadSourceKey": "",
+    "IsInsideBHR": false,
+    "Locality": "",
+    "ProductCode": "",
+    "FirstName": "Ayush",
+    "ZipCode": "",
+    "WebsiteUrl": "",
+    "Title": "",
+    "Custom": {                            // Extra nested object (ignored)
+      "Gender1": "Male",
+      "Company": "ADOBE SYSTEMS",
+      "l_Present_Address_L1": "B-606 Amrapali Zodiac",
+      "l_Present_Address_PIN": "",
+      "utm_medium_l": "",
+      "FieldID_11216": "",
+      "l_Office_PIN": "",
+      "FieldID_12": "",
+      "l_Present_Address_L2": "Sector-120"
+      // ... 30+ more custom fields (all ignored)
+    },
+    "StatusCodeName": "New",
+    "MiddleName": "",
+    "LeadParentId": "0",
+    "SalutationName": "",
+    "LayoutKey": "10003984",
+    "LeadRating": "Hot"
+    // ... 20+ more fields (all ignored)
+  }
+}
+```
+
+**Generated Mountebank Predicates (Individual JSONPath):**
+```json
+[
+  {
+    "equals": {
+      "body": {
+        "$.CRMnextObject.MobilePhone": "9585802955"
+      }
+    }
+  },
+  {
+    "equals": {
+      "body": {
+        "$.CRMnextObject.IsDedupeSearch": false
+      }
+    }
+  },
+  {
+    "equals": {
+      "body": {
+        "$.CRMnextObject.ProductName": "Credit Card"
+      }
+    }
+  }
+]
+```
+
+**Result: MATCHES!** 
+- Each of the 3 fields is matched independently using JSONPath
+- All 50+ other fields including nested `Custom` object are ignored
+- This is why your CRM API with boolean fields works!
+
+---
+
+### **Mixed Predicates: Regex + Boolean/Number**
+
+When you combine regex with booleans/numbers, the system creates **multiple predicates** (all must match).
+
+#### **Example 5: Regex + Boolean**
+
+**Predicate:**
+```json
+{
+  "predicate": {
+    "request": {
+      "CRMnextObject": {
+        "MobilePhone": "regex:^[6-9]\\d{9}$",
+        "ProductName": "Credit Card",
+        "IsDedupeSearch": false
+      }
+    }
+  }
+}
+```
+
+**Generated Mountebank Predicates:**
+```json
+[
+  {
+    "matches": {
+      "body": {
+        "$.CRMnextObject.MobilePhone": "^[6-9]\\d{9}$"
+      }
+    }
+  },
+  {
+    "equals": {
+      "body": {
+        "$.CRMnextObject.ProductName": "Credit Card"
+      }
+    }
+  },
+  {
+    "equals": {
+      "body": {
+        "$.CRMnextObject.IsDedupeSearch": false
+      }
+    }
+  }
+]
+```
+
+**Matching Logic:** **ALL predicates must match (AND logic)**
+
+**Matches:**
+```json
+{
+  "CRMnextObject": {
+    "MobilePhone": "9585802955",      // Matches regex (starts 6-9, 10 digits)
+    "ProductName": "Credit Card",      // Exact match
+    "IsDedupeSearch": false,           // Boolean match
+    "Email": "test@example.com"        // Extra field (ignored)
+  }
+}
+```
+
+**Doesn't Match (Regex Fails):**
+```json
+{
+  "CRMnextObject": {
+    "MobilePhone": "5585802955",      // Regex fails (starts with 5, not 6-9)
+    "ProductName": "Credit Card",
+    "IsDedupeSearch": false
+  }
+}
+```
+
+**Doesn't Match (Boolean Fails):**
+```json
+{
+  "CRMnextObject": {
+    "MobilePhone": "9585802955",      // Regex passes
+    "ProductName": "Credit Card",
+    "IsDedupeSearch": true             // Boolean mismatch
+  }
+}
+```
+
+---
+
+### **Decision Matrix: Which Operator?**
+
+| Your Predicate Contains | Operator Used | Best For | Example |
+|------------------------|---------------|----------|---------|
+| **Only strings** | `contains` | Deeply nested objects, ignores extra fields | `{"user": {"name": "John"}}` |
+| **Booleans** | `equals` (JSONPath) | Boolean matching, ignores extra fields | `{"$.active": false}` |
+| **Numbers** | `equals` (JSONPath) | Number matching, ignores extra fields | `{"$.age": 25}` |
+| **Arrays** | `equals` (JSONPath) | Array matching | `{"$.tags": ["cc", "ntb"]}` |
+| **Regex only** | `matches` (JSONPath) | Pattern matching | `{"$.phone": "^\\d{10}$"}` |
+| **Regex + strings** | `matches` + `equals` | Pattern + exact match | See Example 5 |
+| **Regex + boolean** | `matches` + `equals` | Pattern + exact match | See Example 5 |
+
+---
+
+### **Best Practices**
+
+#### **DO:**
+1. **Use string-only predicates when possible** for best deep nesting support
+   ```json
+   {"journeyInfo": {"journeyID": "xyz"}}  // ← Prefer this
+   ```
+
+2. **Only include fields you need to match**
+   ```json
+   {"mobileNumber": "9585802955"}  // ← Simple and flexible
+   ```
+
+3. **Use regex for dynamic values**
+   ```json
+   {"txId": "regex:^AD\\d+$"}  // ← Matches any Adobe transaction ID
+   ```
+
+#### **DON'T:**
+1. **Avoid empty objects in predicates**
+   ```json
+   {"leadProfile": {}, "journeyInfo": {...}}  // Unnecessary
+   {"journeyInfo": {...}}                     // Better
+   ```
+
+2. **Don't mix booleans unless necessary** (limits deep nesting flexibility)
+   ```json
+   // If you don't need to match the boolean, remove it:
+   {"user": {"active": true, "name": "John"}}  // Forces deepEquals
+   {"user": {"name": "John"}}                   // Uses contains
+   ```
+
+3. **Don't create overly specific predicates**
+   ```json
+   // Too specific (50 fields):
+   {"CRMnextObject": { /* all 50 fields */ }}  // Hard to maintain
+   
+   // Just match what matters:
+   {"CRMnextObject": {"MobilePhone": "regex:^\\d{10}$"}}  // Flexible
+   ```
+
+---
+
+This tells you which operator was chosen and which fields are being matched!
 
 ---
 
@@ -614,10 +1251,10 @@ module.exports = {
 ```
 
 **Note:** 
-- Simply add `responseFunction`✨
+- Simply add `responseFunction`
 - `responseFunction` can be either:
-  - **Function name** (e.g., `"dynamicLoanStatus"`) - References a function exported in `functions.js` ✅ Recommended
-  - **Inline code** (e.g., `"function(request) { return {...} }"`) - Legacy support ⚠️ Not recommended
+  - **Function name** (e.g., `"dynamicLoanStatus"`) - References a function exported in `functions.js` (Recommended)
+  - **Inline code** (e.g., `"function(request) { return {...} }"`) - Legacy support (Not recommended)
 
 ### Function Signature
 
