@@ -6,7 +6,8 @@
   "latencyMs": 0,
   "predicate": {
     "request": {
-    },
+      "journeyID": "regex:.*_PACC_R_WEB$"
+      },
     "headers": {},
     "query": {}
     },
