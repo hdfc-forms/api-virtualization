@@ -5,8 +5,8 @@
   "statusCode": 200,
   "latencyMs": 0,
   "predicate": {
-    "request":  {
-      "RequestPayload": "regex:.*089999.*"
+    "request":   {
+      "journeyID": "regex:.*_IJCC_U_WEB$"
     },
     "headers": {},
     "query": {}
