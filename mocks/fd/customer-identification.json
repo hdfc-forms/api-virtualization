@@ -1,0 +1,38 @@
+{
+  "businessName": "Customer Identification",
+  "apiName": "API/CustomerIdentification",
+  "method": "POST",
+  "statusCode": 200,
+  "latencyMs": 0,
+  "predicate": {
+    "request": {
+     
+      "FetchCustomerCASADetailsReqDTO": {
+        "mobileNumber": "917096622906"
+       
+        }
+      },
+    "headers": {},
+    "query": {}
+    },
+  "responseHeaders": {"Content-Type": "application/json"},
+  "responseBody": {
+    "type": "fetchCustomerCASADetailsResDTO",
+    "status": {
+      "errorCode": "0",
+      "extendedReply": {},
+      "externalReferenceNo": "AD20251030161049601",
+      "internalReferenceNumber": "2025303399798671",
+      "isOverriden": false,
+      "postingDate": {"dateString": "20251030000000"},
+      "replyCode": 0,
+      "replyText": "0"
+      },
+    "customerCASADetailsDTO": {
+      "customerEmailId": "YKKPKZ@SCSYZ.imo",
+      "customerType": "I  ",
+      "customerTypeDesc": "INDIVIDUALS",
+      "existingCustomer": "Y"
+      }
+    }
+  }
