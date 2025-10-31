@@ -36,6 +36,7 @@ This repository stores mock API responses for service virtualization and API tes
 - [Repository Structure](#repository-structure)
 - [Mock JSON Schema](#mock-json-schema)
 - [Regex Pattern Matching in Predicates](#regex-pattern-matching-in-predicates)
+- [XML Body Matching with XPath](#xml-body-matching-with-xpath)
 - [Understanding Predicate Matching: contains vs JSONPath](#understanding-predicate-matching-contains-vs-jsonpath)
 - [How Response Loading Works](#how-response-loading-works)
 - [Dynamic Mocks with External Functions](#dynamic-mocks-with-external-functions)
@@ -617,6 +618,104 @@ Combine regex with exact values and booleans:
 
 ---
 
+## XML Body Matching with XPath
+
+For APIs that accept XML/SOAP requests, use XPath predicates to match specific XML elements.
+
+### Syntax
+
+```json
+{
+  "predicate": {
+    "request": {
+      "_xpath": {
+        "selector": "//xmlElementName",
+        "pattern": "value-or-regex"
+      }
+    }
+  }
+}
+```
+
+### Example: SOAP API with Customer ID
+
+Request Body:
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+  <soapenv:Body>
+    <ns:getCustomerDetails>
+      <customerId>12345</customerId>
+      <accountType>SAVINGS</accountType>
+    </ns:getCustomerDetails>
+  </soapenv:Body>
+</soapenv:Envelope>
+```
+
+Mock Configuration:
+```json
+{
+  "businessName": "Get Customer Details - ID 12345",
+  "apiName": "API/GetCustomer",
+  "method": "POST",
+  "predicate": {
+    "request": {
+      "_xpath": {
+        "selector": "//customerId",
+        "pattern": "12345"
+      }
+    },
+    "headers": {
+      "content-type": "text/xml"
+    }
+  },
+  "responseBody": {
+    "status": "success",
+    "customer": {
+      "id": "12345",
+      "name": "John Doe"
+    }
+  },
+  "responseHeaders": {
+    "Content-Type": "application/json"
+  },
+  "statusCode": 200
+}
+```
+
+### XPath with Regex Pattern
+
+Match any account type (SAVINGS or CHECKING):
+
+```json
+{
+  "predicate": {
+    "request": {
+      "_xpath": {
+        "selector": "//accountType",
+        "pattern": "SAVINGS|CHECKING"
+      }
+    }
+  }
+}
+```
+
+### Common XPath Selectors
+
+- `//elementName` - Any element with this name anywhere in XML
+- `/root/child/element` - Specific path from root
+- `//ns:element` - Element with namespace prefix
+- `//*[local-name()='element']` - Element ignoring namespace
+
+### Notes
+
+- XPath predicates work with XML and SOAP request bodies
+- Pattern field supports both exact values and regex patterns
+- Multiple XPath predicates can be combined (all must match)
+- Body parsing automatically detects XML vs JSON content
+
+---
+
 ## Understanding Predicate Matching: `contains` vs JSONPath
 
 The stub generator intelligently chooses the best Mountebank operator based on your predicate content. Understanding this helps you write effective predicates.
@@ -1078,6 +1177,7 @@ When you combine regex with booleans/numbers, the system creates **multiple pred
 | **Regex only** | `matches` (JSONPath) | Pattern matching | `{"$.phone": "^\\d{10}$"}` |
 | **Regex + strings** | `matches` + `equals` | Pattern + exact match | See Example 5 |
 | **Regex + boolean** | `matches` + `equals` | Pattern + exact match | See Example 5 |
+| **XML element** | `matches` (XPath) | XML/SOAP request matching | `{"_xpath": {"selector": "//customerId", "pattern": "12345"}}` |
 
 ---
 
