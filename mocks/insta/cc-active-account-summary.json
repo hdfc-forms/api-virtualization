@@ -5,7 +5,9 @@
   "statusCode": 200,
   "latencyMs": 0,
   "predicate": {
-    "request": {},
+    "request":  {
+      "RequestPayload": "regex:.*089999.*"
+    },
     "headers": {},
     "query": {}
     },
