@@ -1,0 +1,38 @@
+{
+  "businessName": "Customer Identification",
+  "apiName": "API/CustomerIdentification",
+  "method": "POST",
+  "statusCode": 200,
+  "latencyMs": 0,
+  "predicate": {
+    "request": {
+      
+      "FetchCustomerCASADetailsReqDTO": {
+        "mobileNumber": "919856336195"
+        }
+      },
+    "headers": {},
+    "query": {}
+    },
+  "responseHeaders": {"Content-Type": "application/json"},
+  "responseBody": {
+    "type": "fetchCustomerCASADetailsResDTO",
+    "status": {
+      "errorCode": "0",
+      "extendedReply": {},
+      "externalReferenceNo": "AD20251029071546701",
+      "internalReferenceNumber": "2025302391011727",
+      "isOverriden": false,
+      "postingDate": {"dateString": "20251029000000"},
+      "replyCode": 0,
+      "replyText": "0",
+      "userReferenceNumber": "AD20251029071546701"
+      },
+    "customerCASADetailsDTO": {
+      "customerEmailId": "samplemail@gmail.com",
+      "customerType": "Y  ",
+      "customerTypeDesc": "SENIOR CITIZEN = > 80 YEARS",
+      "existingCustomer": "Y"
+      }
+    }
+  }

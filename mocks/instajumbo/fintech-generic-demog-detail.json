@@ -1,0 +1,46 @@
+{
+  "businessName": "Fintech Generic Demog Detail",
+  "apiName": "API/Fintech_Generic_Demog_Detail",
+  "method": "POST",
+  "statusCode": 200,
+  "latencyMs": 0,
+  "predicate": {
+    "request": {"FintechDemographicDetailsRequest": {
+      "FintechOTPValidateRequest": {
+       
+        "linkData": "0000000919856336195"
+       
+        }
+     
+      
+      }},
+    "headers": {},
+    "query": {}
+    },
+  "responseHeaders": {"Content-Type": "application/json"},
+  "responseBody": {"FintechDemographicDetailsResponse": {
+    "CP_RespCode": "true",
+    "CP_RespDesc": "Error (Code: 27243) : Customer Key could not be retrieved based on customer code",
+    "CIF_RespCode": "0",
+    "CIF_RespDesc": "No Data Found",
+    "soaStandard": {
+      "service_user": "",
+      "service_password": "",
+      "consumer_name": "",
+      "unique_id": "",
+      "time_stamp": ""
+      },
+    "soaFillers": {
+      "filler1": "",
+      "filler2": "",
+      "filler3": "",
+      "filler4": "",
+      "filler5": "",
+      "filler6": "",
+      "filler7": "",
+      "filler8": "",
+      "filler9": "",
+      "filler10": ""
+      }
+    }}
+  }
