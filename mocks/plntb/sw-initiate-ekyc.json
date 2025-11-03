@@ -1,0 +1,39 @@
+{
+  "businessName": "SW Initiate EKYC",
+  "apiName": "API/SW_Initiate_EKYC",
+  "method": "POST",
+  "statusCode": 200,
+  "latencyMs": 0,
+  "predicate": {
+    "request": {
+      "requestString": {
+        "mobileNo": "8470769080",
+        "dob": "1977-05-21",
+        "pan": "WITPL3993B"
+      }
+    },
+    "headers": {},
+    "query": {}
+  },
+  "responseHeaders": {
+    "Content-Type": "application/json"
+  },
+  "responseBody": {
+    "contextParam": {
+      "partnerJourneyID": "ec7cad80-ff8f-4bb6-8e4a-948627e2b3dc_01_PL_U_WEB",
+      "bankJourneyID": "481379706496",
+      "partnerID": "HDFCBANK",
+      "productName": "PL",
+      "channelID": "ADOBE"
+    },
+    "responseString": {
+      "url": "https://pehchaan-uat2.hdfcuat.bank.in:443/kycengine/ekyc?jid=XZg5qLmrQrut3vPPtE7Dc1G5%2FOy4MTvljMnSlSPjduB4XDLxdcJyBBDAgQcRhZBRjfWIpKZgBzKuHrDI35AQ06uBWYnDHptC1sM%2Frsqx89vYPtkksjQujO6DXQQ5MMMdKOb5zvUjlSTt6A4qWXUJxiaBWrIPgtazZSwPk4xxiM33VPfrE6O%2FQn3Ks1F8K11yFGsS2cusXVZ8WFN10PV6T2uCaTkbcbgJYOnLqLbFCWR79h3h2FqW3uHy8kIG53jdafFEmxU%2B9tBpUDTUPkdawgf7zzEbDmyEeSaETcBszLv2I%2BUVp%2BuW76HqZgZiZ%2Bmd3YiuI%2BZnNDACBxAZ6ix%2BqvlKTXU0yEx97QaYPsj1pz%2BEucZqwniq%2FHgtTRku7VBur5ZcLHkV%2FnMn8Td2CQH5vceLDAk0m3BFmNI%2B6nd5dUXO67T5VuPk%2FB9x3RnKYBCQ15nDvBC2GIYbTa6rn221rw%3D%3D",
+      "nextJourneyStep": "INITIATE-KYC"
+    },
+    "status": {
+      "responseCode": "0",
+      "errorCode": "",
+      "errorDesc": ""
+    }
+  }
+}

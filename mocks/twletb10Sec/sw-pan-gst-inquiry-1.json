@@ -1,0 +1,53 @@
+{
+  "businessName": "SW PAN GST Inquiry",
+  "apiName": "API/SW_PAN_GST_Inquiry",
+  "method": "POST",
+  "statusCode": 200,
+  "latencyMs": 0,
+  "predicate": {
+    "request": {"requestString": {
+      "dob": "09/08/1999"
+      }},
+    "headers": {},
+    "query": {}
+    },
+  "responseHeaders": {"Content-Type": "application/json"},
+  "responseBody": {
+    "responseString": {
+      "gstinResponse": {},
+      "addressResponse": {},
+      "panResponse": {
+        "lastName": "Chandu",
+        "seedingStatus": "Y",
+        "dobMatchFlag": "Y",
+        "nmPerStatus": "",
+        "panStatus": "E",
+        "panFiller3": "",
+        "firstName": "Pradip",
+        "panFiller4": "",
+        "panFiller1": "",
+        "panFiller2": "",
+        "nmNamePercentage": "",
+        "fatherNameMatchFlag": "",
+        "middleName": "Machiraju",
+        "nmRemarks": "",
+        "pan": "PQQPZ3449W",
+        "panTitle": "",
+        "nameMatchFlag": "",
+        "panFiller5": ""
+        }
+      },
+    "contextParam": {
+      "bankJourneyID": "314164215000",
+      "partnerJourneyID": "c3f6390f-5d2a-4afe-8f95-fa3b4d52ddda_01_BL_U_WEB",
+      "partnerID": "HDFCBANK",
+      "productName": "BL",
+      "channelID": "ADOBE"
+      },
+    "status": {
+      "errorDesc": "",
+      "errorCode": "",
+      "responseCode": "0"
+      }
+    }
+  }

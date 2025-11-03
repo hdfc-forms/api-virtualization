@@ -1,0 +1,67 @@
+{
+  "businessName": "api/v1/bre Check-fetch Demog",
+  "apiName": "api/v1/breCheck-fetchDemog",
+  "method": "POST",
+  "statusCode": 200,
+  "latencyMs": 0,
+  "predicate": {
+    "request": {
+      "CIFAccountInquiryAndCCDemogRequestDTO": {
+        "requestString": {
+          "mobileNumber": "9182736455",
+          "panNumber": "AAIPM3854E"
+        }
+      }
+    },
+    "headers": {},
+    "query": {}
+  },
+  "responseHeaders": {
+    "Content-Type": "application/json"
+  },
+  "responseBody": {
+    "responseString": {
+      "DAXMLDocument": {
+        "OCONTROL": {
+          "EDITIONDATE": "2025-09-01",
+          "ERRORMSG": "SUCCESS",
+          "ERRORCODE": "X100",
+          "ALIAS": "CCDEMOG",
+          "OBJECTIVE": "DEMOG",
+          "APPLICATION_ID": "AD20251103175435684",
+          "SIGNATURE": "HDFC",
+          "EDITION": 98
+        },
+        "DEMOGOUT": {
+          "OUTPUT": {
+            "RESPONSE": {
+              "IPA0": "N",
+              "BREFILLER2": "D102",
+              "BREFILLER4": "NO MATCHING DEMOG RECORDS FOUND IN CIF"
+            }
+          }
+        }
+      }
+    },
+    "Id-token-jwt": "nkZcpHzIGYUWmDv8FcWxE78D4ph5qE8SmihpmYwe2I2xgNzLRICM6korX9mlfmGX7lB_Qj0tMmdres-vtCEJQSizDSvoJHoWPznVDNc6TETq_e84_hZZoN908IAd_9eUGrXMD-MReKjbNq8QVpx5dL-C7oxcmA7Pu6El8govAynT-tSo4uNBApvH4d8hvCoNAFG6zKE5UFPoFlHHEYExpD1OGS_ddC8KcjyCHZoFjcBG_cDITTeBjE1RS9mhrrhJ0UWE7IUbw9zL0w9WVLN8HSxpHeZt1Bx-OHizR8jl9vyPrFltGOKk2jfNlrixpDA5VTz1rkNLudipAxqEDX1f4Q.Eqg3YoC4NIoXyIEXYtNpAw.Zjr2XQMeulzpRQk7YtbG4YgQ5a3Df1C6QIhL5ecqO6ISLFZwIH6NMqHUmCTvi5Seph96FCdqBRS_oi8ZpAz0FB7RXepXNCsxo5gCQktA0WZiyQAKWIxq0oGmha3f0KBR3OeqrP9LN_445wkemNYX55IXHdm5JoUeu4gZv-Ww3gnPmKBniFaDato0AKONbCdeAxvM2i9ksptqlGo_9haWGGxhxYEw4Xiij5aR4O2Qyc7G2Npsh4bCVywniVXA3GsYOncr5YRpbvEDrXN4Wv3qJpuDhgFbUhzF3DTukr7NLdAhhJb-btlAsFpV6Jwk8_FNY_Vn5VLxHGsW0SD3lHPojf6UwPVMgkuJePQaAk6QGtJmdsqG7ekvsuH7b0q_7vE9aW1kiEVTdEYb9-M1WKCAKp_6sQJnItZEEjJiDAcr7sRArc_zxHkq_CTWXnOK-lFu9UVGiUjkb5N4CsovNK-usuamAvXKP-krMBvLVO1qzUOzfYim2DX2_wZSdaSe4bbuoy0PkJpxVcWWLo764jvP-Cyh2psKG_ZcKxGkPoOifoR4-EdDMYewggtUIYxSVftRsimzmSVBO5MJegtMVSyybLw5VzxVpV7nEn8U8lhOBud2mPlgVfLv3qTJ8x9T99wOXUkFYuU6ucKpXUcXOAA85dBJQ3V5uyRryk87gEjvSeYd3rGlpXY5fILhs_oCSTwNgCXpR8G4L4AZJs7CKYWK8aHixjIOSfrmR247XmN2hapkO245btqpJZoa7SofEt3dnXYMTrdDS5cvw5KcAwxwHCswgJjaI6OsTAE-AFKmG-XrYpTenZNhiMwGPuZCeyED96xk4YodLxAKM8_CHP8Wt1CbBHBLfBdBmRQ-hDWz3Ns.yKV7FKF7amYS05UnEKKh1w",
+    "configVersionId": null,
+    "maintenanceType": null,
+    "status": {
+      "isOverriden": false,
+      "replyText": "0",
+      "internalReferenceNumber": "2025307417784566",
+      "replyCode": 0,
+      "memo": null,
+      "errorCode": "0",
+      "validationErrors": null,
+      "externalReferenceNo": "AD20251103175435684",
+      "postingDate": {
+        "dateString": "20251103000000"
+      },
+      "extendedReply": {
+        "messages": null
+      },
+      "userReferenceNumber": null
+    }
+  }
+}

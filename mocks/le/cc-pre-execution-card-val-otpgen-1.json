@@ -1,0 +1,32 @@
+{
+  "businessName": "CC pre Execution Card Val OTPGen",
+  "apiName": "API/CC_preExecution_CardVal_OTPGen",
+  "method": "POST",
+  "statusCode": 200,
+  "latencyMs": 0,
+  "predicate": {
+    "request": {
+      
+      "CrossSaleLoanPreExecutionCardValAndOTPGenRequest": {"requestString": {
+        "mobileNo": "9876154398"
+        }}
+      },
+    "headers": {},
+    "query": {}
+    },
+  "responseHeaders": {"Content-Type": "application/json"},
+  "responseBody": {
+    "type": "crossSaleLoanPreExecutionCardValAndOTPGenResponseDTO",
+    "status": {
+      "errorCode": "0",
+      "extendedReply": {},
+      "externalReferenceNo": "AD31102025095332",
+      "internalReferenceNumber": "2025304483853423",
+      "isOverriden": false,
+      "postingDate": {"dateString": "20251031000000"},
+      "replyCode": 0,
+      "replyText": "0"
+      },
+    "responseString": "Success"
+    }
+  }

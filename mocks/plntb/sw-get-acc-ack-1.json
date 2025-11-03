@@ -1,0 +1,36 @@
+{
+  "businessName": "api/v1/sw-get Acc Ack",
+  "apiName": "api/v1/sw-getAccAck",
+  "method": "POST",
+  "statusCode": 200,
+  "latencyMs": 0,
+  "predicate": {
+    "request": {"requestString": {
+      "customerType": "Retail",
+      "employmentType": "Salaried",
+      "perfiosFipConsentFlag": "Y",
+      "accountdetails": [{
+        "customerID": "XXX56007",
+        "accountNumber": "XXXXXXXXX65601"
+        }]
+      }},
+    "headers": {},
+    "query": {}
+    },
+  "responseHeaders": {"Content-Type": "application/json"},
+  "responseBody": {
+    "contextParam": {
+      "partnerJourneyID": "ff9f8f89-7210-4dd4-bcbe-36bd5e9a9d81_01_PL_U_WEB",
+      "bankJourneyID": "443448824776",
+      "partnerID": "HDFCBANK",
+      "productName": "PL",
+      "channelID": "ADOBE"
+      },
+    "responseString": {"acknowledgement": "ok"},
+    "status": {
+      "responseCode": "0",
+      "errorCode": "",
+      "errorDesc": ""
+      }
+    }
+  }

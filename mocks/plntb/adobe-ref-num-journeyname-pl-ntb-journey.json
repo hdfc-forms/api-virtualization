@@ -1,0 +1,21 @@
+{
+  "businessName": "Adobe Ref Num",
+  "apiName": "API/Adobe_RefNum",
+  "method": "POST",
+  "statusCode": 200,
+  "latencyMs": 0,
+  "predicate": {
+    "request": {
+      "journeyName": "PL_NTB_JOURNEY"
+      },
+    "headers": {},
+    "query": {}
+    },
+  "responseHeaders": {"Content-Type": "application/json"},
+  "responseBody": {
+    "status": "SUCCESS",
+    "referenceNumber": "PL30102500532",
+    "errorCode": "REF0000",
+    "errorText": null
+    }
+  }

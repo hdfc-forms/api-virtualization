@@ -1,0 +1,23 @@
+{
+  "businessName": "api/v1/adobe-identify Customer",
+  "apiName": "api/v1/adobe-identifyCustomer",
+  "method": "POST",
+  "statusCode": 200,
+  "latencyMs": 0,
+  "predicate": {
+    "request": {
+      "journeyName": "ETB10SEC_TWO_WHEELER_LOAN_JOURNEY",
+      "mobileNumber": "9415288437",
+      "dob": "01-01-2000"
+      },
+    "headers": {},
+    "query": {}
+    },
+  "responseHeaders": {"Content-Type": "application/json"},
+  "responseBody": {
+    "customerType": "ETB",
+    "code": "EA001",
+    "message": "Request submitted successfully.",
+    "status": "SUCCESS"
+    }
+  }

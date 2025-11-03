@@ -1,0 +1,37 @@
+{
+  "businessName": "CC Inquire Card Details OTPGen",
+  "apiName": "API/CC_InquireCardDetails_OTPGen",
+  "method": "POST",
+  "statusCode": 200,
+  "latencyMs": 0,
+  "predicate": {
+    "request": {
+      
+      "CrossSaleCardValidationAndOTPGenRequestDTO": {"requestString": {
+        "mobileNo": "9876154398"
+        
+        }}
+      },
+    "headers": {},
+    "query": {}
+    },
+  "responseHeaders": {"Content-Type": "application/json"},
+  "responseBody": {
+    "status": {
+      "isOverriden": false,
+      "replyCode": 0,
+      "replyText": "0",
+      "memo": null,
+      "externalReferenceNo": "AD20251031095302168",
+      "internalReferenceNumber": "2025304402851083",
+      "postingDate": {"dateString": "20251031000000"},
+      "errorCode": "0",
+      "extendedReply": {"messages": null},
+      "validationErrors": null,
+      "userReferenceNumber": null
+      },
+    "maintenanceType": null,
+    "configVersionId": null,
+    "responseString": "Success"
+    }
+  }

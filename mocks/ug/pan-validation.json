@@ -1,0 +1,18 @@
+{
+  "businessName": "Pan Validation",
+  "apiName": "API/PanValidation",
+  "method": "POST",
+  "statusCode": 200,
+  "latencyMs": 0,
+  "predicate": {
+    "request": {"_xpath": {
+        "selector": "//*[local-name()='PAN']",
+        "pattern": "HFYPU2549Z"
+      }
+    },
+    "headers": {},
+    "query": {}
+    },
+  "responseHeaders": {"Content-Type": "application/json"},
+  "responseBody": {"responseString": "or9tEKoQp4tEpmqZ<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<soapenv:Envelope\n   xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\">\n <soapenv:Body>\n  <a:PANValServiceResponse xmlns:a=\"panval.isd.xsd.hdfcbank.com\">\n   <Return_Code>1</Return_Code>\n   <Return_Description>Aadhar seeding status is \u201cY\u201d.</Return_Description>\n   <PAN_Details>\n    <PAN>HFYPU2549Z</PAN>\n    <PAN_Status>E</PAN_Status>\n    <Last_Name>Kabra</Last_Name>\n    <First_Name>Krishna</First_Name>\n    <Middle_Name>Vipul</Middle_Name>\n    <PAN_Title></PAN_Title>\n    <Last_Update_Date></Last_Update_Date>\n    <Filler1></Filler1>\n    <Filler2></Filler2>\n    <Filler3></Filler3>\n    <Filler4></Filler4>\n    <Filler5></Filler5>\n   </PAN_Details>\n   <ResponseTime></ResponseTime>\n  </a:PANValServiceResponse>\n </soapenv:Body>\n</soapenv:Envelope>\n"}
+}

@@ -1,0 +1,79 @@
+{
+  "businessName": "SW OTPVal Fetch Demog Offers",
+  "apiName": "API/SW_OTPVal_FetchDemog_Offers",
+  "method": "POST",
+  "statusCode": 200,
+  "latencyMs": 0,
+  "predicate": {
+    "request": {"requestString": {
+      "passwordValue": "123456"
+      }},
+    "headers": {},
+    "query": {}
+    },
+  "responseHeaders": {"Content-Type": "application/json"},
+  "responseBody": {
+    "responseString": {
+      "digiliteFlag": "N",
+      "stpOfferDetails": {
+        "stpBankJourneyID": "",
+        "stpOfferAvailable": "N",
+        "stpPartnerJourneyID": ""
+        },
+      "OfferDemogDetails": [{
+        "customerFullName": "AMOL GORAKH PAWAR",
+        "zipCode": "302003",
+        "customerState": "RAJASTHAN",
+        "kycFlag": "",
+        "customerCity": "JAIPUR",
+        "rateOfInterest": "",
+        "customerRessidencePhone": "33247766",
+        "customerCountry": "IN",
+        "customerMobileNo": "9621960202",
+        "customerMiddleName": "GORAKH",
+        "customerOfficeZipCode": "",
+        "customerOfficeCity": "",
+        "residenceType": "",
+        "offerType": "",
+        "emailAddress": "Amol.Pawar1@Gmail.com",
+        "customerOfficePhone": "",
+        "customerLastName": "PAWAR",
+        "reltype": "",
+        "tenure": 0,
+        "monthlyIncome": "0",
+        "profession": "",
+        "customerOfficeAddress1": "",
+        "campaignId": "",
+        "customerGender": "M",
+        "dateOfBirth": "12-12-1992",
+        "procFees": "",
+        "accountNumber": "XXXXXXXXX86161",
+        "customerOfficeAddress3": "",
+        "customerOfficeAddress2": "",
+        "repaymentAcct": "",
+        "multiTenureAmt": "",
+        "customerFirstName": "AMOL",
+        "customerID": "XXXX63221",
+        "custType": "E",
+        "offerAmount": 0,
+        "customerAddress1": "ITHINK LODHA",
+        "customerAddress3": "JAIPUR",
+        "customerAddress2": "TECHNOCAMPUS",
+        "customerPan": "DCSPS5757R"
+        }],
+      "ekycStatusFlag": "N"
+      },
+    "contextParam": {
+      "bankJourneyID": "528369239897",
+      "partnerJourneyID": "444e9b68-2be3-43ec-8f2c-9da64ae2ae8e_01_PL_U_WEB",
+      "partnerID": "HDFCBANK",
+      "productName": "PL",
+      "channelID": "ADOBE"
+      },
+    "status": {
+      "errorDesc": "",
+      "errorCode": "",
+      "responseCode": "0"
+      }
+    }
+  }

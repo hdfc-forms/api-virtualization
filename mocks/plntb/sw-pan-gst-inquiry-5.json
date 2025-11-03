@@ -1,0 +1,57 @@
+{
+  "businessName": "SW PAN GST Inquiry",
+  "apiName": "API/SW_PAN_GST_Inquiry",
+  "method": "POST",
+  "statusCode": 200,
+  "latencyMs": 0,
+  "predicate": {
+    "request": {
+      "requestString": {
+        "dob": "21/05/1977"
+      }
+    },
+    "headers": {},
+    "query": {}
+  },
+  "responseHeaders": {
+    "Content-Type": "application/json"
+  },
+  "responseBody": {
+    "contextParam": {
+      "partnerJourneyID": "ec7cad80-ff8f-4bb6-8e4a-948627e2b3dc_01_PL_U_WEB",
+      "bankJourneyID": "481379706496",
+      "partnerID": "HDFCBANK",
+      "productName": "PL",
+      "channelID": "ADOBE"
+    },
+    "responseString": {
+      "panResponse": {
+        "pan": "WITPL3993B",
+        "panStatus": "E",
+        "lastName": "Andhale",
+        "firstName": "Vinayak",
+        "middleName": "bhalu",
+        "panTitle": "",
+        "panFiller1": "",
+        "panFiller2": "",
+        "panFiller3": "",
+        "panFiller4": "",
+        "panFiller5": "",
+        "fatherNameMatchFlag": "",
+        "seedingStatus": "Y",
+        "nameMatchFlag": "Y",
+        "dobMatchFlag": "Y",
+        "nmNamePercentage": "",
+        "nmPerStatus": "",
+        "nmRemarks": ""
+      },
+      "addressResponse": {},
+      "gstinResponse": {}
+    },
+    "status": {
+      "responseCode": "0",
+      "errorCode": "",
+      "errorDesc": ""
+    }
+  }
+}

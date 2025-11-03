@@ -1,0 +1,34 @@
+{
+  "businessName": "CC OTPVal Credit Card Upgrade",
+  "apiName": "API/CC_OTPVal_CreditCardUpgrade",
+  "method": "POST",
+  "statusCode": 200,
+  "latencyMs": 0,
+  "predicate": {
+    "request": {
+      
+      "CardUpgradeOTPOrchestrationRequestDTO": {"requestString": {
+       
+        "mobileNo": "8654752213"
+        
+        }}
+      },
+    "headers": {},
+    "query": {}
+    },
+  "responseHeaders": {"Content-Type": "application/json"},
+  "responseBody": {
+    "type": "cardUpgradeOTPOrchestrationResponseDTO",
+    "status": {
+      "errorCode": "0",
+      "extendedReply": {},
+      "externalReferenceNo": "AD31102025095019",
+      "internalReferenceNumber": "2025304483853394",
+      "isOverriden": false,
+      "postingDate": {"dateString": "20251031000000"},
+      "replyCode": 0,
+      "replyText": "0"
+      },
+    "responseString": "{\"proCode\":\"002\",\"processingFlag\":\"Y\",\"logo\":\"817\",\"newCrLim\":\"00000000000000000\",\"acctNbr\":\"0001018170000006725\"}"
+    }
+  }

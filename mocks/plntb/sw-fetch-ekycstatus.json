@@ -1,0 +1,45 @@
+{
+  "businessName": "SW Fetch EKYCStatus",
+  "apiName": "API/SW_Fetch_EKYCStatus",
+  "method": "POST",
+  "statusCode": 200,
+  "latencyMs": 0,
+  "predicate": {
+    "request": {"requestString": {
+      "encStr": "a2V5PWFST2Z1NUJxUmVZbGl4UDcyS3NuMXVQbXFpcmhXNnU3bGhSdTBqLzM4d0s0d2ppNzdvQkcwRnduUGtWM2x1bVhldHhFSkFtY1RYQThSL1JFZ20xa0FHcUtwNUJoTXpDRCtZT1NtdEJNZmJGZHh6bTdTRDlyaXFDeFRQMldIUU55QnlLT0cwUnVXR29BdS83ZExzSEhyTHBZOVBVdndibXlwRk9PZ3plVm1rVTVuMlptNk9FTTNsa1dnRmtTM3ZFNEt4VzY2bmtDb0FXNDBUY2I5dFR5TWdmRUxsaGdqTVgvUW9zeTdEOGlQdTBSUkFraHZRaDJNYWg4VW9Mc2kwMmpRMXVYTmFOdXFnTmdybU9zc1pZNjhsamwyV3p2T2U1dEhIZzBzVGhwQ1B1dnpMZ3ZmSW5zNW9tZTQ2MEE4WFBHaEdQMy9WRS9Ub1EzaHNWWkFsanVzUT09JmRhdGE9cHZtSStybDdhWC9yK2V6RUZwSlBiTGxTN0dpSGp0TnJyZTFBN1lqY3pDNlNTRjV6QkRQWWJzSldzcDFiOTloVWVuKzlHd3lGU0lTWm1GbG9iN3NTQWlrZ0xwTEZkaWx1czlLNHF2M0xYeWhyT1oyOGJ0MWtZakRBU0FsaGJYT0NsbTB4NmNOdDlyNlM1Wk1lcjBMR2h6T2ZFeW1NblI1ZTN3N2tFelQ2TnZNdGkvNjJXSVFpU09EeTFOekpJM2Z3MDhFTmRpd1VIeTlJd0twQlQ5MzRRMTcvNm1YK1hFallZMnovYURIT3lpMS95RDA3WlZBbnNPUmhZMTN4cG5CZXN2M2N5WUlXbUw3c0hESm1jb2s1MW0ra0NHSlhOQ3lMZkRFTFFIL0NybGU5QUh4SFB1UTlQUzFvQklsK0FSQTlsUXlGL1lQeGNEK0pFbUROZ0d2NmpNWGc4N2gvQTU4a0p6RWt1NFhycXNWL2dIUGRRVGYxeFIzbWpQZ1VWc1FHSE1FUzBqQkNOZU5RY21CVEhCSmVVNFlnRXd5SmJ3cyt6MGZUdHV5YnB5U3BRM013YW5XRHpuSlpMeWhkMVFuTklFRCtJMnBZdWJFbnZKUTl0ZWZEV2M3Vno3UUVsWXpKdmhRYjY3aVQzWWFjcmFRWGh1RUp6dDVEaTZoNTJXSnhDZUk0YU9wYm5kRFZXSTJ1VERkRXNtNGhJeTg2TDYwOEoyKytHZ3VsY3N4NVRwT1ZvcEtybURvR3FKdkJpNThvOHRPUHdlMmVIdXhIYjhsWUdrV0JKU2JFR0FjRTU1a1lTcmpmbGRsRVpRYXdRTnA1VEFBYTQvMGh0U0QydlVCV3ZCTHI0RmRURC83SEMvWm5oV1VNa2o3OGNzZUkrU05SaXhqVS9HYlE2dEtDSy8xTmRJYlgrbXU1cmZYR2hPaXF0L05tYTJzaVlrRitlMmZHZm5iZyt5OVJXQTNEdS9ibUtUZUV4TWVnR3o2UEFpSnNVclVpYTA3aDFMWUI3cTM3QW8raFpjWXNERFVuN3cxTFZLbUFNMEExWU5UV25MMzZxZGMxazdQYjRwODRxQURZUDRiMXhvWGI1MWE2WjRmOGFpRW1JMVlDWGtvWWZiZXJJcVduMDhjVHJ0dmJRWUFVRTJ5cEdsMnllTnN5dm96cnplRHphSFdwMDcvbXE5Ukh1RGVqSENvRFNmTUNRNkc0Njc2OUorNGxpSDh2TU1hMmFVN1VFQXFUN0VYU3NSNlJtUXZ0dmVEbGtBZHQydkJ4L3hpNFhPVDh4WWkzblZwTjVEbGdMWHhEelpQUzlhMTV2d0VhczNqOVJVc2RBakNvQTcrNE44NGsrZzk3Y25PRVlDeGh2VlZoU3hZWmdrRS8rQzR0ZEduVFhVcG42cDFvdWFKcFhIV296WmdWVGNxa1hubWdIMStvU1hhdStqNDZUTkM3K1c4TDNGVlNjSXZoeVQzWU15K1hiQlNwNVIrRHlxNWNoYWlTYk1KZFVVVkwxdUhlRFBHMDFjVnUrdnEwUUZHRXJ5TkY1R202TVpTYXY0ejQ4dmRQY0poWk9XMDJOVTFwcjF0c0NjSzNtclRDbWtyWlRNOXQrcTdnNFFUY2wwV09pY1lYY0FXQ2tjZFExRS9LOGtrZlVyMUZOVEh3Skxmd0lwMlBlNnVtKzg3SU4wOGtaRk5DNGpaNDRZblZhbHo3THdXellGZVdEUm1kY05VZCtmbGJOeWI2WFJNWC9keTBTQ0k9",
+      "rrnNo": "",
+      "aadhaarRefNo": "",
+      "fillerFields": {}
+      }},
+    "headers": {},
+    "query": {}
+    },
+  "responseHeaders": {"Content-Type": "application/json"},
+  "responseBody": {
+    "contextParam": {
+      "partnerJourneyID": "ec7cad80-ff8f-4bb6-8e4a-948627e2b3dc_01_PL_U_WEB",
+      "bankJourneyID": "481379706496",
+      "partnerID": "HDFCBANK",
+      "productName": "PL",
+      "channelID": "ADOBE"
+      },
+    "responseString": {
+      "ekycStatus": "SUCCESS",
+      "nameMatchPercentage": "59",
+      "addressMatchPercentage": "0.0",
+      "aadhaarName": "Shailesh Devidas Chaudhari",
+      "aadhaarAddress": "Flat No - 301, D-3 Building , Grand Square Society, ,Near Bhakti Park, Anand Nagar, G B Road Thane, ,Thane, ,Thane, ,Maharashtra, ,400615",
+      "aadhaarPincode": "400615",
+      "aadhaarCity": "Thane",
+      "aadhaarState": "Maharashtra",
+      "aadhaarGender": "null",
+      "aadhaarDOB": "null",
+      "ekycCompletionDate": "null"
+      },
+    "status": {
+      "responseCode": "0",
+      "errorCode": "",
+      "errorDesc": ""
+      }
+    }
+  }
