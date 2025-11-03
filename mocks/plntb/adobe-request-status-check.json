@@ -1,0 +1,18 @@
+{
+  "businessName": "Adobe Request Status Check",
+  "apiName": "API/Adobe_RequestStatusCheck",
+  "method": "POST",
+  "statusCode": 200,
+  "latencyMs": 0,
+  "predicate": {
+    "request": {"referenceNumber": "BE30102500516"},
+    "headers": {},
+    "query": {}
+    },
+  "responseHeaders": {"Content-Type": "application/json"},
+  "responseBody": {
+    "response": "Success",
+    "status": "FUNDS_SUCCESS",
+    "errorCode": "LB0000"
+    }
+  }

@@ -1,0 +1,30 @@
+{
+  "businessName": "api/v1/adobe-check Offer",
+  "apiName": "api/v1/adobe-checkOffer",
+  "method": "POST",
+  "statusCode": 200,
+  "latencyMs": 0,
+  "predicate": {
+    "request": {
+      "journeyName": "ETB10SEC_TWO_WHEELER_LOAN_JOURNEY"
+    },
+    "headers": {},
+    "query": {}
+  },
+  "responseHeaders": {
+    "Content-Type": "application/json"
+  },
+  "responseBody": {
+    "offers": [
+      {
+        "offerString": [
+          "STP_TWL_ZIPRIDE_10SEC_NB_TOP3_24JAN_UAT820"
+        ],
+        "offerId": "6e8457f3-3673-4ca4-a11b-c40841b6187b"
+      }
+    ],
+    "code": "EA001",
+    "message": "Offer available.",
+    "status": "SUCCESS"
+  }
+}

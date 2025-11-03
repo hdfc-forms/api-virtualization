@@ -1,0 +1,24 @@
+{
+  "businessName": "api/v1/adobe-identify Customer",
+  "apiName": "api/v1/adobe-identifyCustomer",
+  "method": "POST",
+  "statusCode": 200,
+  "latencyMs": 0,
+  "predicate": {
+    "request": {
+      "mobileNumber": "9182736455",
+      "dob": "01-01-2000"
+    },
+    "headers": {},
+    "query": {}
+  },
+  "responseHeaders": {
+    "Content-Type": "application/json"
+  },
+  "responseBody": {
+    "customerType": "NTB",
+    "code": "EA003",
+    "message": "No customer details found.",
+    "status": "FAILED"
+  }
+}

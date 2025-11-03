@@ -1,0 +1,23 @@
+{
+  "businessName": "Adobe Ref Num",
+  "apiName": "API/Adobe_RefNum",
+  "method": "POST",
+  "statusCode": 200,
+  "latencyMs": 0,
+  "predicate": {
+    "request": {
+      "journeyName": "TWL_UNIFIED_JOURNEY",
+      "partnerCode": "TU",
+      "journeyID": "e5bbdde6-7055-4c7d-bc6d-caf60834ff8f_01_TWLU_U_WEB"
+      },
+    "headers": {},
+    "query": {}
+    },
+  "responseHeaders": {"Content-Type": "application/json"},
+  "responseBody": {
+    "errorText": null,
+    "referenceNumber": "TU03112500003",
+    "errorCode": "REF0000",
+    "status": "SUCCESS"
+    }
+  }

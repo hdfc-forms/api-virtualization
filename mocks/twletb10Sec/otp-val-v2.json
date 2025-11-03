@@ -1,0 +1,29 @@
+{
+  "businessName": "OTP Val v2",
+  "apiName": "API/OTP_Val_v2",
+  "method": "POST",
+  "statusCode": 200,
+  "latencyMs": 0,
+  "predicate": {
+    "request": {"verifyPwdRequest": {"hdfcVerifyPwdReq": {
+      "linkData": "0000000919415288437"
+      }}},
+    "headers": {},
+    "query": {}
+    },
+  "responseHeaders": {"Content-Type": "application/json"},
+  "responseBody": {
+    "verifyPwdRequestResponse": {"multiRef": {
+      "fillerField1": "",
+      "refNo": "20251103171046106",
+      "errorDetail": "",
+      "messageHash": "static:verpwdres:04:K5Aynf+wPgK9P2T+mFaG6MZFYKA=",
+      "fillerField5": "",
+      "fillerField4": "",
+      "fillerField3": "",
+      "fillerField2": "",
+      "statusCode": "00"
+      }},
+    "Id-token-jwt": "KMwhlCtCskxqZ9L55URaKJcfRU9xRCGmnmVi8MnHS5sdCZSFFM7gYxvm5aKt-FumHlOUtbUG2DlBCTOzjMTe-TnVQphZ6rLDBAYoT7AnRKjM6cY8hJuOPZa-LhnWHcG5AAYrPLYjFZJvkv6OCIeU72Wq7pwPCyMOIGHRnt61xnPYKHYJxfp8te4KBWyGOSgO_Swasq3UmOEq28NYvVkq_r9Zlf3tvAIPCAoTsjvPc73ItH2Xxjpk6NUhiV25d4K55eRgUi8H8jOgT48VEbcD3TgsPeCrf5jjI16qS89NpQybmaxAatqBPqxQLhm62sG6ss3-b9P-NSn5KS2igAUA-g.-R9Q-4joacwiH7x-e_iuww.FqcbfmsWfeOyoeiQIzI8KNQ5JKOJeoPQ97kY6YvRoBTzCACLXiSiu1y23ElzYVCrW2Sh7OOAsxMDjNYOSSladA-tuwXkg7TWB6TO8OkCDbry560tEN7pAZahWNim1ZvJyCK_sqwMiGBPuPgP4UqAqxFCYc8X44WjQ6x_cffKt4ocAkfHtDQ7VwAU8-_bejwyv86Idbf1rD6h1Q88adb8N9qpPiKNuSt4ufC2bm_4K6S9qtcm56ODUV-yVq6NNEtMn4pgdBZ2GIpWZen7EjqkCxC4zn9N60k40H0Ho2AFAhLsKXByI3cFh3kSRF83TUm6yacfYVf2EhVRKwvYdyxpHNBxycbnfcdMsJ4-vBtAeABrf3DQ_9D2QSeM3muaGQs5IxhwwsO3aKQabssF1oakIA7P8UXGKU-ABMEGV_WjtTM-VwL2qFEwabZs1twkgtRIviIPyhYtOWf_wqDWHmzMlGpnZp0ByvopekOFntXSJ95x33jXhuZR4dDEgv6zKpPhCmoJwQGSBDGfjRjn6n8s9qzy3epFakqpkWwn-rQpogq-QjcEOdgFhsAqOa7rfhK22Ks7fjYgRjmo9-Eqrq6WzLL_iaqx3SiVyYp-_y49c3FV8JzpbsMh_yyMj6XxsmJY2K4h5WN9KZJXEeLT1j6Frv6EtAno-8qYUUttRWSjX-DqbsN4jCqfK9ydzXc1cUT6XWZz772NJ-I_T7ZPT2bZTeLHRQCHYkPWUYRHWIzvYX_yS1KxQKbi37BBtBWeHAUidW-BrHwnFtpkIkZvEMkGiy9XWbzy8JyWyen3vk0ozA1q1sZ8VPck4EOC7OThJr955Q1myQkHT7vf1R4WRkrCGgI-hbnfDQejrOM7j68aMvlrBSpP4DxQ70y8GyAXTqqe.OCB-XOBkdYWNbXpAEPi7BA"
+    }
+  }

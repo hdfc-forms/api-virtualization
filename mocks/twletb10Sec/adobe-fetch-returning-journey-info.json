@@ -1,0 +1,37 @@
+{
+  "businessName": "Adobe Fetch Returning Journey Info",
+  "apiName": "API/Adobe_FetchReturningJourneyInfo",
+  "method": "POST",
+  "statusCode": 200,
+  "latencyMs": 0,
+  "predicate": {
+    "request": {
+      "journeyName": "ETB10SEC_TWO_WHEELER_LOAN_JOURNEY",
+      "mobileNumber": "9415288437"
+      },
+    "headers": {},
+    "query": {}
+    },
+  "responseHeaders": {"Content-Type": "application/json"},
+  "responseBody": {
+    "journey": [{
+      "journeyName": "ETB10SEC_TWO_WHEELER_LOAN_JOURNEY",
+      "leadProfileId": 27369725,
+      "journeyStateInfo": [{
+        "stateInfo": "{\"GWSymmetricKeyEncryptedValue\":null,\"Id_token_jwt\":\"Ri1lY01zcU93VWt1akNObFhBQTRCX25qeHlUTlBVQTB3cmRyT2FMOGlmMkM4bHlaa2NlWEIwMEJfWHVTWWp2VDdWV3VlYU1OZTA1SFRtazc2ZU1CV3dKWm9DU3V1a3NjRDVscWFiNXpOa0stLVNfQy15VEVRRjh2T1Aya2xpWFNhTm1fZGluTE5jXzkwZkhJWUhsRDhiQ3B4OGhydzZkcGc2V2JyekZWbE8tcUdXX2s1aEdhaVYtaGQyakc5cUxYSkpzRW12SWthbnFMWFlJZkR1YUVnazdneXRySmpnaDFtX2JhSl9vRHAyTThIVnZiX1BuQ1RSUUxIRENBWUR1TmNmTzk4YjZRa2FQRHRpQWlCMHFiYy1rYUF6eDhEQ3daeGdaR2FwY19ZM253QWR4SUR5WU90bFk0aG1MUjkxckg5TVg3QlRrLXlxcl9lcFVBby1hLTF3LmljZExSc05iSEVaMnRnWGU5M3VQVGcuZ05pU0FQazFsT2lUeWF4ZDVHcm9BUnc5NE9CMGhlRzg3WGRrT2NxdmhraFJ6V09xTERjc1JoaHRkcEFNRkhNNjVUNWNHdmV1T3FGTGdhVmZ2MHMxcHA0X0l2dXpkQWdmX3VuUmRXVVNOYWxFTFNRQ0Jyamp5TDZ3SUMtYlFpZkppTk8wSUxUWVc5Q0ZkazFOTzNtN0JmaXBxZXdlR2VSa3pTOTZUbUI3dk1WWmFTU3BXU0xfOEJzS0xxaU85OXlJaEdXZVZVRHh2b0w2a3dLNVRvRUlYLTlzcGgzNFZpcDF2TVJFbmptUlM3bnh5azgwWFk3STRIM2s3c0Q0N1NuRmhtTW1xVzlQZ2lYT0pXY3dfMXdRZVZJWHNiVVY4Nm1RbTJjb2xWa1pVRUQwandEdUtIMXdSX1FKcWpmdHNQQkh2endwX0dGMkZnVWt2NGJIY2todUlENmhEcEhFNEVfSGZkMlFLOEpwOTVlVy1QZ3BnM2lpeVU2SC11QW5pZWtUSHBVRUFOMUtoeFFqUWktUmEwOXVHcWJ6U29SckUwOXRZd1VOWkN1SEt4N04xNDM3VVRqZWJNTVllaVZPZFFWNVo5Y1V5eUlSOGNtSTQwQUZBSnFpM2RjY3RRTEYxTDFSMlhkRE9maG9iZXZtUm9RdmRCOUd2R1FCTlJaSGNYUmhialFkVWpLRlNTcWFOZHRMU28wOFZxd0JLYXA2cmI5Q0pxZ3RWNjJPRXNNak0yRzZxYVdmS2d3UHN0WF9ua05YSDVMMEdtb3o3VTVhRWxiS0JvZGFFclREbVBDaXBVNnRDWEZRaTVIMlN3X28yM0x1Qmw2OGlXZ0pTUjBBTzNZaEFNWTFGaDJ6U0V1RUoyTzM5cnlQRTZYclk3MVNLNVB6RFo3azE0WkwxV3dtaHRNaFI3WmJycWxHVjNWWTJDZG5HalJaSXNlVmJKZWt2UC1kc3ZIUWxuaERFUFYycWFMWmtNdVJ3R0FLVlhmc0dGa3phY2tkRDRPOVRoOEp2WHBzYTNfQlJfamJYR2F6UG9KWDFWU1Y5XzJranhxbjlWelNRamlMdGo2LU93YmFnZFNtTGl3SU05RGl1V1hJOWx5X3F4R0hFUXRNVk1wRkdqMUw2ZnF0LWhRajNLc09EMkhBSlZRcU9sVUh2NVUucTU1aUlSNk1STEpaWEFtc25sd3V5UQ==\",\"ResponseSignatureEncryptedValue\":null,\"Scope\":null,\"TransactionId\":null,\"errorCode\":null,\"extRefNo\":\"AD20251103115759693\",\"formData\":{\"transactionID\":\"c3c1ad80cb324352bd17fa74c23d5535TWLETBAGENT\"},\"originCode\":null,\"originMessage\":null,\"ssoData\":{\"additionalInfo\":{\"loanAmountSelected\":null,\"requestParams\":\"LGCODE=1234567890AJREBFNDE9012\"},\"customerInfo\":{\"ccNoLast4Digits\":\"1223\",\"dob\":\"01/01/2000\",\"mbl\":\"9415288437\",\"pan\":\"OHNPXXXXX\",\"pseudoId\":null},\"journeyInfo\":{\"jKey\":\"TWLETB_AGENT\",\"showFooter\":null,\"showHeader\":null,\"theme\":null}},\"ssoMetadata\":{\"sourceChannel\":\"WEB_APP\",\"sourceId\":\"test\",\"sourceName\":\"test\",\"srcRefNo\":\"AD24556667\",\"ssoTokenAud\":null,\"ssoTokenIAt\":\"1762151272242\",\"ssoTokenTTL\":\"86400000\"},\"status\":null,\"statusCode\":\"0\",\"statusMsg\":\"success\"}",
+        "state": "SSO_AUTHENTICATION_SUCCESS",
+        "timeinfo": "2025-11-03T11:57:59+0530"
+        }],
+      "address": null,
+      "card4Digits": "1223",
+      "isCountryCodeAppended": "false",
+      "mobileNumber": "9415288437",
+      "countryCode": "91",
+      "profile": {"dob": "2000-01-01"},
+      "channel": "ADOBE WEBFORMS",
+      "journeyState": "SSO_AUTHENTICATION_SUCCESS",
+      "journeyID": "c3c1ad80-cb32-4352-bd17-fa74c23d5535_28_TWLETB_AGENT_U_WEB"
+      }],
+    "errorCode": "RJI0000"
+    }
+  }

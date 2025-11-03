@@ -1,0 +1,34 @@
+{
+  "businessName": "SW Save Additional Dtls",
+  "apiName": "API/SW_Save_Additional_Dtls",
+  "method": "POST",
+  "statusCode": 200,
+  "latencyMs": 0,
+  "predicate": {
+    "request": {
+      "requestString": {
+        "refLastName": "Gupta"
+      }
+    },
+    "headers": {},
+    "query": {}
+  },
+  "responseHeaders": {
+    "Content-Type": "application/json"
+  },
+  "responseBody": {
+    "contextParam": {
+      "partnerJourneyID": "ec7cad80-ff8f-4bb6-8e4a-948627e2b3dc_01_PL_U_WEB",
+      "bankJourneyID": "481379706496",
+      "partnerID": "HDFCBANK",
+      "productName": "PL",
+      "channelID": "ADOBE"
+    },
+    "responseString": {},
+    "status": {
+      "responseCode": "0",
+      "errorCode": "",
+      "errorDesc": ""
+    }
+  }
+}

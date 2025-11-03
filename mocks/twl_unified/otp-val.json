@@ -1,0 +1,52 @@
+{
+  "businessName": "api/v4/otp-val",
+  "apiName": "api/v4/otp-val",
+  "method": "POST",
+  "statusCode": 200,
+  "latencyMs": 0,
+  "predicate": {
+    "request": {"VerifyOTPRestRequestDTO": {
+      "headerParams": [
+        {
+        "value": "hdfc_adobe",
+        "key": "apiUser"
+        },
+        {
+        "value": "testing",
+        "key": "apiKey"
+        }
+      ],
+      "requestString": {
+        "linkData": "0000000919182736455"
+        }
+      }},
+    "headers": {},
+    "query": {}
+    },
+  "responseHeaders": {"Content-Type": "application/json"},
+  "responseBody": {
+    "responseString": {
+      "refNo": "AD20251103175329239",
+      "errorDetail": "No password in system",
+      "messageHash": "static:verpwdres:04:PzYfnG8c+LI3pRCJaKO9lkTbP/c=",
+      "statusCode": "08",
+      "txnId": null
+      },
+    "Id-token-jwt": "",
+    "configVersionId": null,
+    "maintenanceType": null,
+    "status": {
+      "isOverriden": false,
+      "replyText": "0",
+      "internalReferenceNumber": "2025307418253175",
+      "replyCode": 0,
+      "memo": null,
+      "errorCode": "0",
+      "validationErrors": null,
+      "externalReferenceNo": "AD20251103175329239",
+      "postingDate": {"dateString": "20251103000000"},
+      "extendedReply": {"messages": null},
+      "userReferenceNumber": null
+      }
+    }
+  }

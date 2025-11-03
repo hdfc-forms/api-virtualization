@@ -1,0 +1,44 @@
+{
+  "businessName": "Adobe Fetch Returning Journey Info",
+  "apiName": "API/Adobe_FetchReturningJourneyInfo",
+  "method": "POST",
+  "statusCode": 200,
+  "latencyMs": 0,
+  "predicate": {
+    "request": {
+      "journeyName": "TWL_UNIFIED_JOURNEY",
+      "mobileNumber": "9182736455"
+    },
+    "headers": {},
+    "query": {}
+  },
+  "responseHeaders": {
+    "Content-Type": "application/json"
+  },
+  "responseBody": {
+    "journey": [
+      {
+        "journeyName": "TWL_UNIFIED_JOURNEY",
+        "leadProfileId": 27370946,
+        "journeyStateInfo": [
+          {
+            "stateInfo": "{\"RegisteredPhoneNum\":9182736455,\"formData\":{\"transactionID\":\"9f7281cb512c4445ba5145831ac4a433TWLU\"},\"hiddenChannelDataConsentCheckboxValue\":\"N\",\"hiddenPersonalDataConsentCheckboxValue\":\"Y\",\"hiddenPersonalizedOffersConsentCheckboxValue\":\"N\"}",
+            "state": "CUSTOMER_IDENTITY_ACQUIRED",
+            "timeinfo": "2025-11-03T17:52:24.000Z"
+          }
+        ],
+        "address": null,
+        "isCountryCodeAppended": "false",
+        "mobileNumber": "9182736455",
+        "countryCode": "91",
+        "profile": {
+          "dob": "2000-01-01"
+        },
+        "channel": "ADOBE WEBFORMS",
+        "journeyState": "CUSTOMER_IDENTITY_ACQUIRED",
+        "journeyID": "9f7281cb-512c-4445-ba51-45831ac4a433_01_TWLU_U_WEB"
+      }
+    ],
+    "errorCode": "RJI0000"
+  }
+}

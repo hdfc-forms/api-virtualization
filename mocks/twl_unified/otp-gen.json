@@ -1,0 +1,56 @@
+{
+  "businessName": "api/v4/otp-gen",
+  "apiName": "api/v4/otp-gen",
+  "method": "POST",
+  "statusCode": 200,
+  "latencyMs": 0,
+  "predicate": {
+    "request": {
+      "OTPGenAndSMSEmailDispatchOrchestrationRequestDTO": {
+        "requestString": {
+          "E2FARequestDTO": {
+            "linkData": "0000000919182736455"
+          }
+        }
+      }
+    },
+    "headers": {},
+    "query": {}
+  },
+  "responseHeaders": {
+    "Content-Type": "application/json"
+  },
+  "responseBody": {
+    "responseString": {
+      "freshPassword": false,
+      "refNo": "AD20251103175317791",
+      "datatimeGen": "11/03/2025 17:51",
+      "datetimeExpire": "11/03/2025 17:53",
+      "errorDetail": null,
+      "messageHash": "static:genpwdreq:06:QWqDXaAFDgguigBoqldNmt4qGig=",
+      "otpReferenceData": "",
+      "statusCode": "00",
+      "txnId": "202511d584d9fc-2ea1-4694-bfde-c4959877cea636_N2",
+      "errorMsg": "Authentication failed !"
+    },
+    "configVersionId": null,
+    "maintenanceType": null,
+    "status": {
+      "isOverriden": false,
+      "replyText": "0",
+      "internalReferenceNumber": "2025307254541962",
+      "replyCode": 0,
+      "memo": null,
+      "errorCode": "0",
+      "validationErrors": null,
+      "externalReferenceNo": "AD20251103175317791",
+      "postingDate": {
+        "dateString": "20251103000000"
+      },
+      "extendedReply": {
+        "messages": null
+      },
+      "userReferenceNumber": "AD20251103175317791"
+    }
+  }
+}
