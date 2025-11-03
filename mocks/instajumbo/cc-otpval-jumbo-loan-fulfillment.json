@@ -1,0 +1,33 @@
+{
+  "businessName": "CC OTPVal Jumbo Loan Fulfillment",
+  "apiName": "API/CC_OTPVal_JumboLoanFulfillment",
+  "method": "POST",
+  "statusCode": 200,
+  "latencyMs": 0,
+  "predicate": {
+    "request": {
+     
+      "JumboLoanOTPOrchestrationRequest": {"requestString": {
+       
+        "caseNumber": "9856336195"
+        }}
+      },
+    "headers": {},
+    "query": {}
+    },
+  "responseHeaders": {"Content-Type": "application/json"},
+  "responseBody": {
+    "type": "jumboLoanOTPOrchestrationResponse",
+    "status": {
+      "errorCode": "0",
+      "extendedReply": {},
+      "externalReferenceNo": "AD29102025071509",
+      "internalReferenceNumber": "2025302391217094",
+      "isOverriden": false,
+      "postingDate": {"dateString": "20251029000000"},
+      "replyCode": 0,
+      "replyText": "0"
+      },
+    "responseString": "{\"newAcct\":\"0001011940001234881\",\"proCode\":\"010\",\"processingFlag\":\"Y\",\"loanNbr\":\"0000000000000140563\",\"loanAmt\":\"00000000011300000\",\"acctNbr\":\"0001011940001234881\",\"tid\":\"000009364\",\"relNbr\":\"0000000000175596873\"}"
+    }
+  }

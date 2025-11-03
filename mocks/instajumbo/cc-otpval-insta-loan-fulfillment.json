@@ -1,0 +1,33 @@
+{
+  "businessName": "CC OTPVal Insta Loan Fulfillment",
+  "apiName": "API/CC_OTPVal_InstaLoanFulfillment",
+  "method": "POST",
+  "statusCode": 200,
+  "latencyMs": 0,
+  "predicate": {
+    "request": {
+     
+      "InstaLoanApplyRequestDTO": {"requestString": {
+       
+        "caseNumber": "9856336195"
+        }}
+      },
+    "headers": {},
+    "query": {}
+    },
+  "responseHeaders": {"Content-Type": "application/json"},
+  "responseBody": {
+    "type": "instaLoanApplyResponseDTO",
+    "status": {
+      "errorCode": "0",
+      "extendedReply": {},
+      "externalReferenceNo": "AD29102025071536",
+      "internalReferenceNumber": "2025302391217098",
+      "isOverriden": false,
+      "postingDate": {"dateString": "20251029000000"},
+      "replyCode": 0,
+      "replyText": "0"
+      },
+    "responseString": "{\"proCode\":\"007\",\"processingFlag\":\"Y\",\"intAmt\":\"00000001820\",\"prodId\":\"\",\"loanNbr\":\"0000000000000140564\",\"loanAmt\":\"00000000011100000\",\"acctNbr\":\"0001011940001234881\",\"tenAmt\":\"024\"}"
+    }
+  }
