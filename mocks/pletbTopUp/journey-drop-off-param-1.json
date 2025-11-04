@@ -7,7 +7,7 @@
   "predicate": {
     "request": {
       "leadProfile": {},
-      "journeyInfo": {"journeyID": "7380fb2c-f8e3-49ae-a128-9e9e010046e7_01_PL_U_WEB"}
+      "journeyInfo": {"journeyID": "regex:.*_PL_U_WEB$"}
       },
     "headers": {},
     "query": {}

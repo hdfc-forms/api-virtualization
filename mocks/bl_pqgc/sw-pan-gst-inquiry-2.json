@@ -1,0 +1,60 @@
+{
+  "businessName": "SW PAN GST Inquiry",
+  "apiName": "API/SW_PAN_GST_Inquiry",
+  "method": "POST",
+  "statusCode": 200,
+  "latencyMs": 0,
+  "predicate": {
+    "request": {
+      "requestString": {
+        "firstName": "Pradip",
+        "lastName": "Raj",
+        "dob": "09/08/2000",
+        "pan": "PQQPZ3449W"
+      }
+    },
+    "headers": {},
+    "query": {}
+  },
+  "responseHeaders": {
+    "Content-Type": "application/json"
+  },
+  "responseBody": {
+    "responseString": {
+      "gstinResponse": {},
+      "addressResponse": {},
+      "panResponse": {
+        "lastName": "Raj",
+        "seedingStatus": "Y",
+        "dobMatchFlag": "Y",
+        "nmPerStatus": "",
+        "panStatus": "E",
+        "panFiller3": "",
+        "firstName": "Pradip",
+        "panFiller4": "",
+        "panFiller1": "",
+        "panFiller2": "",
+        "nmNamePercentage": "",
+        "fatherNameMatchFlag": "",
+        "middleName": "",
+        "nmRemarks": "",
+        "pan": "PQQPZ3449W",
+        "panTitle": "",
+        "nameMatchFlag": "",
+        "panFiller5": ""
+      }
+    },
+    "contextParam": {
+      "bankJourneyID": "882495247677",
+      "partnerJourneyID": "782c8038-30f0-4836-82b0-866a29a20d83_01_BL_U_WEB",
+      "partnerID": "HDFCBANK",
+      "productName": "BL",
+      "channelID": "ADOBE"
+    },
+    "status": {
+      "errorDesc": "",
+      "errorCode": "",
+      "responseCode": "0"
+    }
+  }
+}

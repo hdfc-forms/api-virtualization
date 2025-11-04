@@ -1,30 +1,33 @@
 {
-  "businessName": "SW Fetch Bureau Offer",
-  "apiName": "API/SW_Fetch_BureauOffer",
+  "businessName": "api/v1/sw-get Acc Ack",
+  "apiName": "api/v1/sw-getAccAck",
   "method": "POST",
   "statusCode": 200,
   "latencyMs": 0,
   "predicate": {
     "request": {"requestString": {
-      "resiAddressCity": "PUNE"
+      "accountdetails": [{
+        "customerID": "XXXX01786",
+        "accountNumber": "XXXXXXXXX63515"
+        }]
       }},
     "headers": {},
     "query": {}
     },
   "responseHeaders": {"Content-Type": "application/json"},
   "responseBody": {
+    "responseString": {"acknowledgement": "ok"},
     "contextParam": {
-      "partnerJourneyID": "5fb6d4f4-565b-44f9-abd8-d1ba4c954350_01_BL_U_WEB",
-      "bankJourneyID": "988967940546",
+      "bankJourneyID": "882495247677",
+      "partnerJourneyID": "782c8038-30f0-4836-82b0-866a29a20d83_01_BL_U_WEB",
       "partnerID": "HDFCBANK",
       "productName": "BL",
       "channelID": "ADOBE"
       },
-    "responseString": {},
     "status": {
-      "responseCode": "0",
+      "errorDesc": "",
       "errorCode": "",
-      "errorDesc": ""
+      "responseCode": "0"
       }
     }
   }

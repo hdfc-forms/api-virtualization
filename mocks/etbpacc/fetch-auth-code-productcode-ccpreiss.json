@@ -34,7 +34,7 @@
   "responseHeaders": {"Content-Type": "application/json"},
   "responseBody": {
     "authCode": "P20251027151464918216960",
-    "redirectUrl": "https://idcomuat-in1.hdfcbank.com:443/validate/P20251027151464918216960",
+    "redirectUrl": "https://13.234.85.48/content/forms/af/hdfc/hdfc_ccforms/forms/etbpacc/etbpacc.html?authmode=DebitCard&success=true&journeyId=f1b0b3ec-cb04-49cf-9add-cdf2fddf0554_01_PACC_R_WEB&authcode=P20251027151464918216960",
     "errorCode": null,
     "errorMessage": null,
     "errorDescription": null

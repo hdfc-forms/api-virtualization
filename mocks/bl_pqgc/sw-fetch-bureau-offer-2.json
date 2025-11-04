@@ -1,0 +1,36 @@
+{
+  "businessName": "SW Fetch Bureau Offer",
+  "apiName": "API/SW_Fetch_BureauOffer",
+  "method": "POST",
+  "statusCode": 200,
+  "latencyMs": 0,
+  "predicate": {
+    "request": {
+      "requestString": {
+        "lastName": "Raj",
+        "firstName": "Pradip",
+        "dob": "09-08-2000"
+      }
+    },
+    "headers": {},
+    "query": {}
+  },
+  "responseHeaders": {
+    "Content-Type": "application/json"
+  },
+  "responseBody": {
+    "responseString": {},
+    "contextParam": {
+      "bankJourneyID": "882495247677",
+      "partnerJourneyID": "782c8038-30f0-4836-82b0-866a29a20d83_01_BL_U_WEB",
+      "partnerID": "HDFCBANK",
+      "productName": "BL",
+      "channelID": "ADOBE"
+    },
+    "status": {
+      "errorDesc": "",
+      "errorCode": "",
+      "responseCode": "0"
+    }
+  }
+}

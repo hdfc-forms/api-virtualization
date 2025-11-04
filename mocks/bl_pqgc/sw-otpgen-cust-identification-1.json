@@ -6,9 +6,9 @@
   "latencyMs": 0,
   "predicate": {
     "request": {"requestString": {
-      "identifierName": "DOB",
-      "identifierValue": "07/05/1999",
-      "mobileNo": "8652754907"
+      "identifierName": "PAN_NO",
+      "identifierValue": "PQQPZ3449W",
+      "mobileNo": "9942746163"
       }},
     "headers": {},
     "query": {}
@@ -21,10 +21,10 @@
       "lcmcpFlag": "CP"
       },
     "contextParam": {
-      "bankJourneyID": "887537434626",
-      "partnerJourneyID": "4417de65-9548-4903-a8e4-3364cbc776b7_01_PL_U_WEB",
+      "bankJourneyID": "882495247677",
+      "partnerJourneyID": "782c8038-30f0-4836-82b0-866a29a20d83_01_BL_U_WEB",
       "partnerID": "HDFCBANK",
-      "productName": "PL",
+      "productName": "BL",
       "channelID": "ADOBE"
       },
     "status": {

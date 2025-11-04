@@ -1,0 +1,38 @@
+{
+  "businessName": "SW Initiate EKYC",
+  "apiName": "API/SW_Initiate_EKYC",
+  "method": "POST",
+  "statusCode": 200,
+  "latencyMs": 0,
+  "predicate": {
+    "request": {
+      "requestString": {
+        "mobileNo": "9942746163",
+        "dob": "2000-08-09"
+      }
+    },
+    "headers": {},
+    "query": {}
+  },
+  "responseHeaders": {
+    "Content-Type": "application/json"
+  },
+  "responseBody": {
+    "responseString": {
+      "nextJourneyStep": "INITIATE-KYC",
+      "url": "https://pehchaan-uat2.hdfcuat.bank.in:443/kycengine/ekyc?jid=Y0aKFFfQG2yqFqBLS7erC9N%2FZ7OaJcJJIhyUjR0XAJ83SGMVUJITslTIOn%2FAmAcyrCAeWdyYGzZxWlT790INrHfe6A1jtqwhkPU2WjvgoIKHzFrVDJdIgiffDw0xvrhmOwq%2B%2BpW5R8tE43e%2FuB86YY4pL4g4QdujVySnfSqQOd02lJ6NulvG7vg5BJS5g4FfVVleCRxeH%2BRImlFOMGCfOy2WBgInxaXbjdwrqebscb7yH%2BQ8dNCobxS5IuLgWg6oh9VIbzp405ybVEzScjCY45il%2BNXgCXaBaFzlzCaQQXOml1FciyBqklYGGGYDHKLXWK0bER0%2FrrXU9NQ4l1%2BO%2B5Q1MndFLRRYJutwiPEdcUI1L2QlRRR0jA526Jp4JOYduzG2ITumdgVG6ix2%2BhEgWXUY%2BdqFnHZzXS7oiFfX4gYG8QY4peiUIii%2F207RA5k6"
+    },
+    "contextParam": {
+      "bankJourneyID": "882495247677",
+      "partnerJourneyID": "782c8038-30f0-4836-82b0-866a29a20d83_01_BL_U_WEB",
+      "partnerID": "HDFCBANK",
+      "productName": "BL",
+      "channelID": "ADOBE"
+    },
+    "status": {
+      "errorDesc": "",
+      "errorCode": "",
+      "responseCode": "0"
+    }
+  }
+}

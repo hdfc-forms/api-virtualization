@@ -6,16 +6,19 @@
   "latencyMs": 0,
   "predicate": {
     "request": {
-      "mobileNumber": "9865522881"
+      "journeyName": "ETB10SEC_PERSONAL_LOAN_JOURNEY",
+      "mobileNumber": "9865522881",
+      "dob": "01-01-2000",
+      "journeyId": "regex:.*_PLEB_U_WEB"
       },
     "headers": {},
     "query": {}
     },
   "responseHeaders": {"Content-Type": "application/json"},
   "responseBody": {
-    "status": "SUCCESS",
+    "customerType": "ETB",
     "code": "EA001",
     "message": "Request submitted successfully.",
-    "customerType": "ETB"
+    "status": "SUCCESS"
     }
   }

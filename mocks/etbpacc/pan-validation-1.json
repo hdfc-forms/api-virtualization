@@ -6,7 +6,10 @@
   "latencyMs": 0,
   "predicate": {
     "request": {
-      "journeyID": "regex:.*_PACC_R_WEB$"
+      "_xpath": {
+        "selector": "//*[local-name()='PAN']",
+        "pattern": "OVBPD2158J"
+      }
       },
     "headers": {},
     "query": {}

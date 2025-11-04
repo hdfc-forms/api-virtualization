@@ -1,0 +1,37 @@
+{
+  "businessName": "Adobe Fetch Returning Journey Info",
+  "apiName": "API/Adobe_FetchReturningJourneyInfo",
+  "method": "POST",
+  "statusCode": 200,
+  "latencyMs": 0,
+  "predicate": {
+    "request": {
+      "journeyName": "BL_PQGC_JOURNEY",
+      "mobileNumber": "9942746163",
+      "profile": {"panNumber": "PQQPZ3449W"}
+      },
+    "headers": {},
+    "query": {}
+    },
+  "responseHeaders": {"Content-Type": "application/json"},
+  "responseBody": {
+    "journey": [{
+      "journeyName": "BL_PQGC_JOURNEY",
+      "leadProfileId": 27371861,
+      "journeyStateInfo": [{
+        "stateInfo": "{\"BRE1BFlag\":\"NA\",\"BRE2AFlag\":\"NA\",\"BRE2CFlag\":\"NA\",\"BRE3BFlag\":\"NA\",\"BREManualLoanDetails\":{\"KeyFactsAndChargesConsent\":\"0\"},\"BankingIncomeProof\":\"IP_D\",\"CustomerAddressDetails\":{\"PreferredContactLocation\":\"Current Residence\",\"isPermanentAddress\":\"1\"},\"CustomerDetails\":{\"AssistedByBankEmployee\":\"0\",\"Dob\":\"2006-08-09\",\"EmploymentType\":\"0\",\"FirstName\":\"Pradip\",\"Gender\":\"0\",\"MiddleName\":\"Machiraju\",\"ResidentialAddress\":{\"ExistingAddressLine1\":\"A 20 Building A705\",\"ExistingAddressLine2\":\"Adani Estate\",\"ExistingAddressLine3\":\"Nashik Road\",\"ExistingCity\":\"THANE\",\"ExistingState\":\"MAHARASHTRA\",\"ExistingZipCode\":400706,\"SameAsCurrent\":\"1\"},\"addressConsent\":\"N\",\"cifAddresEditFlag\":\"N\",\"displayKYCScreenFlag\":\"Y\"},\"CustomerPersonalDetails\":{\"Occupation\":\"Salaried Doctor\"},\"DigilightFlag\":\"N\",\"EkycStatusFlag\":\"N\",\"IsEmbeddedURL\":\"false\",\"IsReturnJourney\":\"false\",\"KYCDetails\":{\"AadhaarEKYCDetails\":{\"AadharConsentLanguage\":\"English\",\"AadharTermsAndConditionCheckBox\":\"0\",\"aadhaarEKYCSuccessFlag\":\"N\",\"videoKYCConsent\":\"0\",\"videoKYCConsentLanguage\":\"English\"},\"KYCChoice\":\"AadharKYC\",\"OVDDetails\":{\"documentType\":\"0\"}},\"KYCFlag\":\"NA\",\"KeyFactsAndSheet\":{\"EMI\":\"\u20b9 49,821\",\"EMIEndDate\":\"04/11/2028\",\"EMIStartDate\":\"04/12/2025\",\"LoanAmount\":\"\u20b9 15,00,000\",\"NetLoanAmount\":\"1464600\",\"NoOfInstallments\":\"36\",\"ProcessingFee\":\"\u20b9 35,400\",\"ROI\":\"12% Per Annum\",\"StampDuty\":\"-\"},\"LoginDevice\":\"desktop\",\"ManualIncomeDeclarationFlag\":\"NA\",\"OS\":\"Windows\",\"OfferAmountShown\":\"1500000\",\"OfferTenureShown\":\"36 Months\",\"OfferType\":\"NA\",\"PQGCLoanDetails\":{\"KeyFactsAndChargesConsent\":\"0\",\"LoanAmount\":\"15,00,000\",\"LoanAmountInWords\":\"Fifteen Lakhs only\",\"MonthlyEMI\":\"\u20b9 49,821\",\"RateofInterest\":\"12.00%% p.a\",\"Tenure\":\"36 Months\"},\"PerfiosDetails\":{\"accAggregatorVendor\":\"Anumati\",\"isNewFlowTaken\":\"false\",\"perfiosCompleted\":\"no\",\"perfiosURL\":\"url\",\"personalDataPerfiosCaptureConsent\":\"N\"},\"PerfiosFlag\":\"NA\",\"ProductCode\":\"BL\",\"StageTillReached\":\"customerDetailsScreen\",\"UserAgent\":\"Mozilla/5.0(WindowsNT10.0;Win64;x64)AppleWebKit/537.36(KHTMLlikeGecko)Chrome/141.0.0.0Safari/537.36\",\"VKYCConsent\":\"NA\",\"formData\":{\"transactionID\":\"c98b9b95587246aeb5a7a6ad0bb416e0BLPQGC\"}}",
+        "state": "OFFER_ACCEPTED",
+        "timeinfo": "2025-11-04T11:50:16.472Z"
+        }],
+      "address": null,
+      "isCountryCodeAppended": "false",
+      "mobileNumber": "9942746163",
+      "countryCode": "91",
+      "profile": {},
+      "channel": "ADOBE WEBFORMS",
+      "journeyState": "OFFER_ACCEPTED",
+      "journeyID": "c98b9b95-5872-46ae-b5a7-a6ad0bb416e0_01_BL_PQGC_U_WEB"
+      }],
+    "errorCode": "RJI0000"
+    }
+  }

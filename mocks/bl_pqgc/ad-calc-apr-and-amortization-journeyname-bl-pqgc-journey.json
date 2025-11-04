@@ -1,0 +1,277 @@
+{
+  "businessName": "api/v1/ad-calc Apr And Amortization",
+  "apiName": "api/v1/ad-calcAprAndAmortization",
+  "method": "POST",
+  "statusCode": 200,
+  "latencyMs": 0,
+  "predicate": {
+    "request": {
+      "journeyName": "BL_PQGC_JOURNEY"
+      },
+    "headers": {},
+    "query": {}
+    },
+  "responseHeaders": {"Content-Type": "application/json"},
+  "responseBody": {
+    "code": "KFS001",
+    "aprAmortizationDetail": {
+      "amortizationSchedules": [
+        {
+        "principal": 34821.46,
+        "instalment": 49821.46,
+        "interest": 15000,
+        "instalmentNumber": 1,
+        "outstandingPrincipal": 1500000
+        },
+        {
+        "principal": 35169.46,
+        "instalment": 49821.46,
+        "interest": 14652,
+        "instalmentNumber": 2,
+        "outstandingPrincipal": 1465179
+        },
+        {
+        "principal": 35521.46,
+        "instalment": 49821.46,
+        "interest": 14300,
+        "instalmentNumber": 3,
+        "outstandingPrincipal": 1430009
+        },
+        {
+        "principal": 35876.46,
+        "instalment": 49821.46,
+        "interest": 13945,
+        "instalmentNumber": 4,
+        "outstandingPrincipal": 1394488
+        },
+        {
+        "principal": 36235.46,
+        "instalment": 49821.46,
+        "interest": 13586,
+        "instalmentNumber": 5,
+        "outstandingPrincipal": 1358611
+        },
+        {
+        "principal": 36597.46,
+        "instalment": 49821.46,
+        "interest": 13224,
+        "instalmentNumber": 6,
+        "outstandingPrincipal": 1322376
+        },
+        {
+        "principal": 36963.46,
+        "instalment": 49821.46,
+        "interest": 12858,
+        "instalmentNumber": 7,
+        "outstandingPrincipal": 1285778
+        },
+        {
+        "principal": 37333.46,
+        "instalment": 49821.46,
+        "interest": 12488,
+        "instalmentNumber": 8,
+        "outstandingPrincipal": 1248815
+        },
+        {
+        "principal": 37706.46,
+        "instalment": 49821.46,
+        "interest": 12115,
+        "instalmentNumber": 9,
+        "outstandingPrincipal": 1211481
+        },
+        {
+        "principal": 38083.46,
+        "instalment": 49821.46,
+        "interest": 11738,
+        "instalmentNumber": 10,
+        "outstandingPrincipal": 1173775
+        },
+        {
+        "principal": 38464.46,
+        "instalment": 49821.46,
+        "interest": 11357,
+        "instalmentNumber": 11,
+        "outstandingPrincipal": 1135691
+        },
+        {
+        "principal": 38849.46,
+        "instalment": 49821.46,
+        "interest": 10972,
+        "instalmentNumber": 12,
+        "outstandingPrincipal": 1097227
+        },
+        {
+        "principal": 39237.46,
+        "instalment": 49821.46,
+        "interest": 10584,
+        "instalmentNumber": 13,
+        "outstandingPrincipal": 1058377
+        },
+        {
+        "principal": 39630.46,
+        "instalment": 49821.46,
+        "interest": 10191,
+        "instalmentNumber": 14,
+        "outstandingPrincipal": 1019140
+        },
+        {
+        "principal": 40026.46,
+        "instalment": 49821.46,
+        "interest": 9795,
+        "instalmentNumber": 15,
+        "outstandingPrincipal": 979509
+        },
+        {
+        "principal": 40426.46,
+        "instalment": 49821.46,
+        "interest": 9395,
+        "instalmentNumber": 16,
+        "outstandingPrincipal": 939483
+        },
+        {
+        "principal": 40830.46,
+        "instalment": 49821.46,
+        "interest": 8991,
+        "instalmentNumber": 17,
+        "outstandingPrincipal": 899057
+        },
+        {
+        "principal": 41239.46,
+        "instalment": 49821.46,
+        "interest": 8582,
+        "instalmentNumber": 18,
+        "outstandingPrincipal": 858226
+        },
+        {
+        "principal": 41651.46,
+        "instalment": 49821.46,
+        "interest": 8170,
+        "instalmentNumber": 19,
+        "outstandingPrincipal": 816987
+        },
+        {
+        "principal": 42068.46,
+        "instalment": 49821.46,
+        "interest": 7753,
+        "instalmentNumber": 20,
+        "outstandingPrincipal": 775335
+        },
+        {
+        "principal": 42488.46,
+        "instalment": 49821.46,
+        "interest": 7333,
+        "instalmentNumber": 21,
+        "outstandingPrincipal": 733267
+        },
+        {
+        "principal": 42913.46,
+        "instalment": 49821.46,
+        "interest": 6908,
+        "instalmentNumber": 22,
+        "outstandingPrincipal": 690778
+        },
+        {
+        "principal": 43342.46,
+        "instalment": 49821.46,
+        "interest": 6479,
+        "instalmentNumber": 23,
+        "outstandingPrincipal": 647865
+        },
+        {
+        "principal": 43776.46,
+        "instalment": 49821.46,
+        "interest": 6045,
+        "instalmentNumber": 24,
+        "outstandingPrincipal": 604522
+        },
+        {
+        "principal": 44214.46,
+        "instalment": 49821.46,
+        "interest": 5607,
+        "instalmentNumber": 25,
+        "outstandingPrincipal": 560746
+        },
+        {
+        "principal": 44656.46,
+        "instalment": 49821.46,
+        "interest": 5165,
+        "instalmentNumber": 26,
+        "outstandingPrincipal": 516531
+        },
+        {
+        "principal": 45102.46,
+        "instalment": 49821.46,
+        "interest": 4719,
+        "instalmentNumber": 27,
+        "outstandingPrincipal": 471875
+        },
+        {
+        "principal": 45553.46,
+        "instalment": 49821.46,
+        "interest": 4268,
+        "instalmentNumber": 28,
+        "outstandingPrincipal": 426772
+        },
+        {
+        "principal": 46009.46,
+        "instalment": 49821.46,
+        "interest": 3812,
+        "instalmentNumber": 29,
+        "outstandingPrincipal": 381219
+        },
+        {
+        "principal": 46469.46,
+        "instalment": 49821.46,
+        "interest": 3352,
+        "instalmentNumber": 30,
+        "outstandingPrincipal": 335210
+        },
+        {
+        "principal": 46934.46,
+        "instalment": 49821.46,
+        "interest": 2887,
+        "instalmentNumber": 31,
+        "outstandingPrincipal": 288740
+        },
+        {
+        "principal": 47403.46,
+        "instalment": 49821.46,
+        "interest": 2418,
+        "instalmentNumber": 32,
+        "outstandingPrincipal": 241806
+        },
+        {
+        "principal": 47877.46,
+        "instalment": 49821.46,
+        "interest": 1944,
+        "instalmentNumber": 33,
+        "outstandingPrincipal": 194402
+        },
+        {
+        "principal": 48356.46,
+        "instalment": 49821.46,
+        "interest": 1465,
+        "instalmentNumber": 34,
+        "outstandingPrincipal": 146525
+        },
+        {
+        "principal": 48839.46,
+        "instalment": 49821.46,
+        "interest": 982,
+        "instalmentNumber": 35,
+        "outstandingPrincipal": 98168
+        },
+        {
+        "principal": 49328.74,
+        "instalment": 49822,
+        "interest": 493,
+        "instalmentNumber": 36,
+        "outstandingPrincipal": 49329
+        }
+      ],
+      "apr": 13.67
+      },
+    "message": "SUCCESS",
+    "status": "SUCCESS"
+    }
+  }
