@@ -1,0 +1,42 @@
+{
+  "businessName": "api/v1/adobe-validate SSOToken",
+  "apiName": "api/v1/adobe-validateSSOToken",
+  "method": "POST",
+  "statusCode": 200,
+  "latencyMs": 0,
+  "predicate": {
+    "request": {
+      "srcRefNo": "AD24556667",
+      "extRefNo": "AD20251105120403206",
+      "ssoToken": "eyJraWQiOiJ0ZXN0IiwiZW5jIjoiQTEyOENCQy1IUzI1NiIsImFsZyI6IlJTQS1PQUVQLTI1NiJ9.Wj55u21GDo4mCaaY-p1qgvGIb7nmr-8M0uIc1vBAigpbQICDiVoOvIzbRkUHBabdC7ewVJL7SujQCHQXgVmgFEoqU9NO3Rat-krE0X7Q2_y1F7s0e2lJWjpC-t33EuX3d0NTmYGaBcRc3fpq6l07aci4RbK8MHeA7Ka_NwkFL0TC2aRIPjAMRUq3zYFxA-9X3amKrmiC3cLg-XPJLOE2h1pxTYAU-F6oRNaKaPQDe2oMIFrVrBmioBDm0zRRAS2KE4lpiX1eJppYMEf10no5F1beloB4O0HE0TlB1ruooiq2VJFaptMK8e_3ofWsOHMyqV6FSHWdYBNr7qZnC8bQFA.sci2KGvPmeQM4AWmBC3wIA.CpPvH-Zpynz2q74b4iv7kkl70ohi_1I44l3H5nD4VV4GRzkHL1LsXWEcRo5dnEosyFMRD4DnG_FpSvV4scnCA0PKmeI0OD8MR-wSlnNeOAitQOYzmahGPkkB9qXnsmVyA21vjZJ9Qe1Wn_LvDoBjI3j84dDZPzUXxTKBfgumb_w3la04sH4IhVW6Ak0bADkmSfYSg62klDAjd0zH5GHeqjzzIjVaqRNud2--AcvOlLEHfnq4N3H3Qa8rXddRyqEQcAZipBabnGBRXquQUTvbF9HahmSEofrTd2cONd1FAszq6Jv_0q8CsNcOt3c5JsfglbObnSD_ryJMIqQnuVpS3pdU1a1dxCL33OMytLc8SKDOx2rX-9KrneiLwV3GRj3w80i8tU-wfjGwsoDGJ2KG10Zjj3SAslIaQTsMrh6Tg1eHrRaCOgVrttTfJxQ38jWU3cn94WJjLLW9dnoBGOGBbXO_uGI34KBh2REmlYZJkb6I12NxAG4IotVq5kMNBBKB9NCFNeAYWfmKdzTvET3ElNJaq7IPaYaHQojckpjzKg5qSMnH44QvPXq97Oew7mInGpDPSfxGnMI8n2TDsh53ALFMRk_4iw7wnDUck6TjL_nVC6pCLW3CC7NwJGOIgGWMwZEv_tWH9oJGazl8ts9VfVVXJ4o23mJzITOmoUoubozVPY_bvDPH_M10SL9HHjrtf9XIN4yku7F5i0htrA6_V2gvjMdl6uU0e-OR6FunF2rAc0Eb4KcBsyvwLTeYV3lUGGcjJ4qXyHGSAsKl_EMnIkCDxnhX6DeatGE855EyCamMyCjOAG1lzOJYBwXRo49Hfd2oNHJY3Xf_9UKv79kVXIZpuoKtl1NLeyX2dj2Uou42GbAkJJo4qcO5hHBCCy_7S3mc6Y7BXztKJ78Gagr8q8gqbqepl5qpX8OKn8nGzqeQjzIn_wxKq5XYmYNiykh-q75vfgEWQw3uYxPzc81BrGv3qlbAN5Wu5Xg_nwUQEwCb4S5JRG3wDMD1ImWaJ19oiwpYA939T61F-ilwlM3ssjnbN7pbx4JNEFAR7Vg6_wVhHMlUzsWCZ8FI6-bpKewQyVoD0iC0VIv6B90lDCpmDK9g-iGzGi_7Gz_hUJmaaorhO1DRQ75cySX2PIaobhQAcNjlKufFidEXLIuRZvvs1L8EA06-uggehMoQFp-VF5GvN-_pPEJkcOiR7slL9vYXYKA-IOsjvnLp_HgkhSAmDkmtH2U6CRpNUSst7d2cV1E.4_uVdKiHOksVhWlkCbtk2g"
+      },
+    "headers": {},
+    "query": {}
+    },
+  "responseHeaders": {"Content-Type": "application/json"},
+  "responseBody": {
+    "ssoData": {
+      "journeyInfo": {"jKey": "INSTA_JUMBO_AGENT"},
+      "additionalInfo": {"requestParams": ""},
+      "customerInfo": {
+        "mbl": "7652577710",
+        "pan": "",
+        "customerId": "119726687",
+        "pseudoId": "9f94ff10126225772be48d2948b7955c78d6d55c9595427a693a0c63d648c722",
+        "ccNoLast4Digits": "3699"
+        }
+      },
+    "statusCode": "0",
+    "statusMsg": "success",
+    "extRefNo": "AD20251105120403206",
+    "ssoMetadata": {
+      "sourceId": "test",
+      "sourceName": "test",
+      "sourceChannel": "WEB_APP",
+      "ssoTokenTTL": "86400000",
+      "ssoTokenAud": null,
+      "srcRefNo": "AD24556667",
+      "ssoTokenIAt": "1762344233637"
+      }
+    }
+  }
