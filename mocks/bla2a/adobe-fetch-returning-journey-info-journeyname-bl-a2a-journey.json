@@ -1,0 +1,22 @@
+{
+  "businessName": "Adobe Fetch Returning Journey Info",
+  "apiName": "API/Adobe_FetchReturningJourneyInfo",
+  "method": "POST",
+  "statusCode": 200,
+  "latencyMs": 0,
+  "predicate": {
+    "request": {
+      "journeyName": "BL_A2A_JOURNEY",
+      "mobileNumber": "8170310968",
+      "profile": {},
+      "currentJourneyID": "regex:.*_BL_U_WEB"
+      },
+    "headers": {},
+    "query": {}
+    },
+  "responseHeaders": {"Content-Type": "application/json"},
+  "responseBody": {
+    "msg": "No Incomplete Journey Exists for journeyBL_A2A_JOURNEY",
+    "errorCode": "RJI0001"
+    }
+  }

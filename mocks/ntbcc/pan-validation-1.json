@@ -1,0 +1,19 @@
+{
+  "businessName": "Pan Validation",
+  "apiName": "API/PanValidation",
+  "method": "POST",
+  "statusCode": 200,
+  "latencyMs": 0,
+  "predicate": {
+    "request": {
+      "_xpath": {
+        "selector": "//*[local-name()='Consumer_Name']",
+        "pattern": "TEST"
+      }
+      },
+    "headers": {},
+    "query": {}
+    },
+  "responseHeaders": {"Content-Type": "application/json"},
+  "responseBody": {"responseXmlString": "x4TkDZf0tk78YZic<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<soapenv:Envelope\n   xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\">\n <soapenv:Body>\n  <a:PANValServiceResponse xmlns:a=\"panval.isd.xsd.hdfcbank.com\">\n   <Return_Code>1<\/Return_Code>\n   <Return_Description>Success<\/Return_Description>\n   <PAN_Details>\n    <PAN>OVBPD2158J<\/PAN>\n    <PAN_Status>E<\/PAN_Status>\n    <Last_Name>Patil<\/Last_Name>\n    <First_Name>Ranjit<\/First_Name>\n    <Middle_Name>Vijay<\/Middle_Name>\n    <PAN_Title><\/PAN_Title>\n    <Last_Update_Date><\/Last_Update_Date>\n    <Filler1><\/Filler1>\n    <Filler2>Y<\/Filler2>\n    <Filler3>90<\/Filler3>\n    <Filler4><\/Filler4>\n    <Filler5><\/Filler5>\n   <\/PAN_Details>\n   <ResponseTime><\/ResponseTime>\n  <\/a:PANValServiceResponse>\n <\/soapenv:Body>\n<\/soapenv:Envelope>\n"}
+  }

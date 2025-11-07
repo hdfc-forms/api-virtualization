@@ -6,9 +6,8 @@
   "latencyMs": 0,
   "predicate": {
     "request": {"executeFinalDAPRequest": {"finalDAPRequest": {
-      
-      "PLACE": "BENGALURU"
-   
+      "FILLER8": "",
+      "FILLER9": "ADCC"
       }}},
     "headers": {},
     "query": {}

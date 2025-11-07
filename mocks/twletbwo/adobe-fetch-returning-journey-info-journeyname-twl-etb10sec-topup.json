@@ -1,0 +1,21 @@
+{
+  "businessName": "Adobe Fetch Returning Journey Info",
+  "apiName": "API/Adobe_FetchReturningJourneyInfo",
+  "method": "POST",
+  "statusCode": 200,
+  "latencyMs": 0,
+  "predicate": {
+    "request": {
+      "journeyName": "TWL_ETB10SEC_TOPUP_JOURNEY",
+      "mobileNumber": "9049568863",
+      "currentJourneyID":  "regex:.*_TWET_U_WEB"
+      },
+    "headers": {},
+    "query": {}
+    },
+  "responseHeaders": {"Content-Type": "application/json"},
+  "responseBody": {
+    "msg": "No Incomplete Journey Exists for journeyTWL_ETB10SEC_TOPUP_JOURNEY",
+    "errorCode": "RJI0001"
+    }
+  }

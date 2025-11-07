@@ -1,0 +1,24 @@
+{
+  "businessName": "api/v1/adobe-identify Customer",
+  "apiName": "api/v1/adobe-identifyCustomer",
+  "method": "POST",
+  "statusCode": 200,
+  "latencyMs": 0,
+  "predicate": {
+    "request": {
+      "journeyName": "TWL_ETB10SEC_TOPUP_JOURNEY",
+      "mobileNumber": "9049568863",
+      "dob": "10-09-1992",
+      "journeyId":  "regex:.*_TWET_U_WEB"
+      },
+    "headers": {},
+    "query": {}
+    },
+  "responseHeaders": {"Content-Type": "application/json"},
+  "responseBody": {
+    "customerType": "ETB",
+    "code": "EA001",
+    "message": "Request submitted successfully.",
+    "status": "SUCCESS"
+    }
+  }

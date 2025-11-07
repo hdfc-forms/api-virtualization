@@ -1,0 +1,25 @@
+{
+  "businessName": "api/v1/adobe-check Offer",
+  "apiName": "api/v1/adobe-checkOffer",
+  "method": "POST",
+  "statusCode": 200,
+  "latencyMs": 0,
+  "predicate": {
+    "request": {
+      "journeyName": "TWL_A2A_TOPUP_JOURNEY",
+      "journeyId":  "regex:.*_TWAT_U_WEB"
+      },
+    "headers": {},
+    "query": {}
+    },
+  "responseHeaders": {"Content-Type": "application/json"},
+  "responseBody": {
+    "offers": [{
+      "offerString": ["STP_TWL_10SEC_TOPUP_A2A_29AUG_UATPF1"],
+      "offerId": "c0217ec1-d3ca-4a4d-943b-060e736f47f6"
+      }],
+    "code": "EA001",
+    "message": "Offer available.",
+    "status": "SUCCESS"
+    }
+  }

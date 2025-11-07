@@ -1,0 +1,444 @@
+{
+  "businessName": "api/v1/adobe-fetch Offer",
+  "apiName": "api/v1/adobe-fetchOffer",
+  "method": "POST",
+  "statusCode": 200,
+  "latencyMs": 0,
+  "predicate": {
+    "request": {
+      "journeyName": "TWL_UNIFIED_JOURNEY",
+      "journeyId":  "regex:.*_TWLU_U_WEB"
+      },
+    "headers": {},
+    "query": {}
+    },
+  "responseHeaders": {"Content-Type": "application/json"},
+  "responseBody": {
+    "offerDetail": {
+      "tenureWiseOfferList": null,
+      "campaignId": 13507,
+      "personalizationList": {"personalizationDatapoint": [
+        {
+        "fieldName": "cp_identity_cp",
+        "fieldValue": "4"
+        },
+        {
+        "fieldName": "ba_meta_key",
+        "fieldValue": "75899784"
+        },
+        {
+        "fieldName": "member_id",
+        "fieldValue": "901111386"
+        },
+        {
+        "fieldName": "card_number",
+        "fieldValue": "4386243406012300"
+        },
+        {
+        "fieldName": "customer_id",
+        "fieldValue": ""
+        },
+        {
+        "fieldName": "Email",
+        "fieldValue": "shubham@gmail.com"
+        },
+        {
+        "fieldName": "mobile_number",
+        "fieldValue": "9049568863"
+        },
+        {
+        "fieldName": "Product",
+        "fieldValue": ""
+        },
+        {
+        "fieldName": "ACCOUNT_NO",
+        "fieldValue": "50100117780367"
+        },
+        {
+        "fieldName": "CARD_TYPE",
+        "fieldValue": "STP_TWL_QP_10SEC_CASA_UAT_06AUG25_NB_UAT05_A1"
+        },
+        {
+        "fieldName": "CITY",
+        "fieldValue": "SATARA"
+        },
+        {
+        "fieldName": "CRM_CAMPAIGN_ID",
+        "fieldValue": ""
+        },
+        {
+        "fieldName": "CRM_CUSTOMER_TRACKING_ID",
+        "fieldValue": "901111386"
+        },
+        {
+        "fieldName": "CRM_OCCURRENCE_NUMBER",
+        "fieldValue": "0"
+        },
+        {
+        "fieldName": "LG_CODE",
+        "fieldValue": "987812"
+        },
+        {
+        "fieldName": "MOBILE_NO",
+        "fieldValue": ""
+        },
+        {
+        "fieldName": "NAME",
+        "fieldValue": "Shubham Deelip Sonawane"
+        },
+        {
+        "fieldName": "NEW_CARD_TYPE",
+        "fieldValue": ""
+        },
+        {
+        "fieldName": "OFFER_DETAILS",
+        "fieldValue": ""
+        },
+        {
+        "fieldName": "OFFER_TO_DATE",
+        "fieldValue": ""
+        },
+        {
+        "fieldName": "PRODUCT_1",
+        "fieldValue": ""
+        },
+        {
+        "fieldName": "PROMO_CODE",
+        "fieldValue": ""
+        },
+        {
+        "fieldName": "AADHAR_NO",
+        "fieldValue": ""
+        },
+        {
+        "fieldName": "address1",
+        "fieldValue": "A 20 Building A705"
+        },
+        {
+        "fieldName": "address2",
+        "fieldValue": "Adani Estate"
+        },
+        {
+        "fieldName": "address3",
+        "fieldValue": "Nashik Road"
+        },
+        {
+        "fieldName": "address4",
+        "fieldValue": ""
+        },
+        {
+        "fieldName": "address5",
+        "fieldValue": ""
+        },
+        {
+        "fieldName": "ATM_CITY",
+        "fieldValue": ""
+        },
+        {
+        "fieldName": "ATM_ID",
+        "fieldValue": ""
+        },
+        {
+        "fieldName": "BRANCHCODE",
+        "fieldValue": "2373"
+        },
+        {
+        "fieldName": "CD_CC",
+        "fieldValue": ""
+        },
+        {
+        "fieldName": "CD_DC",
+        "fieldValue": "2304"
+        },
+        {
+        "fieldName": "CD_HASH",
+        "fieldValue": ""
+        },
+        {
+        "fieldName": "CD_POS",
+        "fieldValue": ""
+        },
+        {
+        "fieldName": "Comments",
+        "fieldValue": ""
+        },
+        {
+        "fieldName": "COMP_CODE",
+        "fieldValue": ""
+        },
+        {
+        "fieldName": "COMP_NAME",
+        "fieldValue": ""
+        },
+        {
+        "fieldName": "CUSTADD",
+        "fieldValue": ""
+        },
+        {
+        "fieldName": "DEC_LN_AMOUNT",
+        "fieldValue": ""
+        },
+        {
+        "fieldName": "DOB",
+        "fieldValue": "10/09/1992 12:00:00 AM"
+        },
+        {
+        "fieldName": "EMI",
+        "fieldValue": ""
+        },
+        {
+        "fieldName": "EMI_DUE_DATE",
+        "fieldValue": ""
+        },
+        {
+        "fieldName": "ENCRYPTEDCUSTID",
+        "fieldValue": "NzpGhBjbaqY="
+        },
+        {
+        "fieldName": "FIELD_1",
+        "fieldValue": "100000"
+        },
+        {
+        "fieldName": "FIELD_3",
+        "fieldValue": "755"
+        },
+        {
+        "fieldName": "field2",
+        "fieldValue": "9269540"
+        },
+        {
+        "fieldName": "field3",
+        "fieldValue": "6866855"
+        },
+        {
+        "fieldName": "field4",
+        "fieldValue": "0"
+        },
+        {
+        "fieldName": "field5",
+        "fieldValue": "50100117780367"
+        },
+        {
+        "fieldName": "GENDER",
+        "fieldValue": "M"
+        },
+        {
+        "fieldName": "INTRATE",
+        "fieldValue": "13.50%"
+        },
+        {
+        "fieldName": "INTRATE_1",
+        "fieldValue": "13.00%"
+        },
+        {
+        "fieldName": "MARTIAL_STATUS",
+        "fieldValue": ""
+        },
+        {
+        "fieldName": "NEW_CITY",
+        "fieldValue": ""
+        },
+        {
+        "fieldName": "NEW_STATE",
+        "fieldValue": ""
+        },
+        {
+        "fieldName": "PAN_NO",
+        "fieldValue": "CDMPE7134C"
+        },
+        {
+        "fieldName": "PF",
+        "fieldValue": "3999"
+        },
+        {
+        "fieldName": "PIN",
+        "fieldValue": "412801"
+        },
+        {
+        "fieldName": "PRODUCT_VARIANT",
+        "fieldValue": ""
+        },
+        {
+        "fieldName": "Propensity",
+        "fieldValue": ""
+        },
+        {
+        "fieldName": "Pseudo_Id",
+        "fieldValue": "+0okCQYFcIyv7LrImRsRqQ=="
+        },
+        {
+        "fieldName": "RACKINTRATE",
+        "fieldValue": ""
+        },
+        {
+        "fieldName": "RACKPF",
+        "fieldValue": ""
+        },
+        {
+        "fieldName": "RACKTENOR",
+        "fieldValue": ""
+        },
+        {
+        "fieldName": "RANK",
+        "fieldValue": ""
+        },
+        {
+        "fieldName": "STATE",
+        "fieldValue": "MAHARASHTRA"
+        },
+        {
+        "fieldName": "TENOR",
+        "fieldValue": "60"
+        },
+        {
+        "fieldName": "LOANAMT",
+        "fieldValue": "348681.00"
+        },
+        {
+        "fieldName": "NET_LOAN",
+        "fieldValue": ""
+        },
+        {
+        "fieldName": "LOANAMT_1",
+        "fieldValue": "0.00"
+        },
+        {
+        "fieldName": "LOAN_AMT",
+        "fieldValue": ""
+        },
+        {
+        "fieldName": "custid",
+        "fieldValue": ""
+        }
+      ]},
+      "campaignName": "STP_TWL_QP_10SEC_CASA_UAT_06AUG25_NB_UAT05_A1"
+      },
+    "code": "EA001",
+    "demogDetail": {
+      "score6": null,
+      "vdcustitpan3": "",
+      "score7": null,
+      "vdcustitpan2": "",
+      "vdcusttype": "I",
+      "score8": null,
+      "filler12": null,
+      "filler11": null,
+      "score2": null,
+      "aldebitRawScores": null,
+      "vdcustitnbr": "WITPL3993B",
+      "score3": null,
+      "score4": null,
+      "score5": null,
+      "vdcustoffphone": "",
+      "vdcustoffadr3": "",
+      "band3": null,
+      "band4": null,
+      "ddcustcloseddate": "",
+      "vdcustoffadr1": "",
+      "band1": null,
+      "ethniccode": "12",
+      "vdcustoffadr2": "",
+      "band2": null,
+      "accountid": "50100117780367",
+      "ndcustjoiningage": 0,
+      "vdcustoffzipcode": "",
+      "filler10": null,
+      "vdcustmobilephone": "9049568863",
+      "branchcode": "2373",
+      "debitscorepl": "",
+      "vdcustchannel1CODE": "",
+      "vdthirdholder": "",
+      "totalunsecurepaamt": "",
+      "band7": null,
+      "vdcustmiddlename": "Deelip ",
+      "band8": null,
+      "accountId": null,
+      "band5": null,
+      "band6": null,
+      "vdsecondholder": "",
+      "vdcustempcompany": "",
+      "maskedcardno": "",
+      "score1": null,
+      "vdcustjobtitle": "",
+      "vdcusttypeorigin": "",
+      "sasid": 901111386,
+      "productcode": "187",
+      "ddcustdateofbirth": "1992-09-10 00:00:00",
+      "fwaccntnum": "50100117780367",
+      "vdcuststate": "MAHARASHTRA",
+      "debitscoreal": "",
+      "vdcustnetannualincome": 0,
+      "standardizedcity": "",
+      "ccbehaviorNewBandsForAL": null,
+      "reltype": "SOW",
+      "vdcustcity": "PUNE",
+      "behavioralscore7": "",
+      "ccbehaviorSegment": null,
+      "vdcustprofession": "",
+      "behavioralscore6": "",
+      "behavioralscore5": "",
+      "sourceid": "FINWARE",
+      "behavioralscore4": "",
+      "behavioralscore3": "",
+      "panNo": null,
+      "aadharNo": "",
+      "ccbehaviorRawScores": null,
+      "behavscore1": "",
+      "behavscore2": "",
+      "debitscorebl": "",
+      "sourceId": null,
+      "vdcustadd1": "A 20 Building A705",
+      "vdcustadd2": "Adani Estate",
+      "fdcuststaffind": "",
+      "vdcustadd3": "Nashik Road ",
+      "vdcustadd4": "",
+      "productdescription": "BB KIDS SAVINGS A/C",
+      "vdcustemailadd": "shubham@gmail.com",
+      "debitscorecards": "",
+      "ndcustmonthlyincome": 0,
+      "vdcustresiphone": "9049568863",
+      "producttype": "SAVINGS",
+      "vdcustlastname": "",
+      "cncbehavscore": "",
+      "vdcusteducation": "",
+      "vdcustfullname": "shubham",
+      "vdcusttitle": "MR",
+      "vdcustchannel2CODE": "",
+      "vdcustzipcode": "412105",
+      "ucicno": null,
+      "vdcustnatlid": "",
+      "totalpaamt": "",
+      "vdcustresidencetype": "",
+      "vdcustspousename": "",
+      "fdcustmissingind": "",
+      "vdcustnameshort": "Shubham ",
+      "customerid": "901111386",
+      "vdcustoffemailadd": "",
+      "vdcustmaritalstatus": "2",
+      "vdcustfirstname": "Shubham",
+      "filler9": null,
+      "filler8": null,
+      "filler5": null,
+      "ddcuststartdate": "",
+      "filler4": null,
+      "filler7": null,
+      "filler6": null,
+      "updatedt": "",
+      "vdcustspouseoccu": "",
+      "filler3": null,
+      "ndcustannualincome": 0,
+      "ddcustreestbdate": "",
+      "vdcustcountry": "INDIA",
+      "vdcustbranchcode": "2373",
+      "cardbehavscore": "",
+      "vdcustgender": "M",
+      "mobileNo": null,
+      "fwcustid": "",
+      "customerIdentity": null,
+      "ndcustdependents": 0,
+      "vdcustmthrmadnname": ""
+      },
+    "message": "SUCCESS",
+    "status": "SUCCESS"
+    }
+  }

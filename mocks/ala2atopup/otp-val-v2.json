@@ -1,0 +1,30 @@
+{
+  "businessName": "OTP Val v2",
+  "apiName": "API/OTP_Val_v2",
+  "method": "POST",
+  "statusCode": 200,
+  "latencyMs": 0,
+  "predicate": {
+    "request": {"verifyPwdRequest": {"hdfcVerifyPwdReq": {
+      "linkData": "0000000918039678569",
+      "passwordValue": "123456"
+      }}},
+    "headers": {},
+    "query": {}
+    },
+  "responseHeaders": {"Content-Type": "application/json"},
+  "responseBody": {
+    "verifyPwdRequestResponse": {"multiRef": {
+      "fillerField1": "",
+      "refNo": "20251106131403531",
+      "errorDetail": "",
+      "messageHash": "static:verpwdres:04:ZLenXaXeFz/loa+hWOiwRvdH0Vc=",
+      "fillerField5": "",
+      "fillerField4": "",
+      "fillerField3": "",
+      "fillerField2": "",
+      "statusCode": "00"
+      }},
+    "Id-token-jwt": "BIicJJm8PmkJIXsGN0h6N6JhzM_qJ4bLGSY_zQlfOgkVwczC0lOzfAP6Kir6aebZagdM6JbiV5C8yyYiIzvS0OuvMloF4i0p3Bth5vGZJh5E-IKUIBkY0E17h9H2_0mtCeYN0bzZDOjeA3IfI_1xN97HbmXPn9GJALuLRn3Ji1_RrQF_sCHEKE3OvikZW3Z4qshUp4-e7J9gAjxEFeyfb9WznJRdI7mq9AvVBs_G4J9Q2wPQvNaz_ZhznxW6knjLpW6BykQa2nptBOGjSeK2hOkg1nWPlVsyIPbdwBgJObilcYtKVncHFrYzgR2gHCplqMibH1NjdPBPJGtH20-f1w.C6TZC3BdSpoNTyd7FBLp9A.XR1vUnvptMJmA77iUjjVRu9PPnjPN-1XofO7t51TZtw2raFhba7fn4a24JGQX8TIPnupcWae-h-CGaKHEhksASfIByv6zKZ2zJdYQN2eY-ARhkLa5Z5qoCkqihkWCc691IER3Z9Q_MhAfKD_eoTM2UQdCZlWl7fgeabFhW3IgdUFCP9ocWyDo053xikq4JT8zMfIaHoWOVsauANWStu3Pgy0IFRb6xRzonBMyYOBPp3RTDXoz2IjZiWD9qEZPc_1ysZ2Vr32iTWKaKLHzDqirvnYGduXwMr4eDrqYnSXct0EWoJyV59oN7aNh6cPD1qYwKXNQ5v3oDjG8dCTem0iTcRGkE2uev8wG7U-c-jpQhd6q2RLIoWLkk8HKdQ_VSVMyTDTopCOYkVmHdSO1Q7Gv1vXyhhIJnFHB3K0ji0xERM_GEpASbzJLibW4LC-0gukA6ytCuJXsoyPf9qWy98MQkm1BoiuRMfY_J6n7huL5TlDB_tT45H5v1v3D3JF_D1myDdLa6wmEnBhH8R6mlR9GvOknBTWGs03P7OCDeZYBGJavkRpL073waAT2waZ4kWL5rFHS1Z0iZN6JREzcY7SuhXwj0Q6qct2veXxSd_o2RFF_ILTt89f1uv_l87QDlwPuyyO88UihqCr1ZninF7qgnGClvqVvbzEPjT_Ek16DFr_UDZ8Gk9Rb8iLPw-puihWewkuoP6_-Go-YaWyQG66F8a-b3rIDmFFBEdAMKvu-S7f4eT0GDOQvst_GwqDEMKFahyIXFbr6IGmbcM7A1SkcbpW3woJZco6eipRuhabpUWVLnsKCv2BYOLx5uEeuQm5Hq84jalAqMYj2aHxQaH3qzhXJLVFw2rzdw2w_1blCCtPyp0KPLYTYEQChlveS5s1.JAOv2v8Ja_rvmvrDWdhZjQ"
+    }
+  }
