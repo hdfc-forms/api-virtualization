@@ -1,0 +1,24 @@
+{
+  "businessName": "api/v1/adobe-identify Customer",
+  "apiName": "api/v1/adobe-identifyCustomer",
+  "method": "POST",
+  "statusCode": 200,
+  "latencyMs": 0,
+  "predicate": {
+    "request": {
+      "journeyName": "AL_A2A_TOPUP_JOURNEY",
+      "mobileNumber": "8039678569",
+      "dob": "28-10-1990",
+      "journeyId": "regex:.*_ALAT_U_WEB"
+      },
+    "headers": {},
+    "query": {}
+    },
+  "responseHeaders": {"Content-Type": "application/json"},
+  "responseBody": {
+    "customerType": "A2A",
+    "code": "EA001",
+    "message": "Request submitted successfully.",
+    "status": "SUCCESS"
+    }
+  }

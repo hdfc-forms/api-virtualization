@@ -1,0 +1,31 @@
+{
+  "businessName": "Adobe IFSCCode",
+  "apiName": "API/Adobe_IFSCCode",
+  "method": "POST",
+  "statusCode": 200,
+  "latencyMs": 0,
+  "predicate": {
+    "request": {"ifscCode": "UTIB0000111"},
+    "headers": {},
+    "query": {}
+    },
+  "responseHeaders": {"Content-Type": "application/json"},
+  "responseBody": {
+    "data": [{
+      "address": "HOTEL FORTUNE GALAXY COMM PLOT NO C7 67",
+      "city": "VAPI",
+      "bankBrnach": "VAPI GUJRAT",
+      "contact": "0",
+      "district": "VAPI",
+      "bankName": "AXIS BANK",
+      "check": "x",
+      "state": "GUJARAT",
+      "micrCode": "400211002",
+      "ifscCode": "UTIB0000111",
+      "uniqueId": 503532
+      }],
+    "errorCode": "IFSC0000",
+    "message": "Record found",
+    "status": "200"
+    }
+  }

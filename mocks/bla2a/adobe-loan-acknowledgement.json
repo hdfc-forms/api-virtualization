@@ -1,0 +1,22 @@
+{
+  "businessName": "Adobe Loan Acknowledgement",
+  "apiName": "API/Adobe_LoanAcknowledgement",
+  "method": "POST",
+  "statusCode": 200,
+  "latencyMs": 0,
+  "predicate": {
+    "request": {
+      "leadProfile": {
+        "mobileNumber": "8170310968"
+        }
+      },
+    "headers": {},
+    "query": {}
+    },
+  "responseHeaders": {"Content-Type": "application/json"},
+  "responseBody": {
+    "referenceNumber": "BA06112500570",
+    "errorCode": "RF0000",
+    "status": "Success"
+    }
+  }

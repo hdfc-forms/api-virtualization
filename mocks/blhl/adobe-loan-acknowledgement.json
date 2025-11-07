@@ -1,0 +1,53 @@
+{
+  "businessName": "Adobe Loan Acknowledgement",
+  "apiName": "API/Adobe_LoanAcknowledgement",
+  "method": "POST",
+  "statusCode": 200,
+  "latencyMs": 0,
+  "predicate": {
+    "request": {
+      "leadProfile": {
+        "mobileNumber": "9245406201",
+        "profile": {
+          "firstName": "RAJESH",
+          "lastName": "RAMESH KALE",
+          "gender": "M",
+          "dob": "2000-01-01",
+          "fullName": "RAJESH RAMESH KALE"
+        },
+        "emailId": "rajesh@gmail.com",
+        "CustomerPanNo": "WITPL3993B"
+      },
+      "referenceNumber": "BE06112500195",
+      "journeyInfo": {
+        "journeyName": "ETB10SEC_BUSINESS_LOAN_JOURNEY",
+        "journeyID": "0b599ae5-de6d-4ea8-901e-2643574a1e8e_01_BL_U_WEB",
+        "journeyData": {
+          "recipients": [
+            {
+              "personalization": "<block><firstName>RAJESH<\/firstName><loanAmount>272000<\/loanAmount><loanAccountNo>BE06112500195<\/loanAccountNo><tenure>36<\/tenure><emi>8031<\/emi><firstEmiDate>04-12-2025<\/firstEmiDate><bankName>HDFC BANK<\/bankName><processingFees>1179<\/processingFees><bankAccountNo>50100117465382<\/bankAccountNo><rateofInterest>4<\/rateofInterest><disbursementAmount>270549<\/disbursementAmount><\/block>",
+              "attachmentList": [
+                "ETB10SEC_BUSINESS_LOAN_Agreement"
+              ],
+              "recipientProfile": {
+                "firstName": "RAJESH",
+                "mobileNumber": "9245406201",
+                "email": "rajesh@gmail.com"
+              }
+            }
+          ]
+        }
+      }
+    },
+    "headers": {},
+    "query": {}
+  },
+  "responseHeaders": {
+    "Content-Type": "application/json"
+  },
+  "responseBody": {
+    "referenceNumber": "BE06112500195",
+    "errorCode": "RF0000",
+    "status": "Success"
+  }
+}

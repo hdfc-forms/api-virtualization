@@ -1,0 +1,19 @@
+{
+  "businessName": "Product Journey Data",
+  "apiName": "API/ProductJourneyData",
+  "method": "POST",
+  "statusCode": 200,
+  "latencyMs": 0,
+  "predicate": {
+    "request": {"ucicId": "901096348"},
+    "headers": {},
+    "query": {}
+    },
+  "responseHeaders": {"Content-Type": "application/json"},
+  "responseBody": {
+    "errorTime": 1762416315946,
+    "requestId": "",
+    "message": "Product Journey Not found.",
+    "status": 400
+    }
+  }

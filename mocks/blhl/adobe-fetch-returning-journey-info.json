@@ -1,0 +1,21 @@
+{
+  "businessName": "Adobe Fetch Returning Journey Info",
+  "apiName": "API/Adobe_FetchReturningJourneyInfo",
+  "method": "POST",
+  "statusCode": 200,
+  "latencyMs": 0,
+  "predicate": {
+    "request": {
+      "journeyName": "ETB10SEC_BUSINESS_LOAN_JOURNEY",
+      "mobileNumber": "9245406201",
+      "currentJourneyID":"regex:.*_BL_U_WEB"
+      },
+    "headers": {},
+    "query": {}
+    },
+  "responseHeaders": {"Content-Type": "application/json"},
+  "responseBody": {
+    "msg": "No Incomplete Journey Exists for journeyETB10SEC_BUSINESS_LOAN_JOURNEY",
+    "errorCode": "RJI0001"
+    }
+  }

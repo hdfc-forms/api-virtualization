@@ -1,0 +1,37 @@
+{
+  "businessName": "OTP Gen",
+  "apiName": "API/OTP_Gen",
+  "method": "POST",
+  "statusCode": 200,
+  "latencyMs": 0,
+  "predicate": {
+    "request": {
+      "ccotpserviceRequest": {
+        "mobilenumber": "8170310968",
+        "customerMobileNo": "8170310968",
+        "Credit_Card_Number": "0000000918170310968",
+        "instanceId": "8888",
+        "linkData": "0000000918170310968"
+      }
+    },
+    "headers": {},
+    "query": {}
+  },
+  "responseHeaders": {
+    "Content-Type": "application/json"
+  },
+  "responseBody": {
+    "ccotpserviceResponse": {
+      "Trace_Number": "AD20251106150958154",
+      "soafillers": {
+        "filler5": "",
+        "filler4": "",
+        "filler1": "",
+        "filler3": "",
+        "filler2": ""
+      },
+      "ERROR_MSG": "SUCCESS",
+      "ERROR_CODE": "00000"
+    }
+  }
+}

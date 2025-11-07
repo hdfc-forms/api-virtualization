@@ -1,0 +1,24 @@
+{
+  "businessName": "api/v1/adobe-identify Customer",
+  "apiName": "api/v1/adobe-identifyCustomer",
+  "method": "POST",
+  "statusCode": 200,
+  "latencyMs": 0,
+  "predicate": {
+    "request": {
+      "journeyName": "ETB10SEC_BUSINESS_LOAN_JOURNEY",
+      "mobileNumber": "9245406201",
+      "pan": "WITPL3993B",
+      "journeyId": "regex:.*_BL_U_WEB"
+      },
+    "headers": {},
+    "query": {}
+    },
+  "responseHeaders": {"Content-Type": "application/json"},
+  "responseBody": {
+    "customerType": "ETB",
+    "code": "EA001",
+    "message": "Request submitted successfully.",
+    "status": "SUCCESS"
+    }
+  }

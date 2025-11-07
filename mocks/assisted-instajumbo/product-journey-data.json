@@ -1,0 +1,22 @@
+{
+  "businessName": "Product Journey Data",
+  "apiName": "API/ProductJourneyData",
+  "method": "POST",
+  "statusCode": 200,
+  "latencyMs": 0,
+  "predicate": {
+    "request": {
+      "productUID": "0001011940001243692",
+      "productName": "CC"
+      },
+    "headers": {},
+    "query": {}
+    },
+  "responseHeaders": {"Content-Type": "application/json"},
+  "responseBody": {
+    "errorTime": 1762344247160,
+    "message": "Product Journey Not found.",
+    "requestId": "",
+    "status": 400
+    }
+  }

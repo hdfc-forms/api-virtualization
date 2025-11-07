@@ -1,0 +1,30 @@
+{
+  "businessName": "OTP Val v2",
+  "apiName": "API/OTP_Val_v2",
+  "method": "POST",
+  "statusCode": 200,
+  "latencyMs": 0,
+  "predicate": {
+    "request": {"verifyPwdRequest": {"hdfcVerifyPwdReq": {
+      "linkData": "0000000917694078675",
+      "passwordValue": "123456"
+      }}},
+    "headers": {},
+    "query": {}
+    },
+  "responseHeaders": {"Content-Type": "application/json"},
+  "responseBody": {
+    "verifyPwdRequestResponse": {"multiRef": {
+      "fillerField1": "",
+      "refNo": "20251106135354590",
+      "errorDetail": "",
+      "messageHash": "static:verpwdres:04:NZLh96JE9GSkTeJr3Kkm3x9xcx0=",
+      "fillerField5": "",
+      "fillerField4": "",
+      "fillerField3": "",
+      "fillerField2": "",
+      "statusCode": "00"
+      }},
+    "Id-token-jwt": "Ri9yQBPD9jJqfwzkLAHn0t4E7QVDDqKREP3spnSYToPx4tIfTofEwODHfYkYHGLlBRBYMzOdKKInSOzD5ZLG-yf_ymfqX4_lOGgJcNmXGeQjk6F3jCkK3uRWbNzSbsleUjPOKx17zvIbCteIvg0ip6omeOAkNGRcf6lYzCocB9UniOi8nk8Z1Bnhz4wd6msdx-73h_CQ1mZ5AQKWsVXVXCr4QKNg0wq-zoDDMC4Vtz7GMf6VMic5nNtdyo-KDyy7mOJhahCYiDyflPBjxmFnFlQM7WTBvsAX6xn3DMKNgqF46EdUBMjm7fit5c29z3-S_FEuoO7kDNpatrWzJ9kRGA.t6ntuZo_ndCdlABP47kNEg.jLl23Sd9Ii4L-ioQy4aoM0I7tCNllhev4rfhgsSrMCoXeAR5rHpm4oP2yjCsbwYC6Gd2HR7P0hDWbkrajQeJkZYxDxOK-RnE690N9l1GAAniWZ0_W0vOTR0QbgWC26fxJd4vmpn0lx0RuUa28aSm8m05t8r2nZHMRcPN8fH5X3cHZh1fb-MNk63LRYabs9NplO8pY6xCcEqW8qkyP6srPIxosLFs-PoVTzUb7VwUS8mQ5Eg9-5cDfcjJewJ_dHE4CWAGeTLDXiRB0m6XWqpIwdIW1W_8PA1YobLwGtHp7viAhp9wOUCdldVnjUQGZiQAub1Jt0Ik2iDq3GN1vOoirNo4-depZVUwV6CJ6tRleD4HAmbQbtDjYoj4O6EU3ttqdAwVjtHSCRgwxeI4lqTpIWjR4ePa8_5uIcMsVRK8xr1ygBp0W-RZtnFT9ma1MxdAo4EIS4mKB9WDtgFoEcAgAlz177XEhsHs_7T9uW89UrxBRNA-XCtECwzjC7vTnWZCN4apbtsZAKM2Lcqn3u6nMnlEjoYtCYarHYtp61IVx6Mmde5Vym6RtQNjC9xcJ27s8DXO6xCqG8mebuAjfBqjItJwcfxVxBL55PuQXURcsJapXG1b80FAKB_aXIGcmeZgD8LqmRPVWgeEHtdFzsUE_-CGbng4mU79gB1kwbyRiBxTX2-p50OGnMwj_77VGcx-7UB7irRDCsvQAxiv_TXx8hUgSXCd3cwZmXCDDvueFsRnvlA_5IjirSif3bVv3qvfOsuTsrzBA2RhXgfByctPbEVjQvKBmbU3-ybudcIpJ_sFl348xbROK6iYLjQHLaqB-DPj2FZbyr9GXdJ-jKuOfXXADdUZaA8xYwK2AmRdv2M8toWN9mvgKwc9Oxf9acJi.9z2dNmBFWKfJCUjb9YEimg"
+    }
+  }

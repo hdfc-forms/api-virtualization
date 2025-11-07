@@ -1,0 +1,35 @@
+{
+  "businessName": "SW OTPGen Cust Identification",
+  "apiName": "API/SW_OTPGen_Cust_Identification",
+  "method": "POST",
+  "statusCode": 200,
+  "latencyMs": 0,
+  "predicate": {
+    "request": {"requestString": {
+      "identifierName": "PAN_NO",
+      "mobileNo": "8170310968"
+      }},
+    "headers": {},
+    "query": {}
+    },
+  "responseHeaders": {"Content-Type": "application/json"},
+  "responseBody": {
+    "responseString": {
+      "existingCustomer": "Y",
+      "offerAvailable": "Y",
+      "lcmcpFlag": "CP"
+      },
+    "contextParam": {
+      "bankJourneyID": "362233668922",
+      "partnerJourneyID": "4c3645ec-11b1-4974-9488-eb7e772d8f1a_01_BL_U_WEB",
+      "partnerID": "HDFCBANK",
+      "productName": "BL",
+      "channelID": "ADOBE"
+      },
+    "status": {
+      "errorDesc": "",
+      "errorCode": "",
+      "responseCode": "0"
+      }
+    }
+  }

@@ -1,0 +1,25 @@
+{
+  "businessName": "api/v1/adobe-check Offer",
+  "apiName": "api/v1/adobe-checkOffer",
+  "method": "POST",
+  "statusCode": 200,
+  "latencyMs": 0,
+  "predicate": {
+    "request": {
+      "journeyName": "BL_A2A_JOURNEY",
+      "journeyId": "regex:.*_BL_U_WEB"
+      },
+    "headers": {},
+    "query": {}
+    },
+  "responseHeaders": {"Content-Type": "application/json"},
+  "responseBody": {
+    "offers": [{
+      "offerString": ["LG_BL_A2A_NONCASA_NB_RB_STP_26AUGUAT_A5"],
+      "offerId": "93328bb6-c40f-4196-a44e-85c8deefeb53"
+      }],
+    "code": "EA001",
+    "message": "Offer available.",
+    "status": "SUCCESS"
+    }
+  }

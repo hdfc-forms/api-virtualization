@@ -1,0 +1,31 @@
+{
+  "businessName": "Adobe IFSCCode",
+  "apiName": "API/Adobe_IFSCCode",
+  "method": "POST",
+  "statusCode": 200,
+  "latencyMs": 0,
+  "predicate": {
+    "request": {"ifscCode": "SBIN0000051"},
+    "headers": {},
+    "query": {}
+    },
+  "responseHeaders": {"Content-Type": "application/json"},
+  "responseBody": {
+    "data": [{
+      "address": "\"MUNIM CHOWK",
+      "city": " BIHAR\"",
+      "bankBrnach": "BUXAR",
+      "contact": " BUXAR",
+      "district": "0",
+      "bankName": "STATE BANK OF INDIA",
+      "check": "x",
+      "state": "BUXAR",
+      "micrCode": "802002002",
+      "ifscCode": "SBIN0000051",
+      "uniqueId": 528867
+      }],
+    "errorCode": "IFSC0000",
+    "message": "Record found",
+    "status": "200"
+    }
+  }
