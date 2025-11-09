@@ -15,7 +15,8 @@
   "responseHeaders": {"Content-Type": "application/json"},
   "responseBody": {
     "offers": [{
-      "offerString": ["STP_PL_10SEC_Top3_NB_TEST_13MAR_UAT820"],
+      "offerString": ["STP_PL_10SEC_Top3_NB_TEST_13MAR_UAT820",
+    "STP_PL_10SEC_Top3_NB_TEST_13MAR_UAT821"],
       "offerId": "32d493d1-e2b7-4df1-aff8-0af2493d9a1e"
       }],
     "code": "EA001",

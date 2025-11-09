@@ -1,0 +1,83 @@
+{
+  "businessName": "SW OTPVal Fetch Demog Offers",
+  "apiName": "API/SW_OTPVal_FetchDemog_Offers",
+  "method": "POST",
+  "statusCode": 200,
+  "latencyMs": 0,
+  "predicate": {
+    "request": {"requestString": {
+      "passwordValue": "123450"
+      },
+    "contextParam": {
+      "partnerJourneyID": "regex:.*_BL_U_WEB$"
+      }
+    },
+    "headers": {},
+    "query": {}
+    },
+  "responseHeaders": {"Content-Type": "application/json"},
+  "responseBody": {
+    "responseString": {
+      "digiliteFlag": "N",
+      "stpOfferDetails": {
+        "stpBankJourneyID": "",
+        "stpOfferAvailable": "N",
+        "stpPartnerJourneyID": ""
+        },
+      "OfferDemogDetails": [{
+        "customerFullName": "Shubham Deelip Sonawane",
+        "zipCode": "431401",
+        "customerState": "MAHARASHTRA",
+        "kycFlag": "Y",
+        "customerCity": "PARBHANI",
+        "rateOfInterest": "12.00%",
+        "customerRessidencePhone": "8170310968",
+        "customerCountry": "INDIA",
+        "customerMobileNo": "8170310968",
+        "customerMiddleName": "Deelip",
+        "customerOfficeZipCode": "",
+        "customerOfficeCity": "",
+        "residenceType": "",
+        "offerType": "LG_BL_10SEC_NONCASA_NB_RB_STP_26AUGUAT_A5",
+        "emailAddress": "Ranjit@gmail.com",
+        "customerOfficePhone": "",
+        "customerLastName": "Sonawane",
+        "reltype": "SOW",
+        "tenure": 60,
+        "monthlyIncome": "0",
+        "profession": "",
+        "customerOfficeAddress1": "",
+        "campaignId": "",
+        "customerGender": "M",
+        "dateOfBirth": "09-10-1992",
+        "procFees": "",
+        "accountNumber": "XXXXXXXXX61481",
+        "customerOfficeAddress3": "",
+        "customerOfficeAddress2": "",
+        "repaymentAcct": "",
+        "multiTenureAmt": "",
+        "customerFirstName": "Shubham",
+        "customerID": "XXXX10316",
+        "custType": "I",
+        "offerAmount": 1500000,
+        "customerAddress1": "Plaza Building K304",
+        "customerAddress3": "Ghodhbunder Road",
+        "customerAddress2": "Hiranandani Estate",
+        "customerPan": ""
+        }],
+      "ekycStatusFlag": "N"
+      },
+    "contextParam": {
+      "bankJourneyID": "362233668922",
+      "partnerJourneyID": "4c3645ec-11b1-4974-9488-eb7e772d8f1a_01_BL_U_WEB",
+      "partnerID": "HDFCBANK",
+      "productName": "BL",
+      "channelID": "ADOBE"
+      },
+    "status": {
+      "errorDesc": "",
+      "errorCode": "",
+      "responseCode": "0"
+      }
+    }
+  }
