@@ -10,7 +10,7 @@
         "pseudoCustomerId": "",
         "mobileNumber": "7020287605"
         },
-      "journeyInfo": {"journeyID": "19e86885-3697-4d68-9a03-f6412963fa78_01_BLEB_U_WEB"}
+      "journeyInfo": {"journeyID": "regex:.*_BLEB_U_WEB$"}
       },
     "headers": {},
     "query": {}

@@ -7,7 +7,8 @@
   "predicate": {
     "request": {
       "journeyName": "ETB10SEC_PERSONAL_LOAN_JOURNEY",
-      "journeyId": "regex:.*_PLEB_U_WEB"
+      "journeyId": "regex:.*_PLEB_U_WEB",
+      "offerString": "STP_PL_10SEC_Top3_NB_TEST_13MAR_UAT820"
       },
     "headers": {},
     "query": {}
@@ -15,7 +16,38 @@
   "responseHeaders": {"Content-Type": "application/json"},
   "responseBody": {
     "offerDetail": {
-      "tenureWiseOfferList": null,
+      "tenureWiseOfferList": {"tenureWiseOfferDetailList":[
+          {
+          "tenureInMonths": "12",
+          "rateOfInterest": "18",
+          "offerAmount": 220000,
+          "tenureEmiPerLakh": 1666.67
+          },
+          {
+          "tenureInMonths": "24",
+          "rateOfInterest": "22",
+          "offerAmount": 320000,
+          "tenureEmiPerLakh": 2083.33
+          },
+          {
+          "tenureInMonths": "36",
+          "rateOfInterest": "28",
+          "offerAmount": 420000,
+          "tenureEmiPerLakh": 2777.78
+          },
+          {
+          "tenureInMonths": "48",
+          "rateOfInterest": "29.5",
+          "offerAmount": 520000,
+          "tenureEmiPerLakh": 4166.67
+          },
+          {
+          "tenureInMonths": "60",
+          "rateOfInterest": "30",
+          "offerAmount": 620000,
+          "tenureEmiPerLakh": 11497.33
+          }
+        ]},
       "campaignId": 13149,
       "personalizationList": {"personalizationDatapoint": [
         {

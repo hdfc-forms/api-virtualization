@@ -8,7 +8,7 @@
     "request": {
       "journeyName": "ETB10SEC_PERSONAL_LOAN_JOURNEY",
       "mobileNumber": "9865522881",
-      "dob": "01-01-2000",
+      "dob": "07-05-1999",
       "journeyId": "regex:.*_PLEB_U_WEB"
       },
     "headers": {},
