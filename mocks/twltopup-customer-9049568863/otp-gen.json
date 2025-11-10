@@ -6,24 +6,25 @@
   "latencyMs": 0,
   "predicate": {
     "request": {"ccotpserviceRequest": {
-     
-      "mobilenumber": "917096622906"
-      
+      "mobilenumber": "9049568863",
+      "customerMobileNo": "9049568863",
+      "linkData": "0000000919049568863",
+      "submitdate": "2025-11-10 08:17:14"
       }},
     "headers": {},
     "query": {}
     },
   "responseHeaders": {"Content-Type": "application/json"},
   "responseBody": {"ccotpserviceResponse": {
-    "Trace_Number": "20251030161050430",
-    "ERROR_CODE": "00000",
-    "ERROR_MSG": "SUCCESS",
+    "Trace_Number": "AD20251110081714532",
     "soafillers": {
-      "filler1": "",
-      "filler2": "",
-      "filler3": "",
+      "filler5": "",
       "filler4": "",
-      "filler5": ""
-      }
+      "filler1": "",
+      "filler3": "",
+      "filler2": ""
+      },
+    "ERROR_MSG": "SUCCESS",
+    "ERROR_CODE": "00000"
     }}
   }

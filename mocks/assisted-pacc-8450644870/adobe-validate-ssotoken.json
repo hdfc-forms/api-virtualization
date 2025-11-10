@@ -1,0 +1,39 @@
+{
+  "businessName": "api/v1/adobe-validate SSOToken",
+  "apiName": "api/v1/adobe-validateSSOToken",
+  "method": "POST",
+  "statusCode": 200,
+  "latencyMs": 0,
+  "predicate": {
+    "request": {
+      "srcRefNo": "ADCC556667"
+      },
+    "headers": {},
+    "query": {}
+    },
+  "responseHeaders": {"Content-Type": "application/json"},
+  "responseBody": {
+    "ssoData": {
+      "journeyInfo": {"jKey": "ASSISTED_PACC"},
+      "additionalInfo": {"requestParams": "sourcesystem=sprinkler&dedupe=N&Channel=BrAnChHnw&LGCode=LG1111&SMCode=SM2222&LCCode=LC3333&LC2=S4444&BCode=11361#nbb"},
+      "customerInfo": {
+        "mbl": "8450644870",
+        "dob": "10/09/1992",
+        "pseudoId": "9f94ff10126225772be48d2948b7955c78d6d55c9595427a693a0c63d648c722",
+        "pan": ""
+        }
+      },
+    "statusCode": "0",
+    "statusMsg": "success",
+    "extRefNo": "AD20251107124549906",
+    "ssoMetadata": {
+      "sourceId": "test",
+      "sourceName": "test",
+      "sourceChannel": "WEB_APP",
+      "ssoTokenTTL": "86400000",
+      "ssoTokenAud": null,
+      "srcRefNo": "AD24556667",
+      "ssoTokenIAt": "1762519528947"
+      }
+    }
+  }

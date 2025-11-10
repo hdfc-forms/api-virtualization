@@ -1,0 +1,38 @@
+{
+  "businessName": "Journey Drop Off Param",
+  "apiName": "API/JourneyDropOff_Param",
+  "method": "POST",
+  "statusCode": 200,
+  "latencyMs": 0,
+  "predicate": {
+    "request": {
+      "leadProfile": {},
+      "journeyInfo": {"journeyID": "regex:.*_TWLET_U_WEB"}
+      },
+    "headers": {},
+    "query": {}
+    },
+  "responseHeaders": {"Content-Type": "application/json"},
+  "responseBody": {
+    "leadProfile": {
+      "leadProfileId": 27383360,
+      "addresses": [],
+      "isCountryCodeAppended": "false",
+      "mobileNumber": "9049568863",
+      "countryCode": "91",
+      "profile": {"dob": "1992-09-10"}
+      },
+    "errorCode": "FJ0000",
+    "formData": {
+      "journeyName": "TWL_ETB10SEC_TOPUP_JOURNEY",
+      "journeyStateInfo": [{
+        "stateInfo": "{\"formData\":{\"transactionID\":\"8515ebdff5e8483ea4539f344bd2f592TWLET\"},\"identifierName\":\"DOB\",\"identifierValue\":\"1992-09-10\"}",
+        "state": "OTP Generation Success",
+        "timeinfo": "2025-11-10T01:47:15.037Z"
+        }],
+      "channel": "ADOBE WEBFORMS",
+      "journeyID": "8515ebdf-f5e8-483e-a453-9f344bd2f592_01_TWLET_U_WEB"
+      },
+    "status": "success"
+    }
+  }

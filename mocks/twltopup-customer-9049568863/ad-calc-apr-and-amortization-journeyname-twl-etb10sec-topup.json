@@ -1,0 +1,152 @@
+{
+  "businessName": "api/v1/ad-calc Apr And Amortization",
+  "apiName": "api/v1/ad-calcAprAndAmortization",
+  "method": "POST",
+  "statusCode": 200,
+  "latencyMs": 0,
+  "predicate": {
+    "request": {
+      "journeyName": "TWL_ETB10SEC_TOPUP_JOURNEY",
+      "journeyId": "regex:.*_TWLTOPUP_AGENT_U_WEB"
+      },
+    "headers": {},
+    "query": {}
+    },
+  "responseHeaders": {"Content-Type": "application/json"},
+  "responseBody": {
+    "code": "KFS001",
+    "aprAmortizationDetail": {
+      "amortizationSchedules": [
+        {
+        "principal": 2176.25,
+        "instalment": 2642.25,
+        "interest": 466,
+        "instalmentNumber": 1,
+        "outstandingPrincipal": 43000
+        },
+        {
+        "principal": 2200.25,
+        "instalment": 2642.25,
+        "interest": 442,
+        "instalmentNumber": 2,
+        "outstandingPrincipal": 40824
+        },
+        {
+        "principal": 2224.25,
+        "instalment": 2642.25,
+        "interest": 418,
+        "instalmentNumber": 3,
+        "outstandingPrincipal": 38624
+        },
+        {
+        "principal": 2248.25,
+        "instalment": 2642.25,
+        "interest": 394,
+        "instalmentNumber": 4,
+        "outstandingPrincipal": 36399
+        },
+        {
+        "principal": 2272.25,
+        "instalment": 2642.25,
+        "interest": 370,
+        "instalmentNumber": 5,
+        "outstandingPrincipal": 34151
+        },
+        {
+        "principal": 2297.25,
+        "instalment": 2642.25,
+        "interest": 345,
+        "instalmentNumber": 6,
+        "outstandingPrincipal": 31879
+        },
+        {
+        "principal": 2322.25,
+        "instalment": 2642.25,
+        "interest": 320,
+        "instalmentNumber": 7,
+        "outstandingPrincipal": 29582
+        },
+        {
+        "principal": 2347.25,
+        "instalment": 2642.25,
+        "interest": 295,
+        "instalmentNumber": 8,
+        "outstandingPrincipal": 27259
+        },
+        {
+        "principal": 2372.25,
+        "instalment": 2642.25,
+        "interest": 270,
+        "instalmentNumber": 9,
+        "outstandingPrincipal": 24912
+        },
+        {
+        "principal": 2398.25,
+        "instalment": 2642.25,
+        "interest": 244,
+        "instalmentNumber": 10,
+        "outstandingPrincipal": 22540
+        },
+        {
+        "principal": 2424.25,
+        "instalment": 2642.25,
+        "interest": 218,
+        "instalmentNumber": 11,
+        "outstandingPrincipal": 20142
+        },
+        {
+        "principal": 2450.25,
+        "instalment": 2642.25,
+        "interest": 192,
+        "instalmentNumber": 12,
+        "outstandingPrincipal": 17717
+        },
+        {
+        "principal": 2477.25,
+        "instalment": 2642.25,
+        "interest": 165,
+        "instalmentNumber": 13,
+        "outstandingPrincipal": 15267
+        },
+        {
+        "principal": 2503.25,
+        "instalment": 2642.25,
+        "interest": 139,
+        "instalmentNumber": 14,
+        "outstandingPrincipal": 12790
+        },
+        {
+        "principal": 2531.25,
+        "instalment": 2642.25,
+        "interest": 111,
+        "instalmentNumber": 15,
+        "outstandingPrincipal": 10287
+        },
+        {
+        "principal": 2558.25,
+        "instalment": 2642.25,
+        "interest": 84,
+        "instalmentNumber": 16,
+        "outstandingPrincipal": 7755
+        },
+        {
+        "principal": 2586.25,
+        "instalment": 2642.25,
+        "interest": 56,
+        "instalmentNumber": 17,
+        "outstandingPrincipal": 5197
+        },
+        {
+        "principal": 2610.81,
+        "instalment": 2639,
+        "interest": 28,
+        "instalmentNumber": 18,
+        "outstandingPrincipal": 2611
+        }
+      ],
+      "apr": 18
+      },
+    "message": "SUCCESS",
+    "status": "SUCCESS"
+    }
+  }

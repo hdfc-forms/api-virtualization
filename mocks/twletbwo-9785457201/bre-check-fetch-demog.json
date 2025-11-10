@@ -1,0 +1,50 @@
+{
+  "businessName": "api/v1/bre Check-fetch Demog",
+  "apiName": "api/v1/breCheck-fetchDemog",
+  "method": "POST",
+  "statusCode": 200,
+  "latencyMs": 0,
+  "predicate": {
+    "request": {"CIFAccountInquiryAndCCDemogRequestDTO": {"requestString": {
+      "mobileNumber": "9785457201"
+      }}},
+    "headers": {},
+    "query": {}
+    },
+  "responseHeaders": {"Content-Type": "application/json"},
+  "responseBody": {
+    "responseString": {"DAXMLDocument": {
+      "OCONTROL": {
+        "EDITIONDATE": "2025-09-01",
+        "ERRORMSG": "SUCCESS",
+        "ERRORCODE": "X100",
+        "ALIAS": "CCDEMOG",
+        "OBJECTIVE": "DEMOG",
+        "APPLICATION_ID": "AD20251110093450583",
+        "SIGNATURE": "HDFC",
+        "EDITION": 98
+        },
+      "DEMOGOUT": {"OUTPUT": {"RESPONSE": {
+        "IPA0": "N",
+        "BREFILLER2": "D102",
+        "BREFILLER4": "NO MATCHING DEMOG RECORDS FOUND IN CIF"
+        }}}
+      }},
+    "Id-token-jwt": "s2-iAAHvMYYYVJjnRPrFmwvso2LkT845fjf7uvR_V408SiXgDNxYYyZh9eHnJfma7b2SzSjFV1-VwDLYcdynOWf4bkQCpyjyyba4kRkJX9vYpMeYdcvtaPVUUn8b_nZ1Mby4NAvgXZH-VTBix0AxdmLPUCWagHFN29M6VR1Aa1-SZrOhCfPpDfJLughzQ_zlg2Z2xEVENJx_MxubSevqPZV_RsWfT8NkFoPDqJaI-evWo7IV9o9Gfplk1uLy6c9W7TwHPUafIECax4k9CjFUlDFRTdCg2599kRi6TrMSEwXY8domms3sAXscnivb4fCNoENyByLuxu2pYzIB6TcJdw.3WALGgVhYb3A2WqQabu9mQ.sWwyWOhqrPDk7RWfUBq8EX3TUtT_odKSk8HHIozoW_fLh3abAglpI-zLISMNYPA_r0X614rG7l6Dxi5-0YeAOUdaWTsrHBo7TiXAUvGHKq71a3zYWqxthpB22oGXydYXNqYNZC3W-nn2e_s2YH7CnOAgSQgQNixoUXcmA7-KHftzRFKmnqAVlJHJs3lilXgZ_EhaUksR8rqlBcL_ZtVWbDcWgEjxOh2A5NHwv1-_l-eYkmwwm498AjlMuZz9Svmyi8BUTJzwbWrkt2wP2JEUC0CBmVxmYH50_movHrUhW3v68KFieSxTHbrT8m60icoIIWQ6k75_ECQzQOzLmvdYet5J0CE26yLtFwxtSsdGbxQo-GnXVWD_Rgge2Juhz6ydaP9MaH4ST3veFCOx0KaOcKnsw1U9fpXRHxOf4jJe9fGxfpE1IpU2sZ8P18cj63p73-9SivP7qFRdn6mi10e1iJg_WvNV0F2QYbm65ZDnknaBM9aU4hx69NW2ZhHKUBVj9APZL_ojfZNDCuWpb7NsfVH3deEjnFM2YTcgReLvCPnH9XSjUfREsmOxeAjDIGwiKt2hGMon5uLcqcWYYLYDn1EJBgTv3RbzAZT5ZPDHXx3lmYUArDOWregWOEH7lsWdAtR9C_xY-DYl2sxVIOGKGrHl4LfAthVN6rBEaWnqnR1_mij7G1lmAsC8dYFj0-BRjeWww6VIdUra5SyA2pc6FJubXyXZ7bkBCf9QJZXl5fVw-_aW2QW92Efich1So0EfMe7DeC6_uhNyWMQIlcr7ombk7eyeMY-JD73yPVfGGDQ7tPh3Yhu_j_4NqfsIyb6rqXXgu2wN775Zw2_HCqgUQdtSTh75_1Wj9q1fMOP0tvo.vAE4mHS6FVIlE1oiIxEbnw",
+    "configVersionId": null,
+    "maintenanceType": null,
+    "status": {
+      "isOverriden": false,
+      "replyText": "0",
+      "internalReferenceNumber": "2025314306190795",
+      "replyCode": 0,
+      "memo": null,
+      "errorCode": "0",
+      "validationErrors": null,
+      "externalReferenceNo": "AD20251110093450583",
+      "postingDate": {"dateString": "20251110000000"},
+      "extendedReply": {"messages": null},
+      "userReferenceNumber": null
+      }
+    }
+  }

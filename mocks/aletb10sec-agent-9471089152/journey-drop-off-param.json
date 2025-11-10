@@ -1,0 +1,38 @@
+{
+  "businessName": "Journey Drop Off Param",
+  "apiName": "API/JourneyDropOff_Param",
+  "method": "POST",
+  "statusCode": 200,
+  "latencyMs": 0,
+  "predicate": {
+    "request": {
+      "leadProfile": {},
+      "journeyInfo": {"journeyId": "regex:.*_ALETB_AGENT_U_WEB$"}
+      },
+    "headers": {},
+    "query": {}
+    },
+  "responseHeaders": {"Content-Type": "application/json"},
+  "responseBody": {
+    "leadProfile": {
+      "leadProfileId": 27383395,
+      "addresses": [],
+      "isCountryCodeAppended": "false",
+      "mobileNumber": "9471089152",
+      "countryCode": "91",
+      "profile": {"dob": "2000-01-01"}
+      },
+    "errorCode": "FJ0000",
+    "formData": {
+      "journeyName": "ETB10SEC_AUTO_LOAN_JOURNEY",
+      "journeyStateInfo": [{
+        "stateInfo": "{\"GWSymmetricKeyEncryptedValue\":null,\"Id_token_jwt\":\"c0lsYktBdEpsTWxIbzRiZ2VLVDVUMFBaTWVkZFFDSEFENm5YY245ZzhQUGFodlBNTEh2aXFDelBMZHVEMkhUQXV0d2lfcnFmQ2tWenRNdGFnaTRyd2VwN0tISktmV2JyREYyTlYtb1pDZlJ0LUdzNnd4elMzOUY1REE0MFhkUUhCTUs5SUFRS0h4WWM4QmxXbVl2NkJtLXJyNG15YVpCN0tHbk81dThHTVExdHFsVkFxY3k0elhCcVFMZTYwN1ItOUhNMjBib19WNXFWMDdJaC00blhuMGdTRnRsYW9yRnhxS3JzSURSUWhEb29aR3lXZXVBS2diSE12ZklyMUhQVS1ETzlwYnF3c3pEcGFSZ19uMFZqYzdfaThXMG1OVVBqUHRvbl9MbHZoVzBZdFVMdXZRd0JmcDlTU1JpOEVUQnVBNkRjX1dGeEc0Um9URUVwMndaU3VBLlZJOHZwSV80a2NfMUVVanJSYmNQSEEuQ0pEVGpscS1mX0o3cUJSVy1zRU9PT2oycHBOdEFXS0VMX0s4OV81YkY1RVhOeWJBaGY5RlAybkNyVHRCMnZDa29xN2tPX0Z1VlE1SmhNNGRfMEJULUhvRndHYlFzS2wyOVl3MWdRV1BqR2M0T3Fyd0ZEaVpXV0x1RGdRWjZpNVRLQTBhbWwzeVpneHZGcVNrMGd4Q2g2S1VNQkdXcUptbWtPdXZiaTlYYzJoSnc2UlVtX3RURExvNmtqQndkb3IxZmtuekZuR3gxaDJLQjdTeGpQWDhwNVpQLUdUNHRfT0xjd25GS1RkYXBuNUtxWkV1SUJGMkpJS1ltNjRKbEh0US1pQmhxdjZwa0ZqVmIzVWtnRHc4d2RuRGJxVVFYVFVNR0pwTGNTMkNmZDQ5X0xqOGhzU0RLSENFZU1PdklmcldsN2dGeEtkeDIxdUhjTnJFRktBVTQwbTZRTHR1bWJzQkMxTlRKQ1NPcjFSeFA0UmRPNFgwYk5PSlZuQmx3U01XelpFNEkzX08wM0I0dE9JTkNyVkFRS0xGNmF3ZGFOSWZkQXY3bXliWkg2LXFsM3loazcySW1HN1FQMnB0NlNTbWFodFRMM0M3NHdZd2g4UU4zd3dTWlJoUzBlNEROM1F6UlV5MzAwajVsekhjSDZRMFdsUjNmbHVmTjRCbm9oSXVFOThuMnBKMUUyX255eXZIMzZObkM0NjUySTNXSDBQUTczUG1DclRHTHY4X1NiZTJ0TXEtVHJndjBkR3ZyNWZxaVZHSHZxVlBackVncGl6Y3piNmVtdjVVamVaMHE1cmF2YnJoa2t1Mi1INHU0cGkyaWtOYUZTYWZ5Y2ZwdTNIUnRvZ1JvTFZhNW80aWlmUmlaZVZBaC1yZWVwSmpRQmpGOXdxQW1rU2p1X3B5Nkptd1RocXNkVE9obllObVlJVFFQWUZPNzFJTjNkYV9hZmNBUkJwNDJnV2MzZEd2MTlkRjNya2F1d2tBdFdtSTdDQUVHRlhmSkV6dE96LUVQUy1hNTBnQnZ5SGdsc3g2aHJZbkRDMXBRR05MSVBKM25VTVl1NDhlNThsdjFpdW01YmNkSm9wTXVsZUh4bjYtMkJTU2JKWHVKbjkwNWxGaVQ5QWZoUGhOWjlfRDh5YVBYLWkzc2dBSlJVNWRBM2suXzFNOWJYWnpaTVRTbG0tVURoNW1zdw==\",\"ResponseSignatureEncryptedValue\":null,\"Scope\":null,\"TransactionId\":null,\"errorCode\":null,\"extRefNo\":\"AD20251110082817007\",\"formData\":{\"transactionID\":\"df2805c9d79048d1a16fbfca799bd9dbALETBAGENT\"},\"originCode\":null,\"originMessage\":null,\"ssoData\":{\"additionalInfo\":{\"loanAmountSelected\":null,\"requestParams\":\"LGCODE=123456789012345abcde12\"},\"customerInfo\":{\"caseId\":null,\"ccNoLast4Digits\":null,\"dob\":\"01/01/2000\",\"groupCode\":null,\"groupId\":null,\"mbl\":\"9471089152\",\"pConsentStamp\":null,\"pCustName\":null,\"pan\":\"OHNPXXXXX\",\"pseudoId\":null,\"relationship\":null},\"journeyInfo\":{\"jKey\":\"ALETB_AGENT\",\"showFooter\":null,\"showHeader\":null,\"theme\":null}},\"ssoMetadata\":{\"sourceChannel\":\"WEB_APP\",\"sourceId\":\"test\",\"sourceName\":\"test\",\"srcRefNo\":\"AD24556667\",\"ssoTokenAud\":null,\"ssoTokenIAt\":\"1762763264821\",\"ssoTokenTTL\":\"86400000\"},\"status\":null,\"statusCode\":\"0\",\"statusMsg\":\"success\"}",
+        "state": "SSO_AUTHENTICATION_SUCCESS",
+        "timeinfo": "2025-11-10T08:28:17+0000"
+        }],
+      "channel": "ADOBE WEBFORMS",
+      "journeyID": "df2805c9-d790-48d1-a16f-bfca799bd9db_28_ALETB_AGENT_U_WEB"
+      },
+    "status": "success"
+    }
+  }

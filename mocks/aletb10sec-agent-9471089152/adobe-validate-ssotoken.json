@@ -1,0 +1,42 @@
+{
+  "businessName": "api/v1/adobe-validate SSOToken",
+  "apiName": "api/v1/adobe-validateSSOToken",
+  "method": "POST",
+  "statusCode": 200,
+  "latencyMs": 0,
+  "predicate": {
+    "request": {
+      "srcRefNo": "AD24556667",
+      "extRefNo": "AD20251110082817007",
+      "ssoToken": "eyJraWQiOiJ0ZXN0IiwiZW5jIjoiQTEyOENCQy1IUzI1NiIsImFsZyI6IlJTQS1PQUVQLTI1NiJ9.XYVh296YqmDwCUuZNUpEXs-Qo6ckAYySdZ7P7UMAQt6CXfThj8A_kUICnqeVrcLouvhiXnGIKVPiYUZT7DP4BUPYJ36RR0EPtCWXEpzPVo_KwF_nwYeyaARBRYe80Z66bTdO8tmJUMHFl5LFnka9WiwLBC1TE5MigjHTw-n010cnw7HnyGpUk0i1naXJzuW3Cv2ih0QPOps1K86vAAwYmiIDzmbCoU-VwgSL62YCS6PoBQfO3B-D9IJLdsOfhUCMbjDNDPXqULqnYDeoYNHM9LnVUBtbOqKLThYyQUBnzUPTq5tp-cotdk4dewBNXeNmmIAIzaaUp5Cc7zQqTKt3HA.gzywMEDCkoUPRe8FuD3LXg.f3hD3T9fLS5fpUDKRCl1ZQRBoUNPnaR38BYdG8Dcdqy0BxmKiKlfGHDSI7k2pIP3dp1_X3CYtMyYn_us4V-IQ6icDcb8NQ2dMh3HbJ7OPRlKy4W7KzHR849MI9HtcXTGXemswcthpGRa78OZthLzvlLpZrBP16g-KT8RJl6V20QrzPXBi9kwCSO6kPF9rXztVfs1kmnMwogEC37Pi6PD7TmUpgP6YCCmDgaGdKvCaeYOQM-vYy7ruv1IzYLVqm_Km5caUOh68hJTtaoHZR6DH3R3x1eQXUgh2Fr2eLamsjT2JiKFsSTL-kofCfCl4yuRRYNGtkhfZCsudLB3S5u4y9ca9SI05BnXR9WR7qi1h0AS3ObIRFfwZkKYw1UJPlWc6gCNF4xfG55avjHPjhNfcU3UYlnXxPUIII4EDlAfybvzb28amz0DJGF9kY2CN4P_obWIZPzpMXLXzrq6psY2wHZMddzYxvXZHarg9PwjGSLtwmIa7d5BDz49D4Iy5i3Gs8XJ1wAv8PFeCtgcZMqk4t7YUkygMM9x9ux0r7MtDSNSDXYtdxVTy9OyapjwT4Mx681mz6dkILbeaBU5j3GRAuoxiGl64Y_gaCKHRCnwgj8GgFQjaewvSPfF8e1IaDPIlCwwtPP6jcqxktM_OrmS_jrvMrM-xWJ6cI3CMv5Rc01obo9r5FzxCcHI73D1aUuAfP9HjEGmufXBR9cCpYak7SdhqKSB4YpSIsFmJ4oNTbpctIHG1cysfIibEeSvp4A1odFCOzdFANYS_6Jo6GnTMsj9mGm0KFZlq9vxWmBi0j2Ue4pYAM7J7wheG8tqaC-hx70scQFbOUtAkLJsPZeIigZP5rY7rDAMQzE-71AZSl88nD3UF2ImB3JV9KwtojvAVJgA0wwQ5oX3mi5bXCwg4m7RSg0__n3eu31t8k1Ch3ef7--0klWZoyblzPjC-MEVY4HJ9_VB4jIlvA22OV7Pk5Beixdh82f8RZxDWyd4Cekgg3wlLjOdsCQx-aTA5LuZ4QfxQ6UnR96irab8avQyycW_603QEiktm8JdLDHSoVKx1myooPDACVFhSA1QZye3-wrV9rCCZCYiZY7Hw8btYV56T2MC7pOcmG-65U745nefMc8dCtrX2C4dIwR2CJH3fOoUM_3yN4BoZZjUGAWakk4rtxKB289mevhh1BzDiKFyM95aT6obVjBCuQlrcY3f.ul99-iEfKoCkaYpkacOf5g"
+      },
+    "headers": {},
+    "query": {}
+    },
+  "responseHeaders": {"Content-Type": "application/json"},
+  "responseBody": {
+    "ssoMetadata": {
+      "sourceId": "test",
+      "srcRefNo": "AD24556667",
+      "ssoTokenAud": null,
+      "sourceChannel": "WEB_APP",
+      "ssoTokenTTL": "86400000",
+      "ssoTokenIAt": "1762763264821",
+      "sourceName": "test"
+      },
+    "statusMsg": "success",
+    "extRefNo": "AD20251110082817007",
+    "Id-token-jwt": "sIlbKAtJlMlHo4bgeKT5T0PZMeddQCHAD6nXcn9g8PPahvPMLHviqCzPLduD2HTAutwi_rqfCkVztMtagi4rwep7KHJKfWbrDF2NV-oZCfRt-Gs6wxzS39F5DA40XdQHBMK9IAQKHxYc8BlWmYv6Bm-rr4myaZB7KGnO5u8GMQ1tqlVAqcy4zXBqQLe607R-9HM20bo_V5qV07Ih-4nXn0gSFtlaorFxqKrsIDRQhDooZGyWeuAKgbHMvfIr1HPU-DO9pbqwszDpaRg_n0Vjc7_i8W0mNUPjPton_LlvhW0YtULuvQwBfp9SSRi8ETBuA6Dc_WFxG4RoTEEp2wZSuA.VI8vpI_4kc_1EUjrRbcPHA.CJDTjlq-f_J7qBRW-sEOOOj2ppNtAWKEL_K89_5bF5EXNybAhf9FP2nCrTtB2vCkoq7kO_FuVQ5JhM4d_0BT-HoFwGbQsKl29Yw1gQWPjGc4OqrwFDiZWWLuDgQZ6i5TKA0aml3yZgxvFqSk0gxCh6KUMBGWqJmmkOuvbi9Xc2hJw6RUm_tTDLo6kjBwdor1fknzFnGx1h2KB7SxjPX8p5ZP-GT4t_OLcwnFKTdapn5KqZEuIBF2JIKYm64JlHtQ-iBhqv6pkFjVb3UkgDw8wdnDbqUQXTUMGJpLcS2Cfd49_Lj8hsSDKHCEeMOvIfrWl7gFxKdx21uHcNrEFKAU40m6QLtumbsBC1NTJCSOr1RxP4RdO4X0bNOJVnBlwSMWzZE4I3_O03B4tOINCrVAQKLF6awdaNIfdAv7mybZH6-ql3yhk72ImG7QP2pt6SSmahtTL3C74wYwh8QN3wwSZRhS0e4DN3QzRUy300j5lzHcH6Q0WlR3flufN4BnohIuE98n2pJ1E2_nyyvH36NnC4652I3WH0PQ73PmCrTGLv8_Sbe2tMq-Trgv0dGvr5fqiVGHvqVPZrEgpizczb6emv5UjeZ0q5ravbrhkku2-H4u4pi2ikNaFSafycfpu3HRtogRoLVa5o4iifRiZeVAh-reepJjQBjF9wqAmkSju_py6JmwThqsdTOhnYNmYITQPYFO71IN3da_afcARBp42gWc3dGv19dF3rkauwkAtWmI7CAEGFXfJEztOz-EPS-a50gBvyHglsx6hrYnDC1pQGNLIPJ3nUMYu48e58lv1ium5bcdJopMuleHxn6-2BSSbJXuJn905lFiT9AfhPhNZ9_D8yaPX-i3sgAJRU5dA3k._1M9bXZzZMTSlm-UDh5msw",
+    "ssoData": {
+      "journeyInfo": {"jKey": "ALETB_AGENT"},
+      "additionalInfo": {"requestParams": "LGCODE=123456789012345abcde12"},
+      "customerInfo": {
+        "dob": "01/01/2000",
+        "mbl": "9471089152",
+        "customerId": "119726687",
+        "pan": "OHNPXXXXX"
+        }
+      },
+    "statusCode": "0"
+    }
+  }

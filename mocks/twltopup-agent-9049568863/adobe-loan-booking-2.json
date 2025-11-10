@@ -1,0 +1,19 @@
+{
+  "businessName": "Adobe Loan Booking",
+  "apiName": "API/Adobe_LoanBooking",
+  "method": "POST",
+  "statusCode": 200,
+  "latencyMs": 0,
+  "predicate": {
+    "request": {
+      "loanAgreementNumber": "453237761"
+      },
+    "headers": {},
+    "query": {}
+    },
+  "responseHeaders": {"Content-Type": "application/json"},
+  "responseBody": {
+    "response": {"inquiryResponse": "{\"HeaderInfo\":{\"TransactionId\":\"TT10112500123\",\"ServiceRequestId\":\"26\"},\"OutputParameters\":{\"MsgRecord\":{\"Make\":\"JUPITER.\",\"AssetDescription\":\"JUPITER ZX DISC BT\",\"InvoiceNumber\":\"284170\",\"InvoiceValue\":\"106000\",\"ChassisNo\":\"MD626CG54N1C78164\",\"EngineNo\":\"EG5CN1653638\",\"RCNo\":\"\",\"SupplierName\":\"PRIYANKA MOTORS-PANVEL\",\"Insurance\":\"Complete\",\"RegNo\":\"Incomplete\",\"Manufacturer\":\"TVS\",\"AssetCost\":\"106000\"}},\"ExceptionInfo\":{\"ErrorCode\":\"0000\",\"ErrorDescription\":\"Successful response source data Available\"}}"},
+    "status": "Success"
+    }
+  }

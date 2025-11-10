@@ -1,0 +1,19 @@
+{
+  "businessName": "api/v1/ms/cc-pre Issuance-doc Upload",
+  "apiName": "api/v1/ms/cc-preIssuance-docUpload",
+  "method": "POST",
+  "statusCode": 200,
+  "latencyMs": 0,
+  "predicate": {
+    "request": {},
+    "headers": {},
+    "query": {}
+    },
+  "responseHeaders": {"Content-Type": "application/json"},
+  "responseBody": {
+    "requestNumber": "AD301250001J",
+    "applicationRefNo": "D25J28077151H0W1",
+    "errorCode": "0000",
+    "errorMessage": "SUCCESS"
+    }
+  }

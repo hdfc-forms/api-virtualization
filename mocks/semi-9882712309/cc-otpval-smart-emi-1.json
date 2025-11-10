@@ -1,0 +1,35 @@
+{
+  "businessName": "CC OTPVal Smart EMI",
+  "apiName": "API/CC_OTPVal_SmartEMI",
+  "method": "POST",
+  "statusCode": 200,
+  "latencyMs": 0,
+  "predicate": {
+    "request": {"SmartEMIFulfillmentOrchestrationRequestDTO": {"requestString": {
+     
+      "mobileNo": "9882712309"
+      
+      }}},
+    "headers": {},
+    "query": {}
+    },
+  "responseHeaders": {"Content-Type": "application/json"},
+  "responseBody": {
+    "responseString": null,
+    "configVersionId": null,
+    "maintenanceType": null,
+    "status": {
+      "isOverriden": false,
+      "replyText": "Your Request Could not be processed, failure from product processor",
+      "internalReferenceNumber": "2025311279083295",
+      "replyCode": 99,
+      "memo": null,
+      "errorCode": "XFACE_VP_0003",
+      "validationErrors": null,
+      "externalReferenceNo": "AD07112025115109",
+      "postingDate": {"dateString": "20251107000000"},
+      "extendedReply": {"messages": null},
+      "userReferenceNumber": "AD07112025115109"
+      }
+    }
+  }

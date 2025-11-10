@@ -1,0 +1,30 @@
+{
+  "businessName": "OTP Gen",
+  "apiName": "API/OTP_Gen",
+  "method": "POST",
+  "statusCode": 200,
+  "latencyMs": 0,
+  "predicate": {
+    "request": {"ccotpserviceRequest": {
+      
+      "mobilenumber": "917096622906"
+     
+       
+      }},
+    "headers": {},
+    "query": {}
+    },
+  "responseHeaders": {"Content-Type": "application/json"},
+  "responseBody": {"ccotpserviceResponse": {
+    "Trace_Number": "20251110150250428",
+    "soafillers": {
+      "filler5": "",
+      "filler4": "",
+      "filler1": "",
+      "filler3": "",
+      "filler2": ""
+      },
+    "ERROR_MSG": "SUCCESS",
+    "ERROR_CODE": "00000"
+    }}
+  }

@@ -1,0 +1,25 @@
+{
+  "businessName": "Adobe Loan Acknowledgement",
+  "apiName": "API/Adobe_LoanAcknowledgement",
+  "method": "POST",
+  "statusCode": 200,
+  "latencyMs": 0,
+  "predicate": {
+    "request": {
+      "leadProfile": {
+        "mobileNumber": "9471089152",
+        "emailId": "rajesh@gmail.com",
+        "customerId": "901092023",
+        "CustomerPanNo": "TNUJJ3333U"
+        }
+      },
+    "headers": {},
+    "query": {}
+    },
+  "responseHeaders": {"Content-Type": "application/json"},
+  "responseBody": {
+    "referenceNumber": "AL10112500146",
+    "errorCode": "RF0000",
+    "status": "Success"
+    }
+  }
