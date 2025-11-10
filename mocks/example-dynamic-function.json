@@ -1,6 +1,6 @@
 {
-  "businessName": "Journey-Based Dynamic Response (Example)",
-  "apiName": "API/DynamicJourney",
+  "businessName": "Counter-Based Dynamic Response (Example)",
+  "apiName": "API/JourneyDropOff",
   "method": "POST",
   "responseFunction": "journeyBasedResponse",
   "predicate": {
@@ -9,33 +9,5 @@
     "query": {}
   },
   "responseHeaders": {},
-  "responseBody": {},
-  "_documentation": {
-    "description": "Uses Referer or Origin headers to determine which journey form the request came from",
-    "useCase": "Request payload cannot identify response (server checks ID via DB). Form journey URL in Referer header determines response.",
-    "refererPatterns": {
-      "/personal-loan or /pl-journey": "Returns personal loan approved response",
-      "/credit-card or /cc-journey": "Returns credit card approved response",
-      "/home-loan or /hl-journey": "Returns home loan pending response"
-    },
-    "example": {
-      "request": {
-        "url": "POST https://mockapi-proxy.onrender.com/API/DynamicJourney",
-        "headers": {
-          "Referer": "https://yoursite.com/personal-loan/apply",
-          "Content-Type": "application/json"
-        },
-        "body": {
-          "customerId": "12345"
-        }
-      },
-      "response": {
-        "status": "APPROVED",
-        "loanAmount": 500000,
-        "message": "Response for Personal Loan journey",
-        "detectedFrom": "Referer header"
-      }
-    }
-  }
+  "responseBody": {}
 }
-
