@@ -144,11 +144,84 @@ function addTwoMinutesToTime(request) {
   };
 }
 
+/**
+ * Example: Referrer/Origin-based routing for journey-specific responses
+ * 
+ * Use Case: When request payload cannot identify what response to return
+ * (e.g., server checks ID via database), check Referer or Origin headers
+ * to determine which journey form the request came from.
+ */
+function journeyBasedResponse(request) {
+  const headers = request.headers || {};
+  
+  // Get referrer URL from headers (case-insensitive)
+  const referer = headers['referer'] || headers['Referer'] || '';
+  const origin = headers['origin'] || headers['Origin'] || '';
+  
+  // Check referrer URL to identify journey
+  if (referer.includes('/personal-loan') || referer.includes('/pl-journey')) {
+    return {
+      statusCode: 200,
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        status: 'APPROVED',
+        loanAmount: 500000,
+        message: 'Response for Personal Loan journey',
+        detectedFrom: 'Referer header',
+        timestamp: new Date().toISOString()
+      })
+    };
+  }
+  
+  if (referer.includes('/credit-card') || referer.includes('/cc-journey')) {
+    return {
+      statusCode: 200,
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        status: 'APPROVED',
+        cardType: 'PLATINUM',
+        creditLimit: 500000,
+        message: 'Response for Credit Card journey',
+        detectedFrom: 'Referer header',
+        timestamp: new Date().toISOString()
+      })
+    };
+  }
+  
+  if (referer.includes('/home-loan') || referer.includes('/hl-journey')) {
+    return {
+      statusCode: 200,
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        status: 'PENDING_VERIFICATION',
+        loanAmount: 5000000,
+        message: 'Response for Home Loan journey',
+        detectedFrom: 'Referer header',
+        timestamp: new Date().toISOString()
+      })
+    };
+  }
+  
+  // Default response
+  return {
+    statusCode: 200,
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+      status: 'PENDING',
+      message: 'Generic response - no journey detected from Referer',
+      referer: referer,
+      origin: origin,
+      timestamp: new Date().toISOString()
+    })
+  };
+}
+
 // Export all functions
 module.exports = {
   dynamicLoanStatus,
   conditionalResponse,
   addTwoMinutesToTime,
-  unreliableService
+  unreliableService,
+  journeyBasedResponse
 };
 
