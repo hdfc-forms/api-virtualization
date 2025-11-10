@@ -1,0 +1,16 @@
+{
+  "statusCode": 200,
+  "responseHeaders": {
+    "Content-Type": "application/json"
+  },
+  "responseBody": {
+    "status": "SUCCESS",
+    "message": "Journey drop-off data retrieved",
+    "operation": "PARAM",
+    "data": {
+      "step": "LOAN_DETAILS",
+      "completed": false
+    }
+  }
+}
+

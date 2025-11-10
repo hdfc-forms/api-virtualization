@@ -1,8 +1,8 @@
 {
-  "businessName": "Dynamic Loan Status (Example)",
-  "apiName": "API/LoanStatusDynamic",
+  "businessName": "Counter-Based Dynamic Response (Example)",
+  "apiName": "API/JourneyDropOff",
   "method": "POST",
-  "responseFunction": "dynamicLoanStatus",
+  "responseFunction": "journeyBasedResponse",
   "predicate": {
     "request": {},
     "headers": {},
@@ -11,4 +11,3 @@
   "responseHeaders": {},
   "responseBody": {}
 }
-
