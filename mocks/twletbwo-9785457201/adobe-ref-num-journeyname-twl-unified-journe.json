@@ -1,0 +1,22 @@
+{
+  "businessName": "Adobe Ref Num",
+  "apiName": "API/Adobe_RefNum",
+  "method": "POST",
+  "statusCode": 200,
+  "latencyMs": 0,
+  "predicate": {
+    "request": {
+      "journeyName": "TWL_UNIFIED_JOURNEY",
+      "journeyID": "regex:.*_TWLU_U_WEB"
+      },
+    "headers": {},
+    "query": {}
+    },
+  "responseHeaders": {"Content-Type": "application/json"},
+  "responseBody": {
+    "errorText": null,
+    "referenceNumber": "TU10112500004",
+    "errorCode": "REF0000",
+    "status": "SUCCESS"
+    }
+  }

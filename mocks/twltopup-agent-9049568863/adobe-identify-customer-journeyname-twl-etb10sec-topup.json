@@ -1,24 +1,24 @@
 {
-  "businessName": "adobe-identify Customer",
+  "businessName": "api/v1/adobe-identify Customer",
   "apiName": "api/v1/adobe-identifyCustomer",
   "method": "POST",
   "statusCode": 200,
   "latencyMs": 0,
   "predicate": {
     "request": {
-      "journeyName": "PL_ETB10SEC_TOPUP_JOURNEY",
-      "productCode": "PLTOPUP",
-      "mobileNumber": "9645291713",
-      "dob": "25-12-1984"
+      "journeyName": "TWL_ETB10SEC_TOPUP_JOURNEY",
+      "mobileNumber": "9049568863",
+      "dob": "10-09-1992",
+      "journeyId":  "regex:.*_TWLTOPUP_AGENT_U_WEB"
       },
     "headers": {},
     "query": {}
     },
   "responseHeaders": {"Content-Type": "application/json"},
   "responseBody": {
-    "status": "SUCCESS",
+    "customerType": "ETB",
     "code": "EA001",
     "message": "Request submitted successfully.",
-    "customerType": "ETB"
+    "status": "SUCCESS"
     }
   }

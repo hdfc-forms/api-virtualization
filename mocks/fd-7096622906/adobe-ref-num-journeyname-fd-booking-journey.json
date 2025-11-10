@@ -1,0 +1,22 @@
+{
+  "businessName": "Adobe Ref Num",
+  "apiName": "API/Adobe_RefNum",
+  "method": "POST",
+  "statusCode": 200,
+  "latencyMs": 0,
+  "predicate": {
+    "request": {
+      "journeyName": "FD_BOOKING_JOURNEY"
+     
+      },
+    "headers": {},
+    "query": {}
+    },
+  "responseHeaders": {"Content-Type": "application/json"},
+  "responseBody": {
+    "errorText": null,
+    "referenceNumber": "10112500002",
+    "errorCode": "REF0000",
+    "status": "SUCCESS"
+    }
+  }

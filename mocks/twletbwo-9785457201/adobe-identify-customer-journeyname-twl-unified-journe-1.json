@@ -1,0 +1,24 @@
+{
+  "businessName": "api/v1/adobe-identify Customer",
+  "apiName": "api/v1/adobe-identifyCustomer",
+  "method": "POST",
+  "statusCode": 200,
+  "latencyMs": 0,
+  "predicate": {
+    "request": {
+      "journeyName": "TWL_UNIFIED_JOURNEY",
+      "mobileNumber": "9785457201",
+      "dob": "10-02-1999",
+      "journeyId": "regex:.*_TWLU_U_WEB"
+      },
+    "headers": {},
+    "query": {}
+    },
+  "responseHeaders": {"Content-Type": "application/json"},
+  "responseBody": {
+    "customerType": "NTB",
+    "code": "EA003",
+    "message": "No customer details found.",
+    "status": "FAILED"
+    }
+  }

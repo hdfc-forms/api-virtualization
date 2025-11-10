@@ -1,0 +1,28 @@
+{
+  "businessName": "api/v1/adobe-check Offer",
+  "apiName": "api/v1/adobe-checkOffer",
+  "method": "POST",
+  "statusCode": 200,
+  "latencyMs": 0,
+  "predicate": {
+    "request": {
+      "journeyName": "ETB10SEC_AUTO_LOAN_JOURNEY",
+      "journeyId": "regex:.*_ALETB_AGENT_U_WEB$"
+      },
+    "headers": {},
+    "query": {}
+    },
+  "responseHeaders": {"Content-Type": "application/json"},
+  "responseBody": {
+    "offers": [{
+      "offerString": [
+        "STP_PL_10SEC_Top3_NB_TEST_13JUN_UAT01_A11",
+        "STP_AL_ZIPDRIVE_10SEC_REST_3JUN_UAT820"
+      ],
+      "offerId": "56476eba-093b-4b07-ad72-7998ba35fc18"
+      }],
+    "code": "EA001",
+    "message": "Offer available.",
+    "status": "SUCCESS"
+    }
+  }

@@ -6,8 +6,9 @@
   "latencyMs": 0,
   "predicate": {
     "request": {
-      "journeyName": "FD_BOOKING_JOURNEY"
- 
+      "journeyName": "PA_CC_JOURNEY",
+      "partnerCode": "AD",
+      "journeyID": "regex:.*_CurrentAccount_U_WEB$"
       },
     "headers": {},
     "query": {}
@@ -15,7 +16,7 @@
   "responseHeaders": {"Content-Type": "application/json"},
   "responseBody": {
     "status": "SUCCESS",
-    "referenceNumber": "30102500010",
+    "referenceNumber": "AD311250003X",
     "errorCode": "REF0000",
     "errorText": null
     }

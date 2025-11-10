@@ -1,0 +1,28 @@
+{
+  "businessName": "api/v1/adobe-check Offer",
+  "apiName": "api/v1/adobe-checkOffer",
+  "method": "POST",
+  "statusCode": 200,
+  "latencyMs": 0,
+  "predicate": {
+    "request": {
+      "journeyName": "TWL_ETB10SEC_TOPUP_JOURNEY",
+      "journeyId":  "regex:.*_TWLTOPUP_AGENT_U_WEB"
+      },
+    "headers": {},
+    "query": {}
+    },
+  "responseHeaders": {"Content-Type": "application/json"},
+  "responseBody": {
+    "offers": [{
+      "offerString": [
+        "STP_TWL_QP_10SEC_CASA_UAT_01SEP_NB_UAT05_A1",
+        "STP_TWL_QP_10SEC_CASA_UAT_06AUG25_NB_UAT05_A1"
+      ],
+      "offerId": "e96e40ad-ab10-4e49-af42-c709ffe256fd"
+      }],
+    "code": "EA001",
+    "message": "Offer available.",
+    "status": "SUCCESS"
+    }
+  }

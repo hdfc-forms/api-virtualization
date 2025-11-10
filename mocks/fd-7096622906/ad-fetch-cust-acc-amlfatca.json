@@ -5,33 +5,17 @@
   "statusCode": 200,
   "latencyMs": 0,
   "predicate": {
-    "request": {
+    "request": {"customerDetailsRequestDTO": {
+     
+      "mobileNumber": "917096622906"
       
-      "customerDetailsRequestDTO": {
-        
-        "mobileNumber": "917096622906"
-        }
-      },
+      }},
     "headers": {},
     "query": {}
     },
   "responseHeaders": {"Content-Type": "application/json"},
   "responseBody": {
-    "journeyId": "53c3ab2a-9b9b-4843-9e6d-8f5a0324433d_01_FDEF_U_online",
     "journeyName": "FD_BOOKING_JOURNEY",
-    "status": {
-      "isOverriden": false,
-      "replyCode": 0,
-      "replyText": "0",
-      "memo": null,
-      "externalReferenceNo": "AD20251030161057886",
-      "internalReferenceNumber": "2025303399798674",
-      "postingDate": {"dataString": null},
-      "errorCode": "0",
-      "extendedReply": {"messgae": null},
-      "validationErrors": null,
-      "userReferenceNumber": null
-      },
     "responseString": {"customerDetailsDTO": [{
       "customerFullName": "Wmpncv Hcadvhac Fcbctd",
       "txtPermadrAdd1": "RDVVKOGKWK RKOOKAKRRKYN",
@@ -77,7 +61,7 @@
         "flgChqGrntyFac": "N",
         "flgAtmFac": 63,
         "ctrChqThreshholdLimit": 200,
-        "balBook": 739583.9,
+        "balBook": 704718.9,
         "flgSiFac": "Y",
         "namGuardian": null,
         "branchCode": 2373,
@@ -98,7 +82,7 @@
         "flgAtm": 63,
         "flgNet": "Y",
         "accountStatusDescription": "Regular",
-        "availableBalance": 739583.9,
+        "availableBalance": 704718.9,
         "codAcctNoExt": null,
         "accountStatus": 8,
         "flgChqbkFac": "Y",
@@ -116,7 +100,7 @@
         "amtHold": 0,
         "amountODLimit": 0,
         "flagMemo": "N",
-        "netBalance": 739583.9,
+        "netBalance": 704718.9,
         "branchName": "MEMARI ANKAR-SUNDER NIWAS-HOSHIARP ",
         "nomineeName": null,
         "accountLongTitle": "Wmpncv Hcadvhac Fcbctd",
@@ -154,7 +138,7 @@
         "flgChqGrntyFac": "N",
         "flgAtmFac": 63,
         "ctrChqThreshholdLimit": 10,
-        "balBook": 0,
+        "balBook": 10000,
         "flgSiFac": "Y",
         "namGuardian": null,
         "branchCode": 2521,
@@ -175,7 +159,7 @@
         "flgAtm": 63,
         "flgNet": "Y",
         "accountStatusDescription": "Regular",
-        "availableBalance": 0,
+        "availableBalance": 10000,
         "codAcctNoExt": null,
         "accountStatus": 8,
         "flgChqbkFac": "Y",
@@ -193,7 +177,7 @@
         "amtHold": 0,
         "amountODLimit": 0,
         "flagMemo": "A",
-        "netBalance": 0,
+        "netBalance": 10000,
         "branchName": "ACHALPUR",
         "nomineeName": null,
         "accountLongTitle": "Wmpncv Hcadvhac Fcbctd",
@@ -513,6 +497,20 @@
       "refHoldPhoneOff": null,
       "codTypKyc": "Certified Copies - Face to Face",
       "flgIcTyp": "I"
-      }]}
+      }]},
+    "journeyId": "70f9acd3-46e2-4ea3-ad42-7e206f05e605_01_FDEF_U_online",
+    "status": {
+      "isOverriden": false,
+      "replyText": "0",
+      "internalReferenceNumber": "2025314306817216",
+      "replyCode": 0,
+      "memo": null,
+      "errorCode": "0",
+      "validationErrors": null,
+      "externalReferenceNo": "AD20251110150255643",
+      "postingDate": {"dataString": null},
+      "extendedReply": {"messgae": null},
+      "userReferenceNumber": null
+      }
     }
   }

@@ -1,160 +1,34 @@
 {
-  "businessName": "adobe-fetch Offer",
+  "businessName": "api/v1/adobe-fetch Offer",
   "apiName": "api/v1/adobe-fetchOffer",
   "method": "POST",
   "statusCode": 200,
   "latencyMs": 0,
   "predicate": {
     "request": {
-      "journeyName": "PL_ETB10SEC_TOPUP_JOURNEY"
+      "journeyName": "TWL_ETB10SEC_TOPUP_JOURNEY",
+      "journeyId":  "regex:.*_TWLTOPUP_AGENT_U_WEB"
       },
     "headers": {},
     "query": {}
     },
   "responseHeaders": {"Content-Type": "application/json"},
   "responseBody": {
-    "status": "SUCCESS",
-    "code": "EA001",
-    "message": "SUCCESS",
-    "demogDetail": {
-      "customerid": "900007184",
-      "accountid": "50100109728571",
-      "sourceid": "FINWARE",
-      "sasid": 900007184,
-      "fwcustid": "",
-      "fwaccntnum": "50100109728571",
-      "vdcustfirstname": "Ranjit",
-      "vdcustmiddlename": "Vijay",
-      "vdcustlastname": "patil",
-      "ddcuststartdate": "",
-      "ddcustcloseddate": "",
-      "vdcustchannel1CODE": "",
-      "vdcustchannel2CODE": "",
-      "vdcustbranchcode": "2373",
-      "ddcustdateofbirth": "1984-12-25 00:00:00",
-      "vdcustprofession": "",
-      "vdcustgender": "M",
-      "fdcuststaffind": "",
-      "vdcustmaritalstatus": "2",
-      "ndcustdependents": 0,
-      "vdcusteducation": "",
-      "ndcustmonthlyincome": 0,
-      "ndcustannualincome": 0,
-      "vdcustempcompany": "",
-      "vdcustadd1": "Plaza Building K304",
-      "vdcustadd2": "Hiranandani Estate",
-      "vdcustadd3": "Ghodhbunder Road",
-      "vdcustzipcode": "413216",
-      "vdcustjobtitle": "",
-      "vdcustoffadr1": "",
-      "vdcustoffadr2": "",
-      "vdcustoffadr3": "",
-      "vdcustoffzipcode": "",
-      "vdcusttypeorigin": "",
-      "vdcustresidencetype": "",
-      "ndcustjoiningage": 0,
-      "fdcustmissingind": "",
-      "ddcustreestbdate": "",
-      "vdcusttitle": "MR",
-      "vdcustadd4": "",
-      "vdcustcity": "SOLAPUR",
-      "vdcuststate": "MAHARASHTRA",
-      "vdcustcountry": "INDIA",
-      "vdcustemailadd": "Ranjit@gmail.com",
-      "vdcustmobilephone": "9645291713",
-      "vdcustitnbr": "ROGPS3337B",
-      "vdcustnetannualincome": 0,
-      "vdcustfullname": "Ranjit Vijay patil",
-      "vdcustspousename": "",
-      "vdcustnameshort": "Ranjit",
-      "vdcustspouseoccu": "",
-      "vdcustresiphone": "9645291713",
-      "vdcustoffphone": "",
-      "vdcustnatlid": "",
-      "vdcustoffemailadd": "",
-      "updatedt": "",
-      "standardizedcity": "",
-      "vdcustmthrmadnname": "",
-      "vdsecondholder": "",
-      "vdthirdholder": "",
-      "vdcustitpan2": "",
-      "vdcustitpan3": "",
-      "vdcusttype": "I",
-      "reltype": "SOW",
-      "debitscorepl": "",
-      "debitscorebl": "",
-      "debitscoreal": "",
-      "debitscorecards": "",
-      "cncbehavscore": "",
-      "cardbehavscore": "",
-      "behavscore1": "",
-      "behavscore2": "",
-      "totalunsecurepaamt": "",
-      "totalpaamt": "",
-      "behavioralscore3": "",
-      "behavioralscore4": "",
-      "behavioralscore5": "",
-      "behavioralscore6": "",
-      "behavioralscore7": "",
-      "score1": null,
-      "score2": null,
-      "score3": null,
-      "score4": null,
-      "score5": null,
-      "score6": null,
-      "score7": null,
-      "score8": null,
-      "band1": null,
-      "band2": null,
-      "band3": null,
-      "band4": null,
-      "band5": null,
-      "band6": null,
-      "band7": null,
-      "band8": null,
-      "ethniccode": "12",
-      "productcode": "",
-      "productdescription": "",
-      "producttype": "",
-      "maskedcardno": "",
-      "branchcode": "1119",
-      "filler3": null,
-      "filler4": null,
-      "filler5": null,
-      "filler6": null,
-      "filler7": null,
-      "filler8": null,
-      "filler9": null,
-      "filler10": null,
-      "filler11": null,
-      "filler12": null,
-      "accountId": null,
-      "sourceId": null,
-      "customerIdentity": null,
-      "panNo": null,
-      "aadharNo": "",
-      "mobileNo": null,
-      "aldebitRawScores": null,
-      "ccbehaviorSegment": null,
-      "ccbehaviorRawScores": null,
-      "ccbehaviorNewBandsForAL": null,
-      "ucicno": null
-      },
     "offerDetail": {
-      "campaignId": 12865,
-      "campaignName": "STP_PL_10SEC_TOPUP_NB_29MAY_UAT01_R1",
+      "tenureWiseOfferList": null,
+      "campaignId": 13532,
       "personalizationList": {"personalizationDatapoint": [
         {
         "fieldName": "cp_identity_cp",
-        "fieldValue": "10"
+        "fieldValue": "4"
         },
         {
         "fieldName": "ba_meta_key",
-        "fieldValue": "67827730"
+        "fieldValue": "75899784"
         },
         {
         "fieldName": "member_id",
-        "fieldValue": "900007184"
+        "fieldValue": "901111386"
         },
         {
         "fieldName": "card_number",
@@ -170,31 +44,31 @@
         },
         {
         "fieldName": "mobile_number",
-        "fieldValue": "9645291713"
+        "fieldValue": "9049568863"
         },
         {
         "fieldName": "Product",
-        "fieldValue": "PL"
+        "fieldValue": "TWL"
         },
         {
         "fieldName": "ACCOUNT_NO",
-        "fieldValue": "50100109728571"
+        "fieldValue": "50100117780367"
         },
         {
         "fieldName": "CARD_TYPE",
-        "fieldValue": "STP_PL_10SEC_TOPUP_NB_29MAY_UAT01"
+        "fieldValue": "STP_TWL_QP_10SEC_CASA_UAT_01SEP_NB_UAT05_A1"
         },
         {
         "fieldName": "CITY",
-        "fieldValue": "PUNE"
+        "fieldValue": "THANE"
         },
         {
         "fieldName": "CRM_CAMPAIGN_ID",
-        "fieldValue": "900007184"
+        "fieldValue": "901111386"
         },
         {
         "fieldName": "CRM_CUSTOMER_TRACKING_ID",
-        "fieldValue": "900007184"
+        "fieldValue": "901111386"
         },
         {
         "fieldName": "CRM_OCCURRENCE_NUMBER",
@@ -306,7 +180,7 @@
         },
         {
         "fieldName": "DOB",
-        "fieldValue": "25/12/1984 12:00:00 AM"
+        "fieldValue": "10/09/1992 12:00:00 AM"
         },
         {
         "fieldName": "EMI",
@@ -326,15 +200,15 @@
         },
         {
         "fieldName": "FIELD_3",
-        "fieldValue": "5.01001E+13"
+        "fieldValue": "50100117780367"
         },
         {
         "fieldName": "field2",
-        "fieldValue": "6521030"
+        "fieldValue": "453237761"
         },
         {
         "fieldName": "field3",
-        "fieldValue": ""
+        "fieldValue": "Y"
         },
         {
         "fieldName": "field4",
@@ -342,7 +216,7 @@
         },
         {
         "fieldName": "field5",
-        "fieldValue": "50100109728571"
+        "fieldValue": "50100117780367"
         },
         {
         "fieldName": "GENDER",
@@ -370,7 +244,7 @@
         },
         {
         "fieldName": "PAN_NO",
-        "fieldValue": "URKPR7744V"
+        "fieldValue": "CDMPE7134C"
         },
         {
         "fieldName": "PF",
@@ -378,11 +252,11 @@
         },
         {
         "fieldName": "PIN",
-        "fieldValue": "411007"
+        "fieldValue": "400603"
         },
         {
         "fieldName": "PRODUCT_VARIANT",
-        "fieldValue": "PL"
+        "fieldValue": "TWL"
         },
         {
         "fieldName": "Propensity",
@@ -437,38 +311,134 @@
         "fieldValue": ""
         }
       ]},
-      "tenureWiseOfferList": {"tenureWiseOfferDetailList":[
-          {
-          "tenureInMonths": "12",
-          "rateOfInterest": "18",
-          "offerAmount": 220000,
-          "tenureEmiPerLakh": 1666.67
-          },
-          {
-          "tenureInMonths": "24",
-          "rateOfInterest": "22",
-          "offerAmount": 320000,
-          "tenureEmiPerLakh": 2083.33
-          },
-          {
-          "tenureInMonths": "36",
-          "rateOfInterest": "28",
-          "offerAmount": 420000,
-          "tenureEmiPerLakh": 2777.78
-          },
-          {
-          "tenureInMonths": "48",
-          "rateOfInterest": "29.5",
-          "offerAmount": 520000,
-          "tenureEmiPerLakh": 4166.67
-          },
-          {
-          "tenureInMonths": "60",
-          "rateOfInterest": "30",
-          "offerAmount": 620000,
-          "tenureEmiPerLakh": 11497.33
-          }
-        ]}
-      }
+      "campaignName": "STP_TWL_QP_10SEC_CASA_UAT_01SEP_NB_UAT05_A1"
+      },
+    "code": "EA001",
+    "demogDetail": {
+      "score6": null,
+      "vdcustitpan3": "",
+      "score7": null,
+      "vdcustitpan2": "",
+      "vdcusttype": "I",
+      "score8": null,
+      "filler12": null,
+      "filler11": null,
+      "score2": null,
+      "aldebitRawScores": null,
+      "vdcustitnbr": "WITPL3993B",
+      "score3": null,
+      "score4": null,
+      "score5": null,
+      "vdcustoffphone": "",
+      "vdcustoffadr3": "",
+      "band3": null,
+      "band4": null,
+      "ddcustcloseddate": "",
+      "vdcustoffadr1": "",
+      "band1": null,
+      "ethniccode": "12",
+      "vdcustoffadr2": "",
+      "band2": null,
+      "accountid": "50100117780367",
+      "ndcustjoiningage": 0,
+      "vdcustoffzipcode": "",
+      "filler10": null,
+      "vdcustmobilephone": "9049568863",
+      "branchcode": "2373",
+      "debitscorepl": "",
+      "vdcustchannel1CODE": "",
+      "vdthirdholder": "",
+      "totalunsecurepaamt": "",
+      "band7": null,
+      "vdcustmiddlename": "Deelip ",
+      "band8": null,
+      "accountId": null,
+      "band5": null,
+      "band6": null,
+      "vdsecondholder": "",
+      "vdcustempcompany": "",
+      "maskedcardno": "",
+      "score1": null,
+      "vdcustjobtitle": "",
+      "vdcusttypeorigin": "",
+      "sasid": 901111386,
+      "productcode": "187",
+      "ddcustdateofbirth": "1992-09-10 00:00:00",
+      "fwaccntnum": "50100117780367",
+      "vdcuststate": "MAHARASHTRA",
+      "debitscoreal": "",
+      "vdcustnetannualincome": 0,
+      "standardizedcity": "",
+      "ccbehaviorNewBandsForAL": null,
+      "reltype": "SOW",
+      "vdcustcity": "PUNE",
+      "behavioralscore7": "",
+      "ccbehaviorSegment": null,
+      "vdcustprofession": "",
+      "behavioralscore6": "",
+      "behavioralscore5": "",
+      "sourceid": "FINWARE",
+      "behavioralscore4": "",
+      "behavioralscore3": "",
+      "panNo": null,
+      "aadharNo": "",
+      "ccbehaviorRawScores": null,
+      "behavscore1": "",
+      "behavscore2": "",
+      "debitscorebl": "",
+      "sourceId": null,
+      "vdcustadd1": "A 20 Building A705",
+      "vdcustadd2": "Adani Estate",
+      "fdcuststaffind": "",
+      "vdcustadd3": "Nashik Road ",
+      "vdcustadd4": "",
+      "productdescription": "BB KIDS SAVINGS A/C",
+      "vdcustemailadd": "shubham@gmail.com",
+      "debitscorecards": "",
+      "ndcustmonthlyincome": 0,
+      "vdcustresiphone": "9049568863",
+      "producttype": "SAVINGS",
+      "vdcustlastname": "",
+      "cncbehavscore": "",
+      "vdcusteducation": "",
+      "vdcustfullname": "shubham",
+      "vdcusttitle": "MR",
+      "vdcustchannel2CODE": "",
+      "vdcustzipcode": "412105",
+      "ucicno": null,
+      "vdcustnatlid": "",
+      "totalpaamt": "",
+      "vdcustresidencetype": "",
+      "vdcustspousename": "",
+      "fdcustmissingind": "",
+      "vdcustnameshort": "Shubham ",
+      "customerid": "901111386",
+      "vdcustoffemailadd": "",
+      "vdcustmaritalstatus": "2",
+      "vdcustfirstname": "Shubham",
+      "filler9": null,
+      "filler8": null,
+      "filler5": null,
+      "ddcuststartdate": "",
+      "filler4": null,
+      "filler7": null,
+      "filler6": null,
+      "updatedt": "",
+      "vdcustspouseoccu": "",
+      "filler3": null,
+      "ndcustannualincome": 0,
+      "ddcustreestbdate": "",
+      "vdcustcountry": "INDIA",
+      "vdcustbranchcode": "2373",
+      "cardbehavscore": "",
+      "vdcustgender": "M",
+      "mobileNo": null,
+      "fwcustid": "",
+      "customerIdentity": null,
+      "ndcustdependents": 0,
+      "vdcustmthrmadnname": ""
+      },
+    "message": "SUCCESS",
+    "status": "SUCCESS"
     }
   }

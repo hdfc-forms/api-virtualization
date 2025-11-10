@@ -1,0 +1,22 @@
+{
+  "businessName": "Adobe Ref Num",
+  "apiName": "API/Adobe_RefNum",
+  "method": "POST",
+  "statusCode": 200,
+  "latencyMs": 0,
+  "predicate": {
+    "request": {
+      "journeyName": "TWL_ETB10SEC_TOPUP_JOURNEY",
+      "journeyID":  "regex:.*_TWLTOPUP_AGENT_U_WEB"
+      },
+    "headers": {},
+    "query": {}
+    },
+  "responseHeaders": {"Content-Type": "application/json"},
+  "responseBody": {
+    "errorText": null,
+    "referenceNumber": "TT10112500123",
+    "errorCode": "REF0000",
+    "status": "SUCCESS"
+    }
+  }

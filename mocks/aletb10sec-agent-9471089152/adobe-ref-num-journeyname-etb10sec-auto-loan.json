@@ -1,0 +1,23 @@
+{
+  "businessName": "Adobe Ref Num",
+  "apiName": "API/Adobe_RefNum",
+  "method": "POST",
+  "statusCode": 200,
+  "latencyMs": 0,
+  "predicate": {
+    "request": {
+      "journeyName": "ETB10SEC_AUTO_LOAN_JOURNEY",
+      "partnerCode": "AL",
+      "journeyID": "regex:.*_ALETB_AGENT_U_WEB$"
+      },
+    "headers": {},
+    "query": {}
+    },
+  "responseHeaders": {"Content-Type": "application/json"},
+  "responseBody": {
+    "errorText": null,
+    "referenceNumber": "AL10112500146",
+    "errorCode": "REF0000",
+    "status": "SUCCESS"
+    }
+  }
