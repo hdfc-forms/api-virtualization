@@ -1,0 +1,22 @@
+{
+  "businessName": "Adobe Fetch Returning Journey Info",
+  "apiName": "API/Adobe_FetchReturningJourneyInfo",
+  "method": "POST",
+  "statusCode": 200,
+  "latencyMs": 0,
+  "predicate": {
+    "request": {
+      "journeyName": "PL_ETBWO_JOURNEY",
+      "mobileNumber": "7004541554"
+    },
+    "headers": {},
+    "query": {}
+  },
+  "responseHeaders": {
+    "Content-Type": "application/json"
+  },
+  "responseBody": {
+    "msg": "No Incomplete Journey Exists for journeyPL_NTB_JOURNEY",
+    "errorCode": "RJI0001"
+  }
+}
