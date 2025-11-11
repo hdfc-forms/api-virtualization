@@ -29,7 +29,7 @@ describe('getAllJsonFiles', () => {
 
   test('should find files in subdirectories', () => {
     const files = getAllJsonFiles(testDir);
-    const subdirFiles = files.filter(file => file.includes('personal-loan'));
+    const subdirFiles = files.filter(file => file.includes('pl-etbwo'));
 
     expect(subdirFiles.length).toBeGreaterThan(0);
   });
