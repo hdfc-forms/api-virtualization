@@ -1,0 +1,34 @@
+{
+  "businessName": "api/v1/cc-inquire Card Dtls-otp Gen",
+  "apiName": "api/v1/cc-inquireCardDtls-otpGen",
+  "method": "POST",
+  "statusCode": 200,
+  "latencyMs": 0,
+  "predicate": {
+    "request": {"CrossSaleCardValidationAndOTPGenRequestDTO": {"requestString": {
+      "mobileNo": "7987668890",
+      "cardNo": "7953"
+      }}},
+    "headers": {},
+    "query": {}
+    },
+  "responseHeaders": {"Content-Type": "application/json"},
+  "responseBody": {
+    "status": {
+      "isOverriden": false,
+      "replyCode": 0,
+      "replyText": "0",
+      "memo": null,
+      "externalReferenceNo": "AD20251111104816841",
+      "internalReferenceNumber": "2025315465765023",
+      "postingDate": {"dateString": "20251111000000"},
+      "errorCode": "0",
+      "extendedReply": {"messages": null},
+      "validationErrors": null,
+      "userReferenceNumber": null
+      },
+    "maintenanceType": null,
+    "configVersionId": null,
+    "responseString": "Success"
+    }
+  }

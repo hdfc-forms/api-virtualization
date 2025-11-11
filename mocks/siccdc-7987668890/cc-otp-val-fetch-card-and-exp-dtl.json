@@ -1,0 +1,229 @@
+{
+  "businessName": "api/v1/cc-otp Val-fetch Card And Exp Dtl",
+  "apiName": "api/v1/cc-otpVal-fetchCardAndExpDtl",
+  "method": "POST",
+  "statusCode": 200,
+  "latencyMs": 0,
+  "predicate": {
+    "request": {"ValidateOTPAndReturnCardDetailsRequestDTO": {"requestString": {
+      "VMX_ROOT": {
+        "VMX_MSGIN": {
+    
+          "MOB_NBR": "7987668890",
+          "CRD": "7953"
+        
+          }
+        
+        }
+    
+      }}},
+    "headers": {},
+    "query": {}
+    },
+  "responseHeaders": {"Content-Type": "application/json"},
+  "responseBody": {
+    "status": {
+      "isOverriden": false,
+      "replyCode": 0,
+      "replyText": "0",
+      "memo": null,
+      "externalReferenceNo": "AD20251111104821476",
+      "internalReferenceNumber": "2025315312456292",
+      "postingDate": {"dateString": "20251111000000"},
+      "errorCode": "0",
+      "extendedReply": {"messages": null},
+      "validationErrors": null,
+      "userReferenceNumber": null
+      },
+    "maintenanceType": null,
+    "configVersionId": null,
+    "responseString": {"VMX_ROOT": {
+      "VMX_MSGOUT": {
+        "SVC_RETURN": "P",
+        "RC_NBR_OCCUR": 0,
+        "RESPONSE_DATA": {"CARD_DATA": [
+          {
+          "CUST_ID": "0900007008",
+          "MOB_NBR": 7987668890,
+          "EXP_DATE": 122025,
+          "BLK_CD1": "",
+          "CARD_SEQ": 1,
+          "BLK_CD2": "",
+          "EMAIL": "VIKRAMTHOMBARE28@GMAIL.COM",
+          "CURR_OUTST": -61876840,
+          "CARD_STATUS": "A",
+          "AAN": "0001014520001977957",
+          "AVAIL_CRLIM": 4000000,
+          "UCIC": "0900007008",
+          "CARD_NBR": "XXXXXXXXXXXXXXX7953",
+          "DOB": "01-06-1965",
+          "CRLIM": 4000000,
+          "CASHLIM": 1600000,
+          "SEQ": "00001"
+          },
+          {
+          "CUST_ID": "",
+          "MOB_NBR": "",
+          "EXP_DATE": "000000",
+          "BLK_CD1": "",
+          "CARD_SEQ": 0,
+          "BLK_CD2": "",
+          "EMAIL": "",
+          "CURR_OUTST": 0,
+          "CARD_STATUS": "",
+          "AAN": "",
+          "AVAIL_CRLIM": 0,
+          "UCIC": "",
+          "CARD_NBR": "",
+          "DOB": "0000000000",
+          "CRLIM": 0,
+          "CASHLIM": 0,
+          "SEQ": "00002"
+          },
+          {
+          "CUST_ID": "",
+          "MOB_NBR": "",
+          "EXP_DATE": "000000",
+          "BLK_CD1": "",
+          "CARD_SEQ": 0,
+          "BLK_CD2": "",
+          "EMAIL": "",
+          "CURR_OUTST": 0,
+          "CARD_STATUS": "",
+          "AAN": "",
+          "AVAIL_CRLIM": 0,
+          "UCIC": "",
+          "CARD_NBR": "",
+          "DOB": "0000000000",
+          "CRLIM": 0,
+          "CASHLIM": 0,
+          "SEQ": "00003"
+          },
+          {
+          "CUST_ID": "",
+          "MOB_NBR": "",
+          "EXP_DATE": "000000",
+          "BLK_CD1": "",
+          "CARD_SEQ": 0,
+          "BLK_CD2": "",
+          "EMAIL": "",
+          "CURR_OUTST": 0,
+          "CARD_STATUS": "",
+          "AAN": "",
+          "AVAIL_CRLIM": 0,
+          "UCIC": "",
+          "CARD_NBR": "",
+          "DOB": "0000000000",
+          "CRLIM": 0,
+          "CASHLIM": 0,
+          "SEQ": "00004"
+          },
+          {
+          "CUST_ID": "",
+          "MOB_NBR": "",
+          "EXP_DATE": "000000",
+          "BLK_CD1": "",
+          "CARD_SEQ": 0,
+          "BLK_CD2": "",
+          "EMAIL": "",
+          "CURR_OUTST": 0,
+          "CARD_STATUS": "",
+          "AAN": "",
+          "AVAIL_CRLIM": 0,
+          "UCIC": "",
+          "CARD_NBR": "",
+          "DOB": "0000000000",
+          "CRLIM": 0,
+          "CASHLIM": 0,
+          "SEQ": "00005"
+          },
+          {
+          "CUST_ID": "",
+          "MOB_NBR": "",
+          "EXP_DATE": "000000",
+          "BLK_CD1": "",
+          "CARD_SEQ": 0,
+          "BLK_CD2": "",
+          "EMAIL": "",
+          "CURR_OUTST": 0,
+          "CARD_STATUS": "",
+          "AAN": "",
+          "AVAIL_CRLIM": 0,
+          "UCIC": "",
+          "CARD_NBR": "",
+          "DOB": "0000000000",
+          "CRLIM": 0,
+          "CASHLIM": 0,
+          "SEQ": "00006"
+          },
+          {
+          "CUST_ID": "",
+          "MOB_NBR": "",
+          "EXP_DATE": "000000",
+          "BLK_CD1": "",
+          "CARD_SEQ": 0,
+          "BLK_CD2": "",
+          "EMAIL": "",
+          "CURR_OUTST": 0,
+          "CARD_STATUS": "",
+          "AAN": "",
+          "AVAIL_CRLIM": 0,
+          "UCIC": "",
+          "CARD_NBR": "",
+          "DOB": "0000000000",
+          "CRLIM": 0,
+          "CASHLIM": 0,
+          "SEQ": "00007"
+          },
+          {
+          "CUST_ID": "",
+          "MOB_NBR": "",
+          "EXP_DATE": "000000",
+          "BLK_CD1": "",
+          "CARD_SEQ": 0,
+          "BLK_CD2": "",
+          "EMAIL": "",
+          "CURR_OUTST": 0,
+          "CARD_STATUS": "",
+          "AAN": "",
+          "AVAIL_CRLIM": 0,
+          "UCIC": "",
+          "CARD_NBR": "",
+          "DOB": "0000000000",
+          "CRLIM": 0,
+          "CASHLIM": 0,
+          "SEQ": "00008"
+          },
+          {
+          "CUST_ID": "",
+          "MOB_NBR": "",
+          "EXP_DATE": "000000",
+          "BLK_CD1": "",
+          "CARD_SEQ": 0,
+          "BLK_CD2": "",
+          "EMAIL": "",
+          "CURR_OUTST": 0,
+          "CARD_STATUS": "",
+          "AAN": "",
+          "AVAIL_CRLIM": 0,
+          "UCIC": "",
+          "CARD_NBR": "",
+          "DOB": "0000000000",
+          "CRLIM": 0,
+          "CASHLIM": 0,
+          "SEQ": "00009"
+          }
+        ]}
+        },
+      "VMX_HEADER": {
+        "CORRELID": 1234,
+        "VERSION": "R8V1",
+        "CLIENTID": "0001",
+        "CONTEXT": "00001HDFCVMX",
+        "MSGID": "VMX.CMS.CARDS.DTL.INQ",
+        "NAME": "00001HDFCVMX"
+        }
+      }},
+    "Id-token-jwt": "UkBCNVxTXQ4ApaJ-T7sviiHNcRZP6at_fVh4Ph6O_YmccyZgqlu0vh3cxuFsYeD-u4vNxf8HWWkbaxUSt5AZrsM6B-bTl9ChkImnfLjuBMHXK9UZaNB9X2htrVHh4U9UadJOGVEvfWQ1vR7kfYpzKV99m5VkCcTcpTCZVwxd20vBqxTcsR5C9SyKtNxV3RLt7yV4De27A7GZNyGobqSdJ8jlAMUUuGPwgCOT-7UzvPdkh781F8KeR_hIwtOeLotzXo-3oPQfFENrU8v3FX_Xj7hW6nCnlQXAyv7vbszlv7ELa2pH1yQwhZIY-sD1xVcKrNZC3Lg3KjuJh0zJrrmi9A.tPdzuQ5Eac3uq7gTE_yaSA.fSuuKtuuG7_isV4yyWuUR0QI1BoqdX2B4OtbuET5Y-PPRdSolpZMMpBDe-kdas3Y1lzlm0Gsvqp9MEAXMfjME2vzzm1lAHwREGgG0mCtFxceD0ONzf_3J0mi1hRRxyWXHt8oMuqVb6_HwK6-dMz74T5WvxIz-emZ2o_39A0apzcw6BWbWc2QW5vMModxc_vpn2itI71C4G6SVLhEXMR9qs4xhi_JdsFKY7McvaIEZOmb0VL3kxCppMhXn6BipeN1_fKgzTZYzKwma5HnsnHWHQ-S-vGdRjMEOxyF5veFNl2RLjYaRLD9EuqFwGCkKLI-yZ-29r6c_RcS9AlPLg_EzZr6RhCYj3JO7AkovLEeElVr81z-BvrWrCOysCQLFFZpID_BmcFSR1rp8A45izw-fLHXRiq_hUyrnHpFrRPM_Gylwr8ROGZCn86Gj4RvIRH7wtkGi8qxpeSu7f72brUZcVfmW3u4FzI1ZksmF1XXeGtwalbnhl2Z3DCmwvy53tXShQ_snZeNtzHnhoya5W3XZCDic9hY1kzq7xJqk_mmEe503NOec2Bu3JM9zmXEo5eAUKks-56khFixAMTfHsjp_n5_qhw3aePF-fD2MhzJiaVF0fJslJhw8JwHQ7U1Q1SsBS9O1uMOukGV4SzifNbqgsRQQd-7Zy6d5SVT9mcBVrns0D9p9SPL5WU5caDr24LI4b8cIhJ48KexpIQesic2QBAGmjhq3f27OsQe3hMydDdoN3d2kxIglwFmr9Wd9obMfcmpHeo0prcuujo68QSWZ7f2imDUIHm6qNxP66uppcJFCrZ3BuFmMzawNwEDsqZFH82EBB_GmgsESDk393ZI1gsk15LoBAv_eSoBiO5OTIdXkesbruhhNdW0tZktQaowWTCZx6Oxe5EwNFWH5zmzQzABQq2EwOD0t3xTVJf4We1iHKXJGrQvAl1Ms9Qn2FTNrMdyZ0uW-ZfuoATknH_WYC-spr7BjyJwP43o2_0-bes.Ybo7e41eKIXbA6UBiHduBA"
+    }
+  }
