@@ -1,0 +1,32 @@
+{
+  "businessName": "Adobe Fetch Returning Journey Info",
+  "apiName": "API/Adobe_FetchReturningJourneyInfo",
+  "method": "POST",
+  "statusCode": 200,
+  "latencyMs": 0,
+  "predicate": {
+    "request": {
+      
+      "mobileNumber": "7020287638"
+      },
+    "headers": {},
+    "query": {}
+    },
+  "responseHeaders": {"Content-Type": "application/json"},
+  "responseBody": {
+    "journey": [{
+      "journeyName": "EXISTING_CC_BASED_FDLIEN_JOURNEY",
+      "leadProfileId": 27386227,
+      
+      "address": null,
+      "isCountryCodeAppended": "false",
+      "mobileNumber": "7020287638",
+      "countryCode": "91",
+      "profile": null,
+      "channel": "ADOBE_WEBFORMS",
+      "journeyState": "CUSTOMER_FD_SELECTED",
+      "journeyID": "bc218e5a-1af4-46a2-9384-2e4be18d231b_01_aa_a_aaa"
+      }],
+    "errorCode": "RJI0000"
+    }
+  }
