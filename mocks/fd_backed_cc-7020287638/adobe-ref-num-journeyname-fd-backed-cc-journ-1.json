@@ -1,0 +1,22 @@
+{
+  "businessName": "Adobe Ref Num",
+  "apiName": "API/Adobe_RefNum",
+  "method": "POST",
+  "statusCode": 200,
+  "latencyMs": 0,
+  "predicate": {
+    "request": {
+      "journeyName": "FD_BACKED_CC_JOURNEY",
+      "journeyID": "regex:.*_FD_BACKED_CC_JOURNEY_U_WEB"
+      },
+    "headers": {},
+    "query": {}
+    },
+  "responseHeaders": {"Content-Type": "application/json"},
+  "responseBody": {
+    "errorText": null,
+    "referenceNumber": "AD1111250005",
+    "errorCode": "REF0000",
+    "status": "SUCCESS"
+    }
+  }

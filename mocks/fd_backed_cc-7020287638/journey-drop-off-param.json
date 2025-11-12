@@ -1,0 +1,24 @@
+{
+  "businessName": "Journey Drop Off Param",
+  "apiName": "API/JourneyDropOff_Param",
+  "method": "POST",
+  "statusCode": 200,
+  "latencyMs": 0,
+  "predicate": {
+    "request": {
+      "leadProfile": {"mobileNumber": ""},
+      "journeyInfo": {"journeyID": ""}
+      },
+    "headers": {},
+    "query": {}
+    },
+  "responseHeaders": {"Content-Type": "application/json"},
+  "responseBody": {
+    "message": "request.body.journeyInfo.journeyID should match pattern \"^(?!*$).+\"",
+    "errors": [{
+      "path": ".body.journeyInfo.journeyID",
+      "errorCode": "pattern.openapi.validation",
+      "message": "should match pattern \"^(?!*$).+\""
+      }]
+    }
+  }

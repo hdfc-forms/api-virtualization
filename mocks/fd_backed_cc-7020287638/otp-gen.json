@@ -1,0 +1,57 @@
+{
+  "businessName": "api/v4/otp-gen",
+  "apiName": "api/v4/otp-gen",
+  "method": "POST",
+  "statusCode": 200,
+  "latencyMs": 0,
+  "predicate": {
+    "request": {"OTPGenAndSMSEmailDispatchOrchestrationRequestDTO": {
+     
+      "requestString": {
+        "E2FARequestDTO": {
+         
+          "linkData": "0000000917020287638"
+         
+          }
+       
+        }
+      }},
+    "headers": {},
+    "query": {}
+    },
+  "responseHeaders": {"Content-Type": "application/json"},
+  "responseBody": {
+    "responseString": {
+      "refNo": "AD20251111114718198",
+      "datetimeExpire": "11/11/2025 11:49",
+      "serverId": "DC",
+      "incrementedCounter": "703",
+      "errorMsg": null,
+      "freshPassword": true,
+      "currentTimestampInMilliSeconds": "1762841838854",
+      "serverInstanceId": "01",
+      "divisionCode": "INSTAALERT",
+      "datatimeGen": "11/11/2025 11:47",
+      "errorDetail": null,
+      "messageHash": "static:genpwdreq:06:Xb6l8POIY/IejjGv9259gixShKo=",
+      "otpReferenceData": "",
+      "statusCode": "00",
+      "txnId": "202511449fede4-78f1-4f13-830d-6df1aec36fb430_N2"
+      },
+    "configVersionId": null,
+    "maintenanceType": null,
+    "status": {
+      "isOverriden": false,
+      "replyText": "0",
+      "internalReferenceNumber": "2025315466123078",
+      "replyCode": 0,
+      "memo": null,
+      "errorCode": "0",
+      "validationErrors": null,
+      "externalReferenceNo": "AD20251111114718198",
+      "postingDate": {"dateString": "20251111000000"},
+      "extendedReply": {"messages": null},
+      "userReferenceNumber": null
+      }
+    }
+  }

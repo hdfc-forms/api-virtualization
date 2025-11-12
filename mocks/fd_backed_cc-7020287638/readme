@@ -1,0 +1,5 @@
+Journey Name : SI CC DC
+Test Data: 7020287638 & FYIPF7495J & 10/09/1992
+URL: https://uat-cards-datavalidation-aemtomdm--hdfc-bank-uat--adhdfc.aem.live/digital/fd-backed-cc
+
+Flow: Landing page --> otp --> select fd --> thank u page

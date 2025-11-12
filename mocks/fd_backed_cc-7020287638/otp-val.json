@@ -1,0 +1,44 @@
+{
+  "businessName": "api/v4/otp-val",
+  "apiName": "api/v4/otp-val",
+  "method": "POST",
+  "statusCode": 200,
+  "latencyMs": 0,
+  "predicate": {
+    "request": {"VerifyOTPRestRequestDTO": {
+    
+      "requestString": {
+       
+        "linkData": "0000000917020287638"
+        }
+      }},
+    "headers": {},
+    "query": {}
+    },
+  "responseHeaders": {"Content-Type": "application/json"},
+  "responseBody": {
+    "responseString": {
+      "refNo": "AD20251111114723535",
+      "errorDetail": null,
+      "messageHash": "static:verpwdres:04:b80qBVRggWyDAC5JqU0d30woQ08=",
+      "statusCode": "00",
+      "txnId": null
+      },
+    "Id-token-jwt": "dUO-C-kVnOYjBvbxQJKkSXWCRzB1irDfCvU5kHiD2pVcBzeEX3gvc-ikBnhpHj5h94Jl7vq1XGOPiYOHVKI-8oLxEcdNHhpkOvuE1ojxx9sPKV7hu9cFIMCrfIR8SF_MX_R6UNXnlZWTTaRUsSjretOqj_8R3gATNLlF4_Vx6Lgo2axnxLvCxIiFeRoUgQ6V9DfX1w9ABfXurFw4aL76aF0woSdoo43Dj-2KZMzzNIhEtFf6c4nimvf3lAGdqVSA0iP1Td9iVU2SofEFennM53n-ZkK4naB7mRPQJL-q5BCC_SJlVXVpH8HFgZEdi6y78Ua3evXHfXsGnQdeM3OpwQ.17ankXlKzeGyJ-Z-uLAU6w.L5PINcncFjunhpMazgPhuT5c4zCvAonUK_zS14ge1nfZq4ITQRkLJA02E5CW0pHt66n-YmwnDE5Hxwog2ERozOt55gt9Y5T_vaTDZU9BlexoZ_27sULeYfAVZ-rNBHv5xEEo3AweZM68QRGV3CyueBLTozjjANT3jY-JXjAM2WZk7NGy9J1lwGfJj54y1V5yH_DHUL0b9ldu_puNyQInuhTih1C25ravNmH2YJmuRwaVWpRzpK_NpartUkk2z5ZxWx_4mxHs0zLhVxu-KDGo37l0f4F-3vEd2gqYAzZz1wX8pqfYKL39DHc9vEafuhQpbNIl8JTLDBWnms73D5cdGIOk-um8wonjh8zYf1RrrNae9A2sJ9SBEuSp6MrnjaXm2GPhsdvLtPQ-PaXGrh8bZJLdhBMdNod8jPcAQ8BQmVhypKYwVWfW2E98sboEEXe2fCiHBrRz2sJrgsNghwZJ-Ozbh4-0Y7rOKmKZENkSsFfTLJGWec_8SUlq9WnS-SfqcmUdqRwdm7OZlNv7XWx2ZM6ZnJwMB3zcFUfiHnQvHSjTjrhoUy2WuzOiz4zLA8Wzt8MFcTIS3GYekJe3yjRUdC5lKP4ZIKHAvxQgWKQNsFlD-UCAv7xTNKu1gxgMV682EepxI5_VgG-nXBAQAyT308MKCNdtFrkN-VQukCB5r8iBsMU6LHdcB6zX7uvKRaUCqqNx-BtCExP3n3kv2lUR7DUgICXaFAAsNrT0GWRpzQ91IxaeTj1JznGVu7ENa4Xg9_qxikjG0kjgBXU71YDmhjUOL8D0MzWlY3MXAmj3eDdruF48t5plevevTCXrAPpjo1GpSuOmyPrtjrz6Sba8BBIY1kXvIJjSbvi_Vnq1OJU.gjxprqpaGdOAbBAmKtmoCA",
+    "configVersionId": null,
+    "maintenanceType": null,
+    "status": {
+      "isOverriden": false,
+      "replyText": "0",
+      "internalReferenceNumber": "2025315466107111",
+      "replyCode": 0,
+      "memo": null,
+      "errorCode": "0",
+      "validationErrors": null,
+      "externalReferenceNo": "AD20251111114723535",
+      "postingDate": {"dateString": "20251111000000"},
+      "extendedReply": {"messages": null},
+      "userReferenceNumber": null
+      }
+    }
+  }
