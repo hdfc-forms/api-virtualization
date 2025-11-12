@@ -9,311 +9,348 @@
       "journeyName": "ETB10SEC_BUSINESS_LOAN_JOURNEY",
       "offerString": "STP_BL_10SEC_BL2CC_NB_OCT23_UATP1",
       "journeyID": "regex:.*_BL_U_WEB"
-      },
+    },
     "headers": {},
     "query": {}
-    },
-  "responseHeaders": {"Content-Type": "application/json"},
+  },
+  "responseHeaders": {
+    "Content-Type": "application/json"
+  },
   "responseBody": {
     "offerDetail": {
-      "tenureWiseOfferList": null,
-      "campaignId": 13286,
-      "personalizationList": {"personalizationDatapoint": [
-        {
-        "fieldName": "cp_identity_cp",
-        "fieldValue": "1"
-        },
-        {
-        "fieldName": "ba_meta_key",
-        "fieldValue": "75823917"
-        },
-        {
-        "fieldName": "member_id",
-        "fieldValue": "901096348"
-        },
-        {
-        "fieldName": "card_number",
-        "fieldValue": ""
-        },
-        {
-        "fieldName": "customer_id",
-        "fieldValue": ""
-        },
-        {
-        "fieldName": "Email",
-        "fieldValue": "shubham@gmail.com"
-        },
-        {
-        "fieldName": "mobile_number",
-        "fieldValue": "8393436674"
-        },
-        {
-        "fieldName": "Product",
-        "fieldValue": ""
-        },
-        {
-        "fieldName": "ACCOUNT_NO",
-        "fieldValue": "50100117465142"
-        },
-        {
-        "fieldName": "CARD_TYPE",
-        "fieldValue": "STP_BL_10SEC_BL2CC_NB_OCT23_UATP1"
-        },
-        {
-        "fieldName": "CITY",
-        "fieldValue": "THANE"
-        },
-        {
-        "fieldName": "CRM_CAMPAIGN_ID",
-        "fieldValue": "901096348"
-        },
-        {
-        "fieldName": "CRM_CUSTOMER_TRACKING_ID",
-        "fieldValue": "901096348"
-        },
-        {
-        "fieldName": "CRM_OCCURRENCE_NUMBER",
-        "fieldValue": ""
-        },
-        {
-        "fieldName": "LG_CODE",
-        "fieldValue": "N"
-        },
-        {
-        "fieldName": "MOBILE_NO",
-        "fieldValue": ""
-        },
-        {
-        "fieldName": "NAME",
-        "fieldValue": "Shubham Deelip Sonawane"
-        },
-        {
-        "fieldName": "NEW_CARD_TYPE",
-        "fieldValue": ""
-        },
-        {
-        "fieldName": "OFFER_DETAILS",
-        "fieldValue": ""
-        },
-        {
-        "fieldName": "OFFER_TO_DATE",
-        "fieldValue": ""
-        },
-        {
-        "fieldName": "PRODUCT_1",
-        "fieldValue": ""
-        },
-        {
-        "fieldName": "PROMO_CODE",
-        "fieldValue": ""
-        },
-        {
-        "fieldName": "AADHAR_NO",
-        "fieldValue": ""
-        },
-        {
-        "fieldName": "address1",
-        "fieldValue": "A 20 Building A705"
-        },
-        {
-        "fieldName": "address2",
-        "fieldValue": "Adani Estate"
-        },
-        {
-        "fieldName": "address3",
-        "fieldValue": "Nashik Road"
-        },
-        {
-        "fieldName": "address4",
-        "fieldValue": ""
-        },
-        {
-        "fieldName": "address5",
-        "fieldValue": ""
-        },
-        {
-        "fieldName": "ATM_CITY",
-        "fieldValue": ""
-        },
-        {
-        "fieldName": "ATM_ID",
-        "fieldValue": ""
-        },
-        {
-        "fieldName": "BRANCHCODE",
-        "fieldValue": "2373"
-        },
-        {
-        "fieldName": "CD_CC",
-        "fieldValue": ""
-        },
-        {
-        "fieldName": "CD_DC",
-        "fieldValue": ""
-        },
-        {
-        "fieldName": "CD_HASH",
-        "fieldValue": ""
-        },
-        {
-        "fieldName": "CD_POS",
-        "fieldValue": ""
-        },
-        {
-        "fieldName": "Comments",
-        "fieldValue": ""
-        },
-        {
-        "fieldName": "COMP_CODE",
-        "fieldValue": ""
-        },
-        {
-        "fieldName": "COMP_NAME",
-        "fieldValue": ""
-        },
-        {
-        "fieldName": "CUSTADD",
-        "fieldValue": ""
-        },
-        {
-        "fieldName": "DEC_LN_AMOUNT",
-        "fieldValue": ""
-        },
-        {
-        "fieldName": "DOB",
-        "fieldValue": "1/1/2000 12:00:00 AM"
-        },
-        {
-        "fieldName": "EMI",
-        "fieldValue": "999"
-        },
-        {
-        "fieldName": "EMI_DUE_DATE",
-        "fieldValue": ""
-        },
-        {
-        "fieldName": "ENCRYPTEDCUSTID",
-        "fieldValue": "NzpGhBjbaqY="
-        },
-        {
-        "fieldName": "FIELD_1",
-        "fieldValue": ""
-        },
-        {
-        "fieldName": "FIELD_3",
-        "fieldValue": "50100117465142"
-        },
-        {
-        "fieldName": "field2",
-        "fieldValue": "6866855"
-        },
-        {
-        "fieldName": "field3",
-        "fieldValue": "Y"
-        },
-        {
-        "fieldName": "field4",
-        "fieldValue": "Y"
-        },
-        {
-        "fieldName": "field5",
-        "fieldValue": "50100117465142"
-        },
-        {
-        "fieldName": "GENDER",
-        "fieldValue": "NO DOCS"
-        },
-        {
-        "fieldName": "INTRATE",
-        "fieldValue": "12.00%"
-        },
-        {
-        "fieldName": "INTRATE_1",
-        "fieldValue": "12.00%"
-        },
-        {
-        "fieldName": "MARTIAL_STATUS",
-        "fieldValue": "0"
-        },
-        {
-        "fieldName": "NEW_CITY",
-        "fieldValue": ""
-        },
-        {
-        "fieldName": "NEW_STATE",
-        "fieldValue": ""
-        },
-        {
-        "fieldName": "PAN_NO",
-        "fieldValue": "WITPL3993B"
-        },
-        {
-        "fieldName": "PF",
-        "fieldValue": "999"
-        },
-        {
-        "fieldName": "PIN",
-        "fieldValue": "421301"
-        },
-        {
-        "fieldName": "PRODUCT_VARIANT",
-        "fieldValue": "BL"
-        },
-        {
-        "fieldName": "Propensity",
-        "fieldValue": "Top 10 Percentile"
-        },
-        {
-        "fieldName": "Pseudo_Id",
-        "fieldValue": ""
-        },
-        {
-        "fieldName": "RACKINTRATE",
-        "fieldValue": "19.00%"
-        },
-        {
-        "fieldName": "RACKPF",
-        "fieldValue": "2.00%"
-        },
-        {
-        "fieldName": "RACKTENOR",
-        "fieldValue": "60"
-        },
-        {
-        "fieldName": "RANK",
-        "fieldValue": ""
-        },
-        {
-        "fieldName": "STATE",
-        "fieldValue": "MAHARASHTRA"
-        },
-        {
-        "fieldName": "TENOR",
-        "fieldValue": "36"
-        },
-        {
-        "fieldName": "LOANAMT",
-        "fieldValue": "1500000.00"
-        },
-        {
-        "fieldName": "NET_LOAN",
-        "fieldValue": ""
-        },
-        {
-        "fieldName": "LOANAMT_1",
-        "fieldValue": ""
-        },
-        {
-        "fieldName": "LOAN_AMT",
-        "fieldValue": ""
-        },
-        {
-        "fieldName": "custid",
-        "fieldValue": ""
-        }
-      ]},
-      "campaignName": "STP_BL_10SEC_BL2CC_NB_OCT23_UATP1"
+      "tenureWiseOfferList": {
+        "tenureWiseOfferDetailList": [
+          {
+            "tenureInMonths": "12",
+            "rateOfInterest": "18",
+            "offerAmount": 220000,
+            "tenureEmiPerLakh": 1666.67
+          },
+          {
+            "tenureInMonths": "24",
+            "rateOfInterest": "22",
+            "offerAmount": 320000,
+            "tenureEmiPerLakh": 2083.33
+          },
+          {
+            "tenureInMonths": "36",
+            "rateOfInterest": "28",
+            "offerAmount": 420000,
+            "tenureEmiPerLakh": 2777.78
+          },
+          {
+            "tenureInMonths": "48",
+            "rateOfInterest": "29.5",
+            "offerAmount": 520000,
+            "tenureEmiPerLakh": 4166.67
+          },
+          {
+            "tenureInMonths": "60",
+            "rateOfInterest": "30",
+            "offerAmount": 620000,
+            "tenureEmiPerLakh": 11497.33
+          }
+        ]
       },
+      "campaignId": 13286,
+      "personalizationList": {
+        "personalizationDatapoint": [
+          {
+            "fieldName": "cp_identity_cp",
+            "fieldValue": "1"
+          },
+          {
+            "fieldName": "ba_meta_key",
+            "fieldValue": "75823917"
+          },
+          {
+            "fieldName": "member_id",
+            "fieldValue": "901096348"
+          },
+          {
+            "fieldName": "card_number",
+            "fieldValue": ""
+          },
+          {
+            "fieldName": "customer_id",
+            "fieldValue": ""
+          },
+          {
+            "fieldName": "Email",
+            "fieldValue": "shubham@gmail.com"
+          },
+          {
+            "fieldName": "mobile_number",
+            "fieldValue": "8393436674"
+          },
+          {
+            "fieldName": "Product",
+            "fieldValue": ""
+          },
+          {
+            "fieldName": "ACCOUNT_NO",
+            "fieldValue": "50100117465142"
+          },
+          {
+            "fieldName": "CARD_TYPE",
+            "fieldValue": "STP_BL_10SEC_BL2CC_NB_OCT23_UATP1"
+          },
+          {
+            "fieldName": "CITY",
+            "fieldValue": "THANE"
+          },
+          {
+            "fieldName": "CRM_CAMPAIGN_ID",
+            "fieldValue": "901096348"
+          },
+          {
+            "fieldName": "CRM_CUSTOMER_TRACKING_ID",
+            "fieldValue": "901096348"
+          },
+          {
+            "fieldName": "CRM_OCCURRENCE_NUMBER",
+            "fieldValue": ""
+          },
+          {
+            "fieldName": "LG_CODE",
+            "fieldValue": "N"
+          },
+          {
+            "fieldName": "MOBILE_NO",
+            "fieldValue": ""
+          },
+          {
+            "fieldName": "NAME",
+            "fieldValue": "Shubham Deelip Sonawane"
+          },
+          {
+            "fieldName": "NEW_CARD_TYPE",
+            "fieldValue": ""
+          },
+          {
+            "fieldName": "OFFER_DETAILS",
+            "fieldValue": ""
+          },
+          {
+            "fieldName": "OFFER_TO_DATE",
+            "fieldValue": ""
+          },
+          {
+            "fieldName": "PRODUCT_1",
+            "fieldValue": ""
+          },
+          {
+            "fieldName": "PROMO_CODE",
+            "fieldValue": ""
+          },
+          {
+            "fieldName": "AADHAR_NO",
+            "fieldValue": ""
+          },
+          {
+            "fieldName": "address1",
+            "fieldValue": "A 20 Building A705"
+          },
+          {
+            "fieldName": "address2",
+            "fieldValue": "Adani Estate"
+          },
+          {
+            "fieldName": "address3",
+            "fieldValue": "Nashik Road"
+          },
+          {
+            "fieldName": "address4",
+            "fieldValue": ""
+          },
+          {
+            "fieldName": "address5",
+            "fieldValue": ""
+          },
+          {
+            "fieldName": "ATM_CITY",
+            "fieldValue": ""
+          },
+          {
+            "fieldName": "ATM_ID",
+            "fieldValue": ""
+          },
+          {
+            "fieldName": "BRANCHCODE",
+            "fieldValue": "2373"
+          },
+          {
+            "fieldName": "CD_CC",
+            "fieldValue": ""
+          },
+          {
+            "fieldName": "CD_DC",
+            "fieldValue": ""
+          },
+          {
+            "fieldName": "CD_HASH",
+            "fieldValue": ""
+          },
+          {
+            "fieldName": "CD_POS",
+            "fieldValue": ""
+          },
+          {
+            "fieldName": "Comments",
+            "fieldValue": ""
+          },
+          {
+            "fieldName": "COMP_CODE",
+            "fieldValue": ""
+          },
+          {
+            "fieldName": "COMP_NAME",
+            "fieldValue": ""
+          },
+          {
+            "fieldName": "CUSTADD",
+            "fieldValue": ""
+          },
+          {
+            "fieldName": "DEC_LN_AMOUNT",
+            "fieldValue": ""
+          },
+          {
+            "fieldName": "DOB",
+            "fieldValue": "1/1/2000 12:00:00 AM"
+          },
+          {
+            "fieldName": "EMI",
+            "fieldValue": "999"
+          },
+          {
+            "fieldName": "EMI_DUE_DATE",
+            "fieldValue": ""
+          },
+          {
+            "fieldName": "ENCRYPTEDCUSTID",
+            "fieldValue": "NzpGhBjbaqY="
+          },
+          {
+            "fieldName": "FIELD_1",
+            "fieldValue": ""
+          },
+          {
+            "fieldName": "FIELD_3",
+            "fieldValue": "50100117465142"
+          },
+          {
+            "fieldName": "field2",
+            "fieldValue": "6866855"
+          },
+          {
+            "fieldName": "field3",
+            "fieldValue": "Y"
+          },
+          {
+            "fieldName": "field4",
+            "fieldValue": "Y"
+          },
+          {
+            "fieldName": "field5",
+            "fieldValue": "50100117465142"
+          },
+          {
+            "fieldName": "GENDER",
+            "fieldValue": "NO DOCS"
+          },
+          {
+            "fieldName": "INTRATE",
+            "fieldValue": "12.00%"
+          },
+          {
+            "fieldName": "INTRATE_1",
+            "fieldValue": "12.00%"
+          },
+          {
+            "fieldName": "MARTIAL_STATUS",
+            "fieldValue": "0"
+          },
+          {
+            "fieldName": "NEW_CITY",
+            "fieldValue": ""
+          },
+          {
+            "fieldName": "NEW_STATE",
+            "fieldValue": ""
+          },
+          {
+            "fieldName": "PAN_NO",
+            "fieldValue": "WITPL3993B"
+          },
+          {
+            "fieldName": "PF",
+            "fieldValue": "999"
+          },
+          {
+            "fieldName": "PIN",
+            "fieldValue": "421301"
+          },
+          {
+            "fieldName": "PRODUCT_VARIANT",
+            "fieldValue": "BL"
+          },
+          {
+            "fieldName": "Propensity",
+            "fieldValue": "Top 10 Percentile"
+          },
+          {
+            "fieldName": "Pseudo_Id",
+            "fieldValue": ""
+          },
+          {
+            "fieldName": "RACKINTRATE",
+            "fieldValue": "19.00%"
+          },
+          {
+            "fieldName": "RACKPF",
+            "fieldValue": "2.00%"
+          },
+          {
+            "fieldName": "RACKTENOR",
+            "fieldValue": "60"
+          },
+          {
+            "fieldName": "RANK",
+            "fieldValue": ""
+          },
+          {
+            "fieldName": "STATE",
+            "fieldValue": "MAHARASHTRA"
+          },
+          {
+            "fieldName": "TENOR",
+            "fieldValue": "36"
+          },
+          {
+            "fieldName": "LOANAMT",
+            "fieldValue": "1500000.00"
+          },
+          {
+            "fieldName": "NET_LOAN",
+            "fieldValue": ""
+          },
+          {
+            "fieldName": "LOANAMT_1",
+            "fieldValue": ""
+          },
+          {
+            "fieldName": "LOAN_AMT",
+            "fieldValue": ""
+          },
+          {
+            "fieldName": "custid",
+            "fieldValue": ""
+          }
+        ]
+      },
+      "campaignName": "STP_BL_10SEC_BL2CC_NB_OCT23_UATP1"
+    },
     "code": "EA001",
     "demogDetail": {
       "score6": null,
@@ -438,8 +475,8 @@
       "customerIdentity": null,
       "ndcustdependents": 0,
       "vdcustmthrmadnname": ""
-      },
+    },
     "message": "SUCCESS",
     "status": "SUCCESS"
-    }
   }
+}
