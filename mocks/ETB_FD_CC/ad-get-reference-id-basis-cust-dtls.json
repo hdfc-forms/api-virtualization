@@ -1,0 +1,24 @@
+{
+  "businessName": "api/v1/ad-get Reference ID-basis Cust Dtls",
+  "apiName": "api/v1/ad-getReferenceID-basisCustDtls",
+  "method": "POST",
+  "statusCode": 200,
+  "latencyMs": 0,
+  "predicate": {
+    "request": {"customerDetailsRequestDTO": {
+  
+      "mobileNumber": "7020287638"
+
+      }},
+    "headers": {},
+    "query": {}
+    },
+  "responseHeaders": {"Content-Type": "application/json"},
+  "responseBody": {
+    "code": "200",
+    "referenceNo": "FDETBYJC19EJUTT",
+    "Id-token-jwt": "PPlsr5E0OzrSZiGRbGTqJN-kNXABhJnblCJ8yBAAKtephPyhZVsp1oAzToYm1tuy6f0i7RDpINgQrcAQcdguM-_1baRn-dDnlD5ILJJCI_no9wAcLLuaEWLzC0BQMGnOsezFZfz3D1tXJNE9ImCwU53Iti3cxKKkKgslxwsuCWnqK8uZ3MVTtzRHmXrV5d2D7obIa11NC8cZynnSJ8uwa4OZuBw5Dueo7R3QVe57IV46_s6em9gYnUahF_iil0iht5UGITmQ2Ofl9_SY4vH8CMIHka9q26ajRWu1KFlPW2ggbHiw2LRtiqty8HuU28oHlb0yAp9KKA2yi3P4TgDjIw.4xajsKhj92E_ZykQaw5LEQ.CiETSd2U4eBPiIeguBcoHmQ-XM2NOzrnxTYNRaHc-xPBOhYspT3lpf_kjcUT6QyqsqQnn1lMmc7HNUHc_ouoB_HUI-3n6mrV-idqmfOk3FvoFEFZyE3S4ME2rWxBS8c3Zg9WlUWHktS1OV7hMn0SYDWqmMpofplM21wACFQWiTu8lkfJU1ELdblg_tPAdcegh6cBNK5M0P1lNUfh7z0-BsBJBrefNglzqBBgElNRrHlD3J3lpxIx39GNQ2gNoLX7mfXPUZ-4xRDlnw-ofGuOf8NdeV7XU0FeG-s5TqyxqHYIai3_CUmwTdQlWVm23TtFU3yRICAHGyROonriCw3FZaeH61FhO8gb5J4YigMMqE4O2i7yfd2eR6LnaAOc0RHVUXRdYNMiqgDhlt3g4SqwKjye-c6Yed0C4ydxUxYdJ1e0kO_V_5P7Cq-MHydlXX-305mG0Hfv0P_5-iYB6SuZO7exmLXYvybPA2CftIZXGZOgdWV18GRsmYnMWy7B5hgz1pkmy6thSeRkTb6bO18ExqdIy9_c1IKoMWoGcp2oIkIvpLj80MB6mFR2X_DIlRo2KPkAXaOcKcE6sXk9mDl6LWPNLYVydZ8eSHB_7RnP-zvVf1-67RY7HXI5PXMc-jAYsWlY-P97OVTiqLLOgH6nDm2BUd1CF0O3KicwK097b9aC4LnpzqBlmx0B-TZkoNDlPyoE3FhZ5BHr4RAgB6kTJ2gIv3PqPAzr7HcGeG0E1V_DkQyrBPt9_joeveJ6onxbJQYBTWMZzc4uLEuxa89n74nMcUjVnDZpwamj6eMd1SXxFzfCD8Ep5FrH7QSp-oRH_2tZLQbWTKBVquFsp-eSaNX9hx1TEQ28aPbMvgJohj6wdKTdJ9gadUz_amKmSLYC9CebLI8cH1-oma1eN_jtdQ.DjTSfYG6QlRv9fDNh_YidQ",
+    "message": "Request processed successfully",
+    "status": "SUCCESS"
+    }
+  }

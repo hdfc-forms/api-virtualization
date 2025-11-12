@@ -1,0 +1,30 @@
+{
+  "businessName": "OTP Val v2",
+  "apiName": "API/OTP_Val_v2",
+  "method": "POST",
+  "statusCode": 200,
+  "latencyMs": 0,
+  "predicate": {
+    "request": {"verifyPwdRequest": {"hdfcVerifyPwdReq": {
+     
+      "linkData": "0000000917020287638"
+      }}},
+    "headers": {},
+    "query": {}
+    },
+  "responseHeaders": {"Content-Type": "application/json"},
+  "responseBody": {
+    "verifyPwdRequestResponse": {"multiRef": {
+      "fillerField1": "",
+      "refNo": "AD20251111162710196",
+      "errorDetail": "",
+      "messageHash": "static:verpwdres:04:V9Y9aRTmUdOxeSMr4fto85Am4kQ=",
+      "fillerField5": "",
+      "fillerField4": "",
+      "fillerField3": "",
+      "fillerField2": "",
+      "statusCode": "00"
+      }},
+    "Id-token-jwt": "l9FjlWhryeMNf_v5iegKUxSeY0ghStHy7SvZNB4BhM3WhdhgXaXCYgWO-sFNBJZ9ty3lZfAXOsg8WkHzpZR4B_DFz0PoTgcJhmSgxO8VWWpBK1hY43VKblVxy_20cDgp9JHldyRJsUq0_nOlFL7f1b7te1BrrMqUh1iZw94adtp8xFRaOxUZtdXi9lIV3d_DAInuIIOyLWrKxcM0du5Wf1KFKANoFaGkpiefM2xQIRQ1nOM7hBbXHs8ucDXh4gTw43zuBfA_xui4ufyeXjuGPdbcqpsS5Uxu89LdXRZ-p42KmT1YUtHWJVkk9yrJN5YBApXfCke-pBM6U-1vuUkA7g.iLPiqL4uhISl1H_7CLDJiA.RwcTo5eDpaSGWs62ikamJt3dJz8qa1gDSfqdn9yK09ogRy-04SZG5-LIpty8YmAXLCwYe1xDBTkCnQgfqTyWYj438Yc8s5cm9B-Q1hHdyJI3VgROpgXBfBMeh1dBNkyyWwwXW0YhLsea-1vtNKR-C9exvahlbfJSvcj8GHfU5gnE2IkTcjNInCCKbgo4NMAtKsa6cDmL7oU8KTmuMNCQN99ygXgftuRFIAEMG9sCGtjXDtTNqETwEG4NVMJjZiit7T8gAkVhAbx5hzbxhNQNeck8sYEuX8KG4TKZjypIjo90Hz-MJP1IkXIKBbss6W8FjDvsqmWCYWQLMFv0bCTGDRQ-rMFIWrh5hUcehBx-wT4Hi1WebVM7lATqzfU8UeavCKZhS4CY45UdvVAc2MSK85ixxc0MhDwOcgvVvTBSqyLI9meS6B8cQSiSmcltdyoeluDfOLbGy5x6bf3MsbLtQh5fHHoTePmXj7YDhRa2wRdPrqoGbIR2n4Y7MZa4RIc-XMFEEkJzJfNOr6fPxg5KxgvaOna6SRaqdUtR8ordbVr0sVT9ZCX4gYYfGELlx3RWRuvvVJvZ60-ty78wdIXIHHjZm47yMazABe20UkUgg9VU8DysAh0aKQ4Z8nW55Y_e9ddHiIr70821qoLrWhaiThCzKKyhYUlcOooeiAO4KcsOgSOieevXpd6fvEclRYeWMHh4QE7uEFh50gWpQrEcNQ3TbYIYvJRKdQWYGgKQ8HVx1zqyyttRvPFSoTChn_646T7tDB1J53b7uKj1TYtDA6RDvkXhsS2cA8NgrvX9aJgh0WFryTBDRtVpUvuRlxtGAl_hDwvkNwOEwCUFSZdHBUko9XUNnTt8aQJ-gkyi1b131ixtDxnTtzGIJpyL7ZzT.-23UHmzArxirF6J9x25Tog"
+    }
+  }

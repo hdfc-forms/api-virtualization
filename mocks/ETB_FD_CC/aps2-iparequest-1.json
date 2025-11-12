@@ -1,0 +1,19 @@
+{
+  "businessName": "APS2 IPARequest",
+  "apiName": "API/APS2_IPARequest",
+  "method": "POST",
+  "statusCode": 200,
+  "latencyMs": 0,
+  "predicate": {
+    "request": {
+      "_xpath": {
+        "selector": "//*[local-name()='APS_SOURCE']",
+        "pattern": "DAP"
+      }
+      },
+    "headers": {},
+    "query": {}
+    },
+  "responseHeaders": {"Content-Type": "application/json"},
+  "responseBody": {"responseXmlString": "22FhxpmkGYFJItzq<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<S:Envelope xmlns:S=\"http://schemas.xmlsoap.org/soap/envelope/\"><S:Body><executeIPARequestResponse xmlns=\"http://service.wsdl.intellect.polaris.com\"><executeIPARequestReturn><APS_APPL_REF_NUM>25K11D01229790S2<\/APS_APPL_REF_NUM><APS_ERROR_CODE>0000<\/APS_ERROR_CODE><APS_ERROR_DESC>SUCCESS<\/APS_ERROR_DESC><APS_E_REF_NUM>AD2025111116271<\/APS_E_REF_NUM><APS_IPA_RESULT>N<\/APS_IPA_RESULT><APS_MB_POS_DESC>MB-POS-FAILED<\/APS_MB_POS_DESC><APS_MB_POS_RESULT>03<\/APS_MB_POS_RESULT><FILLER1 xsi:nil=\"true\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"/><FILLER10 xsi:nil=\"true\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"/><FILLER2 xsi:nil=\"true\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"/><FILLER3 xsi:nil=\"true\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"/><FILLER4 xsi:nil=\"true\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"/><FILLER5 xsi:nil=\"true\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"/><FILLER6>50000<\/FILLER6><FILLER7 xsi:nil=\"true\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"/><FILLER8 xsi:nil=\"true\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"/><FILLER9 xsi:nil=\"true\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"/><STATUS xsi:nil=\"true\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"/><\/executeIPARequestReturn><\/executeIPARequestResponse><\/S:Body><\/S:Envelope>"}
+  }

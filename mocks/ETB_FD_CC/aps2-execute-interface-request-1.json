@@ -1,0 +1,19 @@
+{
+  "businessName": "APS2 Execute Interface Request",
+  "apiName": "API/APS2_ExecuteInterfaceRequest",
+  "method": "POST",
+  "statusCode": 200,
+  "latencyMs": 0,
+  "predicate": {
+    "request": {
+      "_xpath": {
+        "selector": "//*[local-name()='APS_COM_MOBILE_NUM']",
+        "pattern": "7020287638"
+      }
+      },
+    "headers": {},
+    "query": {}
+    },
+  "responseHeaders": {"Content-Type": "application/json"},
+  "responseBody": {"responseXmlString": "hUp4zUkbbWVb6RGk<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<S:Envelope xmlns:S=\"http://schemas.xmlsoap.org/soap/envelope/\"><S:Body><executeInterfaceRequestResponse xmlns=\"http://service.wsdl.intellect.polaris.com\"><executeInterfaceRequestReturn><APS_APPL_REF_NUM>25K11D01229790S2<\/APS_APPL_REF_NUM><APS_ERROR_CODE>0000<\/APS_ERROR_CODE><APS_ERROR_DESC>SUCCESS<\/APS_ERROR_DESC><APS_E_REF_NUM>AD2025111116271<\/APS_E_REF_NUM><\/executeInterfaceRequestReturn><\/executeInterfaceRequestResponse><\/S:Body><\/S:Envelope>"}
+  }
