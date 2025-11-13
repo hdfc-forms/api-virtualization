@@ -1,0 +1,29 @@
+{
+  "businessName": "Customer Identification",
+  "apiName": "API/CustomerIdentification",
+  "method": "POST",
+  "statusCode": 200,
+  "latencyMs": 0,
+  "predicate": {
+    "request": {"FetchCustomerCASADetailsReqDTO": {
+      "mobileNumber": "919876512309",
+      "dateOfBirth": "19901127"
+      }},
+    "headers": {},
+    "query": {}
+    },
+  "responseHeaders": {"Content-Type": "application/json"},
+  "responseBody": {
+    "type": "fetchCustomerCASADetailsResDTO",
+    "status": {
+      "isOverriden": false,
+      "replyText": "No Linked CASA Account found",
+      "internalReferenceNumber": "2025317327064624",
+      "errorCode": "XFACE_ERR_359",
+      "replyCode": 99,
+      "externalReferenceNo": "AD20251113103815175",
+      "postingDate": {"dateString": "20251113000000"},
+      "extendedReply": {}
+      }
+    }
+  }

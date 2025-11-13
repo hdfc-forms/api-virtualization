@@ -1,0 +1,25 @@
+{
+  "businessName": "Adobe Fetch Action Response",
+  "apiName": "API/Adobe_FetchActionResponse",
+  "method": "POST",
+  "statusCode": 200,
+  "latencyMs": 0,
+  "predicate": {
+    "request": {},
+    "headers": {},
+    "query": {}
+    },
+  "responseHeaders": {"Content-Type": "application/json"},
+  "responseBody": {
+    "responseString": "{\"state\":\"COMPLETED\",\"CustomerType\":\"Y\",\"CustomerTypeCode\":\"ETB\",\"soapErrorCode\":\"\"}",
+    "requestString": null,
+    "contextParam": {
+      "partnerID": "",
+      "journeyID": "AD20251113103901878",
+      "externalJourneyID": "D13112025175504",
+      "encodeResponse": false,
+      "productName": ""
+      },
+    "responseParam": {"action": "CKYC_ONE_AADHAAR_ONE_ACCOUNT"}
+    }
+  }

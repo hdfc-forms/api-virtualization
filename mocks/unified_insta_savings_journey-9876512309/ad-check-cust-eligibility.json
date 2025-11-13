@@ -1,0 +1,28 @@
+{
+  "businessName": "api/v1/ad-check Cust Eligibility",
+  "apiName": "api/v1/ad-checkCustEligibility",
+  "method": "POST",
+  "statusCode": 200,
+  "latencyMs": 0,
+  "predicate": {
+    "request": {
+      "context": {
+        "mobileNumber": "9876512309"
+        }
+      },
+    "headers": {},
+    "query": {}
+    },
+  "responseHeaders": {"Content-Type": "application/json"},
+  "responseBody": {
+    "referenceNumber": "ISJQ4P9VDOAFMKT",
+    "context": {
+      "journeyName": "INSTA_SAVINGS_JOURNEY",
+      "productCode": "IS",
+      "mobileNumber": "9876512309",
+      "journeyId": "72763bdb-7e48-470f-beb3-308a82bf53e1_01_InstaSavings_U_WEB"
+      },
+    "message": "Request initiated successfully",
+    "statusCode": "CE000"
+    }
+  }
