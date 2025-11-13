@@ -1,0 +1,33 @@
+{
+  "businessName": "api/v1/kyc Engine-initiate Kyc",
+  "apiName": "api/v1/kycEngine-initiateKyc",
+  "method": "POST",
+  "statusCode": 200,
+  "latencyMs": 0,
+  "predicate": {
+    "request": {"requestParam": {
+      "mobileNo": "9876543211"
+      }},
+    "headers": {},
+    "query": {}
+    },
+  "responseHeaders": {"Content-Type": "application/json"},
+  "responseBody": {
+    "sessionContext": {
+      "prodCd": "BOTH",
+      "nextJourneyStep": "REG-CONSENT",
+      "externalRefNo": "AD20251111112659867",
+      "channelId": "ADOBE-CASA",
+      "kycJourneyId": "D11112025174233"
+      },
+    "responseParam": {
+      "nextJourneyStep": "INITIATE-KYC",
+      "url": "https://pehchaan-uat2.hdfcuat.bank.in:443/kycengine/ekyc?jid=k4wZYsHSRzUsm7QoKK7NGgWbH3Z9x8MO1OPXLGQVv33R3uPwBYUAk8fNTgT6x7ehi%2BdTvCK5yy9N3vEIPIsqcs5lreXv1gU8u5spbLojC3fJFxXVHtj2PrrIT9DpOMUTQGJ%2BT4m6RHBkAMjInqCtO87UBoT%2Fya6Q%2BRrnIw%2BEvvbPH7mctm72EEmXURby7yS6tZ8hmd%2Bd3mccQ4tvu4DNUE7jYAf4YzvlS%2Fh58fgct8%2FHNhazxSeFLt7jUFxdeg52Rs%2BVKy2FaBgbTRg87TLTU%2FWwhM79Q2P44KwFjhD6wzcOBUwhyV5k3fDskmSAivLddww92RnPDsbKO4uDV0VdY747AdHZbSvV5WTNHpVfzG2BVqdZHYk6oezec1dLb5CKgdM3q%2BTEMIxoUWnzPEuH8G3fFsN%2FKwcKuHI7zBcQg9E%3D"
+      },
+    "responseStatus": {
+      "errorCode": "",
+      "responseCode": "0",
+      "errorMsg": ""
+      }
+    }
+  }
