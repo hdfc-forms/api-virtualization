@@ -1,0 +1,45 @@
+{
+  "businessName": "api/v1/ad-fetch Cust Eligibility Status",
+  "apiName": "api/v1/ad-fetchCustEligibilityStatus",
+  "method": "POST",
+  "statusCode": 200,
+  "latencyMs": 0,
+  "predicate": {
+    "request": {
+      "context": {
+        "mobileNumber": "9876543211"
+        }
+      },
+    "headers": {},
+    "query": {}
+    },
+  "responseHeaders": {"Content-Type": "application/json"},
+  "responseBody": {
+    "data": [
+      {
+      "statusDesc": "Request is processing",
+      "type": "CROSSCORE",
+      "statusCode": "IN_PROCESS"
+      },
+      {
+      "statusDesc": "Request is processing",
+      "type": "FACTIVA",
+      "statusCode": "IN_PROCESS"
+      },
+      {
+      "statusDesc": "Request is processing",
+      "type": "UCIC",
+      "statusCode": "IN_PROCESS"
+      }
+    ],
+    "referenceNumber": "ISYD15D8B3X6N7C",
+    "context": {
+      "journeyName": "BAAS_CORPORATE_SALARY_JOURNEY",
+      "productCode": "IS",
+      "mobileNumber": "9876543211",
+      "journeyId": "5035a04e-b11b-450e-811f-9a4a138d55bd_01_CSA_U_BAS"
+      },
+    "message": "Request is currently processing",
+    "statusCode": "CE001"
+    }
+  }
