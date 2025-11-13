@@ -1,0 +1,45 @@
+{
+  "businessName": "api/v1/ad-fetch Cust Eligibility Status",
+  "apiName": "api/v1/ad-fetchCustEligibilityStatus",
+  "method": "POST",
+  "statusCode": 200,
+  "latencyMs": 0,
+  "predicate": {
+    "request": {
+      "context": {
+        "mobileNumber": "8335195793"
+        }
+      },
+    "headers": {},
+    "query": {}
+    },
+  "responseHeaders": {"Content-Type": "application/json"},
+  "responseBody": {
+    "data": [
+      {
+      "statusDesc": "Request is processing",
+      "type": "CROSSCORE",
+      "statusCode": "IN_PROCESS"
+      },
+      {
+      "statusDesc": "Request is processing",
+      "type": "FACTIVA",
+      "statusCode": "IN_PROCESS"
+      },
+      {
+      "statusDesc": "Request is processing",
+      "type": "UCIC",
+      "statusCode": "IN_PROCESS"
+      }
+    ],
+    "referenceNumber": "ISK2KQ0JC7UALD7",
+    "context": {
+      "journeyName": "INSTA_SAVINGS_JOURNEY",
+      "productCode": "IS",
+      "mobileNumber": "8335195793",
+      "journeyId": "f3935a52-1da7-4255-b267-bb429ac7ed1c_01_InstaSavings_U_WEB"
+      },
+    "message": "Request is currently processing",
+    "statusCode": "CE001"
+    }
+  }

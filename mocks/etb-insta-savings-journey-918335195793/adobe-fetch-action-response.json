@@ -1,0 +1,25 @@
+{
+  "businessName": "Adobe Fetch Action Response",
+  "apiName": "API/Adobe_FetchActionResponse",
+  "method": "POST",
+  "statusCode": 200,
+  "latencyMs": 0,
+  "predicate": {
+    "request": {},
+    "headers": {},
+    "query": {}
+    },
+  "responseHeaders": {"Content-Type": "application/json"},
+  "responseBody": {
+    "responseString": "{ \"prnFieldId\": \"\", \"phtFieldId\": \"\", \"hcpStatus\": \"\", \"aadhaarErrorCode\": \"\", \"photoErrorCode\": \"PE999: General error occurred\", \"hcpErrorCode\": \"\", \"prnState\": \"CALLBACK_RECEIVED\", \"phtState\": \"ERROR_OCCURRED\", \"prnDocType\": \"PHOTO\" }",
+    "requestString": null,
+    "contextParam": {
+      "partnerID": "",
+      "journeyID": "AD20251113104945480",
+      "externalJourneyID": "D13112025175510",
+      "encodeResponse": false,
+      "productName": ""
+      },
+    "responseParam": {"action": "CKYC_DOC_UPLOAD"}
+    }
+  }
