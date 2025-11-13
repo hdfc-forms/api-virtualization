@@ -1,0 +1,36 @@
+{
+  "businessName": "api/v1/kyc Engine-initiate Kyc",
+  "apiName": "api/v1/kycEngine-initiateKyc",
+  "method": "POST",
+  "statusCode": 200,
+  "latencyMs": 0,
+  "predicate": {
+    "request": {"requestParam": {
+      "redirectionURL": "https://hdfc-qa-03.adobecqms.net/content/hdfc_formskyc_service/api/kycBack?ifsc=3d98dbedafc347b29911",
+      "transactionId": "918335195793",
+      "dob": "27-Nov-2000",
+      "mobileNo": "8335195793"
+      }},
+    "headers": {},
+    "query": {}
+    },
+  "responseHeaders": {"Content-Type": "application/json"},
+  "responseBody": {
+    "sessionContext": {
+      "prodCd": "BOTH",
+      "nextJourneyStep": "REG-CONSENT",
+      "externalRefNo": "AD20251113104945480",
+      "channelId": "ADOBE-CASA",
+      "kycJourneyId": "D13112025175510"
+      },
+    "responseParam": {
+      "nextJourneyStep": "INITIATE-KYC",
+      "url": "https://pehchaan-uat2.hdfcuat.bank.in:443/kycengine/ekyc?jid=PVlkQizU3YUVWHypd3resnKwOXRnRgqNJJXa%2BR0rDBVxTgYYlmmzKvZJnLvbIOIEKN7YEUrCJXpkV74P2gwADbPY7hhIs9dImSpzbTn7erMmPUwBwChmKw%2BS207IlX12zGn5Oz%2F%2BaJuIJL%2BQuqqZbnGWqEdse3xlH34f3OC0yMjVVHuPP7SvcSdBOz5abwJ0m4dJKJLZdTkvcTgLGZ1rCnSHep9ZiaHvO2rxsICVLrjdiyg5gpZVZOmosGOkDmZQQnbvI2XEiVUbR4bYBK6piCxxWjihugH8f8JM7L6NDI6cFIQUM2N4x1NhCmEpdhY8ZnQzbZQs2nRRFz08F9r8efjzhDQhMFIFBiNGWc0G%2BCpIEze6WERojCnbapSPwdE6%2BiVkWY437fjZLooLL9I7JQlHlwb1CnLaKFMzjiBclpI%3D"
+      },
+    "responseStatus": {
+      "errorCode": "",
+      "responseCode": "0",
+      "errorMsg": ""
+      }
+    }
+  }

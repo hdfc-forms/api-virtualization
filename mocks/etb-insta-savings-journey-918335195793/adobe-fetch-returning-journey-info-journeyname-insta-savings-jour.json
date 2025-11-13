@@ -1,0 +1,20 @@
+{
+  "businessName": "Adobe Fetch Returning Journey Info",
+  "apiName": "API/Adobe_FetchReturningJourneyInfo",
+  "method": "POST",
+  "statusCode": 200,
+  "latencyMs": 0,
+  "predicate": {
+    "request": {
+      "mobileNumber": "8335195793",
+      "profile": {"dob": "2000-11-27"}
+      },
+    "headers": {},
+    "query": {}
+    },
+  "responseHeaders": {"Content-Type": "application/json"},
+  "responseBody": {
+    "msg": "No Incomplete Journey Exists for journeyINSTA_SAVINGS_JOURNEY",
+    "errorCode": "RJI0001"
+    }
+  }
