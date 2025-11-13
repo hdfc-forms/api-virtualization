@@ -6,7 +6,7 @@
   "latencyMs": 0,
   "predicate": {
     "request": {"requestString": {
-      "passwordValue": "123450"
+      "passwordValue": "523450"
       },
     "contextParam": {
       "partnerJourneyID": "regex:.*_BL_U_WEB$"
@@ -38,7 +38,7 @@
         "customerOfficeZipCode": "",
         "customerOfficeCity": "",
         "residenceType": "",
-        "offerType": "LG_BL_10SEC_NONCASA_NB_RB_STP_26AUGUAT_A5",
+        "offerType": "LG_BL_A2A_NONCASA_NB_RB_STP_26AUGUAT_A5",
         "emailAddress": "Ranjit@gmail.com",
         "customerOfficePhone": "",
         "customerLastName": "Sonawane",

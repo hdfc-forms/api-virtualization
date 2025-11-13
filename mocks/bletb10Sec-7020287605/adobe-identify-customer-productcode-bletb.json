@@ -6,8 +6,7 @@
   "latencyMs": 0,
   "predicate": {
     "request": {
-      "mobileNumber": "7020287605",
-      "pan": "KGFPD5805K"
+      "mobileNumber": "7020287605"
       },
     "headers": {},
     "query": {}
