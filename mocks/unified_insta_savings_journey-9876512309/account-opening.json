@@ -1,0 +1,36 @@
+{
+  "businessName": "Account Opening",
+  "apiName": "API/Account_Opening",
+  "method": "POST",
+  "statusCode": 200,
+  "latencyMs": 0,
+  "predicate": {
+    "request": {
+      "SmartAccountOpeningRequest": {
+        "customerDetailsRequest": {
+          "mobileNumber": "919876512309",
+          "custBirthDate": "27/11/1990"
+          }
+        }
+      },
+    "headers": {},
+    "query": {}
+    },
+  "responseHeaders": {"Content-Type": "application/json"},
+  "responseBody": {
+    "customerID": 0,
+    "type": "smartAccountOpeningResponse",
+    "status": {
+      "isOverriden": false,
+      "replyText": "Duplicate PAN Number.",
+      "internalReferenceNumber": "2025317326994568",
+      "errorCode": "10171",
+      "replyCode": 10171,
+      "validationErrors": [],
+      "externalReferenceNo": "779690445",
+      "postingDate": {"dateString": "20251113000000"},
+      "extendedReply": {},
+      "userReferenceNumber": "20251113104243260"
+      }
+    }
+  }
