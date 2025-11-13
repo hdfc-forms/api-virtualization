@@ -1,0 +1,123 @@
+{
+  "businessName": "Fintech FD Account Opening Orch V2",
+  "apiName": "API/Fintech_FD_Account_Opening_Orch_V2",
+  "method": "POST",
+  "statusCode": 200,
+  "latencyMs": 0,
+  "predicate": {
+    "request": {"OpenTermDepositAccountRequest": {
+      "password": "123456",
+      "dictionaryArray": [{"nameValuePairDTOArray": [
+        {
+        "name": "DOB",
+        "value": "20000127"
+        }
+      ]}],
+      "mobileNo": "619721578794"
+      }},
+    "headers": {},
+    "query": {}
+    },
+  "responseHeaders": {"Content-Type": "application/json"},
+  "responseBody": {
+    "termDepositXfaceAccountOpeningResponseDTO": {
+      "relatedCustomerDTO": [{
+        "customerFullName": "Wmpncv Hcadvhac Fcbctd",
+        "customerId": 901099829,
+        "accountNumber": "50300031035477  ",
+        "customerRelationship": "SOW",
+        "flgCustType": "O  "
+        }],
+      "termDepositLocationDtO": {
+        "cityName": "CITY MEMARI, TESTING MAX CHARACTERS",
+        "stateName": "WEST BENGAL",
+        "branchName": "MEMARI ANKAR-SUNDER NIWAS-HOSHIARP"
+        },
+      "depositNo": 1,
+      "tdaccounTNo": "50300031035477",
+      "depTermUnit": "C",
+      "fixedDepositDetailsDTO": {
+        "tdRenewTerm": 0,
+        "tdOrgAmT": 49999,
+        "amtTxnFeeLcy": 0,
+        "tdDeposiTTerm": 6000001,
+        "tdTaxWiThheld2": 0,
+        "datTDMaturity": "14 Nov 2030",
+        "datNxtIntPay": "20251213",
+        "amtTdsAcy2": 0,
+        "codIntPayOpt": "2",
+        "nomineeDetailsDtO": [],
+        "tdMaTInsTrCod": 7,
+        "projectedInt": 0,
+        "datRenewal": "13 nov 2025",
+        "flgSupersaver": "N",
+        "ratConvAclcy": 1,
+        "namCustShrt": "YKHNZA",
+        "codDepStat": 6,
+        "amtTxnFeeTcy": 0,
+        "datDepDate": "13 Nov 2025",
+        "codProdType": "O",
+        "ratTdInteRest": 6.75,
+        "tdTaxWiThheld": 0,
+        "frqIntPay": "4",
+        "odLimit": 0,
+        "flgTdsWaiver": "N",
+        "amtTxnFeeAcy": 0,
+        "flgNomineeName": "Not Registered",
+        "amtTxnLcy": 0,
+        "namCurreNcy": "INDIAN RUPEES",
+        "datLastIntPay": "",
+        "amtTxnTcy": 0,
+        "amtTdsAcy": 0,
+        "codIntACCtXfer": "50100117583232",
+        "codRedACCtXfer": "50300031035477",
+        "tdLienAmounT": 0,
+        "codBloCkedDepNo": 1,
+        "intNxtAmt": 1285.25,
+        "flgSweepin": "N",
+        "codDepNo": 1,
+        "ratConvTcacy": 0,
+        "codIntPayout": 2,
+        "redPayMode": 3,
+        "tdBalInTeresT": 0,
+        "codAutoRenewRedemOpt": 3,
+        "datAcctOpen": "13 Nov 2025",
+        "namCcyShort": "INR",
+        "amtTdMAturity": 49999,
+        "intPayoutPrevYr": 0,
+        "datValueDate": "13 Nov 2025",
+        "amtTxnAcy": 0,
+        "intPayoutYtd": 0,
+        "operatiOnMOde": "Single",
+        "tdInTeresTPaid": 0,
+        "balTdPrincipal": 49999
+        },
+      "flgCumDep": "N",
+      "modOfOperation": "Single",
+      "tdSTarTDaTe": "13 Nov 2025",
+      "status": {
+        "isOverriden": false,
+        "replyText": "0",
+        "internalReferenceNumber": "2025317479522265",
+        "errorCode": "0",
+        "replyCode": 0,
+        "externalReferenceNo": "20251113055632565",
+        "postingDate": {"dateString": "20251113000000"},
+        "extendedReply": {}
+        },
+      "custPanNo": "TJXXX5304C",
+      "flgEmployee": "N"
+      },
+    "type": "openTermDepositAccountResponse",
+    "status": {
+      "isOverriden": false,
+      "replyText": "0",
+      "internalReferenceNumber": "2025317479522265",
+      "errorCode": "0",
+      "replyCode": 0,
+      "externalReferenceNo": "20251113055632565",
+      "postingDate": {"dateString": "20251113000000"},
+      "extendedReply": {}
+      }
+    }
+  }

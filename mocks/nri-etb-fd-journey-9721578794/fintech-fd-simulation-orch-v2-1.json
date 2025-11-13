@@ -1,0 +1,50 @@
+{
+  "businessName": "Fintech FD Simulation Orch V2",
+  "apiName": "API/Fintech_FD_Simulation_Orch_V2",
+  "method": "POST",
+  "statusCode": 200,
+  "latencyMs": 0,
+  "predicate": {
+    "request": {"SimulateTermDepositRequest": {
+      "dictionaryArray": [{"nameValuePairDTOArray": [
+        {
+        "name": "DOB",
+        "value": "20000127"
+        }
+      ]}],
+      "tdSimulationRequestDTO": {"termDepositFactsDTO": {
+        "dictionaryArray": [{"nameValuePairDTOArray": [{
+          "name": "codTypTd",
+          "value": "C"
+          }]}],
+        "debitAccountNo": "50100117583232",
+        "productGroup": "MIP",
+        "term": {
+          "months": "60",
+          "days": "1"
+          },
+        "principalAmount": {
+          "amount": "49999",
+          "currencyCode": "INR"
+          }
+        }},
+      "mobileNo": "619721578794"
+      }},
+    "headers": {},
+    "query": {}
+    },
+  "responseHeaders": {"Content-Type": "application/json"},
+  "responseBody": {
+    "type": "simulateTermDepositResponse",
+    "status": {
+      "isOverriden": false,
+      "replyText": "0",
+      "internalReferenceNumber": "2025317479522263",
+      "errorCode": "0",
+      "replyCode": 0,
+      "externalReferenceNo": "20251113055627352",
+      "postingDate": {"dateString": "20251113000000"},
+      "extendedReply": {}
+      }
+    }
+  }
