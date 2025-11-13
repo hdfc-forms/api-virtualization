@@ -1,7 +1,7 @@
 # [JOURNEY_NAME] Journey - Mock Data
 
 ## Overview
-This folder contains mock API responses for the **[JOURNEY_DESCRIPTION]** 
+This folder contains mock API responses for the **Business Loan ETB 10SEC** 
 
 ## Journey Information
 - **Journey Name**: BL ETB 10SEC
