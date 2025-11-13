@@ -1,0 +1,39 @@
+{
+  "businessName": "api/v1/fc-cust Identification",
+  "apiName": "api/v1/fc-custIdentification",
+  "method": "POST",
+  "statusCode": 200,
+  "latencyMs": 0,
+  "predicate": {
+    "request": {"FetchCustomerAccountAmlFatcaDetailsRequestDTO": {
+      "mobileNumber": "619721578794",
+      "dob": "20000127"
+      }},
+    "headers": {},
+    "query": {}
+    },
+  "responseHeaders": {"Content-Type": "application/json"},
+  "responseBody": {
+    "responseString": {"customerDetailsDTO": [{
+      "existingCustomer": "Y",
+      "flgCustTyp": "O  ",
+      "customerTypeDescription": "NON RESIDENT INDIAN",
+      "refCustEmail": "PPSYCK@ZZZKY.imo"
+      }]},
+    "configVersionId": null,
+    "maintenanceType": null,
+    "status": {
+      "isOverriden": false,
+      "replyText": "0",
+      "internalReferenceNumber": "2025317479489400",
+      "replyCode": 0,
+      "memo": null,
+      "errorCode": "0",
+      "validationErrors": null,
+      "externalReferenceNo": "AD20251113055548150",
+      "postingDate": {"dateString": "20251113000000"},
+      "extendedReply": {"messages": null},
+      "userReferenceNumber": null
+      }
+    }
+  }

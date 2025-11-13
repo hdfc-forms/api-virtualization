@@ -1,0 +1,30 @@
+{
+  "businessName": "OTP Val v2",
+  "apiName": "API/OTP_Val_v2",
+  "method": "POST",
+  "statusCode": 200,
+  "latencyMs": 0,
+  "predicate": {
+    "request": {"verifyPwdRequest": {"hdfcVerifyPwdReq": {
+      "linkData": "0000000619721578794",
+      "passwordValue": "123456"
+      }}},
+    "headers": {},
+    "query": {}
+    },
+  "responseHeaders": {"Content-Type": "application/json"},
+  "responseBody": {
+    "verifyPwdRequestResponse": {"multiRef": {
+      "fillerField1": "",
+      "refNo": "20251113055553574",
+      "errorDetail": "",
+      "messageHash": "static:verpwdres:04:JoGfrsEKrNgIO/h3XnDFbma80Yw=",
+      "fillerField5": "",
+      "fillerField4": "",
+      "fillerField3": "",
+      "fillerField2": "",
+      "statusCode": "00"
+      }},
+    "Id-token-jwt": "EeKTlEKXxDhP5nPkyR2ISBgYAsqJlJdagUlGmAcJAQsK3Q5IMHd1Qa2MHcZMISGd59Y0Rs7NZZn4bFcXaEvWZkto37uuM8-X_Y81UkkFRnOQ7xZrN495_teCL6X89uiHmgxMtj7pOwrzblVQZQZHMTcic5bBwYMvqYRP9esasJ5WdnWzu3MqrkY1xurirEn5pLz-6BfYn57pSfeG_D5uNUY7rchDEWFWsNw84RKXmkJ2Zz_VApsgWK3oW5eiYR6QAI-x6i1xAkzzgVjdOgBeIm5_bZE0cU6WlLx8nxpVYsKv9Jm6VWtzxE08Oj0CT5ew-cqPisMbG6vXoAFNFRetrg.dih0oPEfuE1nRm1gWDTY5A.5518BzlZCE41ajJ2MKFNNXVJOR5x_Hztv3ykZ9am6xYAPgxFlvpzaVo3UO_gf30-JpSmbOYZVLXOxbUM8vBkehzbdREKfhRDNU72dJaJ9ZJ_n2aTNypxbvi-1GwQTl6cCoUF7sf5ZFYZi_YCRQxjcyMm7eNfkCy6ewGB3-Iipn2s43RUeyYXD9rIi96YQ_7vnY94bFT7RO3zM3yF8U8FMyo2prt20VkFDy0-mtJGQ8ZjqeKbd47u2dE4zEGKQgN-7SBG4jFsA8iBRdAINIdgYILOt0OjH8IsrPswyS8bkMIM-dLAQcXuPZ7UJKzOugWOM-N4fJEqgsMBy6od4bB5mC4Fcf3x99EdH6DnZiw8JGgnrz6us9qJffRfh1j4sc3x0uSsuq8MgghlmMzzFeW3nc4nXC-22Ak3skL1sMmvbBTWMV-inZnk_Q9d2EN5uL-5WrBH1Th-XVeM3Ehx8P1M1CQDGWRfXwZ49UrG7V8BHfz79M_KinPdT5Mg4sSO1O0wYD8HaT6kkfS7H_XWGhXyCJi3WMPf5w6QxHs8dmZY2QMsDmEgFgKQkoAagw6AHlT-Bz3-pBIcbDYt17ct0Gt1xSLIRJMEKNVRYESE9XOR6dWssL1m5TipiTajhQJUNcWyW8QHWqMes9ZfDRAkNBGWxJAF0qd74GqDjibbj6UT1b-4cR2QQGca53sxUZg57VBuU6J-45_CobQP1UGOfsN00NoBw-iufzVtZNtZea26adJMrzOuU1Luo6kPnzdLagA_h7kpVav0VfFUfydPtsin6M1-HA0rYVR9uNfQJdPjEG0oevXRmWzKyi2yULzH9yktZ1bde7k3uOFA32dWIBlLmbnS0M_UL6sMhtzfDjFFOtH26fWSDSVYaI3F9qZBnegi.jHv9XEEbq-yIbN1loxdvDQ"
+    }
+  }
