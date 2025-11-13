@@ -15,10 +15,5 @@ This folder contains mock API responses for the **[JOURNEY_DESCRIPTION]**
 
 - **Flow 1**:
 ```
-[STEP_1] → [STEP_2] → [STEP_3] → [STEP_4]
-```
-
-- **Flow 2** (if applicable):
-```
-[STEP_1] → [STEP_2] → [STEP_3] → [STEP_4]
+Landing Page -> Hard Coding the journey ID -> OTP Verification -> Selecting the loan amount -> adding the required details in the form -> Aadhar mandate .
 ```
