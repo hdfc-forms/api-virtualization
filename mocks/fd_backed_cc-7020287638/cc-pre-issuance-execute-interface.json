@@ -1,0 +1,26 @@
+{
+  "businessName": "api/v1/ms/cc-pre Issuance-execute Interface",
+  "apiName": "api/v1/ms/cc-preIssuance-executeInterface",
+  "method": "POST",
+  "statusCode": 200,
+  "latencyMs": 0,
+  "predicate": {
+    "request": {"executeInterfaceRequest": {"requestHandler": {
+      
+      "APS_COM_MOBILE_NUM": "7020287638"
+      
+      }}},
+    "headers": {},
+    "query": {}
+    },
+  "responseHeaders": {"Content-Type": "application/json"},
+  "responseBody": {
+    "executeInterfaceRequestResponse": {"executeInterfaceRequestReturn": {
+      "APS_E_REF_NUM": "AD1111250004",
+      "APS_ERROR_DESC": "Unknown input is given",
+      "APS_ERROR_CODE": "5001",
+      "APS_APPL_REF_NUM": ""
+      }},
+    "Id-token-jwt": ""
+    }
+  }

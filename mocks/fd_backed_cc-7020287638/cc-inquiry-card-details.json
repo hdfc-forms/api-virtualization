@@ -1,0 +1,178 @@
+{
+  "businessName": "api/v3/cc-inquiry Card Details",
+  "apiName": "api/v3/cc-inquiryCardDetails",
+  "method": "POST",
+  "statusCode": 200,
+  "latencyMs": 0,
+  "predicate": {
+    "request": {"CreditCardGenericInquiryRequest": {
+     
+      "PassThroughMessageQueueRequest": {"requestXML": {"VMX_ROOT": {
+        "VMX_MSGIN": {
+          "MOB_NBR": "7020287638"
+          
+          }
+       
+        }}}
+      }},
+    "headers": {},
+    "query": {}
+    },
+  "responseHeaders": {"Content-Type": "application/json"},
+  "responseBody": {
+    "Id-token-jwt": "null",
+    "PassThroughMessageQueueResponse": {
+      "responseXML": {"VMX_ROOT": {
+        "VMX_MSGOUT": {
+          "SVC_RETURN": "F",
+          "RC_NBR_OCCUR": "1",
+          "RESPONSE_DATA": {"CARD_DATA": [
+            {
+            "MASK_CARD_NO": "",
+            "BLK_CODE1": "",
+            "BLK_CODE2": "",
+            "CRLIM": "0",
+            "LOGO": "0",
+            "CARD_DESC": "",
+            "CARD_SEQ": "0",
+            "OTB": "0",
+            "CARD_STATUS": "",
+            "SEQ": "00001",
+            "AAN": ""
+            },
+            {
+            "MASK_CARD_NO": "",
+            "BLK_CODE1": "",
+            "BLK_CODE2": "",
+            "CRLIM": "0",
+            "LOGO": "0",
+            "CARD_DESC": "",
+            "CARD_SEQ": "0",
+            "OTB": "0",
+            "CARD_STATUS": "",
+            "SEQ": "00002",
+            "AAN": ""
+            },
+            {
+            "MASK_CARD_NO": "",
+            "BLK_CODE1": "",
+            "BLK_CODE2": "",
+            "CRLIM": "0",
+            "LOGO": "0",
+            "CARD_DESC": "",
+            "CARD_SEQ": "0",
+            "OTB": "0",
+            "CARD_STATUS": "",
+            "SEQ": "00003",
+            "AAN": ""
+            },
+            {
+            "MASK_CARD_NO": "",
+            "BLK_CODE1": "",
+            "BLK_CODE2": "",
+            "CRLIM": "0",
+            "LOGO": "0",
+            "CARD_DESC": "",
+            "CARD_SEQ": "0",
+            "OTB": "0",
+            "CARD_STATUS": "",
+            "SEQ": "00004",
+            "AAN": ""
+            },
+            {
+            "MASK_CARD_NO": "",
+            "BLK_CODE1": "",
+            "BLK_CODE2": "",
+            "CRLIM": "0",
+            "LOGO": "0",
+            "CARD_DESC": "",
+            "CARD_SEQ": "0",
+            "OTB": "0",
+            "CARD_STATUS": "",
+            "SEQ": "00005",
+            "AAN": ""
+            },
+            {
+            "MASK_CARD_NO": "",
+            "BLK_CODE1": "",
+            "BLK_CODE2": "",
+            "CRLIM": "0",
+            "LOGO": "0",
+            "CARD_DESC": "",
+            "CARD_SEQ": "0",
+            "OTB": "0",
+            "CARD_STATUS": "",
+            "SEQ": "00006",
+            "AAN": ""
+            },
+            {
+            "MASK_CARD_NO": "",
+            "BLK_CODE1": "",
+            "BLK_CODE2": "",
+            "CRLIM": "0",
+            "LOGO": "0",
+            "CARD_DESC": "",
+            "CARD_SEQ": "0",
+            "OTB": "0",
+            "CARD_STATUS": "",
+            "SEQ": "00007",
+            "AAN": ""
+            },
+            {
+            "MASK_CARD_NO": "",
+            "BLK_CODE1": "",
+            "BLK_CODE2": "",
+            "CRLIM": "0",
+            "LOGO": "0",
+            "CARD_DESC": "",
+            "CARD_SEQ": "0",
+            "OTB": "0",
+            "CARD_STATUS": "",
+            "SEQ": "00008",
+            "AAN": ""
+            },
+            {
+            "MASK_CARD_NO": "",
+            "BLK_CODE1": "",
+            "BLK_CODE2": "",
+            "CRLIM": "0",
+            "LOGO": "0",
+            "CARD_DESC": "",
+            "CARD_SEQ": "0",
+            "OTB": "0",
+            "CARD_STATUS": "",
+            "SEQ": "00009",
+            "AAN": ""
+            }
+          ]},
+          "RC_DATA": {
+            "RETURN_CODE": "VPL6MNQ11S",
+            "RETURN_DESC": "NO MATCHING RECORD FOUND IN THE SYSTEM",
+            "SEQ": "00001"
+            }
+          },
+        "VMX_HEADER": {
+          "CORRELID": "1234",
+          "VERSION": "R8V1",
+          "CLIENTID": "00001",
+          "CONTEXT": "00001HDFCVMX",
+          "MSGID": "VMX.CMS.MOBILE.DET.INQ",
+          "NAME": "00001HDFCVMX"
+          }
+        }},
+      "status": {
+        "isOverriden": false,
+        "replyText": "0",
+        "internalReferenceNumber": "2025315465786360",
+        "replyCode": "0",
+        "memo": "null",
+        "errorCode": "0",
+        "validationErrors": "null",
+        "externalReferenceNo": "AD20251111114726027",
+        "postingDate": {"dateString": "20251111000000"},
+        "extendedReply": {"messages": "null"},
+        "userReferenceNumber": "AD20251111114726027"
+        }
+      }
+    }
+  }
