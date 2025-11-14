@@ -1,0 +1,52 @@
+{
+  "businessName": "api/v4/otp-val",
+  "apiName": "api/v4/otp-val",
+  "method": "POST",
+  "statusCode": 200,
+  "latencyMs": 0,
+  "predicate": {
+    "request": {"VerifyOTPRestRequestDTO": {
+      "headerParams": [
+        {
+        "value": "hdfc_adobe",
+        "key": "apiUser"
+        },
+        {
+        "value": "testing",
+        "key": "apiKey"
+        }
+      ],
+      "requestString": {
+        "linkData": "0000000618880725394"
+        }
+      }},
+    "headers": {},
+    "query": {}
+    },
+  "responseHeaders": {"Content-Type": "application/json"},
+  "responseBody": {
+    "responseString": {
+      "refNo": "AD20251114154554643",
+      "errorDetail": null,
+      "messageHash": "static:verpwdres:04:0+W0WxBYkSL5k+I0PtaxY9MQUEg=",
+      "statusCode": "00",
+      "txnId": null
+      },
+    "Id-token-jwt": "opEawajLoiGMxXjWz3ZB5p_943DJnV-slEt0DlkZUTMkXHjfr2vWn4Nhut6SKY1_SvYxVDElI3wIDGT0TU3qed-GQ2AGsFZxKLrDc-yWb_qVT6BlTdLjbSF_zcc_7dzJMrmd_RHAIrPdJXJrSYQ4ed4SKNTN_vLy7DsLlOsbl8C5uA3oLp4hgPzz91SAJdQ_-X4GWeWTK8rgjEvKJafnYZr6N-xoJ4P2EiR3Eg8kGayYURK83lLtJlwx-UfG_icl2A8YEvy45VDfyj9pof-WVFs9p2dEad2woMxQNtDkONRrIFXwIJQRfhyKWF9HfYE7qW3F2CAjv0AfIbK8BvPwpQ.v1yuvzQhQeVYGlzvM3cruw.i16p67L_j_95-eoYM80lKlrYLat5cri17LyiwVOdvUEotKdWYw7cnEXwYlRB8kmOci88dpZpwlI2vmvT1Ai4LS8l3A8htICJsHCQo5XJU5yvndyem_vCqkdOEmWyGrhFk_36YKreR5Wjh30zKIyqNLGqL9FbOidN3SYQkGoJfnASZMgdVnlH5UEavFzy2I7Y7UL_21rmG8H29nNUycWUH3c--O-8aDdzhEBslFGXyCbb6FTUqIiaMwhnT88uZXuuF5V8Y0Uisu6wjOhCBd6FjiSd_If8xg6F4IP_LhLSgoehRyvNmh1n0zTxc72IN7xcoFUs3KzZoOjZR0jUYas1D9hzR1cD0MEuuvxX8qiWcYTI0t5kywhTYrQGKOjyi0YDc6AUesbjkCOstrztCKTJ7sMZjjmowjvySwaDjq9sijjLXBfTSjQ-39HwQxxBBiL2Ut_FoVoWoKwedXQTdbk1afuBdKB7ILnL6mZVWmTaaE71NUlpIWGAbDe7W3DN6rLckINkaySiXA32YPIyeMEMaxtM8QHbFKa64lLsYbuaJFqbW5HaCFKf4BpGhuZeyua975XixXJYeT2Qy6XJrC4jIdDPT6w6HKiDNzBC4OdtaeX06ZFVUPKXjM0QO40mc5BYvI1qbdFMDaX5bzUgZL7id4uYTZkLJfdM-Q-GPpgaSiBOiN3ZoKOhZq-vgM3659dXSUKfaS3v7JjhGZyabeTBZ3gUMYg7VUYcWdV2w-nrZgCJgh69SYr-2hAZXxpJdt_G3aHafJQpVnDSPaT0ku15uWi2xPmVKAy0FY2T8dSXYAhgeWtDOwbDP62mKwlN5YOftOyoZziJKiqAV3SVkPE6AMG-6sQnkOamrZbU84TNgOo.IbY02uVi0TSv28sfdLkvIQ",
+    "configVersionId": null,
+    "maintenanceType": null,
+    "status": {
+      "isOverriden": false,
+      "replyText": "0",
+      "internalReferenceNumber": "2025318333045805",
+      "replyCode": 0,
+      "memo": null,
+      "errorCode": "0",
+      "validationErrors": null,
+      "externalReferenceNo": null,
+      "postingDate": {"dateString": "20251114000000"},
+      "extendedReply": {"messages": null},
+      "userReferenceNumber": null
+      }
+    }
+  }

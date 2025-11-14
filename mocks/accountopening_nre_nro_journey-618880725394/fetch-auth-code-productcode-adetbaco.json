@@ -1,0 +1,27 @@
+{
+  "businessName": "idcom/Fetch Auth Code",
+  "apiName": "API/idcom/Fetch_AuthCode",
+  "method": "POST",
+  "statusCode": 200,
+  "latencyMs": 0,
+  "predicate": {
+    "request": {
+      "Identifiers": [
+        {
+        "TypeName": "MobileNo",
+        "TypeValue": "91618880725394"
+        }
+      ]
+      },
+    "headers": {},
+    "query": {}
+    },
+  "responseHeaders": {"Content-Type": "application/json"},
+  "responseBody": {
+    "authCode": "P20251114154691565222766",
+    "redirectUrl": "https://idcom.hdfcuat.bank.in:443/validate/P20251114154691565222766",
+    "errorDescription": null,
+    "errorMessage": null,
+    "errorCode": null
+    }
+  }
